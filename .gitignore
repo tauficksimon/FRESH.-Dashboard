@@ -1,5 +1,6 @@
 # CSV data files (except sample data)
 *.csv
+!summary_metrics.csv
 !data/.gitkeep
 !output/.gitkeep
 
