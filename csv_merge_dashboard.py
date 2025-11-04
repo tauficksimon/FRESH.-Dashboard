@@ -600,13 +600,46 @@ class CSVMerger:
         total_lbs = wf_items['Quantity'].sum()
         return round(total_lbs, 1)
 
+    def add_work_week_columns(self, df: pd.DataFrame) -> pd.DataFrame:
+        """Add work week number and label columns (Monday-Saturday work weeks)"""
+        df = df.copy()
+
+        # Calculate work week (Monday = start of week, Saturday = end)
+        # Adjust date so Monday = 0, Sunday = 6
+        df['DayOfWeek'] = df['Order Date'].dt.dayofweek
+
+        # For Sunday (6), assign it to next week (since work week is Mon-Sat)
+        df['WorkWeekStart'] = df.apply(
+            lambda row: row['Order Date'] - pd.Timedelta(days=row['DayOfWeek'])
+            if row['DayOfWeek'] != 6
+            else row['Order Date'] + pd.Timedelta(days=1),
+            axis=1
+        )
+
+        # Create year-month for grouping
+        df['YearMonth'] = df['Order Date'].dt.to_period('M')
+
+        # Calculate week number within each month (1, 2, 3, 4, 5)
+        df['WeekOfMonth'] = df.groupby('YearMonth')['WorkWeekStart'].transform(
+            lambda x: pd.factorize(x.dt.date)[0] + 1
+        )
+
+        # Create week label like "2024-10-W1", "2024-10-W2", etc.
+        df['WeekLabel'] = df['YearMonth'].astype(str) + '-W' + df['WeekOfMonth'].astype(str)
+
+        return df
+
     def generate_dashboard_data(self, start_date: str = None, end_date: str = None) -> Dict:
         """Generate comprehensive dashboard data"""
         print("Generating dashboard data...")
-        
+
         # Get filtered datasets
         all_orders = self.filter_by_date_range(start_date, end_date)
         paid_orders = all_orders[all_orders['Paid'] == 1]
+
+        # Add work week columns
+        all_orders = self.add_work_week_columns(all_orders)
+        paid_orders = self.add_work_week_columns(paid_orders)
         
         # Generate date range label
         if start_date and end_date:
@@ -664,7 +697,49 @@ class CSVMerger:
             if pd.notna(month):
                 month_all = all_orders[all_orders['Month'] == month]
                 month_paid = paid_orders[paid_orders['Month'] == month]
-                
+
+                # Get weekly breakdowns for this month
+                by_week_all = {}
+                by_week_paid = {}
+
+                for week_label in sorted(month_all['WeekLabel'].unique()):
+                    week_all = month_all[month_all['WeekLabel'] == week_label]
+                    week_paid = month_paid[month_paid['WeekLabel'] == week_label]
+
+                    by_week_all[week_label] = {
+                        "kpis": self.calculate_kpis(week_all),
+                        "series": self.calculate_time_series(week_all),
+                        "category": self.calculate_category_breakdown(week_all),
+                        "payment": self.calculate_payment_breakdown(week_all),
+                        "status": self.calculate_status_breakdown(week_all),
+                        "advanced": {
+                            "revenue_quality": self.calculate_revenue_quality(week_all),
+                            "aov_stats": self.calculate_aov_stats(week_all),
+                            "customer": self.calculate_customer_advanced(week_all),
+                            "ar": self.calculate_ar_metrics(week_all),
+                            "service_mix": self.calculate_service_mix(week_all),
+                            "unit_prices": self.calculate_unit_prices(week_all),
+                            "wash_fold_lbs": self.calculate_wash_fold_lbs(week_all)
+                        }
+                    }
+
+                    by_week_paid[week_label] = {
+                        "kpis": self.calculate_kpis(week_paid),
+                        "series": self.calculate_time_series(week_paid),
+                        "category": self.calculate_category_breakdown(week_paid),
+                        "payment": self.calculate_payment_breakdown(week_paid),
+                        "status": self.calculate_status_breakdown(week_paid),
+                        "advanced": {
+                            "revenue_quality": self.calculate_revenue_quality(week_paid),
+                            "aov_stats": self.calculate_aov_stats(week_paid),
+                            "customer": self.calculate_customer_advanced(week_paid),
+                            "ar": self.calculate_ar_metrics(week_paid),
+                            "service_mix": self.calculate_service_mix(week_paid),
+                            "unit_prices": self.calculate_unit_prices(week_paid),
+                            "wash_fold_lbs": self.calculate_wash_fold_lbs(week_paid)
+                        }
+                    }
+
                 dashboard_data[f"{date_label}__ALL_ORDERS"]["by_month"][month] = {
                     "kpis": self.calculate_kpis(month_all),
                     "months": [month],
@@ -681,7 +756,8 @@ class CSVMerger:
                         "service_mix": self.calculate_service_mix(month_all),
                         "unit_prices": self.calculate_unit_prices(month_all),
                         "wash_fold_lbs": self.calculate_wash_fold_lbs(month_all)
-                    }
+                    },
+                    "by_week": by_week_all
                 }
 
                 dashboard_data[f"{date_label}__PAID_ONLY"]["by_month"][month] = {
@@ -700,7 +776,8 @@ class CSVMerger:
                         "service_mix": self.calculate_service_mix(month_paid),
                         "unit_prices": self.calculate_unit_prices(month_paid),
                         "wash_fold_lbs": self.calculate_wash_fold_lbs(month_paid)
-                    }
+                    },
+                    "by_week": by_week_paid
                 }
         
         return dashboard_data
@@ -708,6 +785,14 @@ class CSVMerger:
     def save_dashboard_json(self, dashboard_data: Dict, filename: str = 'dashboard_data.json') -> None:
         """Save dashboard data to JSON"""
         print(f"Saving dashboard data to {filename}...")
+
+        # Add metadata with last updated timestamp
+        from datetime import datetime
+        dashboard_data['_metadata'] = {
+            'last_updated': datetime.utcnow().isoformat() + 'Z',
+            'last_updated_display': datetime.utcnow().strftime('%B %d, %Y at %I:%M %p UTC')
+        }
+
         with open(filename, 'w') as f:
             json.dump(dashboard_data, f, indent=2, default=str)
         print(f"Dashboard data saved to {filename}")

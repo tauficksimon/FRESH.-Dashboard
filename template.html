@@ -54,6 +54,13 @@
     <select id="month">
       <option value="__ALL__" selected>All months</option>
     </select>
+    <label>Week:</label>
+    <select id="week">
+      <option value="__ALL__" selected>Entire month</option>
+    </select>
+  </div>
+  <div class="last-updated" id="lastUpdated" style="text-align:center; font-size:0.85em; color:var(--muted); margin-top:8px;">
+    Last updated: Loading...
   </div>
 </header>
 
@@ -184,16 +191,71 @@ function key() {
 function currentPack() { return STORE[key()]; }
 function getDS() {
   const monthSel = document.getElementById('month').value;
+  const weekSel = document.getElementById('week').value;
   const pack = currentPack();
+
+  // If "All months" selected, return all data
   if (monthSel === '__ALL__') return pack.all;
-  return pack.by_month[monthSel] || pack.all;
+
+  // Get the month data
+  const monthData = pack.by_month[monthSel] || pack.all;
+
+  // If "Entire month" selected or no weeks available, return month data
+  if (weekSel === '__ALL__' || !monthData.by_week) return monthData;
+
+  // Return specific week data
+  return monthData.by_week[weekSel] || monthData;
 }
+
 function populateMonths() {
   const select = document.getElementById('month');
   const months = Object.keys(currentPack().by_month || {}).sort();
   const current = select.value;
   select.innerHTML = `<option value="__ALL__">All months</option>` + months.map(m => `<option value="${m}">${m}</option>`).join('');
   if (months.includes(current)) select.value = current; else select.value='__ALL__';
+
+  // Populate weeks when month changes
+  populateWeeks();
+}
+
+function populateWeeks() {
+  const monthSel = document.getElementById('month').value;
+  const weekSelect = document.getElementById('week');
+  const pack = currentPack();
+
+  // If "All months" selected, disable week selector
+  if (monthSel === '__ALL__') {
+    weekSelect.innerHTML = `<option value="__ALL__">Entire month</option>`;
+    weekSelect.disabled = true;
+    return;
+  }
+
+  // Get weeks for the selected month
+  const monthData = pack.by_month[monthSel];
+  if (!monthData || !monthData.by_week) {
+    weekSelect.innerHTML = `<option value="__ALL__">Entire month</option>`;
+    weekSelect.disabled = true;
+    return;
+  }
+
+  // Populate week options
+  const weeks = Object.keys(monthData.by_week).sort();
+  const current = weekSelect.value;
+  const weekOptions = weeks.map(w => {
+    // Format week label like "Week 1", "Week 2", etc.
+    const weekNum = w.split('-W')[1];
+    return `<option value="${w}">Week ${weekNum} (Mon-Sat)</option>`;
+  }).join('');
+
+  weekSelect.innerHTML = `<option value="__ALL__">Entire month</option>` + weekOptions;
+  weekSelect.disabled = false;
+
+  // Restore selection if valid
+  if (weeks.includes(current)) {
+    weekSelect.value = current;
+  } else {
+    weekSelect.value = '__ALL__';
+  }
 }
 
 function setKPIs(ds) {
@@ -411,11 +473,23 @@ function refresh() {
   setKPIs(ds);
   renderCharts(ds);
   fillAdvanced(ds);
+  updateLastUpdated();
+}
+
+function updateLastUpdated() {
+  const metadata = STORE._metadata;
+  const elem = document.getElementById('lastUpdated');
+  if (metadata && metadata.last_updated_display) {
+    elem.textContent = `Last updated: ${metadata.last_updated_display}`;
+  } else {
+    elem.textContent = 'Last updated: Unknown';
+  }
 }
 
 document.getElementById('period').addEventListener('change', refresh);
 document.getElementById('mode').addEventListener('change', refresh);
 document.getElementById('month').addEventListener('change', refresh);
+document.getElementById('week').addEventListener('change', refresh);
 
 // Initial render
 refresh();
