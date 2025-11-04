@@ -604,20 +604,24 @@ class CSVMerger:
         """Add work week number and label columns (Monday-Saturday work weeks)"""
         df = df.copy()
 
+        # Ensure Date Placed is datetime
+        if not pd.api.types.is_datetime64_any_dtype(df['Date Placed']):
+            df['Date Placed'] = pd.to_datetime(df['Date Placed'])
+
         # Calculate work week (Monday = start of week, Saturday = end)
         # Adjust date so Monday = 0, Sunday = 6
-        df['DayOfWeek'] = df['Order Date'].dt.dayofweek
+        df['DayOfWeek'] = df['Date Placed'].dt.dayofweek
 
         # For Sunday (6), assign it to next week (since work week is Mon-Sat)
         df['WorkWeekStart'] = df.apply(
-            lambda row: row['Order Date'] - pd.Timedelta(days=row['DayOfWeek'])
+            lambda row: row['Date Placed'] - pd.Timedelta(days=row['DayOfWeek'])
             if row['DayOfWeek'] != 6
-            else row['Order Date'] + pd.Timedelta(days=1),
+            else row['Date Placed'] + pd.Timedelta(days=1),
             axis=1
         )
 
         # Create year-month for grouping
-        df['YearMonth'] = df['Order Date'].dt.to_period('M')
+        df['YearMonth'] = df['Date Placed'].dt.to_period('M')
 
         # Calculate week number within each month (1, 2, 3, 4, 5)
         df['WeekOfMonth'] = df.groupby('YearMonth')['WorkWeekStart'].transform(
