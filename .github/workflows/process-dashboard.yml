@@ -31,12 +31,13 @@ jobs:
       - name: Check for CSV files
         id: check_files
         run: |
-          if ls data/*.csv 1> /dev/null 2>&1; then
+          if [ -f "data/orders.csv" ] && [ -f "data/items.csv" ]; then
             echo "csv_found=true" >> $GITHUB_OUTPUT
-            echo "✅ CSV files found in data directory"
+            echo "✅ CSV files found: orders.csv and items.csv"
           else
             echo "csv_found=false" >> $GITHUB_OUTPUT
-            echo "⚠️ No CSV files found in data directory"
+            echo "⚠️ No CSV files found. Waiting for data upload."
+            echo "   Expected files: data/orders.csv and data/items.csv"
           fi
 
       - name: Process CSV files
@@ -65,6 +66,12 @@ jobs:
             git commit -m "📊 Update dashboard data - $(date +'%Y-%m-%d %H:%M UTC')"
             git push
           fi
+
+      - name: Skip message
+        if: steps.check_files.outputs.csv_found == 'false'
+        run: |
+          echo "⏭️ Skipping dashboard processing - no CSV files uploaded yet"
+          echo "Upload orders.csv and items.csv to /data/ folder to process data"
 
       - name: Upload artifacts
         if: steps.check_files.outputs.csv_found == 'true'
