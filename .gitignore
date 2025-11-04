@@ -12,6 +12,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+!.python/
 build/
 develop-eggs/
 dist/
