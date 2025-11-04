@@ -829,10 +829,26 @@ class CSVMerger:
 
 def main():
     """Main execution function"""
-    # File paths
-    orders_file = 'CC-Orders-01012025-31122025.csv'
-    items_file = 'CC-Items-Sales_2025-01-01-2025-12-31.csv'
-    
+    import os
+    import sys
+
+    # Look for CSV files in data directory first, then current directory
+    if os.path.exists('data/orders.csv') and os.path.exists('data/items.csv'):
+        orders_file = 'data/orders.csv'
+        items_file = 'data/items.csv'
+    elif os.path.exists('orders.csv') and os.path.exists('items.csv'):
+        orders_file = 'orders.csv'
+        items_file = 'items.csv'
+    else:
+        print("❌ Error: CSV files not found!")
+        print("   Please ensure these files exist:")
+        print("   - data/orders.csv (or orders.csv)")
+        print("   - data/items.csv (or items.csv)")
+        sys.exit(1)
+
+    print(f"📂 Using orders file: {orders_file}")
+    print(f"📂 Using items file: {items_file}")
+
     # Initialize processor
     processor = CSVMerger(orders_file, items_file)
     
