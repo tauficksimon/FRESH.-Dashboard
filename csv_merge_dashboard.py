@@ -310,6 +310,18 @@ class CSVMerger:
         net_revenue = df['Revenue Net Tax'].sum()
         profit = net_revenue - total_cost
         
+        # Calculate dry cleaning items (exclude W&F pounds)
+        order_ids = df['Order ID'].unique()
+        all_items = self.items_df[self.items_df['Order ID'].isin(order_ids)]
+
+        # Non-W&F items (piece count)
+        non_wf_items = all_items[~all_items['Item'].str.contains('wash|fold', case=False, na=False)]
+        dry_clean_items = non_wf_items['Quantity'].sum()
+
+        # W&F items (pounds)
+        wf_items = all_items[all_items['Item'].str.contains('wash|fold', case=False, na=False)]
+        wf_lbs = wf_items['Quantity'].sum()
+
         kpis = {
             'orders': len(df),
             'revenue': total_revenue,
@@ -320,7 +332,9 @@ class CSVMerger:
             'net_revenue': net_revenue,
             'profit': profit,
             'margin_pct': (profit / net_revenue * 100) if net_revenue != 0 else 0,
-            'items': df['Total Items'].sum(),
+            'items': df['Total Items'].sum(),  # Keep total for backwards compatibility
+            'dry_clean_items': dry_clean_items,  # Piece count
+            'wf_lbs': wf_lbs,  # Pounds
             'unique_customers': df['Customer'].nunique(),
             'new_customers': df[df['IsNewCustomer'] == True]['Customer'].nunique(),
             'returning_customers': df['Customer'].nunique() - df[df['IsNewCustomer'] == True]['Customer'].nunique(),
@@ -790,11 +804,14 @@ class CSVMerger:
         """Save dashboard data to JSON"""
         print(f"Saving dashboard data to {filename}...")
 
-        # Add metadata with last updated timestamp
-        from datetime import datetime
+        # Add metadata with last updated timestamp in EST
+        from datetime import datetime, timezone, timedelta
+        est = timezone(timedelta(hours=-5))  # EST is UTC-5
+        now_est = datetime.now(est)
+
         dashboard_data['_metadata'] = {
-            'last_updated': datetime.utcnow().isoformat() + 'Z',
-            'last_updated_display': datetime.utcnow().strftime('%B %d, %Y at %I:%M %p UTC')
+            'last_updated': now_est.isoformat(),
+            'last_updated_display': now_est.strftime('%B %d, %Y at %I:%M %p EST')
         }
 
         with open(filename, 'w') as f:

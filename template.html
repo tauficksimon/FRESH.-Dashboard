@@ -303,7 +303,12 @@ function setKPIs(ds) {
   document.getElementById('kpi_margin').textContent = pct(k.margin_pct);
   document.getElementById('kpi_orders').textContent = (k.orders || 0).toLocaleString();
   document.getElementById('kpi_aov').textContent = money(k.aov);
-  document.getElementById('kpi_items').textContent = (k.items || 0).toLocaleString();
+
+  // Display items as "pieces + lbs"
+  const dryCleanItems = Math.round(k.dry_clean_items || 0);
+  const wfLbs = Math.round(k.wf_lbs || 0);
+  document.getElementById('kpi_items').textContent = `${dryCleanItems.toLocaleString()} + ${wfLbs.toLocaleString()} lbs`;
+
   document.getElementById('kpi_customers').textContent = (k.unique_customers || 0).toLocaleString();
   document.getElementById('kpi_ref_amt').textContent = money(k.refund_amount);
 }
