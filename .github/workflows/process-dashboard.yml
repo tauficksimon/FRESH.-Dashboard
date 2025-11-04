@@ -75,7 +75,7 @@ jobs:
 
       - name: Upload artifacts
         if: steps.check_files.outputs.csv_found == 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dashboard-outputs
           path: |
