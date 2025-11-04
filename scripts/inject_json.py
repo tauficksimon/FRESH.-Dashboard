@@ -50,7 +50,8 @@ def inject_json_into_html():
         return False
 
     # Convert JSON to compact string for embedding
-    json_string = json.dumps(dashboard_data, separators=(',', ':'))
+    # Use ensure_ascii=True to escape all non-ASCII and control characters
+    json_string = json.dumps(dashboard_data, separators=(',', ':'), ensure_ascii=True)
 
     # Find and replace the <script id="store"> content
     # Pattern matches: <script id="store" type="application/json">...</script>
