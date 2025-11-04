@@ -49,9 +49,9 @@ def inject_json_into_html():
         print(f"❌ Error: {template_file} not found!")
         return False
 
-    # Convert JSON to compact string for embedding
-    # Use ensure_ascii=True to escape all non-ASCII and control characters
-    json_string = json.dumps(dashboard_data, separators=(',', ':'), ensure_ascii=True)
+    # Convert JSON to string with proper formatting
+    # Use indent for readability and ensure_ascii to escape control characters
+    json_string = json.dumps(dashboard_data, indent=2, ensure_ascii=True)
 
     # Find and replace the <script id="store"> content
     # Pattern matches: <script id="store" type="application/json">...</script>

@@ -86,11 +86,11 @@ class CSVMerger:
         for col in numeric_cols:
             if col in self.items_df.columns:
                 self.items_df[col] = pd.to_numeric(self.items_df[col], errors='coerce')
-        
-        # Clean text columns
-        self.items_df['Item'] = self.items_df['Item'].fillna('')
-        self.items_df['Item Notes'] = self.items_df['Item Notes'].fillna('')
-        
+
+        # Clean text columns - strip whitespace and control characters
+        self.items_df['Item'] = self.items_df['Item'].fillna('').str.strip()
+        self.items_df['Item Notes'] = self.items_df['Item Notes'].fillna('').str.strip()
+
         # Convert date column
         self.items_df['Date Placed'] = pd.to_datetime(self.items_df['Placed'], format='%d %b %Y', errors='coerce')
         
