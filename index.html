@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FRESH. Dry Cleaning Dashboard – Full KPIs</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+<style>
+  :root {
+    --bg: #0b0f19; --panel: #111727; --muted: #8fa0bf; --text: #e7ecf7;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background: var(--bg); color: var(--text); font: 14px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+  header { padding: 20px 24px; border-bottom: 1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap: wrap; }
+  h1 { margin:0; font-size: 20px; }
+  h2 { margin: 6px 0 12px 0; font-size: 16px; }
+  .controls { display:flex; gap:10px; align-items:center; color: var(--muted); flex-wrap: wrap; }
+  select { background: var(--panel); color: var(--text); border:1px solid var(--line); border-radius:8px; padding:6px 10px; }
+  main { padding: 20px 24px; display:grid; gap:16px; }
+  .grid { display:grid; gap:16px; }
+  .cards { grid-template-columns: repeat(6, minmax(0,1fr)); }
+  @media (max-width: 1280px) { .cards { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  @media (max-width: 700px) { .cards { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  .card { background: var(--panel); border:1px solid var(--line); border-radius: 14px; padding: 14px; }
+  .kpi .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+  .kpi .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+  .split { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .triple { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  @media (max-width: 1200px) { .split, .triple { grid-template-columns: 1fr; } }
+  canvas { width: 100% !important; height: 320px !important; }
+  table { width:100%; border-collapse: collapse; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { text-align:left; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  td.num { text-align:right; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>FRESH. Dry Cleaning Dashboard</h1>
+  <div class="controls">
+    <label>Period:</label>
+    <select id="period">
+      <option value="ALL_DATA">All Data</option>
+    </select>
+    <label>Orders:</label>
+    <select id="mode">
+      <option value="ALL_ORDERS" selected>All Orders</option>
+      <option value="PAID_ONLY">Paid Only</option>
+    </select>
+    <label>Month:</label>
+    <select id="month">
+      <option value="__ALL__" selected>All months</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <!-- Executive KPIs -->
+  <section class="grid cards">
+    <div class="card kpi"><div class="label">Net Revenue</div><div id="kpi_revenue" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Cost HAAP</div><div id="kpi_cost" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Profit</div><div id="kpi_profit" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Gross Margin</div><div id="kpi_margin" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Orders</div><div id="kpi_orders" class="value">–</div></div>
+    <div class="card kpi"><div class="label">AOV</div><div id="kpi_aov" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Items</div><div id="kpi_items" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Unique Customers</div><div id="kpi_customers" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Express Order Rate</div><div id="kpi_express_rate" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Refunds (Total)</div><div id="kpi_ref_amt" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Returning Share %</div><div id="kpi_returning_share" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Returning / New Ratio</div><div id="kpi_returning_new_ratio" class="value">–</div></div>
+  </section>
+
+  <!-- Core charts -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Revenue & Cost (Bars) + Profit (Area)</h2>
+      <canvas id="revCostProfit"></canvas>
+    </div>
+    <div class="card">
+      <h2>Orders & Average Order Value</h2>
+      <canvas id="ordersAOV"></canvas>
+    </div>
+  </section>
+
+  <section class="grid split">
+    <div class="card">
+      <h2>Revenue by Category (Sorted)</h2>
+      <canvas id="catRevenue"></canvas>
+    </div>
+    <div class="card">
+      <h2>Payment Mix & Order Status</h2>
+      <canvas id="mixStacked"></canvas>
+    </div>
+  </section>
+
+  <!-- Financial Quality & Customer Health -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Financial Quality</h2>
+      <table id="tbl_fin_quality">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Gross vs Net, refund/discount/tip rates, and fee breakdown.</div>
+    </div>
+    <div class="card">
+      <h2>AOV Distribution & Margin</h2>
+      <table id="tbl_aov">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Mean, median, quartiles; overall gross margin for the selected window.</div>
+    </div>
+  </section>
+
+  <section class="grid split">
+    <div class="card">
+      <h2>Customer Health</h2>
+      <table id="tbl_customer">
+        <tbody></tbody>
+      </table>
+      <div class="muted">New vs returning, 30‐day repeat for new customers, top‐10 revenue concentration.</div>
+    </div>
+    <div class="card">
+      <h2>Accounts Receivable (AR)</h2>
+      <table id="tbl_ar">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Unpaid order count, unpaid balance, and share of orders.</div>
+    </div>
+  </section>
+
+  <!-- Service Mix & Realized Pricing -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Service Mix (Revenue)</h2>
+      <table>
+        <thead><tr><th>Category</th><th class="num">Revenue</th><th class="num">Share</th></tr></thead>
+        <tbody id="tbl_service_mix"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Implied Realized Unit Prices (Top 10)</h2>
+      <table>
+        <thead><tr><th>Item</th><th class="num">Revenue</th><th class="num">Units</th><th class="num">$ / Unit</th></tr></thead>
+        <tbody id="tbl_unit_prices"></tbody>
+      </table>
+      <div class="muted">Revenue allocated by item quantity within each order.</div>
+      <p><b>Wash & Fold volume:</b> <span id="wnf_lbs">–</span> lbs</p>
+    </div>
+  </section>
+
+  <!-- Top products table -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Top 10 Products (Revenue)</h2>
+      <table>
+        <thead><tr><th>#</th><th>Product</th><th class="num">Revenue</th><th class="num">Units</th></tr></thead>
+        <tbody id="topProducts"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Notes</h2>
+      <p class="muted">Use the <b>Month</b> selector to switch between <i>All months</i> and a specific month in the chosen period. All KPIs refresh.</p>
+      <p class="muted"><small>Generated by FRESH Dashboard Generator | Data updated automatically</small></p>
+    </div>
+  </section>
+</main>
+
+<script id="store" type="application/json">{"ALL_DATA__ALL_ORDERS":{"all":{"kpis":{"orders":510,"revenue":31338.739999999998,"gross_sales":31532.15,"refund_amount":193.41,"refund_count":4,"cost":15026.742,"net_revenue":29322.89,"profit":14296.148,"margin_pct":48.75422579425152,"items":3732.9,"unique_customers":288,"new_customers":288,"returning_customers":0,"aov":61.44850980392157,"express_rate":8.823529411764707,"new_customer_share_pct":100.0},"series":{"months":["2025-07","2025-08","2025-09","2025-10","2025-11"],"revenue":[4517.81,6435.71,7263.05,12821.75,300.42],"cost":[2557.34,3366.0375,3448.687,5505.5675,149.10999999999999],"profit":[1675.7600000000002,2652.3925000000004,3312.393,6524.132500000001,131.47],"orders":[89,123,131,163,4],"aov":[50.76191011235956,52.32284552845528,55.44312977099237,78.66104294478528,75.105]},"category":{"Dry Cleaning":18002.84,"Shoes":148.13,"Wash & Fold":5861.070000000002,"Other":6861.599999999997,"W&F Delicate":465.1},"payment":{"Card":439,"None":30,"Cash":24,"Invoice":12,"11":5},"status":{"collected":470,"ready":24,"cleaning":14,"detailing":1,"pickup":1},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":31532.15,"refunds":193.41,"net_revenue":29322.89,"refund_rate_pct":0.61,"discounts":1656.92,"discount_rate_pct":5.25,"tips":0.0,"tip_rate_pct":0.0,"tax":2015.85,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":4},"aov_stats":{"mean":61.45,"median":43.8,"p25":26.79,"p75":72.4,"gross_margin_pct":48.75},"customer":{"unique_customers":288,"new_customers":288,"returning_customers":0,"new_share_pct":100.0,"ret_share_pct":0.0,"ret_new_ratio":0.0,"repeat_30d":"83/288","repeat_30d_pct":28.82,"top10_share_pct":24.61},"ar":{"unpaid_orders":42,"unpaid_balance":1140.55,"unpaid_share_pct":8.24},"service_mix":[{"category":"Dry Cleaning","revenue":18002.84,"share_pct":57.45},{"category":"Other","revenue":6861.6,"share_pct":21.89},{"category":"Wash & Fold","revenue":5861.07,"share_pct":18.7},{"category":"W&F Delicate","revenue":465.1,"share_pct":1.48},{"category":"Shoes","revenue":148.13,"share_pct":0.47}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":5861.07,"units":1978.9,"price":2.96},{"item":"Hand-Finished Shirts","revenue":3447.01,"units":265.0,"price":13.01},{"item":"Business Shirt","revenue":2644.1,"units":371.0,"price":7.13},{"item":"Trousers","revenue":2554.09,"units":179.0,"price":14.27},{"item":"2-Piece Suit (MEN)","revenue":2350.93,"units":87.0,"price":27.02},{"item":"Sport Jacket/ Blazer","revenue":2154.8,"units":109.0,"price":19.77},{"item":"Long Dress (Regular)","revenue":1245.72,"units":43.0,"price":28.97},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":1007.06,"units":64.0,"price":15.74},{"item":"Polo-Shirt","revenue":943.58,"units":67.0,"price":14.08},{"item":"Short Dress (Regular)","revenue":842.57,"units":37.0,"price":22.77}],"wash_fold_lbs":2093.9}},"by_month":{"2025-07":{"kpis":{"orders":89,"revenue":4517.81,"gross_sales":4603.47,"refund_amount":85.66,"refund_count":1,"cost":2557.34,"net_revenue":4233.099999999999,"profit":1675.7599999999993,"margin_pct":39.58706385391319,"items":728.5,"unique_customers":58,"new_customers":58,"returning_customers":0,"aov":50.76191011235956,"express_rate":7.865168539325842,"new_customer_share_pct":100.0},"months":["2025-07"],"series":{"months":["2025-07"],"revenue":[4517.81],"cost":[2557.34],"profit":[1675.7600000000002],"orders":[89],"aov":[50.76191011235956]},"category":{"Dry Cleaning":2628.77,"Shoes":45.44,"Wash & Fold":1129.88,"Other":615.83,"W&F Delicate":97.89},"payment":{"Card":81,"None":3,"Invoice":3,"11":2},"status":{"collected":87,"ready":2},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":4603.47,"refunds":85.66,"net_revenue":4233.099999999999,"refund_rate_pct":1.86,"discounts":576.34,"discount_rate_pct":12.52,"tips":0.0,"tip_rate_pct":0.0,"tax":284.71,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":1},"aov_stats":{"mean":50.76,"median":40.98,"p25":20.32,"p75":67.13,"gross_margin_pct":39.59},"customer":{"unique_customers":58,"new_customers":58,"returning_customers":0,"new_share_pct":100.0,"ret_share_pct":0.0,"ret_new_ratio":0.0,"repeat_30d":"21/58","repeat_30d_pct":36.21,"top10_share_pct":44.41},"ar":{"unpaid_orders":6,"unpaid_balance":102.15,"unpaid_share_pct":6.74},"service_mix":[{"category":"Dry Cleaning","revenue":2628.77,"share_pct":58.19},{"category":"Wash & Fold","revenue":1129.88,"share_pct":25.01},{"category":"Other","revenue":615.83,"share_pct":13.63},{"category":"W&F Delicate","revenue":97.89,"share_pct":2.17},{"category":"Shoes","revenue":45.44,"share_pct":1.01}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1129.88,"units":426.0,"price":2.65},{"item":"Hand-Finished Shirts","revenue":1043.96,"units":96.0,"price":10.87},{"item":"Sport Jacket/ Blazer","revenue":459.67,"units":24.0,"price":19.15},{"item":"Trousers","revenue":400.18,"units":31.0,"price":12.91},{"item":"2-Piece Suit (MEN)","revenue":302.73,"units":12.0,"price":25.23},{"item":"Blouse","revenue":177.94,"units":11.0,"price":16.18},{"item":"Business Shirt","revenue":154.57,"units":40.0,"price":3.86},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":128.79,"units":8.0,"price":16.1},{"item":"Wash Delicate & Hang Dry (Min 15l b)","revenue":97.89,"units":22.5,"price":4.35},{"item":"T-shirt","revenue":78.05,"units":8.0,"price":9.76}],"wash_fold_lbs":449.5}},"2025-08":{"kpis":{"orders":123,"revenue":6435.710000000001,"gross_sales":6534.72,"refund_amount":99.00999999999999,"refund_count":2,"cost":3366.0375000000004,"net_revenue":6018.43,"profit":2652.3925,"margin_pct":44.07116972366547,"items":979.0,"unique_customers":89,"new_customers":73,"returning_customers":16,"aov":52.32284552845529,"express_rate":13.008130081300814,"new_customer_share_pct":82.02247191011236},"months":["2025-08"],"series":{"months":["2025-08"],"revenue":[6435.71],"cost":[3366.0375],"profit":[2652.3925000000004],"orders":[123],"aov":[52.32284552845528]},"category":{"Dry Cleaning":3116.22,"W&F Delicate":46.36,"Wash & Fold":1957.3600000000001,"Other":1298.65,"Shoes":17.12},"payment":{"Card":107,"Cash":10,"Invoice":4,"None":2},"status":{"collected":121,"ready":2},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":6534.72,"refunds":99.00999999999999,"net_revenue":6018.43,"refund_rate_pct":1.52,"discounts":445.72,"discount_rate_pct":6.82,"tips":0.0,"tip_rate_pct":0.0,"tax":417.28000000000003,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":2},"aov_stats":{"mean":52.32,"median":43.86,"p25":22.54,"p75":69.53,"gross_margin_pct":44.07},"customer":{"unique_customers":89,"new_customers":73,"returning_customers":16,"new_share_pct":82.02,"ret_share_pct":17.98,"ret_new_ratio":0.22,"repeat_30d":"14/73","repeat_30d_pct":19.18,"top10_share_pct":30.77},"ar":{"unpaid_orders":6,"unpaid_balance":136.37,"unpaid_share_pct":4.88},"service_mix":[{"category":"Dry Cleaning","revenue":3116.22,"share_pct":48.42},{"category":"Wash & Fold","revenue":1957.36,"share_pct":30.41},{"category":"Other","revenue":1298.65,"share_pct":20.18},{"category":"W&F Delicate","revenue":46.36,"share_pct":0.72},{"category":"Shoes","revenue":17.12,"share_pct":0.27}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1957.36,"units":671.0,"price":2.92},{"item":"Hand-Finished Shirts","revenue":848.97,"units":62.0,"price":13.69},{"item":"Sport Jacket/ Blazer","revenue":494.22,"units":24.0,"price":20.59},{"item":"2-Piece Suit (MEN)","revenue":418.47,"units":16.0,"price":26.15},{"item":"Short Dress (Regular)","revenue":378.18,"units":16.0,"price":23.64},{"item":"Trousers","revenue":361.73,"units":24.0,"price":15.07},{"item":"Business Shirt","revenue":257.27,"units":52.0,"price":4.95},{"item":"Linen Shirt /Guayabera","revenue":202.96,"units":13.0,"price":15.61},{"item":"King Comforter","revenue":138.51,"units":3.0,"price":46.17},{"item":"Blouse","revenue":135.4,"units":10.0,"price":13.54}],"wash_fold_lbs":686.0}},"2025-09":{"kpis":{"orders":131,"revenue":7263.049999999999,"gross_sales":7271.789999999999,"refund_amount":8.74,"refund_count":1,"cost":3448.687,"net_revenue":6761.08,"profit":3312.393,"margin_pct":48.99206931436989,"items":793.9,"unique_customers":99,"new_customers":73,"returning_customers":26,"aov":55.443129770992364,"express_rate":6.870229007633588,"new_customer_share_pct":73.73737373737373},"months":["2025-09"],"series":{"months":["2025-09"],"revenue":[7263.05],"cost":[3448.687],"profit":[3312.393],"orders":[131],"aov":[55.44312977099237]},"category":{"Other":1523.0800000000008,"Dry Cleaning":4545.07,"Wash & Fold":1059.28,"Shoes":46.0,"W&F Delicate":89.62},"payment":{"Card":115,"None":6,"Cash":5,"Invoice":3,"11":2},"status":{"collected":126,"ready":5},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":7271.789999999999,"refunds":8.74,"net_revenue":6761.08,"refund_rate_pct":0.12,"discounts":387.57000000000005,"discount_rate_pct":5.33,"tips":0.0,"tip_rate_pct":0.0,"tax":501.96999999999997,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":1},"aov_stats":{"mean":55.44,"median":43.31,"p25":21.91,"p75":64.32,"gross_margin_pct":48.99},"customer":{"unique_customers":99,"new_customers":73,"returning_customers":26,"new_share_pct":73.74,"ret_share_pct":26.26,"ret_new_ratio":0.36,"repeat_30d":"11/73","repeat_30d_pct":15.07,"top10_share_pct":33.24},"ar":{"unpaid_orders":9,"unpaid_balance":182.64,"unpaid_share_pct":6.87},"service_mix":[{"category":"Dry Cleaning","revenue":4545.07,"share_pct":62.58},{"category":"Other","revenue":1523.08,"share_pct":20.97},{"category":"Wash & Fold","revenue":1059.28,"share_pct":14.58},{"category":"W&F Delicate","revenue":89.62,"share_pct":1.23},{"category":"Shoes","revenue":46.0,"share_pct":0.63}],"unit_prices":[{"item":"Business Shirt","revenue":1116.61,"units":141.0,"price":7.92},{"item":"Wash & Fold Bag (min 15lb)","revenue":1059.28,"units":356.9,"price":2.97},{"item":"2-Piece Suit (MEN)","revenue":1004.04,"units":35.0,"price":28.69},{"item":"Hand-Finished Shirts","revenue":577.28,"units":46.0,"price":12.55},{"item":"Trousers","revenue":573.78,"units":46.0,"price":12.47},{"item":"Sport Jacket/ Blazer","revenue":451.96,"units":22.0,"price":20.54},{"item":"Long Dress (Regular)","revenue":368.44,"units":11.0,"price":33.49},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":331.42,"units":22.0,"price":15.06},{"item":"Full / Queen Comforter ","revenue":175.01,"units":6.0,"price":29.17},{"item":"Linen Shirt /Guayabera","revenue":172.99,"units":16.0,"price":10.81}],"wash_fold_lbs":380.9}},"2025-10":{"kpis":{"orders":163,"revenue":12821.75,"gross_sales":12821.75,"refund_amount":0.0,"refund_count":0,"cost":5505.567499999999,"net_revenue":12029.699999999997,"profit":6524.132499999998,"margin_pct":54.23354281486653,"items":1217.5,"unique_customers":112,"new_customers":81,"returning_customers":31,"aov":78.66104294478528,"express_rate":7.975460122699387,"new_customer_share_pct":72.32142857142857},"months":["2025-10"],"series":{"months":["2025-10"],"revenue":[12821.75],"cost":[5505.5675],"profit":[6524.132500000001],"orders":[163],"aov":[78.66104294478528]},"category":{"Dry Cleaning":7432.6799999999985,"Other":3403.7199999999993,"Wash & Fold":1714.5500000000002,"W&F Delicate":231.23000000000002,"Shoes":39.57},"payment":{"Card":134,"None":17,"Cash":9,"Invoice":2,"11":1},"status":{"collected":136,"ready":15,"cleaning":11,"detailing":1},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":12821.75,"refunds":0.0,"net_revenue":12029.699999999997,"refund_rate_pct":0.0,"discounts":247.29000000000002,"discount_rate_pct":1.93,"tips":0.0,"tip_rate_pct":0.0,"tax":792.0500000000001,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":0},"aov_stats":{"mean":78.66,"median":50.42,"p25":29.94,"p75":79.77,"gross_margin_pct":54.23},"customer":{"unique_customers":112,"new_customers":81,"returning_customers":31,"new_share_pct":72.32,"ret_share_pct":27.68,"ret_new_ratio":0.38,"repeat_30d":"13/81","repeat_30d_pct":16.05,"top10_share_pct":39.52},"ar":{"unpaid_orders":19,"unpaid_balance":667.13,"unpaid_share_pct":11.66},"service_mix":[{"category":"Dry Cleaning","revenue":7432.68,"share_pct":57.97},{"category":"Other","revenue":3403.72,"share_pct":26.55},{"category":"Wash & Fold","revenue":1714.55,"share_pct":13.37},{"category":"W&F Delicate","revenue":231.23,"share_pct":1.8},{"category":"Shoes","revenue":39.57,"share_pct":0.31}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1714.55,"units":525.0,"price":3.27},{"item":"Trousers","revenue":1218.4,"units":78.0,"price":15.62},{"item":"Business Shirt","revenue":1083.72,"units":133.0,"price":8.15},{"item":"Hand-Finished Shirts","revenue":944.89,"units":60.0,"price":15.75},{"item":"Polo-Shirt","revenue":804.15,"units":54.0,"price":14.89},{"item":"Sport Jacket/ Blazer","revenue":700.28,"units":37.0,"price":18.93},{"item":"T-shirt","revenue":631.0,"units":34.0,"price":18.56},{"item":"Long Dress (Regular)","revenue":615.73,"units":23.0,"price":26.77},{"item":"2-Piece Suit (MEN)","revenue":501.61,"units":20.0,"price":25.08},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":447.1,"units":27.0,"price":16.56}],"wash_fold_lbs":577.5}},"2025-11":{"kpis":{"orders":4,"revenue":300.42,"gross_sales":300.42,"refund_amount":0.0,"refund_count":0,"cost":149.10999999999999,"net_revenue":280.58,"profit":131.47,"margin_pct":46.85651151186828,"items":14.0,"unique_customers":4,"new_customers":3,"returning_customers":1,"aov":75.105,"express_rate":0.0,"new_customer_share_pct":75.0},"months":["2025-11"],"series":{"months":["2025-11"],"revenue":[300.42],"cost":[149.10999999999999],"profit":[131.47],"orders":[4],"aov":[75.105]},"category":{"Other":20.32,"Dry Cleaning":280.1},"payment":{"None":2,"Card":2},"status":{"cleaning":3,"pickup":1},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":300.42,"refunds":0.0,"net_revenue":280.58,"refund_rate_pct":0.0,"discounts":0.0,"discount_rate_pct":0.0,"tips":0.0,"tip_rate_pct":0.0,"tax":19.84,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":0},"aov_stats":{"mean":75.1,"median":44.32,"p25":29.04,"p75":90.38,"gross_margin_pct":46.86},"customer":{"unique_customers":4,"new_customers":3,"returning_customers":1,"new_share_pct":75.0,"ret_share_pct":25.0,"ret_new_ratio":0.33,"repeat_30d":"0/3","repeat_30d_pct":0.0,"top10_share_pct":100.0},"ar":{"unpaid_orders":2,"unpaid_balance":52.26,"unpaid_share_pct":50.0},"service_mix":[{"category":"Dry Cleaning","revenue":280.1,"share_pct":93.24},{"category":"Other","revenue":20.32,"share_pct":6.76}],"unit_prices":[{"item":"2-Piece Suit (MEN)","revenue":124.08,"units":4.0,"price":31.02},{"item":"Long Dress (Regular)","revenue":63.82,"units":2.0,"price":31.91},{"item":"Sport Jacket/ Blazer","revenue":48.66,"units":2.0,"price":24.33},{"item":"Business Shirt","revenue":31.94,"units":5.0,"price":6.39},{"item":"Hand-Finished Shirts","revenue":31.91,"units":1.0,"price":31.91}],"wash_fold_lbs":0.0}}}},"ALL_DATA__PAID_ONLY":{"all":{"kpis":{"orders":468,"revenue":30198.189999999995,"gross_sales":30391.600000000002,"refund_amount":193.41,"refund_count":4,"cost":14576.397,"net_revenue":28256.610000000004,"profit":13680.213000000003,"margin_pct":48.414204676357144,"items":3576.4,"unique_customers":276,"new_customers":275,"returning_customers":1,"aov":64.526047008547,"express_rate":9.401709401709402,"new_customer_share_pct":99.63768115942028},"series":{"months":["2025-07","2025-08","2025-09","2025-10","2025-11"],"revenue":[4415.66,6299.34,7080.41,12154.62,248.16],"cost":[2527.375,3315.0875,3362.517,5247.7474999999995,123.66999999999999],"profit":[1610.255,2575.8925000000004,3229.303,6156.512500000001,108.25],"orders":[83,117,122,144,2],"aov":[53.200722891566265,53.84051282051282,58.036147540983606,84.40708333333333,124.08]},"category":{"Dry Cleaning":17413.32,"Shoes":129.95,"Wash & Fold":5861.070000000002,"Other":6379.169999999998,"W&F Delicate":414.68},"payment":{"Card":439,"Cash":24,"11":5},"status":{"collected":455,"cleaning":10,"ready":3},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":30391.600000000002,"refunds":193.41,"net_revenue":28256.610000000004,"refund_rate_pct":0.64,"discounts":1078.49,"discount_rate_pct":3.55,"tips":0.0,"tip_rate_pct":0.0,"tax":1941.58,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":4},"aov_stats":{"mean":64.53,"median":46.38,"p25":29.35,"p75":72.76,"gross_margin_pct":48.41},"customer":{"unique_customers":276,"new_customers":275,"returning_customers":1,"new_share_pct":99.64,"ret_share_pct":0.36,"ret_new_ratio":0.0,"repeat_30d":"75/275","repeat_30d_pct":27.27,"top10_share_pct":24.63},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":17413.32,"share_pct":57.66},{"category":"Other","revenue":6379.17,"share_pct":21.12},{"category":"Wash & Fold","revenue":5861.07,"share_pct":19.41},{"category":"W&F Delicate","revenue":414.68,"share_pct":1.37},{"category":"Shoes","revenue":129.95,"share_pct":0.43}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":5861.07,"units":1978.9,"price":2.96},{"item":"Hand-Finished Shirts","revenue":3381.93,"units":260.0,"price":13.01},{"item":"Business Shirt","revenue":2598.27,"units":288.0,"price":9.02},{"item":"Trousers","revenue":2449.03,"units":171.0,"price":14.32},{"item":"2-Piece Suit (MEN)","revenue":2331.44,"units":86.0,"price":27.11},{"item":"Sport Jacket/ Blazer","revenue":2052.12,"units":104.0,"price":19.73},{"item":"Long Dress (Regular)","revenue":1113.68,"units":39.0,"price":28.56},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":942.53,"units":60.0,"price":15.71},{"item":"Polo-Shirt","revenue":881.82,"units":63.0,"price":14.0},{"item":"T-shirt","revenue":762.47,"units":47.0,"price":16.22}],"wash_fold_lbs":2080.4}},"by_month":{"2025-07":{"kpis":{"orders":83,"revenue":4415.660000000001,"gross_sales":4501.320000000001,"refund_amount":85.66,"refund_count":1,"cost":2527.3750000000005,"net_revenue":4137.629999999999,"profit":1610.2549999999987,"margin_pct":38.91732706887757,"items":701.5,"unique_customers":55,"new_customers":54,"returning_customers":1,"aov":53.20072289156627,"express_rate":7.228915662650602,"new_customer_share_pct":98.18181818181819},"months":["2025-07"],"series":{"months":["2025-07"],"revenue":[4415.66],"cost":[2527.375],"profit":[1610.255],"orders":[83],"aov":[53.200722891566265]},"category":{"Dry Cleaning":2588.66,"Shoes":45.44,"Wash & Fold":1129.88,"Other":553.7900000000001,"W&F Delicate":97.89},"payment":{"Card":81,"11":2},"status":{"collected":83},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":4501.320000000001,"refunds":85.66,"net_revenue":4137.629999999999,"refund_rate_pct":1.9,"discounts":424.07,"discount_rate_pct":9.42,"tips":0.0,"tip_rate_pct":0.0,"tax":278.0299999999999,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":1},"aov_stats":{"mean":53.2,"median":42.07,"p25":28.37,"p75":68.32,"gross_margin_pct":38.92},"customer":{"unique_customers":55,"new_customers":54,"returning_customers":1,"new_share_pct":98.18,"ret_share_pct":1.82,"ret_new_ratio":0.02,"repeat_30d":"19/54","repeat_30d_pct":35.19,"top10_share_pct":45.43},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":2588.66,"share_pct":58.62},{"category":"Wash & Fold","revenue":1129.88,"share_pct":25.59},{"category":"Other","revenue":553.79,"share_pct":12.54},{"category":"W&F Delicate","revenue":97.89,"share_pct":2.22},{"category":"Shoes","revenue":45.44,"share_pct":1.03}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1129.88,"units":426.0,"price":2.65},{"item":"Hand-Finished Shirts","revenue":1043.96,"units":96.0,"price":10.87},{"item":"Trousers","revenue":400.18,"units":31.0,"price":12.91},{"item":"Sport Jacket/ Blazer","revenue":397.63,"units":22.0,"price":18.07},{"item":"2-Piece Suit (MEN)","revenue":302.73,"units":12.0,"price":25.23},{"item":"Blouse","revenue":177.94,"units":11.0,"price":16.18},{"item":"Business Shirt","revenue":154.57,"units":25.0,"price":6.18},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":108.74,"units":7.0,"price":15.53},{"item":"Wash Delicate & Hang Dry (Min 15l b)","revenue":97.89,"units":22.5,"price":4.35},{"item":"T-shirt","revenue":78.05,"units":7.0,"price":11.15}],"wash_fold_lbs":449.5}},"2025-08":{"kpis":{"orders":117,"revenue":6299.34,"gross_sales":6398.349999999999,"refund_amount":99.00999999999999,"refund_count":2,"cost":3315.0875000000005,"net_revenue":5890.980000000001,"profit":2575.892500000001,"margin_pct":43.726043884039676,"items":957.0,"unique_customers":86,"new_customers":72,"returning_customers":14,"aov":53.84051282051282,"express_rate":13.675213675213676,"new_customer_share_pct":83.72093023255815},"months":["2025-08"],"series":{"months":["2025-08"],"revenue":[6299.34],"cost":[3315.0875],"profit":[2575.8925000000004],"orders":[117],"aov":[53.84051282051282]},"category":{"Dry Cleaning":3023.7099999999996,"W&F Delicate":46.36,"Wash & Fold":1957.3600000000001,"Other":1254.79,"Shoes":17.12},"payment":{"Card":107,"Cash":10},"status":{"collected":117},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":6398.349999999999,"refunds":99.00999999999999,"net_revenue":5890.980000000001,"refund_rate_pct":1.55,"discounts":322.89,"discount_rate_pct":5.05,"tips":0.0,"tip_rate_pct":0.0,"tax":408.36,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":2},"aov_stats":{"mean":53.84,"median":45.51,"p25":25.66,"p75":69.76,"gross_margin_pct":43.73},"customer":{"unique_customers":86,"new_customers":72,"returning_customers":14,"new_share_pct":83.72,"ret_share_pct":16.28,"ret_new_ratio":0.19,"repeat_30d":"14/72","repeat_30d_pct":19.44,"top10_share_pct":31.44},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":3023.71,"share_pct":48.0},{"category":"Wash & Fold","revenue":1957.36,"share_pct":31.07},{"category":"Other","revenue":1254.79,"share_pct":19.92},{"category":"W&F Delicate","revenue":46.36,"share_pct":0.74},{"category":"Shoes","revenue":17.12,"share_pct":0.27}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1957.36,"units":671.0,"price":2.92},{"item":"Hand-Finished Shirts","revenue":848.97,"units":62.0,"price":13.69},{"item":"Sport Jacket/ Blazer","revenue":494.22,"units":23.0,"price":21.49},{"item":"2-Piece Suit (MEN)","revenue":418.47,"units":16.0,"price":26.15},{"item":"Trousers","revenue":361.73,"units":24.0,"price":15.07},{"item":"Short Dress (Regular)","revenue":264.94,"units":12.0,"price":22.08},{"item":"Business Shirt","revenue":257.27,"units":36.0,"price":7.15},{"item":"Linen Shirt /Guayabera","revenue":179.83,"units":12.0,"price":14.99},{"item":"King Comforter","revenue":138.51,"units":3.0,"price":46.17},{"item":"Blouse","revenue":135.4,"units":10.0,"price":13.54}],"wash_fold_lbs":686.0}},"2025-09":{"kpis":{"orders":122,"revenue":7080.410000000001,"gross_sales":7089.150000000001,"refund_amount":8.74,"refund_count":1,"cost":3362.517,"net_revenue":6591.82,"profit":3229.303,"margin_pct":48.98955068554663,"items":761.9,"unique_customers":93,"new_customers":71,"returning_customers":22,"aov":58.03614754098361,"express_rate":7.377049180327869,"new_customer_share_pct":76.34408602150538},"months":["2025-09"],"series":{"months":["2025-09"],"revenue":[7080.41],"cost":[3362.517],"profit":[3229.303],"orders":[122],"aov":[58.036147540983606]},"category":{"Other":1405.4200000000005,"Dry Cleaning":4480.09,"Wash & Fold":1059.28,"Shoes":46.0,"W&F Delicate":89.62},"payment":{"Card":115,"Cash":5,"11":2},"status":{"collected":122},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":7089.150000000001,"refunds":8.74,"net_revenue":6591.82,"refund_rate_pct":0.12,"discounts":231.81,"discount_rate_pct":3.27,"tips":0.0,"tip_rate_pct":0.0,"tax":488.59,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":1},"aov_stats":{"mean":58.04,"median":43.8,"p25":27.78,"p75":65.19,"gross_margin_pct":48.99},"customer":{"unique_customers":93,"new_customers":71,"returning_customers":22,"new_share_pct":76.34,"ret_share_pct":23.66,"ret_new_ratio":0.31,"repeat_30d":"10/71","repeat_30d_pct":14.08,"top10_share_pct":34.1},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":4480.09,"share_pct":63.27},{"category":"Other","revenue":1405.42,"share_pct":19.85},{"category":"Wash & Fold","revenue":1059.28,"share_pct":14.96},{"category":"W&F Delicate","revenue":89.62,"share_pct":1.27},{"category":"Shoes","revenue":46.0,"share_pct":0.65}],"unit_prices":[{"item":"Business Shirt","revenue":1116.61,"units":116.0,"price":9.63},{"item":"Wash & Fold Bag (min 15lb)","revenue":1059.28,"units":356.9,"price":2.97},{"item":"2-Piece Suit (MEN)","revenue":1004.04,"units":35.0,"price":28.69},{"item":"Hand-Finished Shirts","revenue":577.28,"units":46.0,"price":12.55},{"item":"Trousers","revenue":558.81,"units":44.0,"price":12.7},{"item":"Sport Jacket/ Blazer","revenue":431.64,"units":21.0,"price":20.55},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":331.42,"units":22.0,"price":15.06},{"item":"Long Dress (Regular)","revenue":327.25,"units":10.0,"price":32.73},{"item":"Full / Queen Comforter ","revenue":175.01,"units":6.0,"price":29.17},{"item":"Linen Shirt /Guayabera","revenue":172.99,"units":16.0,"price":10.81}],"wash_fold_lbs":380.9}},"2025-10":{"kpis":{"orders":144,"revenue":12154.619999999999,"gross_sales":12154.619999999999,"refund_amount":0.0,"refund_count":0,"cost":5247.7474999999995,"net_revenue":11404.26,"profit":6156.512500000001,"margin_pct":53.984322525091514,"items":1148.0,"unique_customers":106,"new_customers":76,"returning_customers":30,"aov":84.40708333333333,"express_rate":9.027777777777777,"new_customer_share_pct":71.69811320754717},"months":["2025-10"],"series":{"months":["2025-10"],"revenue":[12154.62],"cost":[5247.7474999999995],"profit":[6156.512500000001],"orders":[144],"aov":[84.40708333333333]},"category":{"Dry Cleaning":7072.699999999999,"Other":3165.17,"Wash & Fold":1714.5500000000002,"W&F Delicate":180.81,"Shoes":21.39},"payment":{"Card":134,"Cash":9,"11":1},"status":{"collected":133,"cleaning":8,"ready":3},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":12154.619999999999,"refunds":0.0,"net_revenue":11404.26,"refund_rate_pct":0.0,"discounts":99.72,"discount_rate_pct":0.82,"tips":0.0,"tip_rate_pct":0.0,"tax":750.36,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":0},"aov_stats":{"mean":84.41,"median":52.68,"p25":36.34,"p75":83.38,"gross_margin_pct":53.98},"customer":{"unique_customers":106,"new_customers":76,"returning_customers":30,"new_share_pct":71.7,"ret_share_pct":28.3,"ret_new_ratio":0.39,"repeat_30d":"11/76","repeat_30d_pct":14.47,"top10_share_pct":39.71},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":7072.7,"share_pct":58.19},{"category":"Other","revenue":3165.17,"share_pct":26.04},{"category":"Wash & Fold","revenue":1714.55,"share_pct":14.11},{"category":"W&F Delicate","revenue":180.81,"share_pct":1.49},{"category":"Shoes","revenue":21.39,"share_pct":0.18}],"unit_prices":[{"item":"Wash & Fold Bag (min 15lb)","revenue":1714.55,"units":525.0,"price":3.27},{"item":"Trousers","revenue":1128.31,"units":72.0,"price":15.67},{"item":"Business Shirt","revenue":1069.83,"units":111.0,"price":9.64},{"item":"Hand-Finished Shirts","revenue":879.81,"units":55.0,"price":16.0},{"item":"Polo-Shirt","revenue":742.39,"units":50.0,"price":14.85},{"item":"Sport Jacket/ Blazer","revenue":700.28,"units":37.0,"price":18.93},{"item":"T-shirt","revenue":595.83,"units":32.0,"price":18.62},{"item":"Long Dress (Regular)","revenue":524.88,"units":20.0,"price":26.24},{"item":"2-Piece Suit (MEN)","revenue":482.12,"units":19.0,"price":25.37},{"item":"Sweater/ Sweatshirt/ Hoodie","revenue":402.62,"units":24.0,"price":16.78}],"wash_fold_lbs":564.0}},"2025-11":{"kpis":{"orders":2,"revenue":248.16,"gross_sales":248.16,"refund_amount":0.0,"refund_count":0,"cost":123.66999999999999,"net_revenue":231.92,"profit":108.25,"margin_pct":46.67557778544326,"items":8.0,"unique_customers":2,"new_customers":2,"returning_customers":0,"aov":124.08,"express_rate":0.0,"new_customer_share_pct":100.0},"months":["2025-11"],"series":{"months":["2025-11"],"revenue":[248.16],"cost":[123.66999999999999],"profit":[108.25],"orders":[2],"aov":[124.08]},"category":{"Dry Cleaning":248.16},"payment":{"Card":2},"status":{"cleaning":2},"top_products":[],"advanced":{"revenue_quality":{"gross_sales":248.16,"refunds":0.0,"net_revenue":231.92,"refund_rate_pct":0.0,"discounts":0.0,"discount_rate_pct":0.0,"tips":0.0,"tip_rate_pct":0.0,"tax":16.24,"service_fee":0.0,"delivery_fee":0.0,"refund_orders":0},"aov_stats":{"mean":124.08,"median":124.08,"p25":90.38,"p75":157.78,"gross_margin_pct":46.68},"customer":{"unique_customers":2,"new_customers":2,"returning_customers":0,"new_share_pct":100.0,"ret_share_pct":0.0,"ret_new_ratio":0.0,"repeat_30d":"0/2","repeat_30d_pct":0.0,"top10_share_pct":100.0},"ar":{"unpaid_orders":0,"unpaid_balance":0.0,"unpaid_share_pct":0.0},"service_mix":[{"category":"Dry Cleaning","revenue":248.16,"share_pct":100.0}],"unit_prices":[{"item":"2-Piece Suit (MEN)","revenue":124.08,"units":4.0,"price":31.02},{"item":"Long Dress (Regular)","revenue":63.82,"units":2.0,"price":31.91},{"item":"Hand-Finished Shirts","revenue":31.91,"units":1.0,"price":31.91},{"item":"Sport Jacket/ Blazer","revenue":28.34,"units":1.0,"price":28.34}],"wash_fold_lbs":0.0}}}}}</script>
+<script>
+const STORE = JSON.parse(document.getElementById('store').textContent);
+
+const money = (n) => new Intl.NumberFormat('en-US', { style: 'currency', currency:'USD' }).format(n || 0);
+const pct = (n) => (n == null || isNaN(n) ? '–' : (n.toFixed(1) + '%'));
+
+let charts = {};
+
+function key() {
+  return document.getElementById('period').value + '__' + document.getElementById('mode').value;
+}
+function currentPack() { return STORE[key()]; }
+function getDS() {
+  const monthSel = document.getElementById('month').value;
+  const pack = currentPack();
+  if (monthSel === '__ALL__') return pack.all;
+  return pack.by_month[monthSel] || pack.all;
+}
+function populateMonths() {
+  const select = document.getElementById('month');
+  const months = Object.keys(currentPack().by_month || {}).sort();
+  const current = select.value;
+  select.innerHTML = `<option value="__ALL__">All months</option>` + months.map(m => `<option value="${m}">${m}</option>`).join('');
+  if (months.includes(current)) select.value = current; else select.value='__ALL__';
+}
+
+function setKPIs(ds) {
+  // Express Order Rate KPI
+  (function(){
+    var el = document.getElementById('kpi_express_rate');
+    if (el && ds.kpis && typeof ds.kpis.express_rate !== 'undefined') {
+      var v = ds.kpis.express_rate;
+      el.textContent = (v == null || isNaN(v)) ? '–' : (Number(v).toFixed(1) + '%');
+    }
+  })();
+
+  // Returning Share % and Returning/New Ratio KPIs
+  const custStats = (ds.advanced && ds.advanced.customer) ? ds.advanced.customer : {};
+  const uniqC = Number(custStats.unique_customers ?? ds.kpis?.unique_customers ?? 0);
+  const newC = Number(custStats.new_customers ?? 0);
+  let returningC = Number(
+    (typeof custStats.returning_customers !== 'undefined')
+      ? custStats.returning_customers
+      : Math.max(0, uniqC - newC)
+  );
+  let returningShare = (uniqC > 0) ? (100 * returningC / uniqC) : 0;
+  if (typeof custStats.new_share_pct === 'number') {
+    returningShare = 100 - Number(custStats.new_share_pct);
+  }
+  if (document.getElementById('kpi_returning_share')) {
+    document.getElementById('kpi_returning_share').textContent = (isFinite(returningShare) ? returningShare.toFixed(1) + '%' : '–');
+  }
+  const ratio = (newC > 0) ? (returningC / newC) : null;
+  if (document.getElementById('kpi_returning_new_ratio')) {
+    document.getElementById('kpi_returning_new_ratio').textContent = (ratio !== null && isFinite(ratio)) ? ratio.toFixed(2) : '–';
+  }
+
+  const k = ds.kpis;
+  document.getElementById('kpi_revenue').textContent = money(k.net_revenue);
+  document.getElementById('kpi_cost').textContent = money(k.cost);
+  document.getElementById('kpi_profit').textContent = money(k.profit);
+  document.getElementById('kpi_margin').textContent = pct(k.margin_pct);
+  document.getElementById('kpi_orders').textContent = (k.orders || 0).toLocaleString();
+  document.getElementById('kpi_aov').textContent = money(k.aov);
+  document.getElementById('kpi_items').textContent = (k.items || 0).toLocaleString();
+  document.getElementById('kpi_customers').textContent = (k.unique_customers || 0).toLocaleString();
+  document.getElementById('kpi_ref_amt').textContent = money(k.refund_amount);
+}
+
+function renderCharts(ds) {
+  const months = ds.months || ds.series.months, s = ds.series;
+  for (const id in charts) { charts[id].destroy(); }
+  charts = {};
+
+  charts.revCostProfit = new Chart(document.getElementById('revCostProfit').getContext('2d'), {
+    type: 'bar',
+    data: { labels: months,
+      datasets: [
+        { label: 'Revenue', data: s.Revenue || s.revenue, yAxisID: 'y' },
+        { label: 'Cost', data: s.Cost || s.cost, yAxisID: 'y' },
+        { type:'line', label: 'Profit', data: s.Profit || s.profit, yAxisID: 'y', fill: true, tension: 0.25 }
+      ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#cfe1ff' } },
+                  tooltip: { callbacks: { label: (ctx) => ctx.dataset.label + ': ' + money(ctx.parsed.y) } } },
+      scales: { x: { ticks: { color: '#9fb0d9' } },
+                y: { ticks: { color: '#9fb0d9', callback: (v) => '$' + v } } }
+    }
+  });
+
+  charts.ordersAOV = new Chart(document.getElementById('ordersAOV').getContext('2d'), {
+    type: 'bar',
+    data: { labels: months,
+      datasets: [
+        { label: 'Orders', data: s.Orders || s.orders, yAxisID: 'y1' },
+        { type:'line', label: 'AOV', data: s.AOV || s.aov, yAxisID: 'y2', tension: 0.25 }
+      ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#cfe1ff' } } },
+      scales: {
+        x: { ticks: { color: '#9fb0d9' } },
+        y1: { position:'left', ticks: { color: '#9fb0d9' } },
+        y2: { position:'right', ticks: { color: '#9fb0d9', callback: (v) => '$' + v } }
+      }
+    }
+  });
+
+  // Convert category object to arrays if needed
+  let catLabels, catValues;
+  if (Array.isArray(ds.category)) {
+    catLabels = ds.category.map(c => c.category || c.name);
+    catValues = ds.category.map(c => c.revenue || c.value);
+  } else {
+    catLabels = Object.keys(ds.category || {});
+    catValues = Object.values(ds.category || {});
+  }
+
+  charts.catRevenue = new Chart(document.getElementById('catRevenue').getContext('2d'), {
+    type: 'bar',
+    data: { labels: catLabels, datasets: [{ label: 'Revenue', data: catValues }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false },
+                  tooltip: { callbacks: { label: (ctx) => money(ctx.parsed.x) } } },
+      scales: { x: { ticks: { color: '#9fb0d9', callback: (v) => '$' + v } },
+                y: { ticks: { color: '#9fb0d9' } } }
+    }
+  });
+
+  // Convert payment and status to arrays if objects
+  let payLabels, payValues, stLabels, stValues;
+  if (Array.isArray(ds.payment)) {
+    payLabels = ds.payment.map(p => p.type || p.label);
+    payValues = ds.payment.map(p => p.count || p.value);
+  } else {
+    payLabels = Object.keys(ds.payment || {});
+    payValues = Object.values(ds.payment || {});
+  }
+  if (Array.isArray(ds.status)) {
+    stLabels = ds.status.map(s => s.type || s.label);
+    stValues = ds.status.map(s => s.count || s.value);
+  } else {
+    stLabels = Object.keys(ds.status || {});
+    stValues = Object.values(ds.status || {});
+  }
+
+  const labels = [...payLabels, ...stLabels];
+  const vals = [...payValues, ...stValues];
+
+  charts.mixStacked = new Chart(document.getElementById('mixStacked').getContext('2d'), {
+    type: 'bar',
+    data: { labels: labels, datasets: [{ label: 'Count', data: vals }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { color: '#9fb0d9' } }, y: { ticks: { color: '#9fb0d9' } } }
+    }
+  });
+
+  const tp = ds.top_products || [];
+  const tbody = document.getElementById('topProducts');
+  tbody.innerHTML = tp.map((r, i) => `<tr><td>${i+1}</td><td>${r.item}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${Number(r.units).toFixed(1)}</td></tr>`).join('');
+}
+
+function setTable(selector, rows) {
+  const tbody = document.querySelector(selector + " tbody");
+  tbody.innerHTML = rows.map(r => `<tr><td>${r[0]}</td><td class='num'>${r[1]}</td></tr>`).join('');
+}
+
+function fillAdvanced(ds) {
+  const adv = ds.advanced || {};
+
+  // Financial quality
+  const rq = adv.revenue_quality || {};
+  setTable("#tbl_fin_quality", [
+    ["Gross Sales (before refunds)", money(rq.gross_sales)],
+    ["Refunds ($)", money(rq.refunds)],
+    ["Net Revenue (after refunds & tax)", money(rq.net_revenue)],
+    ["Refund Rate (% of Gross)", (rq.refund_rate_pct ?? '–') + '%'],
+    ["Discounts ($)", money(rq.discounts)],
+    ["Discount Rate (% of Gross)", (rq.discount_rate_pct ?? '–') + '%'],
+    ["Tips ($)", money(rq.tips)],
+    ["Tip Rate (% of Net)", (rq.tip_rate_pct ?? '–') + '%'],
+    ["Tax ($)", money(rq.tax)],
+    ["Service Fee ($)", money(rq.service_fee)],
+    ["Delivery Fee ($)", money(rq.delivery_fee)],
+    ["Orders with Refunds", (rq.refund_orders ?? 0).toLocaleString()]
+  ]);
+
+  // AOV stats
+  const a = adv.aov_stats || {};
+  setTable("#tbl_aov", [
+    ["AOV Mean", money(a.mean)], ["AOV Median", money(a.median)],
+    ["AOV P25", money(a.p25)], ["AOV P75", money(a.p75)],
+    ["Gross Margin %", (a.gross_margin_pct ?? '–') + '%']
+  ]);
+
+  // Customer
+  const c = adv.customer || {};
+  setTable("#tbl_customer", [
+    ["Unique Customers", (c.unique_customers ?? 0).toLocaleString()],
+    ["New Customers in window", (c.new_customers ?? 0).toLocaleString()],
+    ["Returning Customers in window", (c.returning_customers ?? 0).toLocaleString()],
+    ["New Customer Share %", (c.new_share_pct ?? '–') + '%'],
+    ["30d Repeat (new customers)", c.repeat_30d || '–'],
+    ["30d Repeat Rate %", (c.repeat_30d_pct ?? '–') + '%'],
+    ["Top 10 Customers Revenue Share %", (c.top10_share_pct ?? '–') + '%']
+  ]);
+
+  // AR
+  const ar = adv.ar || {};
+  setTable("#tbl_ar", [
+    ["Unpaid Orders (count)", (ar.unpaid_orders ?? 0).toLocaleString()],
+    ["Unpaid Balance ($)", money(ar.unpaid_balance)],
+    ["Unpaid Share of Orders %", (ar.unpaid_share_pct ?? '–') + '%']
+  ]);
+
+  // Service mix
+  const sm = adv.service_mix || [];
+  const smBody = document.getElementById('tbl_service_mix');
+  smBody.innerHTML = sm.map(r => `<tr><td>${r.category}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${(r.share_pct ?? 0).toFixed(1)}%</td></tr>`).join('');
+
+  // Unit prices
+  const up = adv.unit_prices || [];
+  const upBody = document.getElementById('tbl_unit_prices');
+  upBody.innerHTML = up.map(r => `<tr><td>${r.item}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${Number(r.units).toFixed(1)}</td><td class='num'>${money(r.price)}</td></tr>`).join('');
+
+  // W&F lbs
+  document.getElementById('wnf_lbs').textContent = (adv.wash_fold_lbs ?? 0).toLocaleString();
+}
+
+function refresh() {
+  populateMonths();
+  const ds = getDS();
+  setKPIs(ds);
+  renderCharts(ds);
+  fillAdvanced(ds);
+}
+
+document.getElementById('period').addEventListener('change', refresh);
+document.getElementById('mode').addEventListener('change', refresh);
+document.getElementById('month').addEventListener('change', refresh);
+
+// Initial render
+refresh();
+</script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FRESH. Dry Cleaning Dashboard – Full KPIs</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+<style>
+  :root {
+    --bg: #0b0f19; --panel: #111727; --muted: #8fa0bf; --text: #e7ecf7;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background: var(--bg); color: var(--text); font: 14px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+  header { padding: 20px 24px; border-bottom: 1px solid var(--line); display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap: wrap; }
+  h1 { margin:0; font-size: 20px; }
+  h2 { margin: 6px 0 12px 0; font-size: 16px; }
+  .controls { display:flex; gap:10px; align-items:center; color: var(--muted); flex-wrap: wrap; }
+  select { background: var(--panel); color: var(--text); border:1px solid var(--line); border-radius:8px; padding:6px 10px; }
+  main { padding: 20px 24px; display:grid; gap:16px; }
+  .grid { display:grid; gap:16px; }
+  .cards { grid-template-columns: repeat(6, minmax(0,1fr)); }
+  @media (max-width: 1280px) { .cards { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+  @media (max-width: 700px) { .cards { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+  .card { background: var(--panel); border:1px solid var(--line); border-radius: 14px; padding: 14px; }
+  .kpi .label { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .08em; }
+  .kpi .value { font-size: 22px; font-weight: 700; margin-top: 6px; }
+  .split { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .triple { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  @media (max-width: 1200px) { .split, .triple { grid-template-columns: 1fr; } }
+  canvas { width: 100% !important; height: 320px !important; }
+  table { width:100%; border-collapse: collapse; }
+  th, td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { text-align:left; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .06em; }
+  td.num { text-align:right; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>FRESH. Dry Cleaning Dashboard</h1>
+  <div class="controls">
+    <label>Period:</label>
+    <select id="period">
+      <option value="ALL_DATA">All Data</option>
+    </select>
+    <label>Orders:</label>
+    <select id="mode">
+      <option value="ALL_ORDERS" selected>All Orders</option>
+      <option value="PAID_ONLY">Paid Only</option>
+    </select>
+    <label>Month:</label>
+    <select id="month">
+      <option value="__ALL__" selected>All months</option>
+    </select>
+  </div>
+</header>
+
+<main>
+  <!-- Executive KPIs -->
+  <section class="grid cards">
+    <div class="card kpi"><div class="label">Net Revenue</div><div id="kpi_revenue" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Cost HAAP</div><div id="kpi_cost" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Profit</div><div id="kpi_profit" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Gross Margin</div><div id="kpi_margin" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Orders</div><div id="kpi_orders" class="value">–</div></div>
+    <div class="card kpi"><div class="label">AOV</div><div id="kpi_aov" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Items</div><div id="kpi_items" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Unique Customers</div><div id="kpi_customers" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Express Order Rate</div><div id="kpi_express_rate" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Refunds (Total)</div><div id="kpi_ref_amt" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Returning Share %</div><div id="kpi_returning_share" class="value">–</div></div>
+    <div class="card kpi"><div class="label">Returning / New Ratio</div><div id="kpi_returning_new_ratio" class="value">–</div></div>
+  </section>
+
+  <!-- Core charts -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Revenue & Cost (Bars) + Profit (Area)</h2>
+      <canvas id="revCostProfit"></canvas>
+    </div>
+    <div class="card">
+      <h2>Orders & Average Order Value</h2>
+      <canvas id="ordersAOV"></canvas>
+    </div>
+  </section>
+
+  <section class="grid split">
+    <div class="card">
+      <h2>Revenue by Category (Sorted)</h2>
+      <canvas id="catRevenue"></canvas>
+    </div>
+    <div class="card">
+      <h2>Payment Mix & Order Status</h2>
+      <canvas id="mixStacked"></canvas>
+    </div>
+  </section>
+
+  <!-- Financial Quality & Customer Health -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Financial Quality</h2>
+      <table id="tbl_fin_quality">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Gross vs Net, refund/discount/tip rates, and fee breakdown.</div>
+    </div>
+    <div class="card">
+      <h2>AOV Distribution & Margin</h2>
+      <table id="tbl_aov">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Mean, median, quartiles; overall gross margin for the selected window.</div>
+    </div>
+  </section>
+
+  <section class="grid split">
+    <div class="card">
+      <h2>Customer Health</h2>
+      <table id="tbl_customer">
+        <tbody></tbody>
+      </table>
+      <div class="muted">New vs returning, 30‐day repeat for new customers, top‐10 revenue concentration.</div>
+    </div>
+    <div class="card">
+      <h2>Accounts Receivable (AR)</h2>
+      <table id="tbl_ar">
+        <tbody></tbody>
+      </table>
+      <div class="muted">Unpaid order count, unpaid balance, and share of orders.</div>
+    </div>
+  </section>
+
+  <!-- Service Mix & Realized Pricing -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Service Mix (Revenue)</h2>
+      <table>
+        <thead><tr><th>Category</th><th class="num">Revenue</th><th class="num">Share</th></tr></thead>
+        <tbody id="tbl_service_mix"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Implied Realized Unit Prices (Top 10)</h2>
+      <table>
+        <thead><tr><th>Item</th><th class="num">Revenue</th><th class="num">Units</th><th class="num">$ / Unit</th></tr></thead>
+        <tbody id="tbl_unit_prices"></tbody>
+      </table>
+      <div class="muted">Revenue allocated by item quantity within each order.</div>
+      <p><b>Wash & Fold volume:</b> <span id="wnf_lbs">–</span> lbs</p>
+    </div>
+  </section>
+
+  <!-- Top products table -->
+  <section class="grid split">
+    <div class="card">
+      <h2>Top 10 Products (Revenue)</h2>
+      <table>
+        <thead><tr><th>#</th><th>Product</th><th class="num">Revenue</th><th class="num">Units</th></tr></thead>
+        <tbody id="topProducts"></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>Notes</h2>
+      <p class="muted">Use the <b>Month</b> selector to switch between <i>All months</i> and a specific month in the chosen period. All KPIs refresh.</p>
+      <p class="muted"><small>Generated by FRESH Dashboard Generator | Data updated automatically</small></p>
+    </div>
+  </section>
+</main>
+
+<script id="store" type="application/json">{}</script>
+<script>
+const STORE = JSON.parse(document.getElementById('store').textContent);
+
+const money = (n) => new Intl.NumberFormat('en-US', { style: 'currency', currency:'USD' }).format(n || 0);
+const pct = (n) => (n == null || isNaN(n) ? '–' : (n.toFixed(1) + '%'));
+
+let charts = {};
+
+function key() {
+  return document.getElementById('period').value + '__' + document.getElementById('mode').value;
+}
+function currentPack() { return STORE[key()]; }
+function getDS() {
+  const monthSel = document.getElementById('month').value;
+  const pack = currentPack();
+  if (monthSel === '__ALL__') return pack.all;
+  return pack.by_month[monthSel] || pack.all;
+}
+function populateMonths() {
+  const select = document.getElementById('month');
+  const months = Object.keys(currentPack().by_month || {}).sort();
+  const current = select.value;
+  select.innerHTML = `<option value="__ALL__">All months</option>` + months.map(m => `<option value="${m}">${m}</option>`).join('');
+  if (months.includes(current)) select.value = current; else select.value='__ALL__';
+}
+
+function setKPIs(ds) {
+  // Express Order Rate KPI
+  (function(){
+    var el = document.getElementById('kpi_express_rate');
+    if (el && ds.kpis && typeof ds.kpis.express_rate !== 'undefined') {
+      var v = ds.kpis.express_rate;
+      el.textContent = (v == null || isNaN(v)) ? '–' : (Number(v).toFixed(1) + '%');
+    }
+  })();
+
+  // Returning Share % and Returning/New Ratio KPIs
+  const custStats = (ds.advanced && ds.advanced.customer) ? ds.advanced.customer : {};
+  const uniqC = Number(custStats.unique_customers ?? ds.kpis?.unique_customers ?? 0);
+  const newC = Number(custStats.new_customers ?? 0);
+  let returningC = Number(
+    (typeof custStats.returning_customers !== 'undefined')
+      ? custStats.returning_customers
+      : Math.max(0, uniqC - newC)
+  );
+  let returningShare = (uniqC > 0) ? (100 * returningC / uniqC) : 0;
+  if (typeof custStats.new_share_pct === 'number') {
+    returningShare = 100 - Number(custStats.new_share_pct);
+  }
+  if (document.getElementById('kpi_returning_share')) {
+    document.getElementById('kpi_returning_share').textContent = (isFinite(returningShare) ? returningShare.toFixed(1) + '%' : '–');
+  }
+  const ratio = (newC > 0) ? (returningC / newC) : null;
+  if (document.getElementById('kpi_returning_new_ratio')) {
+    document.getElementById('kpi_returning_new_ratio').textContent = (ratio !== null && isFinite(ratio)) ? ratio.toFixed(2) : '–';
+  }
+
+  const k = ds.kpis;
+  document.getElementById('kpi_revenue').textContent = money(k.net_revenue);
+  document.getElementById('kpi_cost').textContent = money(k.cost);
+  document.getElementById('kpi_profit').textContent = money(k.profit);
+  document.getElementById('kpi_margin').textContent = pct(k.margin_pct);
+  document.getElementById('kpi_orders').textContent = (k.orders || 0).toLocaleString();
+  document.getElementById('kpi_aov').textContent = money(k.aov);
+  document.getElementById('kpi_items').textContent = (k.items || 0).toLocaleString();
+  document.getElementById('kpi_customers').textContent = (k.unique_customers || 0).toLocaleString();
+  document.getElementById('kpi_ref_amt').textContent = money(k.refund_amount);
+}
+
+function renderCharts(ds) {
+  const months = ds.months || ds.series.months, s = ds.series;
+  for (const id in charts) { charts[id].destroy(); }
+  charts = {};
+
+  charts.revCostProfit = new Chart(document.getElementById('revCostProfit').getContext('2d'), {
+    type: 'bar',
+    data: { labels: months,
+      datasets: [
+        { label: 'Revenue', data: s.Revenue || s.revenue, yAxisID: 'y' },
+        { label: 'Cost', data: s.Cost || s.cost, yAxisID: 'y' },
+        { type:'line', label: 'Profit', data: s.Profit || s.profit, yAxisID: 'y', fill: true, tension: 0.25 }
+      ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#cfe1ff' } },
+                  tooltip: { callbacks: { label: (ctx) => ctx.dataset.label + ': ' + money(ctx.parsed.y) } } },
+      scales: { x: { ticks: { color: '#9fb0d9' } },
+                y: { ticks: { color: '#9fb0d9', callback: (v) => '$' + v } } }
+    }
+  });
+
+  charts.ordersAOV = new Chart(document.getElementById('ordersAOV').getContext('2d'), {
+    type: 'bar',
+    data: { labels: months,
+      datasets: [
+        { label: 'Orders', data: s.Orders || s.orders, yAxisID: 'y1' },
+        { type:'line', label: 'AOV', data: s.AOV || s.aov, yAxisID: 'y2', tension: 0.25 }
+      ]},
+    options: {
+      responsive: true,
+      plugins: { legend: { labels: { color: '#cfe1ff' } } },
+      scales: {
+        x: { ticks: { color: '#9fb0d9' } },
+        y1: { position:'left', ticks: { color: '#9fb0d9' } },
+        y2: { position:'right', ticks: { color: '#9fb0d9', callback: (v) => '$' + v } }
+      }
+    }
+  });
+
+  // Convert category object to arrays if needed
+  let catLabels, catValues;
+  if (Array.isArray(ds.category)) {
+    catLabels = ds.category.map(c => c.category || c.name);
+    catValues = ds.category.map(c => c.revenue || c.value);
+  } else {
+    catLabels = Object.keys(ds.category || {});
+    catValues = Object.values(ds.category || {});
+  }
+
+  charts.catRevenue = new Chart(document.getElementById('catRevenue').getContext('2d'), {
+    type: 'bar',
+    data: { labels: catLabels, datasets: [{ label: 'Revenue', data: catValues }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false },
+                  tooltip: { callbacks: { label: (ctx) => money(ctx.parsed.x) } } },
+      scales: { x: { ticks: { color: '#9fb0d9', callback: (v) => '$' + v } },
+                y: { ticks: { color: '#9fb0d9' } } }
+    }
+  });
+
+  // Convert payment and status to arrays if objects
+  let payLabels, payValues, stLabels, stValues;
+  if (Array.isArray(ds.payment)) {
+    payLabels = ds.payment.map(p => p.type || p.label);
+    payValues = ds.payment.map(p => p.count || p.value);
+  } else {
+    payLabels = Object.keys(ds.payment || {});
+    payValues = Object.values(ds.payment || {});
+  }
+  if (Array.isArray(ds.status)) {
+    stLabels = ds.status.map(s => s.type || s.label);
+    stValues = ds.status.map(s => s.count || s.value);
+  } else {
+    stLabels = Object.keys(ds.status || {});
+    stValues = Object.values(ds.status || {});
+  }
+
+  const labels = [...payLabels, ...stLabels];
+  const vals = [...payValues, ...stValues];
+
+  charts.mixStacked = new Chart(document.getElementById('mixStacked').getContext('2d'), {
+    type: 'bar',
+    data: { labels: labels, datasets: [{ label: 'Count', data: vals }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: { legend: { display: false } },
+      scales: { x: { ticks: { color: '#9fb0d9' } }, y: { ticks: { color: '#9fb0d9' } } }
+    }
+  });
+
+  const tp = ds.top_products || [];
+  const tbody = document.getElementById('topProducts');
+  tbody.innerHTML = tp.map((r, i) => `<tr><td>${i+1}</td><td>${r.item}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${Number(r.units).toFixed(1)}</td></tr>`).join('');
+}
+
+function setTable(selector, rows) {
+  const tbody = document.querySelector(selector + " tbody");
+  tbody.innerHTML = rows.map(r => `<tr><td>${r[0]}</td><td class='num'>${r[1]}</td></tr>`).join('');
+}
+
+function fillAdvanced(ds) {
+  const adv = ds.advanced || {};
+
+  // Financial quality
+  const rq = adv.revenue_quality || {};
+  setTable("#tbl_fin_quality", [
+    ["Gross Sales (before refunds)", money(rq.gross_sales)],
+    ["Refunds ($)", money(rq.refunds)],
+    ["Net Revenue (after refunds & tax)", money(rq.net_revenue)],
+    ["Refund Rate (% of Gross)", (rq.refund_rate_pct ?? '–') + '%'],
+    ["Discounts ($)", money(rq.discounts)],
+    ["Discount Rate (% of Gross)", (rq.discount_rate_pct ?? '–') + '%'],
+    ["Tips ($)", money(rq.tips)],
+    ["Tip Rate (% of Net)", (rq.tip_rate_pct ?? '–') + '%'],
+    ["Tax ($)", money(rq.tax)],
+    ["Service Fee ($)", money(rq.service_fee)],
+    ["Delivery Fee ($)", money(rq.delivery_fee)],
+    ["Orders with Refunds", (rq.refund_orders ?? 0).toLocaleString()]
+  ]);
+
+  // AOV stats
+  const a = adv.aov_stats || {};
+  setTable("#tbl_aov", [
+    ["AOV Mean", money(a.mean)], ["AOV Median", money(a.median)],
+    ["AOV P25", money(a.p25)], ["AOV P75", money(a.p75)],
+    ["Gross Margin %", (a.gross_margin_pct ?? '–') + '%']
+  ]);
+
+  // Customer
+  const c = adv.customer || {};
+  setTable("#tbl_customer", [
+    ["Unique Customers", (c.unique_customers ?? 0).toLocaleString()],
+    ["New Customers in window", (c.new_customers ?? 0).toLocaleString()],
+    ["Returning Customers in window", (c.returning_customers ?? 0).toLocaleString()],
+    ["New Customer Share %", (c.new_share_pct ?? '–') + '%'],
+    ["30d Repeat (new customers)", c.repeat_30d || '–'],
+    ["30d Repeat Rate %", (c.repeat_30d_pct ?? '–') + '%'],
+    ["Top 10 Customers Revenue Share %", (c.top10_share_pct ?? '–') + '%']
+  ]);
+
+  // AR
+  const ar = adv.ar || {};
+  setTable("#tbl_ar", [
+    ["Unpaid Orders (count)", (ar.unpaid_orders ?? 0).toLocaleString()],
+    ["Unpaid Balance ($)", money(ar.unpaid_balance)],
+    ["Unpaid Share of Orders %", (ar.unpaid_share_pct ?? '–') + '%']
+  ]);
+
+  // Service mix
+  const sm = adv.service_mix || [];
+  const smBody = document.getElementById('tbl_service_mix');
+  smBody.innerHTML = sm.map(r => `<tr><td>${r.category}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${(r.share_pct ?? 0).toFixed(1)}%</td></tr>`).join('');
+
+  // Unit prices
+  const up = adv.unit_prices || [];
+  const upBody = document.getElementById('tbl_unit_prices');
+  upBody.innerHTML = up.map(r => `<tr><td>${r.item}</td><td class='num'>${money(r.revenue)}</td><td class='num'>${Number(r.units).toFixed(1)}</td><td class='num'>${money(r.price)}</td></tr>`).join('');
+
+  // W&F lbs
+  document.getElementById('wnf_lbs').textContent = (adv.wash_fold_lbs ?? 0).toLocaleString();
+}
+
+function refresh() {
+  populateMonths();
+  const ds = getDS();
+  setKPIs(ds);
+  renderCharts(ds);
+  fillAdvanced(ds);
+}
+
+document.getElementById('period').addEventListener('change', refresh);
+document.getElementById('mode').addEventListener('change', refresh);
+document.getElementById('month').addEventListener('change', refresh);
+
+// Initial render
+refresh();
+</script>
+</body>
+</html>

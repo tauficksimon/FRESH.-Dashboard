@@ -1,0 +1,78 @@
+name: Process Dashboard Data
+
+on:
+  push:
+    paths:
+      - 'data/*.csv'
+      - 'csv_merge_dashboard.py'
+  workflow_dispatch:  # Allow manual trigger
+  schedule:
+    - cron: '0 12 * * 1'  # Every Monday at noon UTC (optional backup)
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Check for CSV files
+        id: check_files
+        run: |
+          if ls data/*.csv 1> /dev/null 2>&1; then
+            echo "csv_found=true" >> $GITHUB_OUTPUT
+            echo "✅ CSV files found in data directory"
+          else
+            echo "csv_found=false" >> $GITHUB_OUTPUT
+            echo "⚠️ No CSV files found in data directory"
+          fi
+
+      - name: Process CSV files
+        if: steps.check_files.outputs.csv_found == 'true'
+        run: |
+          echo "Processing CSV files..."
+          python csv_merge_dashboard.py
+
+      - name: Inject JSON into HTML
+        if: steps.check_files.outputs.csv_found == 'true'
+        run: |
+          echo "Injecting dashboard data into HTML template..."
+          python scripts/inject_json.py
+
+      - name: Commit updated dashboard
+        if: steps.check_files.outputs.csv_found == 'true'
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add index.html output/* summary_metrics.csv || true
+
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Update dashboard data - $(date +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Upload artifacts
+        if: steps.check_files.outputs.csv_found == 'true'
+        uses: actions/upload-artifact@v3
+        with:
+          name: dashboard-outputs
+          path: |
+            index.html
+            dashboard_data.json
+            summary_metrics.csv
+            output/
