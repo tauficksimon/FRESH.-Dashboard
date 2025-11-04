@@ -601,34 +601,34 @@ class CSVMerger:
         return round(total_lbs, 1)
 
     def add_work_week_columns(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Add work week number and label columns (Monday-Saturday work weeks)"""
+        """Add work week number and label columns (Sunday-to-Sunday work weeks)
+
+        Work week is Sunday-to-Sunday for payroll. Each month has exactly 5 weeks:
+        - Week 1: Days 1-7 (first 7 days of month)
+        - Week 2: Days 8-14
+        - Week 3: Days 15-21
+        - Week 4: Days 22-28
+        - Week 5: Days 29-31 (remaining days)
+
+        This ensures consistent weekly payroll periods regardless of which day the month starts.
+        """
         df = df.copy()
 
         # Ensure Date Placed is datetime
         if not pd.api.types.is_datetime64_any_dtype(df['Date Placed']):
             df['Date Placed'] = pd.to_datetime(df['Date Placed'])
 
-        # Calculate work week (Monday = start of week, Saturday = end)
-        # Adjust date so Monday = 0, Sunday = 6
-        df['DayOfWeek'] = df['Date Placed'].dt.dayofweek
+        # Get the day of month (1-31)
+        df['DayOfMonth'] = df['Date Placed'].dt.day
 
-        # For Sunday (6), assign it to next week (since work week is Mon-Sat)
-        df['WorkWeekStart'] = df.apply(
-            lambda row: row['Date Placed'] - pd.Timedelta(days=row['DayOfWeek'])
-            if row['DayOfWeek'] != 6
-            else row['Date Placed'] + pd.Timedelta(days=1),
-            axis=1
-        )
+        # Calculate week number based on day of month (Sunday-to-Sunday)
+        # Week 1: days 1-7, Week 2: days 8-14, Week 3: days 15-21, Week 4: days 22-28, Week 5: days 29-31
+        df['WeekOfMonth'] = ((df['DayOfMonth'] - 1) // 7) + 1
 
         # Create year-month for grouping
         df['YearMonth'] = df['Date Placed'].dt.to_period('M')
 
-        # Calculate week number within each month (1, 2, 3, 4, 5)
-        df['WeekOfMonth'] = df.groupby('YearMonth')['WorkWeekStart'].transform(
-            lambda x: pd.factorize(x.dt.date)[0] + 1
-        )
-
-        # Create week label like "2024-10-W1", "2024-10-W2", etc.
+        # Create week label like "2025-10-W1", "2025-10-W2", etc.
         df['WeekLabel'] = df['YearMonth'].astype(str) + '-W' + df['WeekOfMonth'].astype(str)
 
         return df

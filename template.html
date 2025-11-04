@@ -242,9 +242,16 @@ function populateWeeks() {
   const weeks = Object.keys(monthData.by_week).sort();
   const current = weekSelect.value;
   const weekOptions = weeks.map(w => {
-    // Format week label like "Week 1", "Week 2", etc.
+    // Format week label with day ranges
     const weekNum = w.split('-W')[1];
-    return `<option value="${w}">Week ${weekNum} (Mon-Sat)</option>`;
+    const dayRanges = {
+      '1': 'Days 1-7',
+      '2': 'Days 8-14',
+      '3': 'Days 15-21',
+      '4': 'Days 22-28',
+      '5': 'Days 29-31'
+    };
+    return `<option value="${w}">Week ${weekNum} (${dayRanges[weekNum]})</option>`;
   }).join('');
 
   weekSelect.innerHTML = `<option value="__ALL__">Entire month</option>` + weekOptions;
