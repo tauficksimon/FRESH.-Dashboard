@@ -1,43 +1,43 @@
 Metric,Value
-Total Orders,514
-Gross Revenue,$31917.44
-Net Revenue (after tax),$29680.61
-Total Cost,$15178.78
-Profit,$14501.83
-Profit Margin %,48.86%
-Total Items,3775.4
-Average Order Value,$61.72
-Express Order Rate %,8.75%
+Total Orders,533
+Gross Revenue,$32811.44
+Net Revenue (after tax),$30514.59
+Total Cost,$15594.31
+Profit,$14920.28
+Profit Margin %,48.90%
+Total Items,3870.4
+Average Order Value,$61.20
+Express Order Rate %,9.76%
 ,
 REVENUE QUALITY,
 Refunds Total,$193.41
-Refund Rate %,0.61%
+Refund Rate %,0.59%
 Refund Order Count,4
-Discounts Total,$1721.86
-Discount Rate %,5.39%
-Tax Total,$2043.42
+Discounts Total,$1709.87
+Discount Rate %,5.21%
+Tax Total,$2103.44
 ,
 AOV DISTRIBUTION,
-AOV Mean,$61.72
+AOV Mean,$61.20
 AOV Median,$43.83
-AOV 25th Percentile,$26.79
-AOV 75th Percentile,$72.40
+AOV 25th Percentile,$25.97
+AOV 75th Percentile,$70.60
 ,
 CUSTOMER METRICS,
-Unique Customers,288
-New Customers,288
+Unique Customers,299
+New Customers,299
 Returning Customers,0
 New Customer Share %,100.00%
 Returning Share %,0.00%
 Returning/New Ratio,0.00
-30-Day Repeat,84/288
-30-Day Repeat Rate %,29.17%
-Top 10 Revenue Share %,25.19%
+30-Day Repeat,85/299
+30-Day Repeat Rate %,28.43%
+Top 10 Revenue Share %,24.70%
 ,
 ACCOUNTS RECEIVABLE,
-Unpaid Orders,41
-Unpaid Balance,$1255.38
-Unpaid Share %,7.98%
+Unpaid Orders,45
+Unpaid Balance,$1462.76
+Unpaid Share %,8.44%
 ,
 WASH & FOLD,
-Total Pounds,2117.4 lbs
+Total Pounds,2168.4 lbs
