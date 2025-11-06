@@ -36,11 +36,11 @@ export function FilterBar({
   const isWeekDisabled = month === '__ALL__' || availableWeeks.length === 0;
 
   return (
-    <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-      <div className="flex items-center gap-2">
-        <label>Period:</label>
+    <div className="grid grid-cols-2 md:flex md:flex-wrap items-center gap-3 md:gap-4 text-xs md:text-sm text-muted-foreground">
+      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+        <label className="text-xs md:text-sm">Period:</label>
         <Select value={period} onValueChange={onPeriodChange}>
-          <SelectTrigger className="w-[140px]">
+          <SelectTrigger className="w-full md:w-[140px] h-9">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
@@ -49,10 +49,10 @@ export function FilterBar({
         </Select>
       </div>
 
-      <div className="flex items-center gap-2">
-        <label>Orders:</label>
+      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+        <label className="text-xs md:text-sm">Orders:</label>
         <Select value={mode} onValueChange={onModeChange}>
-          <SelectTrigger className="w-[140px]">
+          <SelectTrigger className="w-full md:w-[140px] h-9">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
@@ -62,10 +62,10 @@ export function FilterBar({
         </Select>
       </div>
 
-      <div className="flex items-center gap-2">
-        <label>Month:</label>
+      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+        <label className="text-xs md:text-sm">Month:</label>
         <Select value={month} onValueChange={onMonthChange}>
-          <SelectTrigger className="w-[160px]">
+          <SelectTrigger className="w-full md:w-[160px] h-9">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>
@@ -79,10 +79,10 @@ export function FilterBar({
         </Select>
       </div>
 
-      <div className="flex items-center gap-2">
-        <label>Week:</label>
+      <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-2">
+        <label className="text-xs md:text-sm">Week:</label>
         <Select value={week} onValueChange={onWeekChange} disabled={isWeekDisabled}>
-          <SelectTrigger className="w-[160px]">
+          <SelectTrigger className="w-full md:w-[160px] h-9">
             <SelectValue />
           </SelectTrigger>
           <SelectContent>

@@ -58,58 +58,75 @@ export default function DashboardPage() {
   const currentPack = getCurrentPack(store, period, mode);
 
   return (
-    <div className="hidden flex-col md:flex">
+    <div className="flex flex-col min-h-screen">
       {/* Header */}
       <div className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="flex h-16 items-center px-8">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-sm">
+        <div className="flex h-16 items-center px-4 md:px-8">
+          <div className="flex items-center gap-2 md:gap-3">
+            <div className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-xs md:text-sm">
               F
             </div>
             <div>
-              <h2 className="text-lg font-bold">FRESH</h2>
-              <span className="text-xs text-muted-foreground">Dry Cleaning Analytics</span>
+              <h2 className="text-base md:text-lg font-bold">FRESH</h2>
+              <span className="text-xs text-muted-foreground hidden sm:inline">Dry Cleaning Analytics</span>
             </div>
-          </div>
-          <div className="ml-auto flex items-center space-x-4">
-            <FilterBar
-              period={period}
-              mode={mode}
-              month={month}
-              week={week}
-              availableMonths={availableMonths}
-              availableWeeks={availableWeeks}
-              onPeriodChange={setPeriod}
-              onModeChange={setMode}
-              onMonthChange={setMonth}
-              onWeekChange={setWeek}
-            />
           </div>
         </div>
       </div>
 
+      {/* Filters - Mobile: Below header, Desktop: In header */}
+      <div className="border-b bg-background px-4 py-3 md:hidden">
+        <FilterBar
+          period={period}
+          mode={mode}
+          month={month}
+          week={week}
+          availableMonths={availableMonths}
+          availableWeeks={availableWeeks}
+          onPeriodChange={setPeriod}
+          onModeChange={setMode}
+          onMonthChange={setMonth}
+          onWeekChange={setWeek}
+        />
+      </div>
+
+      <div className="hidden md:block border-b bg-background px-8 py-3">
+        <FilterBar
+          period={period}
+          mode={mode}
+          month={month}
+          week={week}
+          availableMonths={availableMonths}
+          availableWeeks={availableWeeks}
+          onPeriodChange={setPeriod}
+          onModeChange={setMode}
+          onMonthChange={setMonth}
+          onWeekChange={setWeek}
+        />
+      </div>
+
       {/* Main Content */}
-      <div className="flex-1 space-y-6 p-8 pt-6 bg-muted/20">
-        <div className="flex items-center justify-between">
+      <div className="flex-1 space-y-4 md:space-y-6 p-4 md:p-8 pt-4 md:pt-6 bg-muted/20">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
-            <p className="text-muted-foreground mt-1">
+            <h2 className="text-2xl md:text-3xl font-bold tracking-tight">Dashboard</h2>
+            <p className="text-muted-foreground mt-1 text-sm md:text-base">
               Overview of your business performance metrics
             </p>
           </div>
           {lastUpdated && (
-            <div className="text-sm text-muted-foreground bg-background px-3 py-1.5 rounded-md border">
+            <div className="text-xs md:text-sm text-muted-foreground bg-background px-2 md:px-3 py-1 md:py-1.5 rounded-md border w-fit">
               Last updated: {lastUpdated}
             </div>
           )}
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-4 md:space-y-6">
           {/* KPIs */}
           <KPIGrid data={currentData.kpis} customerData={currentData.advanced?.customer} />
 
           {/* Charts Grid - Better proportions */}
-          <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-4 md:gap-6 grid-cols-1 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <RevenueCostProfitChart data={currentData.series} />
             </div>
@@ -118,7 +135,7 @@ export default function DashboardPage() {
             </div>
           </div>
 
-          <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
+          <div className="grid gap-4 md:gap-6 grid-cols-1 lg:grid-cols-2">
             <CategoryRevenueChart data={currentData.category} />
             <CustomerAcquisitionChart monthlyData={currentPack.by_month} />
           </div>
