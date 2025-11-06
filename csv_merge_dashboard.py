@@ -592,7 +592,7 @@ class CSVMerger:
                     'item': item_name,
                     'revenue': round(data['revenue'], 2),
                     'units': round(data['units'], 1),
-                    'unit_price': round(price, 2)
+                    'unit_price': round(price, 1)
                 })
 
         # Sort by revenue and return top 10

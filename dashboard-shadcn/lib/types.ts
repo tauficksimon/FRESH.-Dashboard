@@ -93,7 +93,13 @@ export interface DashboardData {
 }
 
 export interface StoreData {
-  [key: string]: DashboardData;
+  [key: string]: DashboardData | Metadata;
+  _metadata?: Metadata;
+}
+
+export interface Metadata {
+  last_updated: string;
+  last_updated_display: string;
 }
 
 export type PeriodType = 'ALL_DATA';

@@ -30,7 +30,8 @@ export default function DashboardPage() {
     loadDashboardData()
       .then((data) => {
         setStore(data);
-        setLastUpdated(new Date().toLocaleString());
+        // Use the timestamp from when CSV was last processed
+        setLastUpdated(data._metadata?.last_updated_display || 'Unknown');
       })
       .catch((error) => {
         console.error('Failed to load dashboard data:', error);
