@@ -6,6 +6,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { PeriodType, ModeType } from '@/lib/types';
+import { formatWeekLabel } from '@/lib/data-utils';
 
 interface FilterBarProps {
   period: PeriodType;
@@ -88,7 +89,7 @@ export function FilterBar({
             <SelectItem value="__ALL__">Entire month</SelectItem>
             {availableWeeks.map((w) => (
               <SelectItem key={w} value={w}>
-                {w}
+                {formatWeekLabel(w)}
               </SelectItem>
             ))}
           </SelectContent>

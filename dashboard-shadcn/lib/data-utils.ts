@@ -86,3 +86,17 @@ export function formatDecimal(value: number | null | undefined, decimals: number
   if (value === null || value === undefined || isNaN(value)) return '0.00';
   return value.toFixed(decimals);
 }
+
+export function formatWeekLabel(weekKey: string): string {
+  const dayRanges: { [key: string]: string } = {
+    '1': 'Days 1-7',
+    '2': 'Days 8-14',
+    '3': 'Days 15-21',
+    '4': 'Days 22-28',
+    '5': 'Days 29-31'
+  };
+
+  const weekNum = weekKey.replace('week_', '');
+  const dayRange = dayRanges[weekNum] || `Week ${weekNum}`;
+  return `Week ${weekNum} (${dayRange})`;
+}
