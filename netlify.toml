@@ -1,13 +1,8 @@
 [build]
-  # No build command needed - index.html is pre-generated
-  command = ""
-  publish = "."
+  # Build Next.js dashboard
+  base = "dashboard-shadcn"
+  command = "npm run build"
+  publish = "dashboard-shadcn/.next"
 
-# Ignore Python files - only deploy HTML/JS/CSS
-[build.processing]
-  skip_processing = false
-
-# Don't install Python dependencies
 [build.environment]
-  # Disable automatic Python detection
-  PYTHON_VERSION = ""
+  NODE_VERSION = "18"
