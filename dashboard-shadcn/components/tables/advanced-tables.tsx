@@ -8,7 +8,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { AdvancedMetrics, KPIData } from '@/lib/types';
-import { formatCurrency, formatPercent, formatNumber, formatDecimal } from '@/lib/data-utils';
+import { formatCurrency, formatPercent, formatNumber } from '@/lib/data-utils';
 
 interface AdvancedTablesProps {
   data: AdvancedMetrics;
@@ -254,7 +254,7 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
                   <TableCell className="font-medium py-4">{item.item}</TableCell>
                   <TableCell className="text-right py-4 font-mono">{formatNumber(item.units)}</TableCell>
                   <TableCell className="text-right py-4 font-mono">{formatCurrency(item.revenue)}</TableCell>
-                  <TableCell className="text-right py-4 font-mono">{formatCurrency(item.price)}</TableCell>
+                  <TableCell className="text-right py-4 font-mono">{formatCurrency(item.unit_price)}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

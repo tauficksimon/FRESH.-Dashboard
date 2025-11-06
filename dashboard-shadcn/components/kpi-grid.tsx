@@ -4,14 +4,19 @@ import { formatCurrency, formatPercent, formatNumber, formatDecimal } from '@/li
 
 interface KPIGridProps {
   data: KPIData;
-  customerData?: any;
+  customerData?: {
+    unique_customers?: number;
+    new_customers?: number;
+    returning_customers?: number;
+    new_share_pct?: number;
+  };
 }
 
 export function KPIGrid({ data, customerData }: KPIGridProps) {
   // Calculate returning metrics
   const uniqC = Number(customerData?.unique_customers ?? data?.unique_customers ?? 0);
   const newC = Number(customerData?.new_customers ?? 0);
-  let returningC = Number(customerData?.returning_customers ?? Math.max(0, uniqC - newC));
+  const returningC = Number(customerData?.returning_customers ?? Math.max(0, uniqC - newC));
   let returningShare = (uniqC > 0) ? (100 * returningC / uniqC) : 0;
   if (typeof customerData?.new_share_pct === 'number') {
     returningShare = 100 - Number(customerData.new_share_pct);

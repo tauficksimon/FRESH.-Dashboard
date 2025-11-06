@@ -78,7 +78,7 @@ export function CategoryRevenueChart({ data }: CategoryRevenueChartProps) {
             <ChartTooltip
               content={
                 <ChartTooltipContent
-                  formatter={(value, name) => [`$${Number(value).toLocaleString()}`, 'Revenue']}
+                  formatter={(value) => [`$${Number(value).toLocaleString()}`, 'Revenue']}
                   labelFormatter={(label) => label}
                 />
               }
