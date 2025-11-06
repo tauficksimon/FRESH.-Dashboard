@@ -92,14 +92,14 @@ export interface DashboardData {
   by_month: MonthData;
 }
 
-export interface StoreData {
-  [key: string]: DashboardData;
-  _metadata?: Metadata;
-}
-
 export interface Metadata {
   last_updated: string;
   last_updated_display: string;
+}
+
+export interface StoreData {
+  [key: string]: DashboardData | Metadata | undefined;
+  _metadata?: Metadata;
 }
 
 export type PeriodType = 'ALL_DATA';

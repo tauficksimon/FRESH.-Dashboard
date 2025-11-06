@@ -13,7 +13,7 @@ export function getKey(period: PeriodType, mode: ModeType): string {
 }
 
 export function getCurrentPack(store: StoreData, period: PeriodType, mode: ModeType): DashboardData {
-  return store[getKey(period, mode)];
+  return store[getKey(period, mode)] as DashboardData;
 }
 
 export function getDataSet(
