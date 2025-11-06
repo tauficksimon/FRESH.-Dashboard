@@ -2,7 +2,7 @@
   # Build Next.js dashboard
   base = "dashboard-shadcn"
   command = "npm run build"
-  publish = "dashboard-shadcn/.next"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "18"
