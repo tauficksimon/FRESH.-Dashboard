@@ -155,61 +155,61 @@
             "item": "Wash & Fold Bag (min 15lb)",
             "revenue": 6054.8,
             "units": 2053.4,
-            "price": 2.95
+            "unit_price": 2.95
           },
           {
             "item": "Hand-Finished Shirts",
             "revenue": 3605.57,
             "units": 272.0,
-            "price": 13.26
+            "unit_price": 13.26
           },
           {
             "item": "Business Shirt",
             "revenue": 2748.97,
             "units": 384.0,
-            "price": 7.16
+            "unit_price": 7.16
           },
           {
             "item": "Trousers",
             "revenue": 2577.36,
             "units": 180.0,
-            "price": 14.32
+            "unit_price": 14.32
           },
           {
             "item": "2-Piece Suit (MEN)",
             "revenue": 2446.41,
             "units": 90.0,
-            "price": 27.18
+            "unit_price": 27.18
           },
           {
             "item": "Sport Jacket/ Blazer",
             "revenue": 2154.8,
             "units": 109.0,
-            "price": 19.77
+            "unit_price": 19.77
           },
           {
             "item": "Long Dress (Regular)",
             "revenue": 1321.87,
             "units": 45.0,
-            "price": 29.37
+            "unit_price": 29.37
           },
           {
             "item": "Sweater/ Sweatshirt/ Hoodie",
             "revenue": 1065.91,
             "units": 67.0,
-            "price": 15.91
+            "unit_price": 15.91
           },
           {
             "item": "Polo-Shirt",
             "revenue": 988.39,
             "units": 70.0,
-            "price": 14.12
+            "unit_price": 14.12
           },
           {
             "item": "T-shirt",
             "revenue": 980.2,
             "units": 62.0,
-            "price": 15.81
+            "unit_price": 15.81
           }
         ],
         "wash_fold_lbs": 2168.4
@@ -347,61 +347,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1129.88,
               "units": 426.0,
-              "price": 2.65
+              "unit_price": 2.65
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 1043.96,
               "units": 96.0,
-              "price": 10.87
+              "unit_price": 10.87
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 459.67,
               "units": 24.0,
-              "price": 19.15
+              "unit_price": 19.15
             },
             {
               "item": "Trousers",
               "revenue": 400.18,
               "units": 31.0,
-              "price": 12.91
+              "unit_price": 12.91
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 302.73,
               "units": 12.0,
-              "price": 25.23
+              "unit_price": 25.23
             },
             {
               "item": "Blouse",
               "revenue": 177.94,
               "units": 11.0,
-              "price": 16.18
+              "unit_price": 16.18
             },
             {
               "item": "Business Shirt",
               "revenue": 154.57,
               "units": 40.0,
-              "price": 3.86
+              "unit_price": 3.86
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 128.79,
               "units": 8.0,
-              "price": 16.1
+              "unit_price": 16.1
             },
             {
               "item": "Wash Delicate & Hang Dry (Min 15l b)",
               "revenue": 97.89,
               "units": 22.5,
-              "price": 4.35
+              "unit_price": 4.35
             },
             {
               "item": "T-shirt",
               "revenue": 78.05,
               "units": 8.0,
-              "price": 9.76
+              "unit_price": 9.76
             }
           ],
           "wash_fold_lbs": 449.5
@@ -507,7 +507,7 @@
                   "item": "Laundered Shirt",
                   "revenue": 8.98,
                   "units": 1.0,
-                  "price": 8.98
+                  "unit_price": 8.98
                 }
               ],
               "wash_fold_lbs": 0.0
@@ -637,61 +637,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 191.59,
                   "units": 81.5,
-                  "price": 2.35
+                  "unit_price": 2.35
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 152.02,
                   "units": 6.0,
-                  "price": 25.34
+                  "unit_price": 25.34
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 121.44,
                   "units": 10.0,
-                  "price": 12.14
+                  "unit_price": 12.14
                 },
                 {
                   "item": "Trousers",
                   "revenue": 85.05,
                   "units": 7.0,
-                  "price": 12.15
+                  "unit_price": 12.15
                 },
                 {
                   "item": "Blouse",
                   "revenue": 73.21,
                   "units": 5.0,
-                  "price": 14.64
+                  "unit_price": 14.64
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 51.53,
                   "units": 3.0,
-                  "price": 17.18
+                  "unit_price": 17.18
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 47.95,
                   "units": 5.0,
-                  "price": 9.59
+                  "unit_price": 9.59
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 46.37,
                   "units": 15.0,
-                  "price": 3.09
+                  "unit_price": 3.09
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 24.06,
                   "units": 2.0,
-                  "price": 12.03
+                  "unit_price": 12.03
                 },
                 {
                   "item": "Shorts",
                   "revenue": 21.99,
                   "units": 2.0,
-                  "price": 11.0
+                  "unit_price": 11.0
                 }
               ],
               "wash_fold_lbs": 96.5
@@ -823,61 +823,61 @@
                   "item": "Hand-Finished Shirts",
                   "revenue": 383.77,
                   "units": 39.0,
-                  "price": 9.84
+                  "unit_price": 9.84
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 331.81,
                   "units": 112.0,
-                  "price": 2.96
+                  "unit_price": 2.96
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 265.6,
                   "units": 13.0,
-                  "price": 20.43
+                  "unit_price": 20.43
                 },
                 {
                   "item": "Trousers",
                   "revenue": 196.05,
                   "units": 17.0,
-                  "price": 11.53
+                  "unit_price": 11.53
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 65.78,
                   "units": 3.0,
-                  "price": 21.93
+                  "unit_price": 21.93
                 },
                 {
                   "item": "Blouse",
                   "revenue": 54.37,
                   "units": 3.0,
-                  "price": 18.12
+                  "unit_price": 18.12
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 51.52,
                   "units": 7.5,
-                  "price": 6.87
+                  "unit_price": 6.87
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 31.75,
                   "units": 3.0,
-                  "price": 10.58
+                  "unit_price": 10.58
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 30.1,
                   "units": 2.0,
-                  "price": 15.05
+                  "unit_price": 15.05
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 27.88,
                   "units": 20.0,
-                  "price": 1.39
+                  "unit_price": 1.39
                 }
               ],
               "wash_fold_lbs": 119.5
@@ -997,61 +997,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 294.46,
                   "units": 113.5,
-                  "price": 2.59
+                  "unit_price": 2.59
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 249.87,
                   "units": 14.0,
-                  "price": 17.85
+                  "unit_price": 17.85
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 128.78,
                   "units": 5.0,
-                  "price": 25.76
+                  "unit_price": 25.76
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 104.74,
                   "units": 6.0,
-                  "price": 17.46
+                  "unit_price": 17.46
                 },
                 {
                   "item": "Trousers",
                   "revenue": 98.59,
                   "units": 6.0,
-                  "price": 16.43
+                  "unit_price": 16.43
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 67.36,
                   "units": 4.0,
-                  "price": 16.84
+                  "unit_price": 16.84
                 },
                 {
                   "item": "Blouse",
                   "revenue": 50.36,
                   "units": 3.0,
-                  "price": 16.79
+                  "unit_price": 16.79
                 },
                 {
                   "item": "Evening / Gown Dress",
                   "revenue": 50.36,
                   "units": 3.0,
-                  "price": 16.79
+                  "unit_price": 16.79
                 },
                 {
                   "item": "Tablecloths",
                   "revenue": 44.92,
                   "units": 2.0,
-                  "price": 22.46
+                  "unit_price": 22.46
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 34.32,
                   "units": 2.0,
-                  "price": 17.16
+                  "unit_price": 17.16
                 }
               ],
               "wash_fold_lbs": 113.5
@@ -1176,61 +1176,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 312.02,
                   "units": 119.0,
-                  "price": 2.62
+                  "unit_price": 2.62
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 288.88,
                   "units": 33.0,
-                  "price": 8.75
+                  "unit_price": 8.75
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 126.69,
                   "units": 20.0,
-                  "price": 6.33
+                  "unit_price": 6.33
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 75.18,
                   "units": 4.0,
-                  "price": 18.8
+                  "unit_price": 18.8
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 40.17,
                   "units": 5.0,
-                  "price": 8.03
+                  "unit_price": 8.03
                 },
                 {
                   "item": "2-Piece Suit (WOMEN)",
                   "revenue": 20.49,
                   "units": 1.0,
-                  "price": 20.49
+                  "unit_price": 20.49
                 },
                 {
                   "item": "Trousers",
                   "revenue": 20.49,
                   "units": 1.0,
-                  "price": 20.49
+                  "unit_price": 20.49
                 },
                 {
                   "item": "Blanket (Any Size)",
                   "revenue": 20.21,
                   "units": 1.0,
-                  "price": 20.21
+                  "unit_price": 20.21
                 },
                 {
                   "item": "Down Jacket",
                   "revenue": 18.18,
                   "units": 1.0,
-                  "price": 18.18
+                  "unit_price": 18.18
                 },
                 {
                   "item": "Romper (Shorts)",
                   "revenue": 14.97,
                   "units": 1.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 }
               ],
               "wash_fold_lbs": 120.0
@@ -1369,61 +1369,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1957.36,
               "units": 671.0,
-              "price": 2.92
+              "unit_price": 2.92
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 848.97,
               "units": 62.0,
-              "price": 13.69
+              "unit_price": 13.69
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 494.22,
               "units": 24.0,
-              "price": 20.59
+              "unit_price": 20.59
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 418.47,
               "units": 16.0,
-              "price": 26.15
+              "unit_price": 26.15
             },
             {
               "item": "Short Dress (Regular)",
               "revenue": 386.21,
               "units": 16.0,
-              "price": 24.14
+              "unit_price": 24.14
             },
             {
               "item": "Trousers",
               "revenue": 361.73,
               "units": 24.0,
-              "price": 15.07
+              "unit_price": 15.07
             },
             {
               "item": "Business Shirt",
               "revenue": 257.27,
               "units": 52.0,
-              "price": 4.95
+              "unit_price": 4.95
             },
             {
               "item": "Linen Shirt /Guayabera",
               "revenue": 205.63,
               "units": 13.0,
-              "price": 15.82
+              "unit_price": 15.82
             },
             {
               "item": "King Comforter",
               "revenue": 138.51,
               "units": 3.0,
-              "price": 46.17
+              "unit_price": 46.17
             },
             {
               "item": "Blouse",
               "revenue": 135.4,
               "units": 10.0,
-              "price": 13.54
+              "unit_price": 13.54
             }
           ],
           "wash_fold_lbs": 686.0
@@ -1549,61 +1549,61 @@
                   "item": "Hand-Finished Shirts",
                   "revenue": 390.87,
                   "units": 28.0,
-                  "price": 13.96
+                  "unit_price": 13.96
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 307.06,
                   "units": 125.0,
-                  "price": 2.46
+                  "unit_price": 2.46
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 231.68,
                   "units": 9.0,
-                  "price": 25.74
+                  "unit_price": 25.74
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 161.24,
                   "units": 7.0,
-                  "price": 23.03
+                  "unit_price": 23.03
                 },
                 {
                   "item": "King Comforter",
                   "revenue": 101.07,
                   "units": 2.0,
-                  "price": 50.54
+                  "unit_price": 50.54
                 },
                 {
                   "item": "Trousers",
                   "revenue": 88.49,
                   "units": 5.0,
-                  "price": 17.7
+                  "unit_price": 17.7
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 73.15,
                   "units": 4.0,
-                  "price": 18.29
+                  "unit_price": 18.29
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 72.41,
                   "units": 4.0,
-                  "price": 18.1
+                  "unit_price": 18.1
                 },
                 {
                   "item": "Duvet Cover (Any Size)",
                   "revenue": 60.64,
                   "units": 3.0,
-                  "price": 20.21
+                  "unit_price": 20.21
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 46.36,
                   "units": 15.0,
-                  "price": 3.09
+                  "unit_price": 3.09
                 }
               ],
               "wash_fold_lbs": 140.0
@@ -1729,61 +1729,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 570.16,
                   "units": 202.0,
-                  "price": 2.82
+                  "unit_price": 2.82
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 95.34,
                   "units": 7.0,
-                  "price": 13.62
+                  "unit_price": 13.62
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 88.77,
                   "units": 4.0,
-                  "price": 22.19
+                  "unit_price": 22.19
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 67.53,
                   "units": 4.0,
-                  "price": 16.88
+                  "unit_price": 16.88
                 },
                 {
                   "item": "Polo Shirt",
                   "revenue": 55.96,
                   "units": 5.0,
-                  "price": 11.19
+                  "unit_price": 11.19
                 },
                 {
                   "item": "Trousers",
                   "revenue": 51.77,
                   "units": 4.0,
-                  "price": 12.94
+                  "unit_price": 12.94
                 },
                 {
                   "item": "Jeans",
                   "revenue": 46.49,
                   "units": 4.0,
-                  "price": 11.62
+                  "unit_price": 11.62
                 },
                 {
                   "item": "Blouse",
                   "revenue": 45.44,
                   "units": 4.0,
-                  "price": 11.36
+                  "unit_price": 11.36
                 },
                 {
                   "item": "Suit Hem Repair (D)",
                   "revenue": 42.79,
                   "units": 1.0,
-                  "price": 42.79
+                  "unit_price": 42.79
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 38.47,
                   "units": 2.0,
-                  "price": 19.24
+                  "unit_price": 19.24
                 }
               ],
               "wash_fold_lbs": 202.0
@@ -1903,61 +1903,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 323.24,
                   "units": 113.0,
-                  "price": 2.86
+                  "unit_price": 2.86
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 126.6,
                   "units": 4.0,
-                  "price": 31.65
+                  "unit_price": 31.65
                 },
                 {
                   "item": "Trousers",
                   "revenue": 112.4,
                   "units": 8.0,
-                  "price": 14.05
+                  "unit_price": 14.05
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 109.28,
                   "units": 6.0,
-                  "price": 18.21
+                  "unit_price": 18.21
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 74.18,
                   "units": 3.0,
-                  "price": 24.72
+                  "unit_price": 24.72
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 66.32,
                   "units": 2.0,
-                  "price": 33.16
+                  "unit_price": 33.16
                 },
                 {
                   "item": "3-pc Tuxedo / Suit",
                   "revenue": 37.54,
                   "units": 1.0,
-                  "price": 37.54
+                  "unit_price": 37.54
                 },
                 {
                   "item": "King Comforter",
                   "revenue": 37.44,
                   "units": 1.0,
-                  "price": 37.44
+                  "unit_price": 37.44
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 31.64,
                   "units": 2.0,
-                  "price": 15.82
+                  "unit_price": 15.82
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 21.38,
                   "units": 2.0,
-                  "price": 10.69
+                  "unit_price": 10.69
                 }
               ],
               "wash_fold_lbs": 113.0
@@ -2076,61 +2076,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 589.82,
                   "units": 186.5,
-                  "price": 3.16
+                  "unit_price": 3.16
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 170.96,
                   "units": 9.0,
-                  "price": 19.0
+                  "unit_price": 19.0
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 169.76,
                   "units": 35.0,
-                  "price": 4.85
+                  "unit_price": 4.85
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 157.97,
                   "units": 6.0,
-                  "price": 26.33
+                  "unit_price": 26.33
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 120.63,
                   "units": 8.0,
-                  "price": 15.08
+                  "unit_price": 15.08
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 119.18,
                   "units": 3.0,
-                  "price": 39.73
+                  "unit_price": 39.73
                 },
                 {
                   "item": "Trousers",
                   "revenue": 109.06,
                   "units": 7.0,
-                  "price": 15.58
+                  "unit_price": 15.58
                 },
                 {
                   "item": "Evening / Gown Dress",
                   "revenue": 92.08,
                   "units": 2.0,
-                  "price": 46.04
+                  "unit_price": 46.04
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 50.35,
                   "units": 4.0,
-                  "price": 12.59
+                  "unit_price": 12.59
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 50.08,
                   "units": 3.0,
-                  "price": 16.69
+                  "unit_price": 16.69
                 }
               ],
               "wash_fold_lbs": 186.5
@@ -2248,61 +2248,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 167.08,
                   "units": 44.5,
-                  "price": 3.75
+                  "unit_price": 3.75
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 132.86,
                   "units": 13.0,
-                  "price": 10.22
+                  "unit_price": 10.22
                 },
                 {
                   "item": "Blouse",
                   "revenue": 39.97,
                   "units": 3.0,
-                  "price": 13.32
+                  "unit_price": 13.32
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 29.94,
                   "units": 2.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 },
                 {
                   "item": "Silk Blouse",
                   "revenue": 27.2,
                   "units": 2.0,
-                  "price": 13.6
+                  "unit_price": 13.6
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 25.54,
                   "units": 2.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 },
                 {
                   "item": "Shorts",
                   "revenue": 25.54,
                   "units": 2.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 20.32,
                   "units": 1.0,
-                  "price": 20.32
+                  "unit_price": 20.32
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 14.97,
                   "units": 1.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 12.77,
                   "units": 1.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 }
               ],
               "wash_fold_lbs": 44.5
@@ -2442,61 +2442,61 @@
               "item": "Business Shirt",
               "revenue": 1116.61,
               "units": 141.0,
-              "price": 7.92
+              "unit_price": 7.92
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1059.28,
               "units": 356.9,
-              "price": 2.97
+              "unit_price": 2.97
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 1004.04,
               "units": 35.0,
-              "price": 28.69
+              "unit_price": 28.69
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 577.28,
               "units": 46.0,
-              "price": 12.55
+              "unit_price": 12.55
             },
             {
               "item": "Trousers",
               "revenue": 573.78,
               "units": 46.0,
-              "price": 12.47
+              "unit_price": 12.47
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 451.96,
               "units": 22.0,
-              "price": 20.54
+              "unit_price": 20.54
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 368.44,
               "units": 11.0,
-              "price": 33.49
+              "unit_price": 33.49
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 331.42,
               "units": 22.0,
-              "price": 15.06
+              "unit_price": 15.06
             },
             {
               "item": "Full / Queen Comforter",
               "revenue": 175.01,
               "units": 6.0,
-              "price": 29.17
+              "unit_price": 29.17
             },
             {
               "item": "Linen Shirt /Guayabera",
               "revenue": 172.99,
               "units": 16.0,
-              "price": 10.81
+              "unit_price": 10.81
             }
           ],
           "wash_fold_lbs": 380.9
@@ -2615,61 +2615,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 214.09,
                   "units": 65.5,
-                  "price": 3.27
+                  "unit_price": 3.27
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 106.71,
                   "units": 22.0,
-                  "price": 4.85
+                  "unit_price": 4.85
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 100.03,
                   "units": 6.0,
-                  "price": 16.67
+                  "unit_price": 16.67
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 96.22,
                   "units": 4.0,
-                  "price": 24.06
+                  "unit_price": 24.06
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 92.17,
                   "units": 3.0,
-                  "price": 30.72
+                  "unit_price": 30.72
                 },
                 {
                   "item": "Full / Queen Comforter",
                   "revenue": 82.36,
                   "units": 3.0,
-                  "price": 27.45
+                  "unit_price": 27.45
                 },
                 {
                   "item": "Blouse",
                   "revenue": 70.54,
                   "units": 4.0,
-                  "price": 17.64
+                  "unit_price": 17.64
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 66.78,
                   "units": 5.0,
-                  "price": 13.36
+                  "unit_price": 13.36
                 },
                 {
                   "item": "Trousers",
                   "revenue": 56.26,
                   "units": 4.0,
-                  "price": 14.06
+                  "unit_price": 14.06
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 30.74,
                   "units": 3.0,
-                  "price": 10.25
+                  "unit_price": 10.25
                 }
               ],
               "wash_fold_lbs": 65.5
@@ -2789,61 +2789,61 @@
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 501.64,
                   "units": 14.0,
-                  "price": 35.83
+                  "unit_price": 35.83
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 399.1,
                   "units": 138.5,
-                  "price": 2.88
+                  "unit_price": 2.88
                 },
                 {
                   "item": "Gown Puffy Dress",
                   "revenue": 125.82,
                   "units": 1.0,
-                  "price": 125.82
+                  "unit_price": 125.82
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 116.42,
                   "units": 12.0,
-                  "price": 9.7
+                  "unit_price": 9.7
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 94.08,
                   "units": 6.0,
-                  "price": 15.68
+                  "unit_price": 15.68
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 65.61,
                   "units": 3.0,
-                  "price": 21.87
+                  "unit_price": 21.87
                 },
                 {
                   "item": "Trousers",
                   "revenue": 57.62,
                   "units": 7.0,
-                  "price": 8.23
+                  "unit_price": 8.23
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 50.92,
                   "units": 1.0,
-                  "price": 50.92
+                  "unit_price": 50.92
                 },
                 {
                   "item": "2-Piece Dress Suit",
                   "revenue": 45.26,
                   "units": 2.0,
-                  "price": 22.63
+                  "unit_price": 22.63
                 },
                 {
                   "item": "Full / Queen Comforter",
                   "revenue": 29.95,
                   "units": 1.0,
-                  "price": 29.95
+                  "unit_price": 29.95
                 }
               ],
               "wash_fold_lbs": 138.5
@@ -2970,61 +2970,61 @@
                   "item": "Business Shirt",
                   "revenue": 461.16,
                   "units": 57.0,
-                  "price": 8.09
+                  "unit_price": 8.09
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 312.38,
                   "units": 24.0,
-                  "price": 13.02
+                  "unit_price": 13.02
                 },
                 {
                   "item": "Trousers",
                   "revenue": 310.62,
                   "units": 23.0,
-                  "price": 13.51
+                  "unit_price": 13.51
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 231.03,
                   "units": 9.0,
-                  "price": 25.67
+                  "unit_price": 25.67
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 182.67,
                   "units": 9.0,
-                  "price": 20.3
+                  "unit_price": 20.3
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 176.4,
                   "units": 4.0,
-                  "price": 44.1
+                  "unit_price": 44.1
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 154.88,
                   "units": 57.9,
-                  "price": 2.67
+                  "unit_price": 2.67
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 134.5,
                   "units": 7.0,
-                  "price": 19.21
+                  "unit_price": 19.21
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 77.53,
                   "units": 7.0,
-                  "price": 11.08
+                  "unit_price": 11.08
                 },
                 {
                   "item": "Shorts",
                   "revenue": 74.06,
                   "units": 3.0,
-                  "price": 24.69
+                  "unit_price": 24.69
                 }
               ],
               "wash_fold_lbs": 57.9
@@ -3151,61 +3151,61 @@
                   "item": "Business Shirt",
                   "revenue": 386.42,
                   "units": 43.0,
-                  "price": 8.99
+                  "unit_price": 8.99
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 275.73,
                   "units": 11.0,
-                  "price": 25.07
+                  "unit_price": 25.07
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 252.21,
                   "units": 88.4,
-                  "price": 2.85
+                  "unit_price": 2.85
                 },
                 {
                   "item": "Trousers",
                   "revenue": 130.72,
                   "units": 7.0,
-                  "price": 18.67
+                  "unit_price": 18.67
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 119.99,
                   "units": 6.0,
-                  "price": 20.0
+                  "unit_price": 20.0
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 89.62,
                   "units": 24.0,
-                  "price": 3.73
+                  "unit_price": 3.73
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 67.34,
                   "units": 7.0,
-                  "price": 9.62
+                  "unit_price": 9.62
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 63.64,
                   "units": 2.0,
-                  "price": 31.82
+                  "unit_price": 31.82
                 },
                 {
                   "item": "Tie",
                   "revenue": 50.26,
                   "units": 3.0,
-                  "price": 16.75
+                  "unit_price": 16.75
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 42.98,
                   "units": 4.0,
-                  "price": 10.74
+                  "unit_price": 10.74
                 }
               ],
               "wash_fold_lbs": 112.4
@@ -3324,61 +3324,61 @@
                   "item": "Leather Skirt Service  (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Leather Jacket Service (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Ostrich Leather Service (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Blouse",
                   "revenue": 57.35,
                   "units": 3.0,
-                  "price": 19.12
+                  "unit_price": 19.12
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 45.89,
                   "units": 7.0,
-                  "price": 6.56
+                  "unit_price": 6.56
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 39.0,
                   "units": 6.6,
-                  "price": 5.91
+                  "unit_price": 5.91
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 37.67,
                   "units": 6.0,
-                  "price": 6.28
+                  "unit_price": 6.28
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 36.7,
                   "units": 4.0,
-                  "price": 9.17
+                  "unit_price": 9.17
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 35.33,
                   "units": 4.0,
-                  "price": 8.83
+                  "unit_price": 8.83
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 27.91,
                   "units": 2.0,
-                  "price": 13.96
+                  "unit_price": 13.96
                 }
               ],
               "wash_fold_lbs": 6.6
@@ -3519,61 +3519,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1714.55,
               "units": 525.0,
-              "price": 3.27
+              "unit_price": 3.27
             },
             {
               "item": "Trousers",
               "revenue": 1218.4,
               "units": 78.0,
-              "price": 15.62
+              "unit_price": 15.62
             },
             {
               "item": "Business Shirt",
               "revenue": 1083.72,
               "units": 133.0,
-              "price": 8.15
+              "unit_price": 8.15
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 944.89,
               "units": 60.0,
-              "price": 15.75
+              "unit_price": 15.75
             },
             {
               "item": "Polo-Shirt",
               "revenue": 804.15,
               "units": 54.0,
-              "price": 14.89
+              "unit_price": 14.89
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 700.28,
               "units": 37.0,
-              "price": 18.93
+              "unit_price": 18.93
             },
             {
               "item": "T-shirt",
               "revenue": 631.0,
               "units": 34.0,
-              "price": 18.56
+              "unit_price": 18.56
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 615.73,
               "units": 23.0,
-              "price": 26.77
+              "unit_price": 26.77
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 501.61,
               "units": 20.0,
-              "price": 25.08
+              "unit_price": 25.08
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 447.1,
               "units": 27.0,
-              "price": 16.56
+              "unit_price": 16.56
             }
           ],
           "wash_fold_lbs": 577.5
@@ -3705,61 +3705,61 @@
                   "item": "T-shirt",
                   "revenue": 373.96,
                   "units": 21.0,
-                  "price": 17.81
+                  "unit_price": 17.81
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 337.78,
                   "units": 115.5,
-                  "price": 2.92
+                  "unit_price": 2.92
                 },
                 {
                   "item": "Trousers",
                   "revenue": 294.54,
                   "units": 18.0,
-                  "price": 16.36
+                  "unit_price": 16.36
                 },
                 {
                   "item": "Wedding dress  (D)",
                   "revenue": 278.6,
                   "units": 1.0,
-                  "price": 278.6
+                  "unit_price": 278.6
                 },
                 {
                   "item": "Wedding preservation (D)",
                   "revenue": 278.6,
                   "units": 1.0,
-                  "price": 278.6
+                  "unit_price": 278.6
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 263.06,
                   "units": 16.0,
-                  "price": 16.44
+                  "unit_price": 16.44
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 247.62,
                   "units": 30.0,
-                  "price": 8.25
+                  "unit_price": 8.25
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 213.66,
                   "units": 11.0,
-                  "price": 19.42
+                  "unit_price": 19.42
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 190.24,
                   "units": 12.0,
-                  "price": 15.85
+                  "unit_price": 15.85
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 124.77,
                   "units": 7.0,
-                  "price": 17.82
+                  "unit_price": 17.82
                 }
               ],
               "wash_fold_lbs": 123.0
@@ -3884,61 +3884,61 @@
                   "item": "Trousers",
                   "revenue": 359.36,
                   "units": 25.0,
-                  "price": 14.37
+                  "unit_price": 14.37
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 289.9,
                   "units": 111.5,
-                  "price": 2.6
+                  "unit_price": 2.6
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 252.58,
                   "units": 19.0,
-                  "price": 13.29
+                  "unit_price": 13.29
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 227.26,
                   "units": 11.0,
-                  "price": 20.66
+                  "unit_price": 20.66
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 124.8,
                   "units": 31.5,
-                  "price": 3.96
+                  "unit_price": 3.96
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 104.53,
                   "units": 3.0,
-                  "price": 34.84
+                  "unit_price": 34.84
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 100.34,
                   "units": 10.0,
-                  "price": 10.03
+                  "unit_price": 10.03
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 87.04,
                   "units": 6.0,
-                  "price": 14.51
+                  "unit_price": 14.51
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 75.04,
                   "units": 4.0,
-                  "price": 18.76
+                  "unit_price": 18.76
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 64.49,
                   "units": 5.0,
-                  "price": 12.9
+                  "unit_price": 12.9
                 }
               ],
               "wash_fold_lbs": 143.0
@@ -4060,61 +4060,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 440.44,
                   "units": 121.5,
-                  "price": 3.63
+                  "unit_price": 3.63
                 },
                 {
                   "item": "Trousers",
                   "revenue": 304.77,
                   "units": 17.0,
-                  "price": 17.93
+                  "unit_price": 17.93
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 267.29,
                   "units": 10.0,
-                  "price": 26.73
+                  "unit_price": 26.73
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 168.63,
                   "units": 6.0,
-                  "price": 28.1
+                  "unit_price": 28.1
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 154.94,
                   "units": 8.0,
-                  "price": 19.37
+                  "unit_price": 19.37
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 151.63,
                   "units": 7.0,
-                  "price": 21.66
+                  "unit_price": 21.66
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 146.18,
                   "units": 24.0,
-                  "price": 6.09
+                  "unit_price": 6.09
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 94.13,
                   "units": 4.0,
-                  "price": 23.53
+                  "unit_price": 23.53
                 },
                 {
                   "item": "Blouse",
                   "revenue": 86.42,
                   "units": 5.0,
-                  "price": 17.28
+                  "unit_price": 17.28
                 },
                 {
                   "item": "King Comforter (H) (D)",
                   "revenue": 80.24,
                   "units": 1.0,
-                  "price": 80.24
+                  "unit_price": 80.24
                 }
               ],
               "wash_fold_lbs": 121.5
@@ -4248,61 +4248,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 502.25,
                   "units": 148.0,
-                  "price": 3.39
+                  "unit_price": 3.39
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 291.75,
                   "units": 19.0,
-                  "price": 15.36
+                  "unit_price": 15.36
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 250.8,
                   "units": 16.0,
-                  "price": 15.67
+                  "unit_price": 15.67
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 240.96,
                   "units": 37.0,
-                  "price": 6.51
+                  "unit_price": 6.51
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 198.17,
                   "units": 10.0,
-                  "price": 19.82
+                  "unit_price": 19.82
                 },
                 {
                   "item": "Trousers",
                   "revenue": 191.8,
                   "units": 13.0,
-                  "price": 14.75
+                  "unit_price": 14.75
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 153.49,
                   "units": 9.0,
-                  "price": 17.05
+                  "unit_price": 17.05
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 121.35,
                   "units": 4.0,
-                  "price": 30.34
+                  "unit_price": 30.34
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 85.14,
                   "units": 6.0,
-                  "price": 14.19
+                  "unit_price": 14.19
                 },
                 {
                   "item": "Blouse",
                   "revenue": 66.88,
                   "units": 5.0,
-                  "price": 13.38
+                  "unit_price": 13.38
                 }
               ],
               "wash_fold_lbs": 161.5
@@ -4422,61 +4422,61 @@
                   "item": "Business Shirt",
                   "revenue": 348.62,
                   "units": 32.0,
-                  "price": 10.89
+                  "unit_price": 10.89
                 },
                 {
                   "item": "Pillow Case",
                   "revenue": 201.69,
                   "units": 8.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 144.18,
                   "units": 28.5,
-                  "price": 5.06
+                  "unit_price": 5.06
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 126.99,
                   "units": 11.0,
-                  "price": 11.54
+                  "unit_price": 11.54
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 110.49,
                   "units": 5.0,
-                  "price": 22.1
+                  "unit_price": 22.1
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 108.83,
                   "units": 5.0,
-                  "price": 21.77
+                  "unit_price": 21.77
                 },
                 {
                   "item": "Leather Jacket",
                   "revenue": 94.36,
                   "units": 1.0,
-                  "price": 94.36
+                  "unit_price": 94.36
                 },
                 {
                   "item": "Shorts",
                   "revenue": 90.72,
                   "units": 4.0,
-                  "price": 22.68
+                  "unit_price": 22.68
                 },
                 {
                   "item": "Duvet Cover (Any Size)",
                   "revenue": 75.63,
                   "units": 3.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 },
                 {
                   "item": "Bed Sheet",
                   "revenue": 75.63,
                   "units": 3.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 }
               ],
               "wash_fold_lbs": 28.5
@@ -4604,61 +4604,61 @@
               "item": "2-Piece Suit (MEN)",
               "revenue": 219.56,
               "units": 7.0,
-              "price": 31.37
+              "unit_price": 31.37
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 193.73,
               "units": 74.5,
-              "price": 2.6
+              "unit_price": 2.6
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 190.47,
               "units": 8.0,
-              "price": 23.81
+              "unit_price": 23.81
             },
             {
               "item": "T-shirt",
               "revenue": 182.56,
               "units": 12.0,
-              "price": 15.21
+              "unit_price": 15.21
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 139.97,
               "units": 4.0,
-              "price": 34.99
+              "unit_price": 34.99
             },
             {
               "item": "Business Shirt",
               "revenue": 136.81,
               "units": 18.0,
-              "price": 7.6
+              "unit_price": 7.6
             },
             {
               "item": "Evening / Gown Dress",
               "revenue": 68.2,
               "units": 2.0,
-              "price": 34.1
+              "unit_price": 34.1
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 58.84,
               "units": 3.0,
-              "price": 19.61
+              "unit_price": 19.61
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 48.66,
               "units": 2.0,
-              "price": 24.33
+              "unit_price": 24.33
             },
             {
               "item": "Tank Top",
               "revenue": 48.14,
               "units": 3.0,
-              "price": 16.05
+              "unit_price": 16.05
             }
           ],
           "wash_fold_lbs": 74.5
@@ -4780,61 +4780,61 @@
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 219.56,
                   "units": 7.0,
-                  "price": 31.37
+                  "unit_price": 31.37
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 193.73,
                   "units": 74.5,
-                  "price": 2.6
+                  "unit_price": 2.6
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 190.47,
                   "units": 8.0,
-                  "price": 23.81
+                  "unit_price": 23.81
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 182.56,
                   "units": 12.0,
-                  "price": 15.21
+                  "unit_price": 15.21
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 139.97,
                   "units": 4.0,
-                  "price": 34.99
+                  "unit_price": 34.99
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 136.81,
                   "units": 18.0,
-                  "price": 7.6
+                  "unit_price": 7.6
                 },
                 {
                   "item": "Evening / Gown Dress",
                   "revenue": 68.2,
                   "units": 2.0,
-                  "price": 34.1
+                  "unit_price": 34.1
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 58.84,
                   "units": 3.0,
-                  "price": 19.61
+                  "unit_price": 19.61
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 48.66,
                   "units": 2.0,
-                  "price": 24.33
+                  "unit_price": 24.33
                 },
                 {
                   "item": "Tank Top",
                   "revenue": 48.14,
                   "units": 3.0,
-                  "price": 16.05
+                  "unit_price": 16.05
                 }
               ],
               "wash_fold_lbs": 74.5
@@ -4998,61 +4998,61 @@
             "item": "Wash & Fold Bag (min 15lb)",
             "revenue": 6054.8,
             "units": 2053.4,
-            "price": 2.95
+            "unit_price": 2.95
           },
           {
             "item": "Hand-Finished Shirts",
             "revenue": 3550.11,
             "units": 268.0,
-            "price": 13.25
+            "unit_price": 13.25
           },
           {
             "item": "Business Shirt",
             "revenue": 2660.77,
             "units": 297.0,
-            "price": 8.96
+            "unit_price": 8.96
           },
           {
             "item": "Trousers",
             "revenue": 2513.1,
             "units": 175.0,
-            "price": 14.36
+            "unit_price": 14.36
           },
           {
             "item": "2-Piece Suit (MEN)",
             "revenue": 2446.41,
             "units": 90.0,
-            "price": 27.18
+            "unit_price": 27.18
           },
           {
             "item": "Sport Jacket/ Blazer",
             "revenue": 2052.12,
             "units": 104.0,
-            "price": 19.73
+            "unit_price": 19.73
           },
           {
             "item": "Long Dress (Regular)",
             "revenue": 1241.03,
             "units": 42.0,
-            "price": 29.55
+            "unit_price": 29.55
           },
           {
             "item": "Sweater/ Sweatshirt/ Hoodie",
             "revenue": 954.83,
             "units": 61.0,
-            "price": 15.65
+            "unit_price": 15.65
           },
           {
             "item": "Polo-Shirt",
             "revenue": 898.89,
             "units": 64.0,
-            "price": 14.05
+            "unit_price": 14.05
           },
           {
             "item": "T-shirt",
             "revenue": 832.98,
             "units": 53.0,
-            "price": 15.72
+            "unit_price": 15.72
           }
         ],
         "wash_fold_lbs": 2154.9
@@ -5188,61 +5188,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1129.88,
               "units": 426.0,
-              "price": 2.65
+              "unit_price": 2.65
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 1043.96,
               "units": 96.0,
-              "price": 10.87
+              "unit_price": 10.87
             },
             {
               "item": "Trousers",
               "revenue": 400.18,
               "units": 31.0,
-              "price": 12.91
+              "unit_price": 12.91
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 397.63,
               "units": 22.0,
-              "price": 18.07
+              "unit_price": 18.07
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 302.73,
               "units": 12.0,
-              "price": 25.23
+              "unit_price": 25.23
             },
             {
               "item": "Blouse",
               "revenue": 177.94,
               "units": 11.0,
-              "price": 16.18
+              "unit_price": 16.18
             },
             {
               "item": "Business Shirt",
               "revenue": 154.57,
               "units": 25.0,
-              "price": 6.18
+              "unit_price": 6.18
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 108.74,
               "units": 7.0,
-              "price": 15.53
+              "unit_price": 15.53
             },
             {
               "item": "Wash Delicate & Hang Dry (Min 15l b)",
               "revenue": 97.89,
               "units": 22.5,
-              "price": 4.35
+              "unit_price": 4.35
             },
             {
               "item": "T-shirt",
               "revenue": 78.05,
               "units": 7.0,
-              "price": 11.15
+              "unit_price": 11.15
             }
           ],
           "wash_fold_lbs": 449.5
@@ -5348,7 +5348,7 @@
                   "item": "Laundered Shirt",
                   "revenue": 8.98,
                   "units": 1.0,
-                  "price": 8.98
+                  "unit_price": 8.98
                 }
               ],
               "wash_fold_lbs": 0.0
@@ -5478,61 +5478,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 191.59,
                   "units": 81.5,
-                  "price": 2.35
+                  "unit_price": 2.35
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 152.02,
                   "units": 6.0,
-                  "price": 25.34
+                  "unit_price": 25.34
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 121.44,
                   "units": 10.0,
-                  "price": 12.14
+                  "unit_price": 12.14
                 },
                 {
                   "item": "Trousers",
                   "revenue": 85.05,
                   "units": 7.0,
-                  "price": 12.15
+                  "unit_price": 12.15
                 },
                 {
                   "item": "Blouse",
                   "revenue": 73.21,
                   "units": 5.0,
-                  "price": 14.64
+                  "unit_price": 14.64
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 51.53,
                   "units": 3.0,
-                  "price": 17.18
+                  "unit_price": 17.18
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 47.95,
                   "units": 5.0,
-                  "price": 9.59
+                  "unit_price": 9.59
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 46.37,
                   "units": 15.0,
-                  "price": 3.09
+                  "unit_price": 3.09
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 24.06,
                   "units": 2.0,
-                  "price": 12.03
+                  "unit_price": 12.03
                 },
                 {
                   "item": "Shorts",
                   "revenue": 21.99,
                   "units": 2.0,
-                  "price": 11.0
+                  "unit_price": 11.0
                 }
               ],
               "wash_fold_lbs": 96.5
@@ -5662,61 +5662,61 @@
                   "item": "Hand-Finished Shirts",
                   "revenue": 383.77,
                   "units": 39.0,
-                  "price": 9.84
+                  "unit_price": 9.84
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 331.81,
                   "units": 112.0,
-                  "price": 2.96
+                  "unit_price": 2.96
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 203.56,
                   "units": 11.0,
-                  "price": 18.51
+                  "unit_price": 18.51
                 },
                 {
                   "item": "Trousers",
                   "revenue": 196.05,
                   "units": 17.0,
-                  "price": 11.53
+                  "unit_price": 11.53
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 65.78,
                   "units": 3.0,
-                  "price": 21.93
+                  "unit_price": 21.93
                 },
                 {
                   "item": "Blouse",
                   "revenue": 54.37,
                   "units": 3.0,
-                  "price": 18.12
+                  "unit_price": 18.12
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 51.52,
                   "units": 7.5,
-                  "price": 6.87
+                  "unit_price": 6.87
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 31.75,
                   "units": 3.0,
-                  "price": 10.58
+                  "unit_price": 10.58
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 30.1,
                   "units": 2.0,
-                  "price": 15.05
+                  "unit_price": 15.05
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 27.88,
                   "units": 5.0,
-                  "price": 5.58
+                  "unit_price": 5.58
                 }
               ],
               "wash_fold_lbs": 119.5
@@ -5834,61 +5834,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 294.46,
                   "units": 113.5,
-                  "price": 2.59
+                  "unit_price": 2.59
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 249.87,
                   "units": 14.0,
-                  "price": 17.85
+                  "unit_price": 17.85
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 128.78,
                   "units": 5.0,
-                  "price": 25.76
+                  "unit_price": 25.76
                 },
                 {
                   "item": "Trousers",
                   "revenue": 98.59,
                   "units": 6.0,
-                  "price": 16.43
+                  "unit_price": 16.43
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 84.68,
                   "units": 5.0,
-                  "price": 16.94
+                  "unit_price": 16.94
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 67.36,
                   "units": 4.0,
-                  "price": 16.84
+                  "unit_price": 16.84
                 },
                 {
                   "item": "Blouse",
                   "revenue": 50.36,
                   "units": 3.0,
-                  "price": 16.79
+                  "unit_price": 16.79
                 },
                 {
                   "item": "Evening / Gown Dress",
                   "revenue": 50.36,
                   "units": 3.0,
-                  "price": 16.79
+                  "unit_price": 16.79
                 },
                 {
                   "item": "Tablecloths",
                   "revenue": 44.92,
                   "units": 2.0,
-                  "price": 22.46
+                  "unit_price": 22.46
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 34.32,
                   "units": 2.0,
-                  "price": 17.16
+                  "unit_price": 17.16
                 }
               ],
               "wash_fold_lbs": 113.5
@@ -6013,61 +6013,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 312.02,
                   "units": 119.0,
-                  "price": 2.62
+                  "unit_price": 2.62
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 288.88,
                   "units": 33.0,
-                  "price": 8.75
+                  "unit_price": 8.75
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 126.69,
                   "units": 20.0,
-                  "price": 6.33
+                  "unit_price": 6.33
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 75.18,
                   "units": 4.0,
-                  "price": 18.8
+                  "unit_price": 18.8
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 40.17,
                   "units": 5.0,
-                  "price": 8.03
+                  "unit_price": 8.03
                 },
                 {
                   "item": "2-Piece Suit (WOMEN)",
                   "revenue": 20.49,
                   "units": 1.0,
-                  "price": 20.49
+                  "unit_price": 20.49
                 },
                 {
                   "item": "Trousers",
                   "revenue": 20.49,
                   "units": 1.0,
-                  "price": 20.49
+                  "unit_price": 20.49
                 },
                 {
                   "item": "Blanket (Any Size)",
                   "revenue": 20.21,
                   "units": 1.0,
-                  "price": 20.21
+                  "unit_price": 20.21
                 },
                 {
                   "item": "Down Jacket",
                   "revenue": 18.18,
                   "units": 1.0,
-                  "price": 18.18
+                  "unit_price": 18.18
                 },
                 {
                   "item": "Romper (Shorts)",
                   "revenue": 14.97,
                   "units": 1.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 }
               ],
               "wash_fold_lbs": 120.0
@@ -6204,61 +6204,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1957.36,
               "units": 671.0,
-              "price": 2.92
+              "unit_price": 2.92
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 848.97,
               "units": 62.0,
-              "price": 13.69
+              "unit_price": 13.69
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 494.22,
               "units": 23.0,
-              "price": 21.49
+              "unit_price": 21.49
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 418.47,
               "units": 16.0,
-              "price": 26.15
+              "unit_price": 26.15
             },
             {
               "item": "Trousers",
               "revenue": 361.73,
               "units": 24.0,
-              "price": 15.07
+              "unit_price": 15.07
             },
             {
               "item": "Short Dress (Regular)",
               "revenue": 264.94,
               "units": 12.0,
-              "price": 22.08
+              "unit_price": 22.08
             },
             {
               "item": "Business Shirt",
               "revenue": 257.27,
               "units": 36.0,
-              "price": 7.15
+              "unit_price": 7.15
             },
             {
               "item": "Linen Shirt /Guayabera",
               "revenue": 179.83,
               "units": 12.0,
-              "price": 14.99
+              "unit_price": 14.99
             },
             {
               "item": "King Comforter",
               "revenue": 138.51,
               "units": 3.0,
-              "price": 46.17
+              "unit_price": 46.17
             },
             {
               "item": "Blouse",
               "revenue": 135.4,
               "units": 10.0,
-              "price": 13.54
+              "unit_price": 13.54
             }
           ],
           "wash_fold_lbs": 686.0
@@ -6383,61 +6383,61 @@
                   "item": "Hand-Finished Shirts",
                   "revenue": 390.87,
                   "units": 28.0,
-                  "price": 13.96
+                  "unit_price": 13.96
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 307.06,
                   "units": 125.0,
-                  "price": 2.46
+                  "unit_price": 2.46
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 231.68,
                   "units": 9.0,
-                  "price": 25.74
+                  "unit_price": 25.74
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 161.24,
                   "units": 7.0,
-                  "price": 23.03
+                  "unit_price": 23.03
                 },
                 {
                   "item": "King Comforter",
                   "revenue": 101.07,
                   "units": 2.0,
-                  "price": 50.54
+                  "unit_price": 50.54
                 },
                 {
                   "item": "Trousers",
                   "revenue": 88.49,
                   "units": 5.0,
-                  "price": 17.7
+                  "unit_price": 17.7
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 73.15,
                   "units": 4.0,
-                  "price": 18.29
+                  "unit_price": 18.29
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 72.41,
                   "units": 4.0,
-                  "price": 18.1
+                  "unit_price": 18.1
                 },
                 {
                   "item": "Duvet Cover (Any Size)",
                   "revenue": 60.64,
                   "units": 3.0,
-                  "price": 20.21
+                  "unit_price": 20.21
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 46.36,
                   "units": 15.0,
-                  "price": 3.09
+                  "unit_price": 3.09
                 }
               ],
               "wash_fold_lbs": 140.0
@@ -6562,61 +6562,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 570.16,
                   "units": 202.0,
-                  "price": 2.82
+                  "unit_price": 2.82
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 95.34,
                   "units": 7.0,
-                  "price": 13.62
+                  "unit_price": 13.62
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 67.53,
                   "units": 4.0,
-                  "price": 16.88
+                  "unit_price": 16.88
                 },
                 {
                   "item": "Polo Shirt",
                   "revenue": 55.96,
                   "units": 5.0,
-                  "price": 11.19
+                  "unit_price": 11.19
                 },
                 {
                   "item": "Trousers",
                   "revenue": 51.77,
                   "units": 4.0,
-                  "price": 12.94
+                  "unit_price": 12.94
                 },
                 {
                   "item": "Jeans",
                   "revenue": 46.49,
                   "units": 4.0,
-                  "price": 11.62
+                  "unit_price": 11.62
                 },
                 {
                   "item": "Blouse",
                   "revenue": 45.44,
                   "units": 4.0,
-                  "price": 11.36
+                  "unit_price": 11.36
                 },
                 {
                   "item": "Suit Hem Repair (D)",
                   "revenue": 42.79,
                   "units": 1.0,
-                  "price": 42.79
+                  "unit_price": 42.79
                 },
                 {
                   "item": "Down Comforter (Any size)",
                   "revenue": 32.49,
                   "units": 1.0,
-                  "price": 32.49
+                  "unit_price": 32.49
                 },
                 {
                   "item": "Duvet Cover (Any Size)",
                   "revenue": 32.49,
                   "units": 1.0,
-                  "price": 32.49
+                  "unit_price": 32.49
                 }
               ],
               "wash_fold_lbs": 202.0
@@ -6735,61 +6735,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 323.24,
                   "units": 113.0,
-                  "price": 2.86
+                  "unit_price": 2.86
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 126.6,
                   "units": 4.0,
-                  "price": 31.65
+                  "unit_price": 31.65
                 },
                 {
                   "item": "Trousers",
                   "revenue": 112.4,
                   "units": 8.0,
-                  "price": 14.05
+                  "unit_price": 14.05
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 109.28,
                   "units": 6.0,
-                  "price": 18.21
+                  "unit_price": 18.21
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 74.18,
                   "units": 3.0,
-                  "price": 24.72
+                  "unit_price": 24.72
                 },
                 {
                   "item": "3-pc Tuxedo / Suit",
                   "revenue": 37.54,
                   "units": 1.0,
-                  "price": 37.54
+                  "unit_price": 37.54
                 },
                 {
                   "item": "King Comforter",
                   "revenue": 37.44,
                   "units": 1.0,
-                  "price": 37.44
+                  "unit_price": 37.44
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 31.64,
                   "units": 2.0,
-                  "price": 15.82
+                  "unit_price": 15.82
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 22.46,
                   "units": 1.0,
-                  "price": 22.46
+                  "unit_price": 22.46
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 21.38,
                   "units": 2.0,
-                  "price": 10.69
+                  "unit_price": 10.69
                 }
               ],
               "wash_fold_lbs": 113.0
@@ -6907,61 +6907,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 589.82,
                   "units": 186.5,
-                  "price": 3.16
+                  "unit_price": 3.16
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 170.96,
                   "units": 8.0,
-                  "price": 21.37
+                  "unit_price": 21.37
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 169.76,
                   "units": 24.0,
-                  "price": 7.07
+                  "unit_price": 7.07
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 157.97,
                   "units": 6.0,
-                  "price": 26.33
+                  "unit_price": 26.33
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 120.63,
                   "units": 8.0,
-                  "price": 15.08
+                  "unit_price": 15.08
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 119.18,
                   "units": 3.0,
-                  "price": 39.73
+                  "unit_price": 39.73
                 },
                 {
                   "item": "Trousers",
                   "revenue": 109.06,
                   "units": 7.0,
-                  "price": 15.58
+                  "unit_price": 15.58
                 },
                 {
                   "item": "Evening / Gown Dress",
                   "revenue": 92.08,
                   "units": 2.0,
-                  "price": 46.04
+                  "unit_price": 46.04
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 50.35,
                   "units": 4.0,
-                  "price": 12.59
+                  "unit_price": 12.59
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 50.08,
                   "units": 3.0,
-                  "price": 16.69
+                  "unit_price": 16.69
                 }
               ],
               "wash_fold_lbs": 186.5
@@ -7079,61 +7079,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 167.08,
                   "units": 44.5,
-                  "price": 3.75
+                  "unit_price": 3.75
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 132.86,
                   "units": 13.0,
-                  "price": 10.22
+                  "unit_price": 10.22
                 },
                 {
                   "item": "Blouse",
                   "revenue": 39.97,
                   "units": 3.0,
-                  "price": 13.32
+                  "unit_price": 13.32
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 29.94,
                   "units": 2.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 },
                 {
                   "item": "Silk Blouse",
                   "revenue": 27.2,
                   "units": 2.0,
-                  "price": 13.6
+                  "unit_price": 13.6
                 },
                 {
                   "item": "Linen Shirt  Press",
                   "revenue": 25.54,
                   "units": 2.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 },
                 {
                   "item": "Shorts",
                   "revenue": 25.54,
                   "units": 2.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 20.32,
                   "units": 1.0,
-                  "price": 20.32
+                  "unit_price": 20.32
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 14.97,
                   "units": 1.0,
-                  "price": 14.97
+                  "unit_price": 14.97
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 12.77,
                   "units": 1.0,
-                  "price": 12.77
+                  "unit_price": 12.77
                 }
               ],
               "wash_fold_lbs": 44.5
@@ -7271,61 +7271,61 @@
               "item": "Business Shirt",
               "revenue": 1116.61,
               "units": 116.0,
-              "price": 9.63
+              "unit_price": 9.63
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1059.28,
               "units": 356.9,
-              "price": 2.97
+              "unit_price": 2.97
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 1004.04,
               "units": 35.0,
-              "price": 28.69
+              "unit_price": 28.69
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 577.28,
               "units": 46.0,
-              "price": 12.55
+              "unit_price": 12.55
             },
             {
               "item": "Trousers",
               "revenue": 558.81,
               "units": 44.0,
-              "price": 12.7
+              "unit_price": 12.7
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 431.64,
               "units": 21.0,
-              "price": 20.55
+              "unit_price": 20.55
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 331.42,
               "units": 22.0,
-              "price": 15.06
+              "unit_price": 15.06
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 327.25,
               "units": 10.0,
-              "price": 32.73
+              "unit_price": 32.73
             },
             {
               "item": "Full / Queen Comforter",
               "revenue": 175.01,
               "units": 6.0,
-              "price": 29.17
+              "unit_price": 29.17
             },
             {
               "item": "Linen Shirt /Guayabera",
               "revenue": 172.99,
               "units": 16.0,
-              "price": 10.81
+              "unit_price": 10.81
             }
           ],
           "wash_fold_lbs": 380.9
@@ -7443,61 +7443,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 214.09,
                   "units": 65.5,
-                  "price": 3.27
+                  "unit_price": 3.27
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 106.71,
                   "units": 14.0,
-                  "price": 7.62
+                  "unit_price": 7.62
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 100.03,
                   "units": 6.0,
-                  "price": 16.67
+                  "unit_price": 16.67
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 96.22,
                   "units": 4.0,
-                  "price": 24.06
+                  "unit_price": 24.06
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 92.17,
                   "units": 3.0,
-                  "price": 30.72
+                  "unit_price": 30.72
                 },
                 {
                   "item": "Full / Queen Comforter",
                   "revenue": 82.36,
                   "units": 3.0,
-                  "price": 27.45
+                  "unit_price": 27.45
                 },
                 {
                   "item": "Blouse",
                   "revenue": 70.54,
                   "units": 4.0,
-                  "price": 17.64
+                  "unit_price": 17.64
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 66.78,
                   "units": 5.0,
-                  "price": 13.36
+                  "unit_price": 13.36
                 },
                 {
                   "item": "Trousers",
                   "revenue": 56.26,
                   "units": 4.0,
-                  "price": 14.06
+                  "unit_price": 14.06
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 30.74,
                   "units": 3.0,
-                  "price": 10.25
+                  "unit_price": 10.25
                 }
               ],
               "wash_fold_lbs": 65.5
@@ -7617,61 +7617,61 @@
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 501.64,
                   "units": 14.0,
-                  "price": 35.83
+                  "unit_price": 35.83
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 399.1,
                   "units": 138.5,
-                  "price": 2.88
+                  "unit_price": 2.88
                 },
                 {
                   "item": "Gown Puffy Dress",
                   "revenue": 125.82,
                   "units": 1.0,
-                  "price": 125.82
+                  "unit_price": 125.82
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 116.42,
                   "units": 11.0,
-                  "price": 10.58
+                  "unit_price": 10.58
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 94.08,
                   "units": 6.0,
-                  "price": 15.68
+                  "unit_price": 15.68
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 65.61,
                   "units": 3.0,
-                  "price": 21.87
+                  "unit_price": 21.87
                 },
                 {
                   "item": "Trousers",
                   "revenue": 57.62,
                   "units": 6.0,
-                  "price": 9.6
+                  "unit_price": 9.6
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 50.92,
                   "units": 1.0,
-                  "price": 50.92
+                  "unit_price": 50.92
                 },
                 {
                   "item": "2-Piece Dress Suit",
                   "revenue": 45.26,
                   "units": 2.0,
-                  "price": 22.63
+                  "unit_price": 22.63
                 },
                 {
                   "item": "Full / Queen Comforter",
                   "revenue": 29.95,
                   "units": 1.0,
-                  "price": 29.95
+                  "unit_price": 29.95
                 }
               ],
               "wash_fold_lbs": 138.5
@@ -7796,61 +7796,61 @@
                   "item": "Business Shirt",
                   "revenue": 461.16,
                   "units": 47.0,
-                  "price": 9.81
+                  "unit_price": 9.81
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 312.38,
                   "units": 24.0,
-                  "price": 13.02
+                  "unit_price": 13.02
                 },
                 {
                   "item": "Trousers",
                   "revenue": 295.65,
                   "units": 22.0,
-                  "price": 13.44
+                  "unit_price": 13.44
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 231.03,
                   "units": 9.0,
-                  "price": 25.67
+                  "unit_price": 25.67
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 182.67,
                   "units": 9.0,
-                  "price": 20.3
+                  "unit_price": 20.3
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 176.4,
                   "units": 4.0,
-                  "price": 44.1
+                  "unit_price": 44.1
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 154.88,
                   "units": 57.9,
-                  "price": 2.67
+                  "unit_price": 2.67
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 134.5,
                   "units": 7.0,
-                  "price": 19.21
+                  "unit_price": 19.21
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 77.53,
                   "units": 7.0,
-                  "price": 11.08
+                  "unit_price": 11.08
                 },
                 {
                   "item": "Shorts",
                   "revenue": 74.06,
                   "units": 3.0,
-                  "price": 24.69
+                  "unit_price": 24.69
                 }
               ],
               "wash_fold_lbs": 57.9
@@ -7975,61 +7975,61 @@
                   "item": "Business Shirt",
                   "revenue": 386.42,
                   "units": 37.0,
-                  "price": 10.44
+                  "unit_price": 10.44
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 275.73,
                   "units": 11.0,
-                  "price": 25.07
+                  "unit_price": 25.07
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 252.21,
                   "units": 88.4,
-                  "price": 2.85
+                  "unit_price": 2.85
                 },
                 {
                   "item": "Trousers",
                   "revenue": 130.72,
                   "units": 7.0,
-                  "price": 18.67
+                  "unit_price": 18.67
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 99.67,
                   "units": 5.0,
-                  "price": 19.93
+                  "unit_price": 19.93
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 89.62,
                   "units": 24.0,
-                  "price": 3.73
+                  "unit_price": 3.73
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 67.34,
                   "units": 7.0,
-                  "price": 9.62
+                  "unit_price": 9.62
                 },
                 {
                   "item": "Tie",
                   "revenue": 50.26,
                   "units": 3.0,
-                  "price": 16.75
+                  "unit_price": 16.75
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 42.98,
                   "units": 4.0,
-                  "price": 10.74
+                  "unit_price": 10.74
                 },
                 {
                   "item": "Jeans",
                   "revenue": 31.92,
                   "units": 2.0,
-                  "price": 15.96
+                  "unit_price": 15.96
                 }
               ],
               "wash_fold_lbs": 112.4
@@ -8148,61 +8148,61 @@
                   "item": "Leather Skirt Service  (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Leather Jacket Service (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Ostrich Leather Service (D)",
                   "revenue": 90.23,
                   "units": 1.0,
-                  "price": 90.23
+                  "unit_price": 90.23
                 },
                 {
                   "item": "Blouse",
                   "revenue": 57.35,
                   "units": 3.0,
-                  "price": 19.12
+                  "unit_price": 19.12
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 45.89,
                   "units": 7.0,
-                  "price": 6.56
+                  "unit_price": 6.56
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 39.0,
                   "units": 6.6,
-                  "price": 5.91
+                  "unit_price": 5.91
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 37.67,
                   "units": 6.0,
-                  "price": 6.28
+                  "unit_price": 6.28
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 36.7,
                   "units": 4.0,
-                  "price": 9.17
+                  "unit_price": 9.17
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 35.33,
                   "units": 4.0,
-                  "price": 8.83
+                  "unit_price": 8.83
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 27.91,
                   "units": 2.0,
-                  "price": 13.96
+                  "unit_price": 13.96
                 }
               ],
               "wash_fold_lbs": 6.6
@@ -8341,61 +8341,61 @@
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 1714.55,
               "units": 525.0,
-              "price": 3.27
+              "unit_price": 3.27
             },
             {
               "item": "Trousers",
               "revenue": 1192.38,
               "units": 76.0,
-              "price": 15.69
+              "unit_price": 15.69
             },
             {
               "item": "Business Shirt",
               "revenue": 1069.83,
               "units": 111.0,
-              "price": 9.64
+              "unit_price": 9.64
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 908.67,
               "units": 58.0,
-              "price": 15.67
+              "unit_price": 15.67
             },
             {
               "item": "Polo-Shirt",
               "revenue": 759.46,
               "units": 51.0,
-              "price": 14.89
+              "unit_price": 14.89
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 700.28,
               "units": 37.0,
-              "price": 18.93
+              "unit_price": 18.93
             },
             {
               "item": "T-shirt",
               "revenue": 612.89,
               "units": 33.0,
-              "price": 18.57
+              "unit_price": 18.57
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 597.62,
               "units": 22.0,
-              "price": 27.16
+              "unit_price": 27.16
             },
             {
               "item": "2-Piece Suit (MEN)",
               "revenue": 501.61,
               "units": 20.0,
-              "price": 25.08
+              "unit_price": 25.08
             },
             {
               "item": "Sweater/ Sweatshirt/ Hoodie",
               "revenue": 402.62,
               "units": 24.0,
-              "price": 16.78
+              "unit_price": 16.78
             }
           ],
           "wash_fold_lbs": 564.0
@@ -8526,61 +8526,61 @@
                   "item": "T-shirt",
                   "revenue": 373.96,
                   "units": 21.0,
-                  "price": 17.81
+                  "unit_price": 17.81
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 337.78,
                   "units": 115.5,
-                  "price": 2.92
+                  "unit_price": 2.92
                 },
                 {
                   "item": "Trousers",
                   "revenue": 281.71,
                   "units": 17.0,
-                  "price": 16.57
+                  "unit_price": 16.57
                 },
                 {
                   "item": "Wedding dress  (D)",
                   "revenue": 278.6,
                   "units": 1.0,
-                  "price": 278.6
+                  "unit_price": 278.6
                 },
                 {
                   "item": "Wedding preservation (D)",
                   "revenue": 278.6,
                   "units": 1.0,
-                  "price": 278.6
+                  "unit_price": 278.6
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 263.06,
                   "units": 16.0,
-                  "price": 16.44
+                  "unit_price": 16.44
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 247.62,
                   "units": 30.0,
-                  "price": 8.25
+                  "unit_price": 8.25
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 213.66,
                   "units": 11.0,
-                  "price": 19.42
+                  "unit_price": 19.42
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 190.24,
                   "units": 12.0,
-                  "price": 15.85
+                  "unit_price": 15.85
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 124.77,
                   "units": 7.0,
-                  "price": 17.82
+                  "unit_price": 17.82
                 }
               ],
               "wash_fold_lbs": 123.0
@@ -8705,61 +8705,61 @@
                   "item": "Trousers",
                   "revenue": 359.36,
                   "units": 25.0,
-                  "price": 14.37
+                  "unit_price": 14.37
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 289.9,
                   "units": 111.5,
-                  "price": 2.6
+                  "unit_price": 2.6
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 252.58,
                   "units": 19.0,
-                  "price": 13.29
+                  "unit_price": 13.29
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 227.26,
                   "units": 11.0,
-                  "price": 20.66
+                  "unit_price": 20.66
                 },
                 {
                   "item": "Wash Delicate & Hang Dry (Min 15l b)",
                   "revenue": 124.8,
                   "units": 31.5,
-                  "price": 3.96
+                  "unit_price": 3.96
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 104.53,
                   "units": 3.0,
-                  "price": 34.84
+                  "unit_price": 34.84
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 100.34,
                   "units": 10.0,
-                  "price": 10.03
+                  "unit_price": 10.03
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 87.04,
                   "units": 6.0,
-                  "price": 14.51
+                  "unit_price": 14.51
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 75.04,
                   "units": 4.0,
-                  "price": 18.76
+                  "unit_price": 18.76
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 64.49,
                   "units": 5.0,
-                  "price": 12.9
+                  "unit_price": 12.9
                 }
               ],
               "wash_fold_lbs": 143.0
@@ -8879,61 +8879,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 440.44,
                   "units": 121.5,
-                  "price": 3.63
+                  "unit_price": 3.63
                 },
                 {
                   "item": "Trousers",
                   "revenue": 304.77,
                   "units": 17.0,
-                  "price": 17.93
+                  "unit_price": 17.93
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 267.29,
                   "units": 10.0,
-                  "price": 26.73
+                  "unit_price": 26.73
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 168.63,
                   "units": 6.0,
-                  "price": 28.1
+                  "unit_price": 28.1
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 154.94,
                   "units": 8.0,
-                  "price": 19.37
+                  "unit_price": 19.37
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 151.63,
                   "units": 7.0,
-                  "price": 21.66
+                  "unit_price": 21.66
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 146.18,
                   "units": 14.0,
-                  "price": 10.44
+                  "unit_price": 10.44
                 },
                 {
                   "item": "Short Dress (Regular)",
                   "revenue": 94.13,
                   "units": 4.0,
-                  "price": 23.53
+                  "unit_price": 23.53
                 },
                 {
                   "item": "Blouse",
                   "revenue": 86.42,
                   "units": 5.0,
-                  "price": 17.28
+                  "unit_price": 17.28
                 },
                 {
                   "item": "Jeans",
                   "revenue": 72.96,
                   "units": 3.0,
-                  "price": 24.32
+                  "unit_price": 24.32
                 }
               ],
               "wash_fold_lbs": 121.5
@@ -9053,61 +9053,61 @@
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 502.25,
                   "units": 148.0,
-                  "price": 3.39
+                  "unit_price": 3.39
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 279.99,
                   "units": 18.0,
-                  "price": 15.55
+                  "unit_price": 15.55
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 250.8,
                   "units": 16.0,
-                  "price": 15.67
+                  "unit_price": 15.67
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 240.96,
                   "units": 27.0,
-                  "price": 8.92
+                  "unit_price": 8.92
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 198.17,
                   "units": 10.0,
-                  "price": 19.82
+                  "unit_price": 19.82
                 },
                 {
                   "item": "Trousers",
                   "revenue": 178.61,
                   "units": 12.0,
-                  "price": 14.88
+                  "unit_price": 14.88
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 153.49,
                   "units": 9.0,
-                  "price": 17.05
+                  "unit_price": 17.05
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 121.35,
                   "units": 4.0,
-                  "price": 30.34
+                  "unit_price": 30.34
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 85.14,
                   "units": 6.0,
-                  "price": 14.19
+                  "unit_price": 14.19
                 },
                 {
                   "item": "Blouse",
                   "revenue": 66.88,
                   "units": 5.0,
-                  "price": 13.38
+                  "unit_price": 13.38
                 }
               ],
               "wash_fold_lbs": 148.0
@@ -9226,61 +9226,61 @@
                   "item": "Business Shirt",
                   "revenue": 334.73,
                   "units": 30.0,
-                  "price": 11.16
+                  "unit_price": 11.16
                 },
                 {
                   "item": "Pillow Case",
                   "revenue": 201.69,
                   "units": 8.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 144.18,
                   "units": 28.5,
-                  "price": 5.06
+                  "unit_price": 5.06
                 },
                 {
                   "item": "Polo-Shirt",
                   "revenue": 126.99,
                   "units": 11.0,
-                  "price": 11.54
+                  "unit_price": 11.54
                 },
                 {
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 110.49,
                   "units": 5.0,
-                  "price": 22.1
+                  "unit_price": 22.1
                 },
                 {
                   "item": "Leather Jacket",
                   "revenue": 94.36,
                   "units": 1.0,
-                  "price": 94.36
+                  "unit_price": 94.36
                 },
                 {
                   "item": "Shorts",
                   "revenue": 90.72,
                   "units": 4.0,
-                  "price": 22.68
+                  "unit_price": 22.68
                 },
                 {
                   "item": "Sweater/ Sweatshirt/ Hoodie",
                   "revenue": 90.72,
                   "units": 4.0,
-                  "price": 22.68
+                  "unit_price": 22.68
                 },
                 {
                   "item": "Duvet Cover (Any Size)",
                   "revenue": 75.63,
                   "units": 3.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 },
                 {
                   "item": "Bed Sheet",
                   "revenue": 75.63,
                   "units": 3.0,
-                  "price": 25.21
+                  "unit_price": 25.21
                 }
               ],
               "wash_fold_lbs": 28.5
@@ -9406,61 +9406,61 @@
               "item": "2-Piece Suit (MEN)",
               "revenue": 219.56,
               "units": 7.0,
-              "price": 31.37
+              "unit_price": 31.37
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
               "revenue": 193.73,
               "units": 74.5,
-              "price": 2.6
+              "unit_price": 2.6
             },
             {
               "item": "Hand-Finished Shirts",
               "revenue": 171.23,
               "units": 6.0,
-              "price": 28.54
+              "unit_price": 28.54
             },
             {
               "item": "Long Dress (Regular)",
               "revenue": 118.43,
               "units": 3.0,
-              "price": 39.48
+              "unit_price": 39.48
             },
             {
               "item": "Business Shirt",
               "revenue": 62.5,
               "units": 9.0,
-              "price": 6.94
+              "unit_price": 6.94
             },
             {
               "item": "T-shirt",
               "revenue": 53.45,
               "units": 5.0,
-              "price": 10.69
+              "unit_price": 10.69
             },
             {
               "item": "Trench Coat (3/4)",
               "revenue": 33.69,
               "units": 1.0,
-              "price": 33.69
+              "unit_price": 33.69
             },
             {
               "item": "Sport Jacket/ Blazer",
               "revenue": 28.34,
               "units": 1.0,
-              "price": 28.34
+              "unit_price": 28.34
             },
             {
               "item": "Tank Top",
               "revenue": 24.87,
               "units": 1.0,
-              "price": 24.87
+              "unit_price": 24.87
             },
             {
               "item": "Linen Shirt /Guayabera",
               "revenue": 18.98,
               "units": 1.0,
-              "price": 18.98
+              "unit_price": 18.98
             }
           ],
           "wash_fold_lbs": 74.5
@@ -9580,61 +9580,61 @@
                   "item": "2-Piece Suit (MEN)",
                   "revenue": 219.56,
                   "units": 7.0,
-                  "price": 31.37
+                  "unit_price": 31.37
                 },
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
                   "revenue": 193.73,
                   "units": 74.5,
-                  "price": 2.6
+                  "unit_price": 2.6
                 },
                 {
                   "item": "Hand-Finished Shirts",
                   "revenue": 171.23,
                   "units": 6.0,
-                  "price": 28.54
+                  "unit_price": 28.54
                 },
                 {
                   "item": "Long Dress (Regular)",
                   "revenue": 118.43,
                   "units": 3.0,
-                  "price": 39.48
+                  "unit_price": 39.48
                 },
                 {
                   "item": "Business Shirt",
                   "revenue": 62.5,
                   "units": 9.0,
-                  "price": 6.94
+                  "unit_price": 6.94
                 },
                 {
                   "item": "T-shirt",
                   "revenue": 53.45,
                   "units": 5.0,
-                  "price": 10.69
+                  "unit_price": 10.69
                 },
                 {
                   "item": "Trench Coat (3/4)",
                   "revenue": 33.69,
                   "units": 1.0,
-                  "price": 33.69
+                  "unit_price": 33.69
                 },
                 {
                   "item": "Sport Jacket/ Blazer",
                   "revenue": 28.34,
                   "units": 1.0,
-                  "price": 28.34
+                  "unit_price": 28.34
                 },
                 {
                   "item": "Tank Top",
                   "revenue": 24.87,
                   "units": 1.0,
-                  "price": 24.87
+                  "unit_price": 24.87
                 },
                 {
                   "item": "Linen Shirt /Guayabera",
                   "revenue": 18.98,
                   "units": 1.0,
-                  "price": 18.98
+                  "unit_price": 18.98
                 }
               ],
               "wash_fold_lbs": 74.5
@@ -9645,7 +9645,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2025-11-06T17:10:25.444559-05:00",
-    "last_updated_display": "November 06, 2025 at 05:10 PM EST"
+    "last_updated": "2025-11-06T17:41:23.455297-05:00",
+    "last_updated_display": "November 06, 2025 at 05:41 PM EST"
   }
 }
