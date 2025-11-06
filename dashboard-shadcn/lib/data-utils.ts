@@ -88,15 +88,32 @@ export function formatDecimal(value: number | null | undefined, decimals: number
 }
 
 export function formatWeekLabel(weekKey: string): string {
-  const dayRanges: { [key: string]: string } = {
-    '1': 'Days 1-7',
-    '2': 'Days 8-14',
-    '3': 'Days 15-21',
-    '4': 'Days 22-28',
-    '5': 'Days 29-31'
+  // Parse format like "2025-10-W1" or "2025-11-W2"
+  const match = weekKey.match(/^(\d{4})-(\d{2})-W(\d)$/);
+
+  if (!match) {
+    // Fallback for old format or unexpected format
+    return weekKey;
+  }
+
+  const [, , month, weekNum] = match;
+  const weekNumber = parseInt(weekNum);
+
+  // Calculate date ranges based on week number (Sunday-to-Sunday weeks)
+  const dayRanges: { [key: number]: string } = {
+    1: '1-7',
+    2: '8-14',
+    3: '15-21',
+    4: '22-28',
+    5: '29-31'
   };
 
-  const weekNum = weekKey.replace('week_', '');
-  const dayRange = dayRanges[weekNum] || `Week ${weekNum}`;
-  return `Week ${weekNum} (${dayRange})`;
+  const dayRange = dayRanges[weekNumber] || `${weekNumber}`;
+
+  // Format month name
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const monthName = monthNames[parseInt(month) - 1] || month;
+
+  return `${monthName} ${dayRange}`;
 }

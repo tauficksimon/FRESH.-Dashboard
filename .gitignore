@@ -20,7 +20,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -29,6 +28,9 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+
+# Python lib folder only (not dashboard-shadcn/lib)
+/lib/
 
 # Virtual Environment
 venv/
