@@ -93,7 +93,7 @@ export interface DashboardData {
 }
 
 export interface StoreData {
-  [key: string]: DashboardData | Metadata;
+  [key: string]: DashboardData;
   _metadata?: Metadata;
 }
 
