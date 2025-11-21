@@ -78,16 +78,16 @@ function parseCSV(csvContent: string): OrderRow[] {
     if (!line) continue;
 
     const values = parseCSVLine(line);
-    const row: any = {};
+    const row: Partial<OrderRow> = {};
 
     headers.forEach((header, index) => {
       const value = values[index] || '';
 
       // Parse numbers for specific columns
       if (['Total', 'Final Cost', 'Profit', 'Express', 'Revenue Net Tax', 'Total after Credit Used'].includes(header)) {
-        row[header] = parseFloat(value) || 0;
+        (row as Record<string, number | string>)[header] = parseFloat(value) || 0;
       } else {
-        row[header] = value;
+        (row as Record<string, number | string>)[header] = value;
       }
     });
 
