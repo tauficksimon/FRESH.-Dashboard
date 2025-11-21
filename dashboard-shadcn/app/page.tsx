@@ -8,6 +8,7 @@ import { OrdersAOVChart } from '@/components/charts/orders-aov-chart';
 import { CategoryRevenueChart } from '@/components/charts/category-revenue-chart';
 import { CustomerAcquisitionChart } from '@/components/charts/customer-acquisition-chart';
 import { AdvancedTables } from '@/components/tables/advanced-tables';
+import { ExportHAAPButton } from '@/components/export-haap-button';
 import {
   loadDashboardData,
   getDataSet,
@@ -62,7 +63,7 @@ export default function DashboardPage() {
     <div className="flex flex-col min-h-screen">
       {/* Header */}
       <div className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="flex h-16 items-center px-4 md:px-8">
+        <div className="flex h-16 items-center justify-between px-4 md:px-8">
           <div className="flex items-center gap-2 md:gap-3">
             <div className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-xs md:text-sm">
               F
@@ -72,6 +73,7 @@ export default function DashboardPage() {
               <span className="text-xs text-muted-foreground hidden sm:inline">Dry Cleaning Analytics</span>
             </div>
           </div>
+          <ExportHAAPButton />
         </div>
       </div>
 
