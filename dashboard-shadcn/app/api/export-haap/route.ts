@@ -1,11 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { exec } from 'child_process';
-import { promisify } from 'util';
 import path from 'path';
 import fs from 'fs/promises';
 import puppeteer from 'puppeteer';
-
-const execAsync = promisify(exec);
+import { generateHAAPReport } from '@/lib/generate-haap-report';
 
 export async function POST(request: NextRequest) {
   try {
@@ -18,43 +15,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Path to the Python script (in dashboard-shadcn directory for Vercel)
-    const scriptPath = path.join(process.cwd(), 'scripts', 'generate_haap_report.py');
-    const outputDir = process.cwd();
+    console.log(`Generating HAAP report for ${startDate} to ${endDate}`);
 
-    // Execute the Python script to generate HTML
-    const command = `python3 "${scriptPath}" ${startDate} ${endDate}`;
+    // Generate HTML content using TypeScript function
+    const htmlContent = await generateHAAPReport(startDate, endDate);
 
-    console.log('Executing:', command);
-    const { stdout, stderr } = await execAsync(command, {
-      cwd: outputDir,
-      timeout: 60000, // 60 second timeout
-    });
-
-    if (stderr && !stderr.includes('Warning')) {
-      console.error('Script error:', stderr);
-    }
-
-    console.log('Script output:', stdout);
-
-    // Determine the output filename
-    const htmlFilename = `haap_report_${startDate}_to_${endDate}.html`;
-    const htmlPath = path.join(outputDir, htmlFilename);
+    // Define output paths
     const pdfFilename = `haap_report_${startDate}_to_${endDate}.pdf`;
-    const pdfPath = path.join(outputDir, pdfFilename);
-
-    // Check if HTML file exists
-    try {
-      await fs.access(htmlPath);
-    } catch {
-      return NextResponse.json(
-        { error: 'Report generation failed - HTML file not found' },
-        { status: 500 }
-      );
-    }
-
-    // Read the HTML content
-    const htmlContent = await fs.readFile(htmlPath, 'utf-8');
+    const pdfPath = path.join('/tmp', pdfFilename);
 
     // Launch puppeteer and convert to PDF
     console.log('Converting HTML to PDF...');
@@ -87,8 +55,7 @@ export async function POST(request: NextRequest) {
     // Read the PDF file
     const pdfBuffer = await fs.readFile(pdfPath);
 
-    // Clean up temporary files
-    await fs.unlink(htmlPath).catch(() => {});
+    // Clean up temporary PDF file
     await fs.unlink(pdfPath).catch(() => {});
 
     // Return the PDF
