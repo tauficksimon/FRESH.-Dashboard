@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 import fs from 'fs/promises';
-import puppeteer from 'puppeteer-core';
-import chromium from '@sparticuz/chromium';
 import { generateHAAPReport } from '@/lib/generate-haap-report';
 
 export async function POST(request: NextRequest) {
@@ -29,12 +27,25 @@ export async function POST(request: NextRequest) {
     console.log('Converting HTML to PDF...');
 
     // Use chromium for serverless environments (Vercel/Netlify)
-    const browser = await puppeteer.launch({
-      args: chromium.args,
-      defaultViewport: chromium.defaultViewport,
-      executablePath: await chromium.executablePath(),
-      headless: chromium.headless,
-    });
+    const isProduction = process.env.VERCEL || process.env.NETLIFY;
+
+    let browser;
+    if (isProduction) {
+      const puppeteerCore = await import('puppeteer-core');
+      const chromium = await import('@sparticuz/chromium');
+      browser = await puppeteerCore.default.launch({
+        args: chromium.default.args,
+        defaultViewport: chromium.default.defaultViewport,
+        executablePath: await chromium.default.executablePath('/tmp'),
+        headless: chromium.default.headless,
+      });
+    } else {
+      const puppeteer = await import('puppeteer');
+      browser = await puppeteer.default.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      });
+    }
 
     const page = await browser.newPage();
     await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
