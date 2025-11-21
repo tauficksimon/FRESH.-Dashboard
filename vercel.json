@@ -1,6 +1,0 @@
-{
-  "buildCommand": "cd dashboard-shadcn && npm run build",
-  "outputDirectory": "dashboard-shadcn/.next",
-  "installCommand": "cd dashboard-shadcn && npm install",
-  "framework": "nextjs"
-}
