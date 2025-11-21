@@ -18,9 +18,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Path to the Python script
-    const scriptPath = path.join(process.cwd(), '..', 'scripts', 'generate_haap_report.py');
-    const outputDir = path.join(process.cwd(), '..');
+    // Path to the Python script (in dashboard-shadcn directory for Vercel)
+    const scriptPath = path.join(process.cwd(), 'scripts', 'generate_haap_report.py');
+    const outputDir = process.cwd();
 
     // Execute the Python script to generate HTML
     const command = `python3 "${scriptPath}" ${startDate} ${endDate}`;
