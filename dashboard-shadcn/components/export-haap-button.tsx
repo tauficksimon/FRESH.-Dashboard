@@ -56,22 +56,17 @@ export function ExportHAAPButton() {
         throw new Error(error.error || 'Export failed');
       }
 
-      // Get the PDF content
-      const pdfBlob = await response.blob();
+      // Get the HTML content
+      const htmlBlob = await response.blob();
+      const htmlUrl = window.URL.createObjectURL(htmlBlob);
 
-      // Create a temporary link and trigger download
-      const a = document.createElement('a');
-      a.href = window.URL.createObjectURL(pdfBlob);
-      a.download = `haap_report_${formattedStartDate}_to_${formattedEndDate}.pdf`;
-      a.style.display = 'none';
-      document.body.appendChild(a);
-      a.click();
+      // Open in new tab - will auto-trigger print dialog
+      window.open(htmlUrl, '_blank');
 
       // Cleanup
       setTimeout(() => {
-        document.body.removeChild(a);
-        window.URL.revokeObjectURL(a.href);
-      }, 100);
+        window.URL.revokeObjectURL(htmlUrl);
+      }, 1000);
 
       // Close dialog
       setOpen(false);

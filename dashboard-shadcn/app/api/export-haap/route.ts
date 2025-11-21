@@ -1,6 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import path from 'path';
-import fs from 'fs/promises';
 import { generateHAAPReport } from '@/lib/generate-haap-report';
 
 export async function POST(request: NextRequest) {
@@ -19,67 +17,25 @@ export async function POST(request: NextRequest) {
     // Generate HTML content using TypeScript function
     const htmlContent = await generateHAAPReport(startDate, endDate);
 
-    // Define output paths
-    const pdfFilename = `haap_report_${startDate}_to_${endDate}.pdf`;
-    const pdfPath = path.join('/tmp', pdfFilename);
+    // Add auto-print script to the HTML
+    const htmlWithPrint = htmlContent.replace(
+      '</body>',
+      `<script>
+        // Auto-open print dialog after page loads
+        window.onload = function() {
+          setTimeout(function() {
+            window.print();
+          }, 500);
+        };
+      </script>
+      </body>`
+    );
 
-    // Launch puppeteer and convert to PDF
-    console.log('Converting HTML to PDF...');
-
-    // Use chromium for serverless environments (Vercel/Netlify)
-    const isProduction = process.env.VERCEL || process.env.NETLIFY;
-
-    let browser;
-    if (isProduction) {
-      const puppeteerCore = await import('puppeteer-core');
-      const chromium = await import('@sparticuz/chromium');
-      browser = await puppeteerCore.default.launch({
-        args: chromium.default.args,
-        defaultViewport: chromium.default.defaultViewport,
-        executablePath: await chromium.default.executablePath('/tmp'),
-        headless: chromium.default.headless,
-      });
-    } else {
-      const puppeteer = await import('puppeteer');
-      browser = await puppeteer.default.launch({
-        headless: true,
-        args: ['--no-sandbox', '--disable-setuid-sandbox'],
-      });
-    }
-
-    const page = await browser.newPage();
-    await page.setContent(htmlContent, { waitUntil: 'networkidle0' });
-
-    // Generate PDF with landscape orientation and no headers/footers
-    await page.pdf({
-      path: pdfPath,
-      format: 'A4',
-      landscape: true,
-      printBackground: true,
-      displayHeaderFooter: false,
-      margin: {
-        top: '0.4in',
-        right: '0.5in',
-        bottom: '0.4in',
-        left: '0.5in',
-      },
-    });
-
-    await browser.close();
-    console.log('PDF generated successfully');
-
-    // Read the PDF file
-    const pdfBuffer = await fs.readFile(pdfPath);
-
-    // Clean up temporary PDF file
-    await fs.unlink(pdfPath).catch(() => {});
-
-    // Return the PDF
-    return new NextResponse(pdfBuffer, {
+    // Return HTML that will open print dialog
+    return new NextResponse(htmlWithPrint, {
       status: 200,
       headers: {
-        'Content-Type': 'application/pdf',
-        'Content-Disposition': `attachment; filename="${pdfFilename}"`,
+        'Content-Type': 'text/html',
       },
     });
   } catch (error) {
