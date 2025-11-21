@@ -251,6 +251,7 @@
                     <th style="width: 65px;">Charged</th>
                     <th style="width: 70px;">HAAP Cost</th>
                     <th style="width: 65px;">Profit</th>
+                    <th style="width: 50px;">Margin</th>
                     <th style="width: 40px;">Express</th>
                     <th>Items</th>
                     <th style="width: 90px;">Notes</th>
@@ -259,6 +260,16 @@
             <tbody>
                 {{TABLE_ROWS}}
             </tbody>
+            <tfoot>
+                <tr style="background: #002B49; color: white; font-weight: 700;">
+                    <td colspan="3" style="text-align: right; padding: 10px 6px;">TOTALS:</td>
+                    <td class="amount" style="color: white;">${{TOTAL_REVENUE}}</td>
+                    <td class="amount" style="color: white;">${{TOTAL_COST}}</td>
+                    <td class="amount" style="color: white;">${{TOTAL_PROFIT}}</td>
+                    <td class="amount" style="color: white;">{{MARGIN_PCT}}%</td>
+                    <td colspan="3"></td>
+                </tr>
+            </tfoot>
         </table>
 
         <div class="footer">

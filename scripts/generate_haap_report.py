@@ -125,6 +125,12 @@ def generate_report(df, title, output_file):
         haap_cost = f"${row.get('Final Cost', 0):,.2f}" if pd.notnull(row.get('Final Cost')) else "$0.00"
         profit = f"${row.get('Profit', 0):,.2f}" if pd.notnull(row.get('Profit')) else "$0.00"
 
+        # Calculate margin percentage for this order
+        revenue_val = row.get('Total', 0) if pd.notnull(row.get('Total')) else 0
+        profit_val = row.get('Profit', 0) if pd.notnull(row.get('Profit')) else 0
+        margin = (profit_val / revenue_val * 100) if revenue_val > 0 else 0
+        margin_pct_str = f"{margin:.1f}%"
+
         # Escape HTML
         customer = html.escape(str(row.get('Customer', '')))
         notes = html.escape(str(row.get('Notes', '')))
@@ -140,6 +146,7 @@ def generate_report(df, title, output_file):
                 <td class="amount">{total_charged}</td>
                 <td class="amount">{haap_cost}</td>
                 <td class="amount">{profit}</td>
+                <td class="amount">{margin_pct_str}</td>
                 <td>{express_badge}</td>
                 <td class="items">{items_html}</td>
                 <td class="notes">{notes}</td>
