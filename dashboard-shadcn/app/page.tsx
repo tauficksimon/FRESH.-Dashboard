@@ -73,7 +73,15 @@ export default function DashboardPage() {
               <span className="text-xs text-muted-foreground hidden sm:inline">Dry Cleaning Analytics</span>
             </div>
           </div>
-          <ExportHAAPButton />
+          <div className="flex items-center gap-2">
+            <a
+              href="/advanced-metrics"
+              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2"
+            >
+              Advanced Metrics
+            </a>
+            <ExportHAAPButton />
+          </div>
         </div>
       </div>
 

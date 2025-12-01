@@ -69,7 +69,7 @@ def inject_json_into_html():
         # Replace existing content
         html_content = re.sub(
             pattern,
-            r'\1' + json_string + r'\3',
+            lambda m: m.group(1) + json_string + m.group(3),
             html_content,
             flags=re.DOTALL
         )
