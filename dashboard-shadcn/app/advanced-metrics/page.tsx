@@ -105,6 +105,16 @@ interface SeasonalPatterns {
   };
 }
 
+interface UnitEconomicsMonth {
+  month: string;
+  orders: number;
+  revenue_per_order: number;
+  fixed_cost_per_order: number;
+  contribution_margin: number;
+  total_fixed_costs: number;
+  break_even_orders: number;
+}
+
 interface AdvancedMetrics {
   ltv: {
     customers: Customer[];
@@ -116,7 +126,7 @@ interface AdvancedMetrics {
   cohorts: Cohort[];
   churn: ChurnPrediction[];
   unit_economics: {
-    monthly: any[];
+    monthly: UnitEconomicsMonth[];
     fixed_costs: Record<string, number>;
   };
   order_interval: {
