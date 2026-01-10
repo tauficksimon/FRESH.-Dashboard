@@ -63,6 +63,12 @@ jobs:
           echo "Copying dashboard_data.json to React dashboard public folder..."
           cp dashboard_data.json dashboard-shadcn/public/dashboard_data.json
 
+      - name: Copy orders_ALL.csv for HAAP export
+        if: steps.check_files.outputs.csv_found == 'true'
+        run: |
+          echo "Copying orders_ALL.csv to React dashboard for HAAP report export..."
+          cp orders_ALL.csv dashboard-shadcn/orders_ALL.csv
+
       - name: Generate Advanced Metrics
         if: steps.check_files.outputs.csv_found == 'true'
         run: |
@@ -80,7 +86,7 @@ jobs:
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add index.html output/* summary_metrics.csv dashboard-shadcn/public/dashboard_data.json dashboard-shadcn/public/advanced_metrics.json advanced_metrics.json || true
+          git add index.html output/* summary_metrics.csv dashboard-shadcn/public/dashboard_data.json dashboard-shadcn/public/advanced_metrics.json advanced_metrics.json dashboard-shadcn/orders_ALL.csv || true
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then

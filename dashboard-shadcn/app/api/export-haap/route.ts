@@ -40,8 +40,12 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     console.error('Export error:', error);
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    const errorStack = error instanceof Error ? error.stack : '';
+    console.error('Error details:', errorMessage);
+    console.error('Stack trace:', errorStack);
     return NextResponse.json(
-      { error: 'Failed to generate report', details: String(error) },
+      { error: 'Failed to generate report', details: errorMessage },
       { status: 500 }
     );
   }
