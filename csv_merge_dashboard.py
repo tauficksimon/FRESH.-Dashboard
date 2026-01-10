@@ -75,7 +75,20 @@ class CSVMerger:
         self.orders_df['Tax'] = self.orders_df['Tax'].fillna(0)
         self.orders_df['Notes'] = self.orders_df['Notes'].fillna('')
         self.orders_df['Address'] = self.orders_df['Address'].fillna('')
-        
+
+        # Recalculate tax for orders on/after Jan 5, 2026 (tax rate changed from 7% to 2%)
+        tax_change_date = pd.to_datetime('2026-01-05')
+        new_tax_rate = 0.02
+
+        # For orders after tax change, recalculate: Tax = Total * (rate / (1 + rate))
+        # This extracts tax from a tax-inclusive total
+        mask = self.orders_df['Date Placed'] >= tax_change_date
+        self.orders_df.loc[mask, 'Tax'] = (
+            self.orders_df.loc[mask, 'Total after Credit Used'] * (new_tax_rate / (1 + new_tax_rate))
+        ).round(2)
+
+        print(f"  📋 Recalculated tax (2%) for {mask.sum()} orders on/after {tax_change_date.strftime('%Y-%m-%d')}")
+
         # Create month column for filtering
         self.orders_df['Month'] = self.orders_df['Date Placed'].dt.strftime('%Y-%m')
         
