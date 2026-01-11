@@ -13536,7 +13536,7 @@
       "current_orders": 65,
       "current_revenue": 2829.75,
       "projected_orders": 203,
-      "projected_revenue": 8837.53,
+      "projected_revenue": 9265.15,
       "days_elapsed": 10,
       "days_remaining": 21,
       "daily_run_rate": 6.5,
@@ -13618,5 +13618,5 @@
       ]
     }
   },
-  "generated_at": "2026-01-10T19:36:21.366300"
+  "generated_at": "2026-01-10T19:42:49.936499"
 }

@@ -727,8 +727,10 @@ def calculate_seasonal_patterns(orders_file):
 
         projected_total_orders = round(current_month_total_orders + projected_remaining_orders)
 
-        # Revenue projection
-        avg_revenue_per_order = current_month_total_revenue / current_month_total_orders if current_month_total_orders > 0 else 0
+        # Revenue projection - exclude $0 orders from AOV calculation (subscription prepaid orders)
+        paid_orders = [o for o in current_month_orders if o['revenue'] > 0]
+        paid_revenue = sum(o['revenue'] for o in paid_orders)
+        avg_revenue_per_order = paid_revenue / len(paid_orders) if paid_orders else 0
         projected_total_revenue = round(projected_total_orders * avg_revenue_per_order, 2)
 
         current_month_projection = {
