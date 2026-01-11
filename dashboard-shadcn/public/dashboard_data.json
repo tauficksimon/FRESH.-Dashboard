@@ -3,21 +3,22 @@
     "all": {
       "kpis": {
         "orders": 892,
-        "revenue": 54924.490000000005,
-        "gross_sales": 55117.9,
+        "revenue": 55300.62700000001,
+        "gross_sales": 55494.037000000004,
+        "subscription_revenue": 376.13699999999994,
         "refund_amount": 193.41,
         "refund_count": 4,
         "cost": 25092.139499999997,
-        "net_revenue": 51523.64,
-        "profit": 26431.500500000002,
-        "margin_pct": 51.29975386055799,
+        "net_revenue": 51899.597,
+        "profit": 26807.457500000004,
+        "margin_pct": 51.65253498981891,
         "items": 6238.9,
         "dry_clean_items": 2934.0,
         "wf_lbs": 3304.9,
         "unique_customers": 459,
         "new_customers": 459,
         "returning_customers": 0,
-        "aov": 61.5745403587444,
+        "aov": 61.99621860986548,
         "express_rate": 9.080717488789238,
         "new_customer_share_pct": 100.0
       },
@@ -56,7 +57,7 @@
           6596.5675,
           5571.0725,
           5243.6675000000005,
-          1299.8475
+          1299.6675000000002
         ],
         "orders": [
           89,
@@ -86,6 +87,7 @@
       },
       "payment": {
         "Card": 780,
+        "None": 46,
         "Cash": 41,
         "Invoice": 15,
         "11": 10
@@ -102,13 +104,13 @@
         "revenue_quality": {
           "gross_sales": 55117.9,
           "refunds": 193.41,
-          "net_revenue": 51523.64,
+          "net_revenue": 51523.46,
           "refund_rate_pct": 0.35,
           "discounts": 2482.2400000000002,
           "discount_rate_pct": 4.5,
           "tips": 0.0,
           "tip_rate_pct": 0.0,
-          "tax": 3400.85,
+          "tax": 3401.0299999999997,
           "service_fee": 0.0,
           "delivery_fee": 0.0,
           "refund_orders": 4
@@ -234,6 +236,7 @@
           "orders": 89,
           "revenue": 4496.39,
           "gross_sales": 4582.05,
+          "subscription_revenue": 0.0,
           "refund_amount": 85.66,
           "refund_count": 1,
           "cost": 2532.59,
@@ -282,6 +285,7 @@
         },
         "payment": {
           "Card": 81,
+          "None": 3,
           "Invoice": 3,
           "11": 2
         },
@@ -425,6 +429,7 @@
               "orders": 1,
               "revenue": 8.98,
               "gross_sales": 8.98,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 0.0,
@@ -531,6 +536,7 @@
               "orders": 15,
               "revenue": 775.63,
               "gross_sales": 861.29,
+              "subscription_revenue": 0.0,
               "refund_amount": 85.66,
               "refund_count": 1,
               "cost": 465.93499999999995,
@@ -715,6 +721,7 @@
               "orders": 31,
               "revenue": 1519.0600000000004,
               "gross_sales": 1519.0600000000004,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 851.8200000000003,
@@ -760,6 +767,7 @@
             },
             "payment": {
               "Card": 28,
+              "None": 2,
               "Invoice": 1
             },
             "status": {
@@ -901,6 +909,7 @@
               "orders": 22,
               "revenue": 1240.48,
               "gross_sales": 1240.48,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 657.22,
@@ -944,7 +953,8 @@
             },
             "payment": {
               "Card": 19,
-              "Invoice": 2
+              "Invoice": 2,
+              "None": 1
             },
             "status": {
               "collected": 21,
@@ -1075,6 +1085,7 @@
               "orders": 20,
               "revenue": 952.24,
               "gross_sales": 952.24,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 557.6149999999999,
@@ -1256,6 +1267,7 @@
           "orders": 123,
           "revenue": 6420.240000000001,
           "gross_sales": 6519.25,
+          "subscription_revenue": 0.0,
           "refund_amount": 99.00999999999999,
           "refund_count": 2,
           "cost": 3317.5375000000004,
@@ -1305,7 +1317,8 @@
         "payment": {
           "Card": 107,
           "Cash": 11,
-          "Invoice": 4
+          "Invoice": 4,
+          "None": 1
         },
         "status": {
           "collected": 122,
@@ -1447,6 +1460,7 @@
               "orders": 35,
               "revenue": 1907.2499999999998,
               "gross_sales": 1907.2499999999998,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1060.8550000000002,
@@ -1627,6 +1641,7 @@
               "orders": 23,
               "revenue": 1237.74,
               "gross_sales": 1237.74,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 592.415,
@@ -1671,7 +1686,8 @@
             },
             "payment": {
               "Card": 21,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 22,
@@ -1807,6 +1823,7 @@
               "orders": 22,
               "revenue": 1006.9300000000001,
               "gross_sales": 1006.9300000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 505.42749999999995,
@@ -1980,6 +1997,7 @@
               "orders": 33,
               "revenue": 1812.5200000000002,
               "gross_sales": 1832.8400000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 20.32,
               "refund_count": 1,
               "cost": 881.32,
@@ -2153,6 +2171,7 @@
               "orders": 10,
               "revenue": 455.8,
               "gross_sales": 534.49,
+              "subscription_revenue": 0.0,
               "refund_amount": 78.69,
               "refund_count": 1,
               "cost": 277.52,
@@ -2327,6 +2346,7 @@
           "orders": 131,
           "revenue": 7266.549999999999,
           "gross_sales": 7275.289999999999,
+          "subscription_revenue": 0.0,
           "refund_amount": 8.74,
           "refund_count": 1,
           "cost": 3415.437,
@@ -2377,6 +2397,7 @@
           "Card": 119,
           "Cash": 5,
           "Invoice": 3,
+          "None": 2,
           "11": 2
         },
         "status": {
@@ -2519,6 +2540,7 @@
               "orders": 19,
               "revenue": 999.5,
               "gross_sales": 1008.2399999999999,
+              "subscription_revenue": 0.0,
               "refund_amount": 8.74,
               "refund_count": 1,
               "cost": 436.5949999999999,
@@ -2692,6 +2714,7 @@
               "orders": 28,
               "revenue": 1594.14,
               "gross_sales": 1594.14,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 761.745,
@@ -2736,6 +2759,7 @@
             "payment": {
               "Card": 24,
               "11": 2,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -2866,6 +2890,7 @@
               "orders": 41,
               "revenue": 2390.2599999999998,
               "gross_sales": 2390.2599999999998,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1053.8919999999998,
@@ -2910,6 +2935,7 @@
             },
             "payment": {
               "Card": 38,
+              "None": 1,
               "Invoice": 1,
               "Cash": 1
             },
@@ -3047,6 +3073,7 @@
               "orders": 33,
               "revenue": 1597.8300000000002,
               "gross_sales": 1597.8300000000002,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 759.9150000000001,
@@ -3227,6 +3254,7 @@
               "orders": 10,
               "revenue": 684.8199999999999,
               "gross_sales": 684.8199999999999,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 403.29,
@@ -3402,6 +3430,7 @@
           "orders": 163,
           "revenue": 12824.06,
           "gross_sales": 12824.06,
+          "subscription_revenue": 0.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 5431.692499999999,
@@ -3452,6 +3481,7 @@
           "Card": 148,
           "Cash": 11,
           "Invoice": 2,
+          "None": 1,
           "11": 1
         },
         "status": {
@@ -3594,6 +3624,7 @@
               "orders": 39,
               "revenue": 3883.7300000000005,
               "gross_sales": 3883.7300000000005,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1397.225,
@@ -3639,7 +3670,8 @@
             },
             "payment": {
               "Card": 35,
-              "Cash": 3
+              "Cash": 3,
+              "None": 1
             },
             "status": {
               "collected": 38,
@@ -3780,6 +3812,7 @@
               "orders": 30,
               "revenue": 2050.3299999999995,
               "gross_sales": 2050.3299999999995,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 990.7950000000001,
@@ -3959,6 +3992,7 @@
               "orders": 35,
               "revenue": 2526.0799999999995,
               "gross_sales": 2526.0799999999995,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1099.13,
@@ -4134,6 +4168,7 @@
               "orders": 37,
               "revenue": 2581.36,
               "gross_sales": 2581.36,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1101.7,
@@ -4320,6 +4355,7 @@
               "orders": 22,
               "revenue": 1782.56,
               "gross_sales": 1782.56,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 842.8425000000001,
@@ -4495,6 +4531,7 @@
           "orders": 143,
           "revenue": 10708.689999999999,
           "gross_sales": 10708.689999999999,
+          "subscription_revenue": 0.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4446.7675,
@@ -4544,6 +4581,7 @@
           "Card": 133,
           "Cash": 5,
           "11": 2,
+          "None": 2,
           "Invoice": 1
         },
         "status": {
@@ -4682,6 +4720,7 @@
               "orders": 40,
               "revenue": 2547.75,
               "gross_sales": 2547.75,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1207.845,
@@ -4856,6 +4895,7 @@
               "orders": 31,
               "revenue": 3350.1400000000003,
               "gross_sales": 3350.1400000000003,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1243.915,
@@ -5029,6 +5069,7 @@
               "orders": 35,
               "revenue": 1984.6000000000001,
               "gross_sales": 1984.6000000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 875.6725000000001,
@@ -5072,7 +5113,8 @@
             },
             "payment": {
               "Card": 33,
-              "11": 1
+              "11": 1,
+              "None": 1
             },
             "status": {
               "collected": 34,
@@ -5203,6 +5245,7 @@
               "orders": 36,
               "revenue": 2749.2000000000003,
               "gross_sales": 2749.2000000000003,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1077.415,
@@ -5248,7 +5291,8 @@
             "payment": {
               "Card": 33,
               "11": 1,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 35,
@@ -5384,6 +5428,7 @@
               "orders": 1,
               "revenue": 77.0,
               "gross_sales": 77.0,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 41.92,
@@ -5490,21 +5535,22 @@
       "2025-12": {
         "kpis": {
           "orders": 178,
-          "revenue": 10378.81,
-          "gross_sales": 10378.81,
+          "revenue": 10571.376999999999,
+          "gross_sales": 10571.376999999999,
+          "subscription_revenue": 192.56699999999998,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4490.5225,
-          "net_revenue": 9734.189999999999,
-          "profit": 5243.667499999999,
-          "margin_pct": 53.86855506210583,
+          "net_revenue": 9926.756999999998,
+          "profit": 5436.234499999998,
+          "margin_pct": 54.7634489289906,
           "items": 1324.5,
           "dry_clean_items": 594.0,
           "wf_lbs": 730.5,
           "unique_customers": 127,
           "new_customers": 79,
           "returning_customers": 48,
-          "aov": 58.3079213483146,
+          "aov": 59.38975842696628,
           "express_rate": 10.112359550561797,
           "new_customer_share_pct": 62.20472440944882
         },
@@ -5540,6 +5586,7 @@
         },
         "payment": {
           "Card": 149,
+          "None": 16,
           "Cash": 9,
           "11": 2,
           "Invoice": 2
@@ -5682,21 +5729,22 @@
           "2025-12-W1": {
             "kpis": {
               "orders": 50,
-              "revenue": 3253.77,
-              "gross_sales": 3253.77,
+              "revenue": 3446.337,
+              "gross_sales": 3446.337,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1436.17,
-              "net_revenue": 3042.05,
-              "profit": 1605.88,
-              "margin_pct": 52.78940188359823,
+              "net_revenue": 3234.617,
+              "profit": 1798.4470000000001,
+              "margin_pct": 55.599998392390816,
               "items": 348.5,
               "dry_clean_items": 188.0,
               "wf_lbs": 160.5,
               "unique_customers": 48,
               "new_customers": 25,
               "returning_customers": 23,
-              "aov": 65.0754,
+              "aov": 68.92674,
               "express_rate": 14.000000000000002,
               "new_customer_share_pct": 52.083333333333336
             },
@@ -5728,6 +5776,7 @@
             },
             "payment": {
               "Card": 46,
+              "None": 2,
               "11": 2
             },
             "status": {
@@ -5862,21 +5911,22 @@
           "2025-12-W2": {
             "kpis": {
               "orders": 32,
-              "revenue": 2227.27,
-              "gross_sales": 2227.27,
+              "revenue": 2419.837,
+              "gross_sales": 2419.837,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 716.175,
-              "net_revenue": 2082.69,
-              "profit": 1366.515,
-              "margin_pct": 65.61298128862192,
+              "net_revenue": 2275.257,
+              "profit": 1559.082,
+              "margin_pct": 68.5233360451149,
               "items": 195.5,
               "dry_clean_items": 114.0,
               "wf_lbs": 81.5,
               "unique_customers": 31,
               "new_customers": 17,
               "returning_customers": 14,
-              "aov": 69.6021875,
+              "aov": 75.61990625,
               "express_rate": 18.75,
               "new_customer_share_pct": 54.83870967741935
             },
@@ -5907,6 +5957,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 2,
               "Cash": 1
             },
             "status": {
@@ -6036,21 +6087,22 @@
           "2025-12-W3": {
             "kpis": {
               "orders": 40,
-              "revenue": 2190.0,
-              "gross_sales": 2190.0,
+              "revenue": 2382.567,
+              "gross_sales": 2382.567,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1121.545,
-              "net_revenue": 2053.9700000000003,
-              "profit": 932.4250000000002,
-              "margin_pct": 45.39623266162602,
+              "net_revenue": 2246.5370000000003,
+              "profit": 1124.9920000000002,
+              "margin_pct": 50.07671807764573,
               "items": 357.5,
               "dry_clean_items": 106.0,
               "wf_lbs": 251.5,
               "unique_customers": 34,
               "new_customers": 18,
               "returning_customers": 16,
-              "aov": 54.75,
+              "aov": 59.564175,
               "express_rate": 5.0,
               "new_customer_share_pct": 52.94117647058824
             },
@@ -6082,7 +6134,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 4
             },
             "status": {
               "collected": 36,
@@ -6216,21 +6269,22 @@
           "2025-12-W4": {
             "kpis": {
               "orders": 39,
-              "revenue": 2168.67,
-              "gross_sales": 2168.67,
+              "revenue": 2361.237,
+              "gross_sales": 2361.237,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 995.2925,
-              "net_revenue": 2039.2399999999998,
-              "profit": 1043.9474999999998,
-              "margin_pct": 51.192968949216365,
+              "net_revenue": 2231.807,
+              "profit": 1236.5144999999998,
+              "margin_pct": 55.40418593543258,
               "items": 331.5,
               "dry_clean_items": 141.0,
               "wf_lbs": 190.5,
               "unique_customers": 35,
               "new_customers": 14,
               "returning_customers": 21,
-              "aov": 55.60692307692308,
+              "aov": 60.544538461538465,
               "express_rate": 7.6923076923076925,
               "new_customer_share_pct": 40.0
             },
@@ -6262,6 +6316,7 @@
             "payment": {
               "Card": 32,
               "Cash": 3,
+              "None": 3,
               "Invoice": 1
             },
             "status": {
@@ -6391,21 +6446,22 @@
           "2025-12-W5": {
             "kpis": {
               "orders": 17,
-              "revenue": 539.0999999999999,
-              "gross_sales": 539.0999999999999,
+              "revenue": 731.6669999999999,
+              "gross_sales": 731.6669999999999,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 221.34,
-              "net_revenue": 516.24,
-              "profit": 294.9,
-              "margin_pct": 57.12459321245932,
+              "net_revenue": 708.807,
+              "profit": 487.467,
+              "margin_pct": 68.77288175765757,
               "items": 91.5,
               "dry_clean_items": 45.0,
               "wf_lbs": 46.5,
               "unique_customers": 16,
               "new_customers": 5,
               "returning_customers": 11,
-              "aov": 31.71176470588235,
+              "aov": 43.039235294117645,
               "express_rate": 0.0,
               "new_customer_share_pct": 31.25
             },
@@ -6436,6 +6492,7 @@
             },
             "payment": {
               "Card": 10,
+              "None": 5,
               "Invoice": 1,
               "Cash": 1
             },
@@ -6568,21 +6625,22 @@
       "2026-01": {
         "kpis": {
           "orders": 65,
-          "revenue": 2829.75,
-          "gross_sales": 2829.75,
+          "revenue": 3013.32,
+          "gross_sales": 3013.32,
+          "subscription_revenue": 183.57,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 1457.5924999999997,
-          "net_revenue": 2757.44,
-          "profit": 1299.8475000000003,
-          "margin_pct": 47.139647644191726,
+          "net_revenue": 2940.83,
+          "profit": 1483.2375000000002,
+          "margin_pct": 50.43601636272753,
           "items": 325.0,
           "dry_clean_items": 187.0,
           "wf_lbs": 138.0,
           "unique_customers": 58,
           "new_customers": 32,
           "returning_customers": 26,
-          "aov": 43.534615384615385,
+          "aov": 46.358769230769234,
           "express_rate": 4.615384615384616,
           "new_customer_share_pct": 55.172413793103445
         },
@@ -6600,7 +6658,7 @@
             1457.5925
           ],
           "profit": [
-            1299.8475
+            1299.6675000000002
           ],
           "orders": [
             65
@@ -6618,6 +6676,7 @@
         },
         "payment": {
           "Card": 43,
+          "None": 21,
           "11": 1
         },
         "status": {
@@ -6632,13 +6691,13 @@
           "revenue_quality": {
             "gross_sales": 2829.75,
             "refunds": 0.0,
-            "net_revenue": 2757.44,
+            "net_revenue": 2757.2599999999998,
             "refund_rate_pct": 0.0,
             "discounts": 69.13,
             "discount_rate_pct": 2.44,
             "tips": 0.0,
             "tip_rate_pct": 0.0,
-            "tax": 72.31,
+            "tax": 72.49,
             "service_fee": 0.0,
             "delivery_fee": 0.0,
             "refund_orders": 0
@@ -6761,21 +6820,22 @@
           "2026-01-W1": {
             "kpis": {
               "orders": 50,
-              "revenue": 2121.5800000000004,
-              "gross_sales": 2121.5800000000004,
+              "revenue": 2305.1500000000005,
+              "gross_sales": 2305.1500000000005,
+              "subscription_revenue": 183.57,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1073.1125,
-              "net_revenue": 2058.77,
-              "profit": 985.6575,
-              "margin_pct": 47.876037634121346,
+              "net_revenue": 2246.5600000000004,
+              "profit": 1173.4475000000004,
+              "margin_pct": 52.23308079908839,
               "items": 236.0,
               "dry_clean_items": 133.0,
               "wf_lbs": 103.0,
               "unique_customers": 44,
               "new_customers": 24,
               "returning_customers": 20,
-              "aov": 42.43160000000001,
+              "aov": 46.10300000000001,
               "express_rate": 4.0,
               "new_customer_share_pct": 54.54545454545454
             },
@@ -6790,7 +6850,7 @@
                 1073.1125
               ],
               "profit": [
-                985.6575
+                989.8774999999998
               ],
               "orders": [
                 50
@@ -6808,6 +6868,7 @@
             },
             "payment": {
               "Card": 34,
+              "None": 15,
               "11": 1
             },
             "status": {
@@ -6820,13 +6881,13 @@
               "revenue_quality": {
                 "gross_sales": 2121.5800000000004,
                 "refunds": 0.0,
-                "net_revenue": 2058.77,
+                "net_revenue": 2062.9900000000002,
                 "refund_rate_pct": 0.0,
                 "discounts": 34.36,
                 "discount_rate_pct": 1.62,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 62.81,
+                "tax": 58.58999999999999,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 0
@@ -6836,7 +6897,7 @@
                 "median": 33.85,
                 "p25": 19.52,
                 "p75": 63.22,
-                "gross_margin_pct": 47.88
+                "gross_margin_pct": 47.98
               },
               "customer": {
                 "unique_customers": 44,
@@ -6949,21 +7010,22 @@
           "2026-01-W2": {
             "kpis": {
               "orders": 15,
-              "revenue": 708.17,
-              "gross_sales": 708.17,
+              "revenue": 891.74,
+              "gross_sales": 891.74,
+              "subscription_revenue": 183.57,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 384.48,
-              "net_revenue": 698.6700000000001,
-              "profit": 314.19000000000005,
-              "margin_pct": 44.969728197861656,
+              "net_revenue": 877.8400000000001,
+              "profit": 493.3600000000001,
+              "margin_pct": 56.20158571038003,
               "items": 89.0,
               "dry_clean_items": 54.0,
               "wf_lbs": 35.0,
               "unique_customers": 15,
               "new_customers": 8,
               "returning_customers": 7,
-              "aov": 47.21133333333333,
+              "aov": 59.449333333333335,
               "express_rate": 6.666666666666667,
               "new_customer_share_pct": 53.333333333333336
             },
@@ -6978,7 +7040,7 @@
                 384.48
               ],
               "profit": [
-                314.18999999999994
+                309.78999999999996
               ],
               "orders": [
                 15
@@ -6993,7 +7055,8 @@
               "Other": 197.1
             },
             "payment": {
-              "Card": 9
+              "Card": 9,
+              "None": 6
             },
             "status": {
               "cleaning": 11,
@@ -7004,13 +7067,13 @@
               "revenue_quality": {
                 "gross_sales": 708.17,
                 "refunds": 0.0,
-                "net_revenue": 698.6700000000001,
+                "net_revenue": 694.2700000000001,
                 "refund_rate_pct": 0.0,
                 "discounts": 34.77,
                 "discount_rate_pct": 4.91,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 9.5,
+                "tax": 13.900000000000002,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 0
@@ -7020,7 +7083,7 @@
                 "median": 38.9,
                 "p25": 28.5,
                 "p75": 57.1,
-                "gross_margin_pct": 44.97
+                "gross_margin_pct": 44.62
               },
               "customer": {
                 "unique_customers": 15,
@@ -7128,21 +7191,22 @@
     "all": {
       "kpis": {
         "orders": 834,
-        "revenue": 53271.090000000004,
-        "gross_sales": 53464.5,
+        "revenue": 53647.227000000006,
+        "gross_sales": 53840.637,
+        "subscription_revenue": 376.13699999999994,
         "refund_amount": 193.41,
         "refund_count": 4,
         "cost": 24307.9945,
-        "net_revenue": 49934.44,
-        "profit": 25626.4455,
-        "margin_pct": 51.32018202266813,
+        "net_revenue": 50307.547000000006,
+        "profit": 25999.552500000005,
+        "margin_pct": 51.68121693550274,
         "items": 6017.4,
         "dry_clean_items": 2723.0,
         "wf_lbs": 3294.4,
         "unique_customers": 442,
         "new_customers": 439,
         "returning_customers": 3,
-        "aov": 63.87420863309353,
+        "aov": 64.32521223021584,
         "express_rate": 9.59232613908873,
         "new_customer_share_pct": 99.3212669683258
       },
@@ -7181,7 +7245,7 @@
           6575.2775,
           5463.7025,
           5003.4574999999995,
-          976.7675000000002
+          973.7375
         ],
         "orders": [
           83,
@@ -7212,7 +7276,8 @@
       "payment": {
         "Card": 780,
         "Cash": 41,
-        "11": 10
+        "11": 10,
+        "None": 3
       },
       "status": {
         "collected": 821,
@@ -7224,13 +7289,13 @@
         "revenue_quality": {
           "gross_sales": 53464.5,
           "refunds": 193.41,
-          "net_revenue": 49934.44,
+          "net_revenue": 49931.41,
           "refund_rate_pct": 0.36,
           "discounts": 1713.8999999999999,
           "discount_rate_pct": 3.21,
           "tips": 0.0,
           "tip_rate_pct": 0.0,
-          "tax": 3336.65,
+          "tax": 3339.6800000000003,
           "service_fee": 0.0,
           "delivery_fee": 0.0,
           "refund_orders": 4
@@ -7356,6 +7421,7 @@
           "orders": 83,
           "revenue": 4415.660000000001,
           "gross_sales": 4501.320000000001,
+          "subscription_revenue": 0.0,
           "refund_amount": 85.66,
           "refund_count": 1,
           "cost": 2502.625,
@@ -7545,6 +7611,7 @@
               "orders": 1,
               "revenue": 8.98,
               "gross_sales": 8.98,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 0.0,
@@ -7651,6 +7718,7 @@
               "orders": 15,
               "revenue": 775.63,
               "gross_sales": 861.29,
+              "subscription_revenue": 0.0,
               "refund_amount": 85.66,
               "refund_count": 1,
               "cost": 465.93499999999995,
@@ -7835,6 +7903,7 @@
               "orders": 28,
               "revenue": 1478.44,
               "gross_sales": 1478.44,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 830.8400000000003,
@@ -8019,6 +8088,7 @@
               "orders": 19,
               "revenue": 1200.37,
               "gross_sales": 1200.37,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 648.2349999999999,
@@ -8191,6 +8261,7 @@
               "orders": 20,
               "revenue": 952.24,
               "gross_sales": 952.24,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 557.6149999999999,
@@ -8372,6 +8443,7 @@
           "orders": 118,
           "revenue": 6321.84,
           "gross_sales": 6420.85,
+          "subscription_revenue": 0.0,
           "refund_amount": 99.00999999999999,
           "refund_count": 2,
           "cost": 3277.8275000000003,
@@ -8561,6 +8633,7 @@
               "orders": 34,
               "revenue": 1907.25,
               "gross_sales": 1907.25,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1060.855,
@@ -8740,6 +8813,7 @@
               "orders": 22,
               "revenue": 1139.3400000000001,
               "gross_sales": 1139.3400000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 552.705,
@@ -8919,6 +8993,7 @@
               "orders": 22,
               "revenue": 1006.9300000000001,
               "gross_sales": 1006.9300000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 505.42749999999995,
@@ -9092,6 +9167,7 @@
               "orders": 30,
               "revenue": 1812.52,
               "gross_sales": 1832.84,
+              "subscription_revenue": 0.0,
               "refund_amount": 20.32,
               "refund_count": 1,
               "cost": 881.32,
@@ -9264,6 +9340,7 @@
               "orders": 10,
               "revenue": 455.8,
               "gross_sales": 534.49,
+              "subscription_revenue": 0.0,
               "refund_amount": 78.69,
               "refund_count": 1,
               "cost": 277.52,
@@ -9438,6 +9515,7 @@
           "orders": 126,
           "revenue": 7226.950000000001,
           "gross_sales": 7235.6900000000005,
+          "subscription_revenue": 0.0,
           "refund_amount": 8.74,
           "refund_count": 1,
           "cost": 3390.7169999999996,
@@ -9628,6 +9706,7 @@
               "orders": 18,
               "revenue": 999.4999999999999,
               "gross_sales": 1008.2399999999999,
+              "subscription_revenue": 0.0,
               "refund_amount": 8.74,
               "refund_count": 1,
               "cost": 436.5949999999999,
@@ -9800,6 +9879,7 @@
               "orders": 27,
               "revenue": 1594.1399999999999,
               "gross_sales": 1594.1399999999999,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 751.265,
@@ -9974,6 +10054,7 @@
               "orders": 39,
               "revenue": 2350.66,
               "gross_sales": 2350.66,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1039.6519999999998,
@@ -10153,6 +10234,7 @@
               "orders": 32,
               "revenue": 1597.83,
               "gross_sales": 1597.83,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 759.915,
@@ -10332,6 +10414,7 @@
               "orders": 10,
               "revenue": 684.8199999999999,
               "gross_sales": 684.8199999999999,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 403.29,
@@ -10507,6 +10590,7 @@
           "orders": 160,
           "revenue": 12787.66,
           "gross_sales": 12787.66,
+          "subscription_revenue": 0.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 5418.9625,
@@ -10697,6 +10781,7 @@
               "orders": 38,
               "revenue": 3847.330000000001,
               "gross_sales": 3847.330000000001,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1384.495,
@@ -10882,6 +10967,7 @@
               "orders": 30,
               "revenue": 2050.3299999999995,
               "gross_sales": 2050.3299999999995,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 990.7950000000001,
@@ -11061,6 +11147,7 @@
               "orders": 34,
               "revenue": 2526.08,
               "gross_sales": 2526.08,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1099.1299999999999,
@@ -11235,6 +11322,7 @@
               "orders": 36,
               "revenue": 2581.36,
               "gross_sales": 2581.36,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1101.7,
@@ -11420,6 +11508,7 @@
               "orders": 22,
               "revenue": 1782.56,
               "gross_sales": 1782.56,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 842.8425000000001,
@@ -11595,6 +11684,7 @@
           "orders": 140,
           "revenue": 10569.789999999999,
           "gross_sales": 10569.789999999999,
+          "subscription_revenue": 0.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4422.797500000001,
@@ -11773,6 +11863,7 @@
               "orders": 39,
               "revenue": 2547.75,
               "gross_sales": 2547.75,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1207.845,
@@ -11946,6 +12037,7 @@
               "orders": 31,
               "revenue": 3350.1400000000003,
               "gross_sales": 3350.1400000000003,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1243.915,
@@ -12119,6 +12211,7 @@
               "orders": 34,
               "revenue": 1939.7,
               "gross_sales": 1939.7,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 851.7025,
@@ -12292,6 +12385,7 @@
               "orders": 35,
               "revenue": 2655.2000000000003,
               "gross_sales": 2655.2000000000003,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1077.415,
@@ -12466,6 +12560,7 @@
               "orders": 1,
               "revenue": 77.0,
               "gross_sales": 77.0,
+              "subscription_revenue": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 41.92,
@@ -12572,21 +12667,22 @@
       "2025-12": {
         "kpis": {
           "orders": 163,
-          "revenue": 9847.81,
-          "gross_sales": 9847.81,
+          "revenue": 10040.376999999999,
+          "gross_sales": 10040.376999999999,
+          "subscription_revenue": 192.56699999999998,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4221.682500000001,
-          "net_revenue": 9225.14,
-          "profit": 5003.457499999999,
-          "margin_pct": 54.237198568260204,
+          "net_revenue": 9417.706999999999,
+          "profit": 5196.024499999998,
+          "margin_pct": 55.17292585127143,
           "items": 1268.5,
           "dry_clean_items": 538.0,
           "wf_lbs": 730.5,
           "unique_customers": 120,
           "new_customers": 76,
           "returning_customers": 44,
-          "aov": 60.41601226993865,
+          "aov": 61.59740490797545,
           "express_rate": 11.042944785276074,
           "new_customer_share_pct": 63.33333333333333
         },
@@ -12623,6 +12719,7 @@
         "payment": {
           "Card": 149,
           "Cash": 9,
+          "None": 3,
           "11": 2
         },
         "status": {
@@ -12763,21 +12860,22 @@
           "2025-12-W1": {
             "kpis": {
               "orders": 48,
-              "revenue": 3209.27,
-              "gross_sales": 3209.27,
+              "revenue": 3401.837,
+              "gross_sales": 3401.837,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1415.21,
-              "net_revenue": 3000.46,
-              "profit": 1585.25,
-              "margin_pct": 52.83356551995361,
+              "net_revenue": 3193.027,
+              "profit": 1777.817,
+              "margin_pct": 55.678107325744506,
               "items": 344.5,
               "dry_clean_items": 184.0,
               "wf_lbs": 160.5,
               "unique_customers": 46,
               "new_customers": 25,
               "returning_customers": 21,
-              "aov": 66.85979166666667,
+              "aov": 70.87160416666667,
               "express_rate": 14.583333333333334,
               "new_customer_share_pct": 54.347826086956516
             },
@@ -12942,21 +13040,22 @@
           "2025-12-W2": {
             "kpis": {
               "orders": 31,
-              "revenue": 2148.6700000000005,
-              "gross_sales": 2148.6700000000005,
+              "revenue": 2341.2370000000005,
+              "gross_sales": 2341.2370000000005,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 680.265,
-              "net_revenue": 2009.23,
-              "profit": 1328.9650000000001,
-              "margin_pct": 66.14300005474735,
+              "net_revenue": 2201.797,
+              "profit": 1521.5320000000002,
+              "margin_pct": 69.1040999692524,
               "items": 186.5,
               "dry_clean_items": 105.0,
               "wf_lbs": 81.5,
               "unique_customers": 30,
               "new_customers": 16,
               "returning_customers": 14,
-              "aov": 69.31193548387098,
+              "aov": 75.5237741935484,
               "express_rate": 19.35483870967742,
               "new_customer_share_pct": 53.333333333333336
             },
@@ -12987,6 +13086,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -13115,21 +13215,22 @@
           "2025-12-W3": {
             "kpis": {
               "orders": 38,
-              "revenue": 2008.6000000000004,
-              "gross_sales": 2008.6000000000004,
+              "revenue": 2201.1670000000004,
+              "gross_sales": 2201.1670000000004,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1018.1550000000002,
-              "net_revenue": 1877.84,
-              "profit": 859.6849999999997,
-              "margin_pct": 45.780524432326494,
+              "net_revenue": 2070.4069999999997,
+              "profit": 1052.2519999999995,
+              "margin_pct": 50.82343713096022,
               "items": 345.5,
               "dry_clean_items": 94.0,
               "wf_lbs": 251.5,
               "unique_customers": 32,
               "new_customers": 17,
               "returning_customers": 15,
-              "aov": 52.85789473684211,
+              "aov": 57.92544736842106,
               "express_rate": 5.263157894736842,
               "new_customer_share_pct": 53.125
             },
@@ -13161,7 +13262,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 2
             },
             "status": {
               "collected": 36,
@@ -13295,21 +13397,22 @@
           "2025-12-W4": {
             "kpis": {
               "orders": 35,
-              "revenue": 2069.2700000000004,
-              "gross_sales": 2069.2700000000004,
+              "revenue": 2261.8370000000004,
+              "gross_sales": 2261.8370000000004,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 939.1425000000002,
-              "net_revenue": 1942.28,
-              "profit": 1003.1374999999998,
-              "margin_pct": 51.64741952756553,
+              "net_revenue": 2134.8469999999998,
+              "profit": 1195.7044999999996,
+              "margin_pct": 56.0089083667354,
               "items": 320.5,
               "dry_clean_items": 130.0,
               "wf_lbs": 190.5,
               "unique_customers": 31,
               "new_customers": 13,
               "returning_customers": 18,
-              "aov": 59.122000000000014,
+              "aov": 64.62391428571429,
               "express_rate": 8.571428571428571,
               "new_customer_share_pct": 41.935483870967744
             },
@@ -13469,21 +13572,22 @@
           "2025-12-W5": {
             "kpis": {
               "orders": 11,
-              "revenue": 412.0,
-              "gross_sales": 412.0,
+              "revenue": 604.567,
+              "gross_sales": 604.567,
+              "subscription_revenue": 192.56699999999998,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 168.91000000000003,
-              "net_revenue": 395.33000000000004,
-              "profit": 226.42000000000002,
-              "margin_pct": 57.273670098398796,
+              "net_revenue": 587.897,
+              "profit": 418.987,
+              "margin_pct": 71.26877667346491,
               "items": 71.5,
               "dry_clean_items": 25.0,
               "wf_lbs": 46.5,
               "unique_customers": 10,
               "new_customers": 5,
               "returning_customers": 5,
-              "aov": 37.45454545454545,
+              "aov": 54.96063636363636,
               "express_rate": 0.0,
               "new_customer_share_pct": 50.0
             },
@@ -13638,21 +13742,22 @@
       "2026-01": {
         "kpis": {
           "orders": 44,
-          "revenue": 2101.38,
-          "gross_sales": 2101.38,
+          "revenue": 2284.9500000000003,
+          "gross_sales": 2284.9500000000003,
+          "subscription_revenue": 183.57,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 1073.3825,
-          "net_revenue": 2050.1500000000005,
-          "profit": 976.7675000000006,
-          "margin_pct": 47.64370899690268,
+          "net_revenue": 2230.69,
+          "profit": 1157.3075000000001,
+          "margin_pct": 51.881144399266596,
           "items": 266.5,
           "dry_clean_items": 139.0,
           "wf_lbs": 127.5,
           "unique_customers": 40,
           "new_customers": 22,
           "returning_customers": 18,
-          "aov": 47.75863636363636,
+          "aov": 51.930681818181824,
           "express_rate": 6.8181818181818175,
           "new_customer_share_pct": 55.00000000000001
         },
@@ -13670,7 +13775,7 @@
             1073.3825
           ],
           "profit": [
-            976.7675000000002
+            973.7375
           ],
           "orders": [
             44
@@ -13700,13 +13805,13 @@
           "revenue_quality": {
             "gross_sales": 2101.38,
             "refunds": 0.0,
-            "net_revenue": 2050.1500000000005,
+            "net_revenue": 2047.1200000000001,
             "refund_rate_pct": 0.0,
             "discounts": 34.36,
             "discount_rate_pct": 1.64,
             "tips": 0.0,
             "tip_rate_pct": 0.0,
-            "tax": 51.230000000000004,
+            "tax": 54.26,
             "service_fee": 0.0,
             "delivery_fee": 0.0,
             "refund_orders": 0
@@ -13716,7 +13821,7 @@
             "median": 43.7,
             "p25": 27.88,
             "p75": 66.52,
-            "gross_margin_pct": 47.64
+            "gross_margin_pct": 47.57
           },
           "customer": {
             "unique_customers": 40,
@@ -13829,21 +13934,22 @@
           "2026-01-W1": {
             "kpis": {
               "orders": 35,
-              "revenue": 1646.38,
-              "gross_sales": 1646.38,
+              "revenue": 1829.95,
+              "gross_sales": 1829.95,
+              "subscription_revenue": 183.57,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 835.8925,
-              "net_revenue": 1602.4099999999999,
-              "profit": 766.5174999999998,
-              "margin_pct": 47.835291841663484,
+              "net_revenue": 1784.62,
+              "profit": 948.7274999999998,
+              "margin_pct": 53.161317255213994,
               "items": 202.5,
               "dry_clean_items": 110.0,
               "wf_lbs": 92.5,
               "unique_customers": 31,
               "new_customers": 17,
               "returning_customers": 14,
-              "aov": 47.03942857142857,
+              "aov": 52.284285714285716,
               "express_rate": 5.714285714285714,
               "new_customer_share_pct": 54.83870967741935
             },
@@ -13858,7 +13964,7 @@
                 835.8924999999999
               ],
               "profit": [
-                766.5175000000002
+                765.1575
               ],
               "orders": [
                 35
@@ -13886,13 +13992,13 @@
               "revenue_quality": {
                 "gross_sales": 1646.38,
                 "refunds": 0.0,
-                "net_revenue": 1602.4099999999999,
+                "net_revenue": 1601.05,
                 "refund_rate_pct": 0.0,
                 "discounts": 34.36,
                 "discount_rate_pct": 2.09,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 43.97,
+                "tax": 45.32999999999999,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 0
@@ -13902,7 +14008,7 @@
                 "median": 37.0,
                 "p25": 25.0,
                 "p75": 71.25,
-                "gross_margin_pct": 47.84
+                "gross_margin_pct": 47.79
               },
               "customer": {
                 "unique_customers": 31,
@@ -14015,21 +14121,22 @@
           "2026-01-W2": {
             "kpis": {
               "orders": 9,
-              "revenue": 455.0,
-              "gross_sales": 455.0,
+              "revenue": 638.5699999999999,
+              "gross_sales": 638.5699999999999,
+              "subscription_revenue": 183.57,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 237.48999999999998,
-              "net_revenue": 447.74,
-              "profit": 210.25000000000003,
-              "margin_pct": 46.95805601465137,
+              "net_revenue": 629.6400000000001,
+              "profit": 392.1500000000001,
+              "margin_pct": 62.2816212438854,
               "items": 64.0,
               "dry_clean_items": 29.0,
               "wf_lbs": 35.0,
               "unique_customers": 9,
               "new_customers": 5,
               "returning_customers": 4,
-              "aov": 50.55555555555556,
+              "aov": 70.95222222222222,
               "express_rate": 11.11111111111111,
               "new_customer_share_pct": 55.55555555555556
             },
@@ -14044,7 +14151,7 @@
                 237.49
               ],
               "profit": [
-                210.25
+                208.57999999999998
               ],
               "orders": [
                 9
@@ -14069,13 +14176,13 @@
               "revenue_quality": {
                 "gross_sales": 455.0,
                 "refunds": 0.0,
-                "net_revenue": 447.74,
+                "net_revenue": 446.07000000000005,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 7.26,
+                "tax": 8.93,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 0
@@ -14085,7 +14192,7 @@
                 "median": 53.0,
                 "p25": 38.9,
                 "p75": 58.1,
-                "gross_margin_pct": 46.96
+                "gross_margin_pct": 46.76
               },
               "customer": {
                 "unique_customers": 9,
@@ -14184,7 +14291,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2026-01-10T18:08:14.605242-05:00",
-    "last_updated_display": "January 10, 2026 at 06:08 PM EST"
+    "last_updated": "2026-01-10T19:09:38.379881-05:00",
+    "last_updated_display": "January 10, 2026 at 07:09 PM EST"
   }
 }

@@ -20,13 +20,15 @@ warnings.filterwarnings('ignore')
 
 class CSVMerger:
     """Main class for processing CSV files and generating dashboard data"""
-    
-    def __init__(self, orders_file: str, items_file: str):
+
+    def __init__(self, orders_file: str, items_file: str, subscriptions_file: str = None):
         self.orders_file = orders_file
         self.items_file = items_file
+        self.subscriptions_file = subscriptions_file
         self.orders_df = None
         self.items_df = None
         self.merged_df = None
+        self.subscriptions_df = None
         
     def load_and_clean_data(self) -> None:
         """Load CSV files and perform initial data cleaning"""
@@ -53,8 +55,37 @@ class CSVMerger:
         
         self.orders_df['Order ID'] = self.orders_df['Order ID'].astype(int)
         self.items_df['Order ID'] = self.items_df['Order ID'].astype(int)
-        
+
+        # Load subscriptions if file provided
+        self._load_subscriptions()
+
         print("Data cleaning completed")
+
+    def _load_subscriptions(self) -> None:
+        """Load subscription payments CSV if available"""
+        import os
+
+        # Try to find subscriptions file
+        if self.subscriptions_file and os.path.exists(self.subscriptions_file):
+            subs_path = self.subscriptions_file
+        elif os.path.exists('data/subscriptions.csv'):
+            subs_path = 'data/subscriptions.csv'
+        else:
+            print("  📋 No subscriptions file found, skipping subscription revenue")
+            return
+
+        try:
+            self.subscriptions_df = pd.read_csv(subs_path)
+            # Parse payment date (format: MM/DD/YY)
+            self.subscriptions_df['Payment Date'] = pd.to_datetime(
+                self.subscriptions_df['Payment Date'], format='%m/%d/%y'
+            )
+            self.subscriptions_df['Amount'] = pd.to_numeric(self.subscriptions_df['Amount'], errors='coerce')
+            self.subscriptions_df['Month'] = self.subscriptions_df['Payment Date'].dt.strftime('%Y-%m')
+            print(f"  📋 Loaded {len(self.subscriptions_df)} subscription payments")
+        except Exception as e:
+            print(f"  ⚠️ Error loading subscriptions: {e}")
+            self.subscriptions_df = None
         
     def _clean_orders_data(self) -> None:
         """Clean and standardize orders data"""
@@ -310,6 +341,18 @@ class CSVMerger:
         
         print(f"✅ Created {len(months)} monthly CSV files")
     
+    def get_subscription_revenue(self, months: List[str] = None) -> float:
+        """Get subscription revenue for given months"""
+        if self.subscriptions_df is None or len(self.subscriptions_df) == 0:
+            return 0.0
+
+        if months:
+            subs = self.subscriptions_df[self.subscriptions_df['Month'].isin(months)]
+        else:
+            subs = self.subscriptions_df
+
+        return subs['Amount'].sum()
+
     def calculate_kpis(self, df: pd.DataFrame) -> Dict:
         """Calculate KPIs for a given dataset"""
         # Handle refunds (negative revenue)
@@ -317,10 +360,14 @@ class CSVMerger:
         negative_revenue = df[df['Total after Credit Used'] < 0]['Total after Credit Used'].sum()
         refund_amount = abs(negative_revenue)
         refund_count = len(df[df['Total after Credit Used'] < 0])
-        
-        total_revenue = df['Total after Credit Used'].sum()
+
+        # Get subscription revenue for the months in this dataset
+        months_in_df = df['Month'].dropna().unique().tolist()
+        subscription_revenue = self.get_subscription_revenue(months_in_df)
+
+        total_revenue = df['Total after Credit Used'].sum() + subscription_revenue
         total_cost = df['Final Cost'].sum()
-        net_revenue = df['Revenue Net Tax'].sum()
+        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue  # Subscription revenue is already net (no tax on subscriptions)
         profit = net_revenue - total_cost
         
         # Calculate dry cleaning items (exclude W&F pounds)
@@ -338,7 +385,8 @@ class CSVMerger:
         kpis = {
             'orders': len(df),
             'revenue': total_revenue,
-            'gross_sales': positive_revenue,
+            'gross_sales': positive_revenue + subscription_revenue,
+            'subscription_revenue': subscription_revenue,
             'refund_amount': refund_amount,
             'refund_count': refund_count,
             'cost': total_cost,
