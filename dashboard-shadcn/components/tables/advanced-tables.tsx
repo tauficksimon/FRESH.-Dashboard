@@ -20,6 +20,7 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
 
   // Calculate Financial Quality with Cost breakdown
   const grossSales = revenue_quality.gross_sales || 0;
+  const subscriptionRevenue = kpiData?.subscription_revenue || 0;
   const refunds = revenue_quality.refunds || 0;
   const discounts = revenue_quality.discounts || 0;
   const tips = revenue_quality.tips || 0;
@@ -33,6 +34,7 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
 
   const financialRows = [
     { label: 'Gross Sales', value: grossSales, format: 'currency' },
+    { label: 'Subscription Revenue', value: subscriptionRevenue, format: 'currency', highlight: 'positive' },
     { label: 'Refunds', value: -refunds, format: 'currency', highlight: 'negative' },
     { label: 'Discounts', value: -discounts, format: 'currency', highlight: 'negative' },
     { label: 'Tips', value: tips, format: 'currency' },
@@ -83,6 +85,8 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
                         row.bold ? 'font-bold text-base' : ''
                       } ${
                         row.highlight === 'negative' ? 'text-red-600 dark:text-red-400' : ''
+                      } ${
+                        row.highlight === 'positive' ? 'text-green-600 dark:text-green-400' : ''
                       } ${
                         row.highlight === 'total' ? 'text-foreground' : ''
                       }`}

@@ -10,6 +10,7 @@ export interface KPIData {
   unique_customers?: number;
   express_rate?: number;
   refund_amount?: number;
+  subscription_revenue?: number;
 }
 
 export interface SeriesData {
