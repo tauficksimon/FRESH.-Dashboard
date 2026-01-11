@@ -241,6 +241,13 @@ class CSVMerger:
         notes_450_mask = df['Notes'].str.contains('450', case=False, na=False)
         df.loc[apt_450_mask | notes_450_mask, 'Final Cost'] = 0.0
         
+        # Rule 1b: Manual override for Order 977 (now 450 in CleanCloud, pending CSV update)
+        df.loc[df['Order ID'] == 977, 'Final Cost'] = 0.0
+        
+        # Rule 1c: Manual override for Order 954 (cashier gave wrong credit, actual: $98 revenue, $0 cost - cobbler paid separately)
+        df.loc[df['Order ID'] == 954, 'Total after Credit Used'] = 98.0
+        df.loc[df['Order ID'] == 954, 'Final Cost'] = 0.0
+        
         # Rule 2: Camille Simon - revenue becomes 0 (cost stays calculated)
         camille_mask = df['Customer'].str.contains('Camille Simon', case=False, na=False)
         df.loc[camille_mask, 'Total after Credit Used'] = 0.0
@@ -1041,6 +1048,13 @@ def main():
     processor.save_monthly_csvs()
     processor.save_dashboard_json(dashboard_data)
     processor.save_summary_metrics(dashboard_data)
+
+    # Copy files to dashboard-shadcn for HAAP report generation
+    import shutil
+    if os.path.exists('dashboard-shadcn'):
+        shutil.copy('orders_ALL.csv', 'dashboard-shadcn/orders_ALL.csv')
+        shutil.copy('dashboard_data.json', 'dashboard-shadcn/public/dashboard_data.json')
+        print("  📋 Copied data files to dashboard-shadcn/")
 
     # Validate calculations
     processor.validate_calculations()
