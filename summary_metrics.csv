@@ -2,11 +2,11 @@ Metric,Value
 Total Orders,892
 Gross Revenue,$55494.04
 Net Revenue (after tax),$51899.60
-Total Cost,$25092.14
-Profit,$26807.46
-Profit Margin %,51.65%
+Total Cost,$25056.20
+Profit,$26843.40
+Profit Margin %,51.72%
 Total Items,6238.9
-Average Order Value,$62.00
+Average Order Value,$61.49
 Express Order Rate %,9.08%
 ,
 REVENUE QUALITY,
@@ -18,10 +18,10 @@ Discount Rate %,4.50%
 Tax Total,$3401.03
 ,
 AOV DISTRIBUTION,
-AOV Mean,$61.57
-AOV Median,$43.83
-AOV 25th Percentile,$26.56
-AOV 75th Percentile,$72.71
+AOV Mean,$61.05
+AOV Median,$43.41
+AOV 25th Percentile,$27.94
+AOV 75th Percentile,$69.72
 ,
 CUSTOMER METRICS,
 Unique Customers,459

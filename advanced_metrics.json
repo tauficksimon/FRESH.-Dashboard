@@ -6505,7 +6505,7 @@
       "email": "Wernerlaw01@gmail.com",
       "last_order": "2025-10-01",
       "expected_next": "2025-10-13",
-      "days_overdue": 89,
+      "days_overdue": 90,
       "churn_risk": 95,
       "avg_order_interval": 11.6
     },
@@ -7055,7 +7055,7 @@
       "email": "mrragan1@icloud.com",
       "last_order": "2025-11-24",
       "expected_next": "2025-12-06",
-      "days_overdue": 35,
+      "days_overdue": 36,
       "churn_risk": 80,
       "avg_order_interval": 11.5
     },
@@ -7085,7 +7085,7 @@
       "email": "",
       "last_order": "2025-11-29",
       "expected_next": "2025-12-02",
-      "days_overdue": 39,
+      "days_overdue": 40,
       "churn_risk": 80,
       "avg_order_interval": 2.4
     },
@@ -13535,55 +13535,55 @@
       "month": "January",
       "current_orders": 65,
       "current_revenue": 2829.75,
-      "projected_orders": 164,
-      "projected_revenue": 7139.68,
+      "projected_orders": 202,
+      "projected_revenue": 9219.51,
       "days_elapsed": 11,
       "days_remaining": 20,
       "daily_run_rate": 5.9,
-      "growth_rate": -20.9
+      "growth_rate": 9.5
     },
     "forecast_7_days": [
       {
         "date": "2026-01-12",
         "day": "Monday",
-        "predicted_orders": 8,
-        "confidence_low": 4,
-        "confidence_high": 12
+        "predicted_orders": 12,
+        "confidence_low": 8,
+        "confidence_high": 16
       },
       {
         "date": "2026-01-13",
         "day": "Tuesday",
-        "predicted_orders": 6,
-        "confidence_low": 3,
-        "confidence_high": 8
+        "predicted_orders": 8,
+        "confidence_low": 5,
+        "confidence_high": 10
       },
       {
         "date": "2026-01-14",
         "day": "Wednesday",
-        "predicted_orders": 5,
-        "confidence_low": 1,
-        "confidence_high": 9
+        "predicted_orders": 7,
+        "confidence_low": 3,
+        "confidence_high": 11
       },
       {
         "date": "2026-01-15",
         "day": "Thursday",
-        "predicted_orders": 5,
-        "confidence_low": 2,
-        "confidence_high": 8
+        "predicted_orders": 7,
+        "confidence_low": 4,
+        "confidence_high": 10
       },
       {
         "date": "2026-01-16",
         "day": "Friday",
-        "predicted_orders": 5,
-        "confidence_low": 1,
-        "confidence_high": 9
+        "predicted_orders": 7,
+        "confidence_low": 3,
+        "confidence_high": 11
       },
       {
         "date": "2026-01-17",
         "day": "Saturday",
-        "predicted_orders": 3,
-        "confidence_low": 1,
-        "confidence_high": 5
+        "predicted_orders": 4,
+        "confidence_low": 2,
+        "confidence_high": 6
       },
       {
         "date": "2026-01-18",
@@ -13618,5 +13618,5 @@
       ]
     }
   },
-  "generated_at": "2026-01-11T00:27:25.646049"
+  "generated_at": "2026-01-11T01:47:10.679719"
 }
