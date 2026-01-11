@@ -7015,7 +7015,7 @@
       "email": "",
       "last_order": "2025-10-22",
       "expected_next": "2025-11-13",
-      "days_overdue": 58,
+      "days_overdue": 59,
       "churn_risk": 80,
       "avg_order_interval": 21.5
     },
@@ -7155,7 +7155,7 @@
       "email": "Noemail@gmail.com",
       "last_order": "2025-12-02",
       "expected_next": "2025-12-23",
-      "days_overdue": 18,
+      "days_overdue": 19,
       "churn_risk": 60,
       "avg_order_interval": 20.5
     },
@@ -13618,5 +13618,5 @@
       ]
     }
   },
-  "generated_at": "2026-01-11T01:47:10.679719"
+  "generated_at": "2026-01-11T02:10:08.334463"
 }
