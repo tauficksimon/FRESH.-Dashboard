@@ -87,6 +87,7 @@
       },
       "payment": {
         "Card": 780,
+        "None": 46,
         "Cash": 41,
         "Invoice": 15,
         "11": 10
@@ -284,6 +285,7 @@
         },
         "payment": {
           "Card": 81,
+          "None": 3,
           "Invoice": 3,
           "11": 2
         },
@@ -765,6 +767,7 @@
             },
             "payment": {
               "Card": 28,
+              "None": 2,
               "Invoice": 1
             },
             "status": {
@@ -950,7 +953,8 @@
             },
             "payment": {
               "Card": 19,
-              "Invoice": 2
+              "Invoice": 2,
+              "None": 1
             },
             "status": {
               "collected": 21,
@@ -1313,7 +1317,8 @@
         "payment": {
           "Card": 107,
           "Cash": 11,
-          "Invoice": 4
+          "Invoice": 4,
+          "None": 1
         },
         "status": {
           "collected": 122,
@@ -1681,7 +1686,8 @@
             },
             "payment": {
               "Card": 21,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 22,
@@ -2391,6 +2397,7 @@
           "Card": 119,
           "Cash": 5,
           "Invoice": 3,
+          "None": 2,
           "11": 2
         },
         "status": {
@@ -2752,6 +2759,7 @@
             "payment": {
               "Card": 24,
               "11": 2,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -2927,6 +2935,7 @@
             },
             "payment": {
               "Card": 38,
+              "None": 1,
               "Invoice": 1,
               "Cash": 1
             },
@@ -3472,6 +3481,7 @@
           "Card": 148,
           "Cash": 11,
           "Invoice": 2,
+          "None": 1,
           "11": 1
         },
         "status": {
@@ -3660,7 +3670,8 @@
             },
             "payment": {
               "Card": 35,
-              "Cash": 3
+              "Cash": 3,
+              "None": 1
             },
             "status": {
               "collected": 38,
@@ -4570,6 +4581,7 @@
           "Card": 133,
           "Cash": 5,
           "11": 2,
+          "None": 2,
           "Invoice": 1
         },
         "status": {
@@ -5101,7 +5113,8 @@
             },
             "payment": {
               "Card": 33,
-              "11": 1
+              "11": 1,
+              "None": 1
             },
             "status": {
               "collected": 34,
@@ -5278,7 +5291,8 @@
             "payment": {
               "Card": 33,
               "11": 1,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 35,
@@ -5572,6 +5586,7 @@
         },
         "payment": {
           "Card": 149,
+          "None": 16,
           "Cash": 9,
           "11": 2,
           "Invoice": 2
@@ -5761,6 +5776,7 @@
             },
             "payment": {
               "Card": 46,
+              "None": 2,
               "11": 2
             },
             "status": {
@@ -5941,6 +5957,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 2,
               "Cash": 1
             },
             "status": {
@@ -6117,7 +6134,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 4
             },
             "status": {
               "collected": 36,
@@ -6298,6 +6316,7 @@
             "payment": {
               "Card": 32,
               "Cash": 3,
+              "None": 3,
               "Invoice": 1
             },
             "status": {
@@ -6473,6 +6492,7 @@
             },
             "payment": {
               "Card": 10,
+              "None": 5,
               "Invoice": 1,
               "Cash": 1
             },
@@ -6656,6 +6676,7 @@
         },
         "payment": {
           "Card": 43,
+          "None": 21,
           "11": 1
         },
         "status": {
@@ -6847,6 +6868,7 @@
             },
             "payment": {
               "Card": 34,
+              "None": 15,
               "11": 1
             },
             "status": {
@@ -7033,7 +7055,8 @@
               "Other": 197.1
             },
             "payment": {
-              "Card": 9
+              "Card": 9,
+              "None": 6
             },
             "status": {
               "cleaning": 11,
@@ -7253,7 +7276,8 @@
       "payment": {
         "Card": 780,
         "Cash": 41,
-        "11": 10
+        "11": 10,
+        "None": 3
       },
       "status": {
         "collected": 821,
@@ -12695,6 +12719,7 @@
         "payment": {
           "Card": 149,
           "Cash": 9,
+          "None": 3,
           "11": 2
         },
         "status": {
@@ -13061,6 +13086,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -13236,7 +13262,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 2
             },
             "status": {
               "collected": 36,
@@ -14264,7 +14291,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2026-01-10T21:10:07.874452-05:00",
-    "last_updated_display": "January 10, 2026 at 09:10 PM EST"
+    "last_updated": "2026-01-10T21:21:28.068141-05:00",
+    "last_updated_display": "January 10, 2026 at 09:21 PM EST"
   }
 }
