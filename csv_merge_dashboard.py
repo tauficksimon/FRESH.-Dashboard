@@ -399,7 +399,7 @@ class CSVMerger:
             'unique_customers': df['Customer'].nunique(),
             'new_customers': df[df['IsNewCustomer'] == True]['Customer'].nunique(),
             'returning_customers': df['Customer'].nunique() - df[df['IsNewCustomer'] == True]['Customer'].nunique(),
-            'aov': total_revenue / len(df) if len(df) > 0 else 0,
+            'aov': (df[df['Revenue Net Tax'] > 0]['Revenue Net Tax'].sum() + subscription_revenue) / len(df[df['Revenue Net Tax'] > 0]) if len(df[df['Revenue Net Tax'] > 0]) > 0 else 0,  # AOV = (Net Revenue + Subscriptions) / Paid Orders
             'express_rate': (df['Express'].sum() / len(df) * 100) if len(df) > 0 else 0,
             'new_customer_share_pct': (df[df['IsNewCustomer'] == True]['Customer'].nunique() / df['Customer'].nunique() * 100) if df['Customer'].nunique() > 0 else 0
         }
@@ -414,10 +414,16 @@ class CSVMerger:
             'Revenue Net Tax': 'sum',
             'Order ID': 'count'
         }).reset_index()
-        
+
         monthly_data['Profit'] = monthly_data['Revenue Net Tax'] - monthly_data['Final Cost']
-        monthly_data['AOV'] = monthly_data['Total after Credit Used'] / monthly_data['Order ID']
-        
+
+        # Calculate AOV excluding $0 orders for each month (using Net Revenue)
+        paid_orders = df[df['Revenue Net Tax'] > 0]
+        monthly_aov = paid_orders.groupby('Month')['Revenue Net Tax'].mean().reset_index()
+        monthly_aov.columns = ['Month', 'AOV']
+        monthly_data = monthly_data.merge(monthly_aov, on='Month', how='left')
+        monthly_data['AOV'] = monthly_data['AOV'].fillna(0)
+
         return {
             'months': monthly_data['Month'].tolist(),
             'revenue': monthly_data['Total after Credit Used'].tolist(),
@@ -504,8 +510,11 @@ class CSVMerger:
         }
 
     def calculate_aov_stats(self, df: pd.DataFrame) -> Dict:
-        """Calculate AOV distribution statistics"""
-        if len(df) == 0:
+        """Calculate AOV distribution statistics (excluding $0 orders, using Net Revenue)"""
+        # Filter out $0 orders (subscription prepaid orders)
+        paid_df = df[df['Revenue Net Tax'] > 0]
+
+        if len(paid_df) == 0:
             return {
                 'mean': 0,
                 'median': 0,
@@ -514,8 +523,8 @@ class CSVMerger:
                 'gross_margin_pct': 0
             }
 
-        # Calculate AOV for each order
-        aov_values = df['Total after Credit Used'].values
+        # Calculate AOV for each paid order (using Net Revenue)
+        aov_values = paid_df['Revenue Net Tax'].values
 
         # Calculate statistics
         mean_aov = np.mean(aov_values)
