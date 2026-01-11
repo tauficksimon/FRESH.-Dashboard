@@ -1051,10 +1051,31 @@ def main():
 
     # Copy files to dashboard-shadcn for HAAP report generation
     import shutil
+    import subprocess
     if os.path.exists('dashboard-shadcn'):
         shutil.copy('orders_ALL.csv', 'dashboard-shadcn/orders_ALL.csv')
         shutil.copy('dashboard_data.json', 'dashboard-shadcn/public/dashboard_data.json')
         print("  📋 Copied data files to dashboard-shadcn/")
+
+    # Generate advanced metrics (customer LTV, churn predictions, cohorts, etc.)
+    print("\n📊 Generating advanced metrics...")
+    try:
+        result = subprocess.run(
+            ['python', 'scripts/advanced_metrics.py'],
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+        if result.returncode == 0:
+            print("  ✅ Advanced metrics generated successfully")
+            # Copy to dashboard-shadcn
+            if os.path.exists('dashboard-shadcn') and os.path.exists('advanced_metrics.json'):
+                shutil.copy('advanced_metrics.json', 'dashboard-shadcn/public/advanced_metrics.json')
+                print("  📋 Copied advanced_metrics.json to dashboard-shadcn/")
+        else:
+            print(f"  ⚠️ Advanced metrics failed: {result.stderr}")
+    except Exception as e:
+        print(f"  ⚠️ Could not generate advanced metrics: {e}")
 
     # Validate calculations
     processor.validate_calculations()

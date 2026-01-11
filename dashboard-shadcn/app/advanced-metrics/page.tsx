@@ -1,7 +1,9 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import {
   Users,
   AlertTriangle,
@@ -9,7 +11,8 @@ import {
   UserX,
   Calendar,
   TrendingUp,
-  Clock
+  Clock,
+  ArrowLeft
 } from 'lucide-react';
 
 interface Customer {
@@ -192,11 +195,18 @@ export default function AdvancedMetrics() {
   return (
     <div className="container mx-auto p-6 space-y-6">
       <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-3xl font-bold tracking-tight">Advanced Metrics</h1>
-          <p className="text-muted-foreground">
-            Customer insights, retention analysis, and predictive analytics
-          </p>
+        <div className="flex items-center gap-4">
+          <Link href="/">
+            <Button variant="outline" size="icon" className="h-10 w-10">
+              <ArrowLeft className="h-5 w-5" />
+            </Button>
+          </Link>
+          <div>
+            <h1 className="text-3xl font-bold tracking-tight">Advanced Metrics</h1>
+            <p className="text-muted-foreground">
+              Customer insights, retention analysis, and predictive analytics
+            </p>
+          </div>
         </div>
       </div>
 
