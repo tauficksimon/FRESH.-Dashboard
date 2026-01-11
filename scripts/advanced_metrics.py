@@ -505,8 +505,9 @@ def calculate_seasonal_patterns(orders_file):
             date_key = placed_date.strftime('%Y-%m-%d')
             daily_order_counts[date_key] += 1
 
-            # Count by week for trend detection
-            week_key = placed_date.strftime('%Y-W%W')
+            # Count by week for trend detection (use ISO week to handle year boundaries correctly)
+            iso_year, iso_week, _ = placed_date.isocalendar()
+            week_key = f'{iso_year}-W{iso_week:02d}'
             weekly_order_counts[week_key] += 1
 
             # Track current month orders for projection

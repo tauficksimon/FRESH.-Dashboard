@@ -910,7 +910,7 @@
         "aov": 54.47,
         "first_order": "2025-11-26",
         "last_order": "2025-12-23",
-        "days_since_last": 18,
+        "days_since_last": 17,
         "segment": "Active"
       },
       {
@@ -3466,7 +3466,7 @@
         "aov": 43.78,
         "first_order": "2025-09-03",
         "last_order": "2025-09-03",
-        "days_since_last": 129,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -5494,7 +5494,7 @@
         "aov": 0.0,
         "first_order": "2025-08-16",
         "last_order": "2025-09-08",
-        "days_since_last": 125,
+        "days_since_last": 124,
         "segment": "At-Risk"
       },
       {
@@ -6324,7 +6324,7 @@
         "aov": 0.0,
         "first_order": "2025-08-16",
         "last_order": "2025-09-08",
-        "days_since_last": 125,
+        "days_since_last": 124,
         "segment": "At-Risk"
       },
       {
@@ -6765,7 +6765,7 @@
       "email": "maanildodani@gmail.com",
       "last_order": "2025-09-08",
       "expected_next": "2025-09-30",
-      "days_overdue": 103,
+      "days_overdue": 102,
       "churn_risk": 95,
       "avg_order_interval": 22
     },
@@ -7045,7 +7045,7 @@
       "email": "Yuriramos884@gmail.com",
       "last_order": "2025-11-13",
       "expected_next": "2025-11-16",
-      "days_overdue": 55,
+      "days_overdue": 54,
       "churn_risk": 80,
       "avg_order_interval": 3.4
     },
@@ -7205,7 +7205,7 @@
       "email": "",
       "last_order": "2025-11-20",
       "expected_next": "2025-12-11",
-      "days_overdue": 30,
+      "days_overdue": 29,
       "churn_risk": 60,
       "avg_order_interval": 21.5
     },
@@ -7235,7 +7235,7 @@
       "email": "",
       "last_order": "2025-12-15",
       "expected_next": "2025-12-25",
-      "days_overdue": 16,
+      "days_overdue": 15,
       "churn_risk": 60,
       "avg_order_interval": 10.2
     },
@@ -7305,7 +7305,7 @@
       "email": "dangoodeofficial@gmail.com",
       "last_order": "2025-12-18",
       "expected_next": "2026-01-01",
-      "days_overdue": 9,
+      "days_overdue": 8,
       "churn_risk": 40,
       "avg_order_interval": 14.4
     },
@@ -13535,62 +13535,62 @@
       "month": "January",
       "current_orders": 65,
       "current_revenue": 2829.75,
-      "projected_orders": 164,
-      "projected_revenue": 7139.68,
-      "days_elapsed": 11,
-      "days_remaining": 20,
-      "daily_run_rate": 5.9,
-      "growth_rate": -20.9
+      "projected_orders": 203,
+      "projected_revenue": 8837.53,
+      "days_elapsed": 10,
+      "days_remaining": 21,
+      "daily_run_rate": 6.5,
+      "growth_rate": 9.5
     },
     "forecast_7_days": [
       {
-        "date": "2026-01-12",
-        "day": "Monday",
-        "predicted_orders": 8,
-        "confidence_low": 4,
-        "confidence_high": 12
-      },
-      {
-        "date": "2026-01-13",
-        "day": "Tuesday",
-        "predicted_orders": 6,
-        "confidence_low": 3,
-        "confidence_high": 8
-      },
-      {
-        "date": "2026-01-14",
-        "day": "Wednesday",
-        "predicted_orders": 5,
-        "confidence_low": 1,
-        "confidence_high": 9
-      },
-      {
-        "date": "2026-01-15",
-        "day": "Thursday",
-        "predicted_orders": 5,
-        "confidence_low": 2,
-        "confidence_high": 8
-      },
-      {
-        "date": "2026-01-16",
-        "day": "Friday",
-        "predicted_orders": 5,
-        "confidence_low": 1,
-        "confidence_high": 9
-      },
-      {
-        "date": "2026-01-17",
-        "day": "Saturday",
-        "predicted_orders": 3,
-        "confidence_low": 1,
-        "confidence_high": 5
-      },
-      {
-        "date": "2026-01-18",
+        "date": "2026-01-11",
         "day": "Sunday",
         "predicted_orders": 1,
         "confidence_low": 1,
         "confidence_high": 1
+      },
+      {
+        "date": "2026-01-12",
+        "day": "Monday",
+        "predicted_orders": 12,
+        "confidence_low": 8,
+        "confidence_high": 16
+      },
+      {
+        "date": "2026-01-13",
+        "day": "Tuesday",
+        "predicted_orders": 7,
+        "confidence_low": 5,
+        "confidence_high": 10
+      },
+      {
+        "date": "2026-01-14",
+        "day": "Wednesday",
+        "predicted_orders": 7,
+        "confidence_low": 3,
+        "confidence_high": 11
+      },
+      {
+        "date": "2026-01-15",
+        "day": "Thursday",
+        "predicted_orders": 7,
+        "confidence_low": 4,
+        "confidence_high": 10
+      },
+      {
+        "date": "2026-01-16",
+        "day": "Friday",
+        "predicted_orders": 7,
+        "confidence_low": 3,
+        "confidence_high": 11
+      },
+      {
+        "date": "2026-01-17",
+        "day": "Saturday",
+        "predicted_orders": 4,
+        "confidence_low": 2,
+        "confidence_high": 7
       }
     ],
     "insights": {
@@ -13618,5 +13618,5 @@
       ]
     }
   },
-  "generated_at": "2026-01-11T00:27:25.646049"
+  "generated_at": "2026-01-10T19:36:21.366300"
 }
