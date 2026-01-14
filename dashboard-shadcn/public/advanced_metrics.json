@@ -934,7 +934,7 @@
         "aov": 54.47,
         "first_order": "2025-11-26",
         "last_order": "2025-12-23",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "Active"
       },
       {
@@ -5602,7 +5602,7 @@
         "aov": 0.0,
         "first_order": "2025-08-16",
         "last_order": "2025-09-08",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "At-Risk"
       },
       {
@@ -6420,7 +6420,7 @@
         "aov": 0.0,
         "first_order": "2025-08-16",
         "last_order": "2025-09-08",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "At-Risk"
       },
       {
@@ -6601,7 +6601,7 @@
       "email": "Wernerlaw01@gmail.com",
       "last_order": "2025-10-01",
       "expected_next": "2025-10-13",
-      "days_overdue": 92,
+      "days_overdue": 93,
       "churn_risk": 95,
       "avg_order_interval": 11.6
     },
@@ -6851,7 +6851,7 @@
       "email": "maanildodani@gmail.com",
       "last_order": "2025-09-08",
       "expected_next": "2025-09-30",
-      "days_overdue": 105,
+      "days_overdue": 106,
       "churn_risk": 95,
       "avg_order_interval": 22
     },
@@ -6941,7 +6941,7 @@
       "email": "",
       "last_order": "2025-10-22",
       "expected_next": "2025-11-13",
-      "days_overdue": 61,
+      "days_overdue": 62,
       "churn_risk": 95,
       "avg_order_interval": 21.5
     },
@@ -7161,7 +7161,7 @@
       "email": "Yuriramos884@gmail.com",
       "last_order": "2025-11-13",
       "expected_next": "2025-11-16",
-      "days_overdue": 57,
+      "days_overdue": 58,
       "churn_risk": 80,
       "avg_order_interval": 3.4
     },
@@ -7181,7 +7181,7 @@
       "email": "mrragan1@icloud.com",
       "last_order": "2025-11-24",
       "expected_next": "2025-12-06",
-      "days_overdue": 38,
+      "days_overdue": 39,
       "churn_risk": 80,
       "avg_order_interval": 11.5
     },
@@ -7211,7 +7211,7 @@
       "email": "",
       "last_order": "2025-11-29",
       "expected_next": "2025-12-02",
-      "days_overdue": 42,
+      "days_overdue": 43,
       "churn_risk": 80,
       "avg_order_interval": 2.4
     },
@@ -7281,7 +7281,7 @@
       "email": "Noemail@gmail.com",
       "last_order": "2025-12-02",
       "expected_next": "2025-12-23",
-      "days_overdue": 21,
+      "days_overdue": 22,
       "churn_risk": 60,
       "avg_order_interval": 20.5
     },
@@ -7321,7 +7321,7 @@
       "email": "",
       "last_order": "2025-12-15",
       "expected_next": "2025-12-25",
-      "days_overdue": 18,
+      "days_overdue": 19,
       "churn_risk": 60,
       "avg_order_interval": 10.2
     },
@@ -7411,7 +7411,7 @@
       "email": "dangoodeofficial@gmail.com",
       "last_order": "2025-12-18",
       "expected_next": "2026-01-01",
-      "days_overdue": 11,
+      "days_overdue": 12,
       "churn_risk": 40,
       "avg_order_interval": 14.4
     },
@@ -7424,6 +7424,16 @@
       "days_overdue": 10,
       "churn_risk": 40,
       "avg_order_interval": 23
+    },
+    {
+      "customer_id": "403",
+      "name": "Eduardo Kley Cavalieri",
+      "email": "eduardokcavalieri@hotmail.com",
+      "last_order": "2025-12-23",
+      "expected_next": "2026-01-05",
+      "days_overdue": 8,
+      "churn_risk": 40,
+      "avg_order_interval": 13
     },
     {
       "customer_id": "463",
@@ -13697,21 +13707,14 @@
       "month": "January",
       "current_orders": 86,
       "current_revenue": 5001.84,
-      "projected_orders": 187,
-      "projected_revenue": 12120.9,
-      "days_elapsed": 13,
-      "days_remaining": 18,
-      "daily_run_rate": 6.6,
+      "projected_orders": 182,
+      "projected_revenue": 11796.81,
+      "days_elapsed": 14,
+      "days_remaining": 17,
+      "daily_run_rate": 6.1,
       "growth_rate": -7.2
     },
     "forecast_7_days": [
-      {
-        "date": "2026-01-14",
-        "day": "Wednesday",
-        "predicted_orders": 6,
-        "confidence_low": 3,
-        "confidence_high": 10
-      },
       {
         "date": "2026-01-15",
         "day": "Thursday",
@@ -13750,9 +13753,16 @@
       {
         "date": "2026-01-20",
         "day": "Tuesday",
-        "predicted_orders": 6,
-        "confidence_low": 4,
+        "predicted_orders": 7,
+        "confidence_low": 5,
         "confidence_high": 9
+      },
+      {
+        "date": "2026-01-21",
+        "day": "Wednesday",
+        "predicted_orders": 6,
+        "confidence_low": 3,
+        "confidence_high": 10
       }
     ],
     "insights": {
@@ -13780,5 +13790,5 @@
       ]
     }
   },
-  "generated_at": "2026-01-13T21:35:24.293018"
+  "generated_at": "2026-01-14T02:35:55.917230"
 }
