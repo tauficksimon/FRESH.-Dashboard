@@ -484,8 +484,12 @@ class CSVMerger:
         refunds = abs(negative_revenue)
         refund_orders = len(df[df['Total after Credit Used'] < 0])
 
-        # Net revenue (after tax)
-        net_revenue = df['Revenue Net Tax'].sum()
+        # Get subscription revenue for the months in this dataset
+        months_in_df = df['Month'].dropna().unique().tolist()
+        subscription_revenue = self.get_subscription_revenue(months_in_df)
+
+        # Net revenue (after tax) + subscription revenue
+        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue
 
         # Discounts and tax
         discounts = df['Discount'].sum()

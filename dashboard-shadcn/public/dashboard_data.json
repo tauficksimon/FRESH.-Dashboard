@@ -87,6 +87,7 @@
       },
       "payment": {
         "Card": 788,
+        "None": 56,
         "Cash": 42,
         "Invoice": 17,
         "11": 10
@@ -103,7 +104,7 @@
         "revenue_quality": {
           "gross_sales": 57367.04,
           "refunds": 193.41,
-          "net_revenue": 53733.91,
+          "net_revenue": 54110.047000000006,
           "refund_rate_pct": 0.34,
           "discounts": 2626.57,
           "discount_rate_pct": 4.58,
@@ -284,6 +285,7 @@
         },
         "payment": {
           "Card": 81,
+          "None": 3,
           "Invoice": 3,
           "11": 2
         },
@@ -765,6 +767,7 @@
             },
             "payment": {
               "Card": 28,
+              "None": 2,
               "Invoice": 1
             },
             "status": {
@@ -950,7 +953,8 @@
             },
             "payment": {
               "Card": 19,
-              "Invoice": 2
+              "Invoice": 2,
+              "None": 1
             },
             "status": {
               "collected": 21,
@@ -1313,7 +1317,8 @@
         "payment": {
           "Card": 107,
           "Cash": 11,
-          "Invoice": 4
+          "Invoice": 4,
+          "None": 1
         },
         "status": {
           "collected": 122,
@@ -1681,7 +1686,8 @@
             },
             "payment": {
               "Card": 21,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 22,
@@ -2391,6 +2397,7 @@
           "Card": 119,
           "Cash": 5,
           "Invoice": 3,
+          "None": 2,
           "11": 2
         },
         "status": {
@@ -2752,6 +2759,7 @@
             "payment": {
               "Card": 24,
               "11": 2,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -2927,6 +2935,7 @@
             },
             "payment": {
               "Card": 38,
+              "None": 1,
               "Invoice": 1,
               "Cash": 1
             },
@@ -3472,6 +3481,7 @@
           "Card": 148,
           "Cash": 11,
           "Invoice": 2,
+          "None": 1,
           "11": 1
         },
         "status": {
@@ -3660,7 +3670,8 @@
             },
             "payment": {
               "Card": 35,
-              "Cash": 3
+              "Cash": 3,
+              "None": 1
             },
             "status": {
               "collected": 38,
@@ -4570,6 +4581,7 @@
           "Card": 133,
           "Cash": 5,
           "11": 2,
+          "None": 2,
           "Invoice": 1
         },
         "status": {
@@ -5101,7 +5113,8 @@
             },
             "payment": {
               "Card": 33,
-              "11": 1
+              "11": 1,
+              "None": 1
             },
             "status": {
               "collected": 34,
@@ -5278,7 +5291,8 @@
             "payment": {
               "Card": 33,
               "11": 1,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 35,
@@ -5572,6 +5586,7 @@
         },
         "payment": {
           "Card": 149,
+          "None": 16,
           "Cash": 9,
           "11": 2,
           "Invoice": 2
@@ -5585,7 +5600,7 @@
           "revenue_quality": {
             "gross_sales": 10357.91,
             "refunds": 0.0,
-            "net_revenue": 9716.27,
+            "net_revenue": 9908.837,
             "refund_rate_pct": 0.0,
             "discounts": 361.4799999999999,
             "discount_rate_pct": 3.49,
@@ -5761,6 +5776,7 @@
             },
             "payment": {
               "Card": 46,
+              "None": 2,
               "11": 2
             },
             "status": {
@@ -5771,7 +5787,7 @@
               "revenue_quality": {
                 "gross_sales": 3253.77,
                 "refunds": 0.0,
-                "net_revenue": 3042.05,
+                "net_revenue": 3234.617,
                 "refund_rate_pct": 0.0,
                 "discounts": 79.9,
                 "discount_rate_pct": 2.46,
@@ -5941,6 +5957,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 2,
               "Cash": 1
             },
             "status": {
@@ -5951,7 +5968,7 @@
               "revenue_quality": {
                 "gross_sales": 2227.27,
                 "refunds": 0.0,
-                "net_revenue": 2082.69,
+                "net_revenue": 2275.257,
                 "refund_rate_pct": 0.0,
                 "discounts": 118.52,
                 "discount_rate_pct": 5.32,
@@ -6117,7 +6134,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 4
             },
             "status": {
               "collected": 36,
@@ -6127,7 +6145,7 @@
               "revenue_quality": {
                 "gross_sales": 2190.0,
                 "refunds": 0.0,
-                "net_revenue": 2053.9700000000003,
+                "net_revenue": 2246.5370000000003,
                 "refund_rate_pct": 0.0,
                 "discounts": 38.42,
                 "discount_rate_pct": 1.75,
@@ -6298,6 +6316,7 @@
             "payment": {
               "Card": 32,
               "Cash": 3,
+              "None": 3,
               "Invoice": 1
             },
             "status": {
@@ -6308,7 +6327,7 @@
               "revenue_quality": {
                 "gross_sales": 2147.7700000000004,
                 "refunds": 0.0,
-                "net_revenue": 2021.3199999999997,
+                "net_revenue": 2213.8869999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 46.76,
                 "discount_rate_pct": 2.18,
@@ -6473,6 +6492,7 @@
             },
             "payment": {
               "Card": 10,
+              "None": 5,
               "Invoice": 1,
               "Cash": 1
             },
@@ -6484,7 +6504,7 @@
               "revenue_quality": {
                 "gross_sales": 539.0999999999999,
                 "refunds": 0.0,
-                "net_revenue": 516.24,
+                "net_revenue": 708.807,
                 "refund_rate_pct": 0.0,
                 "discounts": 77.88,
                 "discount_rate_pct": 14.45,
@@ -6656,6 +6676,7 @@
         },
         "payment": {
           "Card": 51,
+          "None": 31,
           "Invoice": 2,
           "11": 1,
           "Cash": 1
@@ -6671,7 +6692,7 @@
           "revenue_quality": {
             "gross_sales": 5099.790000000001,
             "refunds": 0.0,
-            "net_revenue": 4985.630000000001,
+            "net_revenue": 5169.200000000001,
             "refund_rate_pct": 0.0,
             "discounts": 213.45999999999998,
             "discount_rate_pct": 4.19,
@@ -6848,6 +6869,7 @@
             },
             "payment": {
               "Card": 37,
+              "None": 12,
               "11": 1
             },
             "status": {
@@ -6859,7 +6881,7 @@
               "revenue_quality": {
                 "gross_sales": 2199.2300000000005,
                 "refunds": 0.0,
-                "net_revenue": 2141.9700000000003,
+                "net_revenue": 2325.5400000000004,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.349999999999994,
                 "discount_rate_pct": 2.43,
@@ -7033,6 +7055,7 @@
               "Other": 1589.9999999999998
             },
             "payment": {
+              "None": 19,
               "Card": 14,
               "Invoice": 2,
               "Cash": 1
@@ -7047,7 +7070,7 @@
               "revenue_quality": {
                 "gross_sales": 2900.56,
                 "refunds": 0.0,
-                "net_revenue": 2843.66,
+                "net_revenue": 3027.23,
                 "refund_rate_pct": 0.0,
                 "discounts": 160.11,
                 "discount_rate_pct": 5.52,
@@ -7256,7 +7279,8 @@
       "payment": {
         "Card": 788,
         "Cash": 42,
-        "11": 10
+        "11": 10,
+        "None": 3
       },
       "status": {
         "collected": 828,
@@ -7268,7 +7292,7 @@
         "revenue_quality": {
           "gross_sales": 54094.75,
           "refunds": 193.41,
-          "net_revenue": 50551.86,
+          "net_revenue": 50927.997,
           "refund_rate_pct": 0.36,
           "discounts": 1732.8899999999999,
           "discount_rate_pct": 3.2,
@@ -12698,6 +12722,7 @@
         "payment": {
           "Card": 149,
           "Cash": 9,
+          "None": 3,
           "11": 2
         },
         "status": {
@@ -12709,7 +12734,7 @@
           "revenue_quality": {
             "gross_sales": 9826.91,
             "refunds": 0.0,
-            "net_revenue": 9207.220000000001,
+            "net_revenue": 9399.787,
             "refund_rate_pct": 0.0,
             "discounts": 250.00999999999996,
             "discount_rate_pct": 2.54,
@@ -12894,7 +12919,7 @@
               "revenue_quality": {
                 "gross_sales": 3209.27,
                 "refunds": 0.0,
-                "net_revenue": 3000.46,
+                "net_revenue": 3193.027,
                 "refund_rate_pct": 0.0,
                 "discounts": 75.99000000000001,
                 "discount_rate_pct": 2.37,
@@ -13064,6 +13089,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -13073,7 +13099,7 @@
               "revenue_quality": {
                 "gross_sales": 2148.6700000000005,
                 "refunds": 0.0,
-                "net_revenue": 2009.23,
+                "net_revenue": 2201.797,
                 "refund_rate_pct": 0.0,
                 "discounts": 118.52,
                 "discount_rate_pct": 5.52,
@@ -13239,7 +13265,8 @@
             },
             "payment": {
               "Card": 32,
-              "Cash": 4
+              "Cash": 4,
+              "None": 2
             },
             "status": {
               "collected": 36,
@@ -13249,7 +13276,7 @@
               "revenue_quality": {
                 "gross_sales": 2008.6000000000004,
                 "refunds": 0.0,
-                "net_revenue": 1877.84,
+                "net_revenue": 2070.4069999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 22.73,
                 "discount_rate_pct": 1.13,
@@ -13428,7 +13455,7 @@
               "revenue_quality": {
                 "gross_sales": 2048.3700000000003,
                 "refunds": 0.0,
-                "net_revenue": 1924.36,
+                "net_revenue": 2116.9269999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 32.77,
                 "discount_rate_pct": 1.6,
@@ -13602,7 +13629,7 @@
               "revenue_quality": {
                 "gross_sales": 412.0,
                 "refunds": 0.0,
-                "net_revenue": 395.33000000000004,
+                "net_revenue": 587.897,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -13780,7 +13807,7 @@
           "revenue_quality": {
             "gross_sales": 2752.5299999999997,
             "refunds": 0.0,
-            "net_revenue": 2685.4900000000002,
+            "net_revenue": 2869.0600000000004,
             "refund_rate_pct": 0.0,
             "discounts": 53.35,
             "discount_rate_pct": 1.94,
@@ -13961,7 +13988,7 @@
               "revenue_quality": {
                 "gross_sales": 1794.1299999999999,
                 "refunds": 0.0,
-                "net_revenue": 1745.9,
+                "net_revenue": 1929.47,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.35,
                 "discount_rate_pct": 2.97,
@@ -14142,7 +14169,7 @@
               "revenue_quality": {
                 "gross_sales": 958.3999999999999,
                 "refunds": 0.0,
-                "net_revenue": 939.5900000000001,
+                "net_revenue": 1123.16,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -14263,7 +14290,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2026-01-13T21:25:02.904956-05:00",
-    "last_updated_display": "January 13, 2026 at 09:25 PM EST"
+    "last_updated": "2026-01-13T21:35:23.775409-05:00",
+    "last_updated_display": "January 13, 2026 at 09:35 PM EST"
   }
 }
