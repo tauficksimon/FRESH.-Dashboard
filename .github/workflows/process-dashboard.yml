@@ -81,12 +81,18 @@ jobs:
           echo "Copying advanced_metrics.json to React dashboard public folder..."
           cp advanced_metrics.json dashboard-shadcn/public/advanced_metrics.json
 
+      - name: Generate Growth Metrics
+        if: steps.check_files.outputs.csv_found == 'true'
+        run: |
+          echo "Generating growth metrics (CMGR, velocity, efficiency)..."
+          python scripts/generate_growth_metrics.py
+
       - name: Commit updated dashboard
         if: steps.check_files.outputs.csv_found == 'true'
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add index.html output/* summary_metrics.csv dashboard-shadcn/public/dashboard_data.json dashboard-shadcn/public/advanced_metrics.json advanced_metrics.json dashboard-shadcn/orders_ALL.csv || true
+          git add index.html output/* summary_metrics.csv dashboard-shadcn/public/dashboard_data.json dashboard-shadcn/public/advanced_metrics.json dashboard-shadcn/public/growth_metrics.json advanced_metrics.json dashboard-shadcn/orders_ALL.csv || true
 
           # Check if there are changes to commit
           if git diff --staged --quiet; then

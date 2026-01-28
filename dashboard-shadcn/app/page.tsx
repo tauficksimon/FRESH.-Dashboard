@@ -61,27 +61,10 @@ export default function DashboardPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header */}
+      {/* Slim Header with just Export button */}
       <div className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="flex h-16 items-center justify-between px-4 md:px-8">
-          <div className="flex items-center gap-2 md:gap-3">
-            <div className="flex h-8 w-8 md:h-10 md:w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold text-xs md:text-sm">
-              F
-            </div>
-            <div>
-              <h2 className="text-base md:text-lg font-bold">FRESH</h2>
-              <span className="text-xs text-muted-foreground hidden sm:inline">Dry Cleaning Analytics</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-2">
-            <a
-              href="/advanced-metrics"
-              className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-secondary text-secondary-foreground hover:bg-secondary/80 h-10 px-4 py-2"
-            >
-              Advanced Metrics
-            </a>
-            <ExportHAAPButton />
-          </div>
+        <div className="flex h-14 items-center justify-end px-4 md:px-8">
+          <ExportHAAPButton />
         </div>
       </div>
 
