@@ -1,9 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { KPICard } from '@/components/kpi-card';
 import {
   ChartContainer,
@@ -15,13 +13,11 @@ import {
   Bar,
   Line,
   Area,
-  AreaChart,
   XAxis,
   YAxis,
   CartesianGrid,
   ReferenceLine,
 } from 'recharts';
-import { ArrowLeft, TrendingUp } from 'lucide-react';
 
 interface MonthlyData {
   month: string;

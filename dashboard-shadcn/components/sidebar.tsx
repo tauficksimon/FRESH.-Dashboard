@@ -24,12 +24,11 @@ const navItems = [
 ];
 
 interface SidebarProps {
-    collapsed: boolean;
     onClose?: () => void;
     isMobile?: boolean;
 }
 
-export function Sidebar({ collapsed, onClose, isMobile }: SidebarProps) {
+export function Sidebar({ onClose, isMobile }: SidebarProps) {
     const pathname = usePathname();
 
     const handleNavClick = () => {

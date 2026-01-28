@@ -53,7 +53,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                     !sidebarOpen && "-translate-x-full"
                 )}
             >
-                <Sidebar collapsed={false} onClose={() => setSidebarOpen(false)} isMobile={isMobile} />
+                <Sidebar onClose={() => setSidebarOpen(false)} isMobile={isMobile} />
             </aside>
 
             {/* Toggle button */}
