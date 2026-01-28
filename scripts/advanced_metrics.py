@@ -24,8 +24,28 @@ def parse_date(date_str):
         except:
             return None
 
-def calculate_ltv_segments(orders_file):
-    """Calculate Customer Lifetime Value and Segmentation"""
+def load_order_costs(items_file):
+    """Load actual cost per order from Items.csv"""
+    order_costs = defaultdict(float)
+
+    with open(items_file, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            order_id = row.get('Order ID', '').strip()
+            if not order_id:
+                continue
+
+            # Sum up item costs
+            item_cost = float(row.get('Cost Price', 0) or 0)
+            order_costs[order_id] += item_cost
+
+    return order_costs
+
+def calculate_ltv_segments(orders_file, items_file='data/Items.csv'):
+    """Calculate Customer Lifetime Value and Segmentation (based on actual gross profit)"""
+
+    # Load actual costs per order from Items.csv
+    order_costs = load_order_costs(items_file)
 
     customer_data = defaultdict(lambda: {
         'orders': [],
@@ -51,14 +71,23 @@ def calculate_ltv_segments(orders_file):
             if not placed_date:
                 continue
 
+            order_id = row.get('Order ID', '').strip()
+
+            # Revenue from Orders.csv (what customer paid)
             revenue = float(row.get('Total after Credit Used', 0) or row.get('Total', 0) or 0)
+
+            # Cost from Items.csv, profit = revenue - cost
+            cost = order_costs.get(order_id, revenue * 0.50)  # Fallback to 50% cost estimate
+            profit = revenue - cost
 
             customer_data[customer_id]['orders'].append({
                 'date': placed_date,
                 'revenue': revenue,
-                'order_id': row.get('Order ID', '')
+                'profit': profit,
+                'order_id': order_id
             })
             customer_data[customer_id]['total_revenue'] += revenue
+            customer_data[customer_id]['total_profit'] += profit
             customer_data[customer_id]['order_count'] += 1
             customer_data[customer_id]['email'] = row.get('Email', '')
             customer_data[customer_id]['name'] = row.get('Customer', '')
@@ -104,7 +133,8 @@ def calculate_ltv_segments(orders_file):
             'customer_id': customer_id,
             'name': data['name'],
             'email': data['email'],
-            'ltv': round(data['total_revenue'], 2),
+            'ltv': round(data['total_profit'], 2),  # LTV based on gross profit
+            'total_revenue': round(data['total_revenue'], 2),
             'orders': data['order_count'],
             'aov': round(data['avg_order_value'], 2),
             'first_order': data['first_order'].strftime('%Y-%m-%d') if data['first_order'] else None,
@@ -122,12 +152,30 @@ def calculate_ltv_segments(orders_file):
         segment_stats[customer['segment']]['count'] += 1
         segment_stats[customer['segment']]['revenue'] += customer['ltv']
 
+    # Calculate LTV averages for key groups
+    all_ltvs = [c['ltv'] for c in customer_segments]
+    vip_customers = [c for c in customer_segments if c['segment'] == 'VIP']
+    repeat_customers = [c for c in customer_segments if c['orders'] >= 2]
+    first_time_customers = [c for c in customer_segments if c['orders'] == 1]
+
+    avg_ltv = sum(all_ltvs) / len(all_ltvs) if all_ltvs else 0
+    avg_vip_ltv = sum(c['ltv'] for c in vip_customers) / len(vip_customers) if vip_customers else 0
+    avg_repeat_ltv = sum(c['ltv'] for c in repeat_customers) / len(repeat_customers) if repeat_customers else 0
+    avg_first_time_ltv = sum(c['ltv'] for c in first_time_customers) / len(first_time_customers) if first_time_customers else 0
+
     return {
         'customers': customer_segments,
         'segment_stats': dict(segment_stats),
         'top_10': customer_segments[:10],
         'at_risk': [c for c in customer_segments if c['segment'] == 'At-Risk'],
-        'churned': [c for c in customer_segments if c['segment'] == 'Churned']
+        'churned': [c for c in customer_segments if c['segment'] == 'Churned'],
+        'avg_ltv': round(avg_ltv, 2),
+        'avg_vip_ltv': round(avg_vip_ltv, 2),
+        'avg_repeat_ltv': round(avg_repeat_ltv, 2),
+        'avg_first_time_ltv': round(avg_first_time_ltv, 2),
+        'vip_count': len(vip_customers),
+        'repeat_count': len(repeat_customers),
+        'first_time_count': len(first_time_customers)
     }
 
 def calculate_cohort_retention(orders_file):
@@ -338,12 +386,16 @@ def calculate_unit_economics(orders_file):
         'fixed_costs': FIXED_COSTS
     }
 
-def calculate_predictive_ltv(orders_file):
-    """Predict LTV for customers with 1-2 orders based on early signals"""
+def calculate_predictive_ltv(orders_file, items_file='data/Items.csv'):
+    """Predict LTV for customers with 1-2 orders based on early signals (using actual gross profit)"""
+
+    # Load actual costs per order from Items.csv
+    order_costs = load_order_costs(items_file)
 
     customer_data = defaultdict(lambda: {
         'orders': [],
         'total_revenue': 0,
+        'total_profit': 0,
         'order_count': 0,
         'name': '',
         'email': '',
@@ -361,23 +413,32 @@ def calculate_predictive_ltv(orders_file):
             if not placed_date:
                 continue
 
+            order_id = row.get('Order ID', '').strip()
+
+            # Revenue from Orders.csv
             revenue = float(row.get('Total after Credit Used', 0) or row.get('Total', 0) or 0)
+
+            # Cost from Items.csv, profit = revenue - cost
+            cost = order_costs.get(order_id, revenue * 0.50)
+            profit = revenue - cost
 
             customer_data[customer_id]['orders'].append({
                 'date': placed_date,
-                'revenue': revenue
+                'revenue': revenue,
+                'profit': profit
             })
             customer_data[customer_id]['total_revenue'] += revenue
+            customer_data[customer_id]['total_profit'] += profit
             customer_data[customer_id]['order_count'] += 1
             customer_data[customer_id]['name'] = row.get('Customer', '')
             customer_data[customer_id]['email'] = row.get('Email', '')
             customer_data[customer_id]['customer_id'] = customer_id
 
-    # Calculate average LTV for customers with 3+ orders (our benchmark)
+    # Calculate average LTV (actual gross profit) for customers with 3+ orders (our benchmark)
     benchmark_ltvs = []
     for data in customer_data.values():
         if data['order_count'] >= 3:
-            benchmark_ltvs.append(data['total_revenue'])
+            benchmark_ltvs.append(data['total_profit'])
 
     avg_loyal_ltv = statistics.mean(benchmark_ltvs) if benchmark_ltvs else 0
 
@@ -446,7 +507,7 @@ def calculate_predictive_ltv(orders_file):
             'name': data['name'],
             'email': data['email'],
             'order_count': data['order_count'],
-            'current_ltv': round(data['total_revenue'], 2),
+            'current_ltv': round(data['total_profit'], 2),  # LTV based on gross profit
             'predicted_ltv': round(predicted_ltv, 2),
             'potential_score': score,
             'potential_category': potential,
@@ -815,6 +876,83 @@ def calculate_avg_order_interval(orders_file):
         'total_repeat_customers': len([c for c in customer_orders.values() if len(c) >= 2])
     }
 
+def load_ad_spend(ad_spend_file='data/ad_spend.csv', default_spend=250):
+    """Load monthly ad spend from CSV file"""
+    ad_spend = {}
+    try:
+        with open(ad_spend_file, 'r') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                month = row.get('month', '').strip()
+                spend = float(row.get('spend', default_spend) or default_spend)
+                if month:
+                    ad_spend[month] = spend
+    except FileNotFoundError:
+        pass
+    return ad_spend, default_spend
+
+def calculate_cac(orders_file, ad_spend_file='data/ad_spend.csv', default_monthly_spend=250):
+    """Calculate Customer Acquisition Cost based on new customers per month and actual ad spend"""
+
+    # Load ad spend data
+    ad_spend_by_month, default_spend = load_ad_spend(ad_spend_file, default_monthly_spend)
+
+    # Track first order date for each customer
+    customer_first_order = {}
+
+    with open(orders_file, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            customer_id = row.get('Customer ID', '').strip()
+            if not customer_id:
+                continue
+
+            placed_date = parse_date(row.get('Placed', ''))
+            if not placed_date:
+                continue
+
+            if customer_id not in customer_first_order:
+                customer_first_order[customer_id] = placed_date
+            else:
+                customer_first_order[customer_id] = min(customer_first_order[customer_id], placed_date)
+
+    # Count new customers per month
+    new_customers_by_month = defaultdict(int)
+    for customer_id, first_date in customer_first_order.items():
+        month_key = first_date.strftime('%Y-%m')
+        new_customers_by_month[month_key] += 1
+
+    # Calculate CAC per month using actual spend data
+    monthly_cac = []
+    total_spend = 0
+    total_customers = 0
+
+    for month in sorted(new_customers_by_month.keys()):
+        count = new_customers_by_month[month]
+        spend = ad_spend_by_month.get(month, default_spend)  # Use actual spend or default $250
+        cac = spend / count if count > 0 else 0
+        monthly_cac.append({
+            'month': month,
+            'new_customers': count,
+            'ad_spend': spend,
+            'cac': round(cac, 2)
+        })
+        total_spend += spend
+        total_customers += count
+
+    # Calculate averages
+    avg_cac = total_spend / total_customers if total_customers > 0 else 0
+    avg_new_customers = total_customers / len(monthly_cac) if monthly_cac else 0
+
+    return {
+        'monthly': monthly_cac,
+        'total_ad_spend': total_spend,
+        'avg_new_customers_per_month': round(avg_new_customers, 1),
+        'avg_cac': round(avg_cac, 2),
+        'total_new_customers': total_customers,
+        'default_monthly_spend': default_spend
+    }
+
 def main():
     orders_file = 'data/orders.csv'
 
@@ -841,6 +979,9 @@ def main():
     print("\n7️⃣ Analyzing Seasonal & Time Patterns...")
     seasonal = calculate_seasonal_patterns(orders_file)
 
+    print("\n8️⃣ Calculating Customer Acquisition Cost...")
+    cac_data = calculate_cac(orders_file, ad_spend_file='data/ad_spend.csv', default_monthly_spend=250)
+
     # Combine all data
     output = {
         'ltv': ltv_data,
@@ -850,11 +991,12 @@ def main():
         'order_interval': order_interval,
         'predictive_ltv': predictive_ltv,
         'seasonal_patterns': seasonal,
+        'cac': cac_data,
         'generated_at': datetime.now().isoformat()
     }
 
-    # Save to JSON
-    with open('advanced_metrics.json', 'w') as f:
+    # Save to JSON (in dashboard public folder)
+    with open('dashboard-shadcn/public/advanced_metrics.json', 'w') as f:
         json.dump(output, f, indent=2)
 
     print("\n✅ Advanced metrics generated: advanced_metrics.json")

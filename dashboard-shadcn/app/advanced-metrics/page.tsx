@@ -10,6 +10,10 @@ import {
   Calendar,
   TrendingUp,
   Clock,
+  Crown,
+  RefreshCw,
+  UserPlus,
+  Target,
 } from 'lucide-react';
 
 interface Customer {
@@ -122,6 +126,13 @@ interface AdvancedMetrics {
     top_10: Customer[];
     at_risk: Customer[];
     churned: Customer[];
+    avg_ltv?: number;
+    avg_vip_ltv?: number;
+    avg_repeat_ltv?: number;
+    avg_first_time_ltv?: number;
+    vip_count?: number;
+    repeat_count?: number;
+    first_time_count?: number;
   };
   cohorts: Cohort[];
   churn: ChurnPrediction[];
@@ -143,6 +154,19 @@ interface AdvancedMetrics {
     total_predicted: number;
   };
   seasonal_patterns: SeasonalPatterns;
+  cac?: {
+    monthly: Array<{
+      month: string;
+      new_customers: number;
+      ad_spend: number;
+      cac: number;
+    }>;
+    total_ad_spend: number;
+    avg_new_customers_per_month: number;
+    avg_cac: number;
+    total_new_customers: number;
+    default_monthly_spend: number;
+  };
 }
 
 export default function AdvancedMetrics() {
@@ -261,14 +285,127 @@ export default function AdvancedMetrics() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
-              ${(data.ltv.customers.reduce((sum, c) => sum + c.ltv, 0) / data.ltv.customers.length).toFixed(0)}
+              ${data.ltv.avg_ltv?.toFixed(0) || (data.ltv.customers.reduce((sum, c) => sum + c.ltv, 0) / data.ltv.customers.length).toFixed(0)}
             </div>
             <p className="text-xs text-muted-foreground">
-              Per customer lifetime
+              {data.ltv.customers.length} customers
             </p>
           </CardContent>
         </Card>
       </div>
+
+      {/* LTV Breakdown by Customer Type */}
+      <div className="grid gap-4 md:grid-cols-3">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">VIP Customer LTV</CardTitle>
+            <Crown className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              ${data.ltv.avg_vip_ltv?.toFixed(0) || 0}
+            </div>
+            <p className="text-xs text-muted-foreground">
+              {data.ltv.vip_count || 0} VIP customers
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Repeat Customer LTV</CardTitle>
+            <RefreshCw className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              ${data.ltv.avg_repeat_ltv?.toFixed(0) || 0}
+            </div>
+            <p className="text-xs text-muted-foreground">
+              {data.ltv.repeat_count || 0} repeat customers (2+ orders)
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">First-Time Customer LTV</CardTitle>
+            <UserPlus className="h-4 w-4 text-muted-foreground" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">
+              ${data.ltv.avg_first_time_ltv?.toFixed(0) || 0}
+            </div>
+            <p className="text-xs text-muted-foreground">
+              {data.ltv.first_time_count || 0} one-time customers
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* CAC & LTV:CAC Ratio */}
+      {data.cac && (
+        <div className="grid gap-4 md:grid-cols-4">
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Avg CAC</CardTitle>
+              <Target className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                ${data.cac.avg_cac?.toFixed(2) || 0}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Cost per new customer
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">LTV:CAC Ratio</CardTitle>
+              <TrendingUp className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                {data.cac.avg_cac > 0 ? ((data.ltv.avg_ltv || 67) / data.cac.avg_cac).toFixed(1) : 0}:1
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Target: 3:1 or higher
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Total Ad Spend</CardTitle>
+              <DollarSign className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                ${data.cac.total_ad_spend?.toLocaleString() || 0}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Google Ads (all time)
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <CardTitle className="text-sm font-medium">Avg New Customers</CardTitle>
+              <Users className="h-4 w-4 text-muted-foreground" />
+            </CardHeader>
+            <CardContent>
+              <div className="text-2xl font-bold">
+                {data.cac.avg_new_customers_per_month?.toFixed(0) || 0}
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Per month
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      )}
 
       {/* Top Customers */}
       <Card>
