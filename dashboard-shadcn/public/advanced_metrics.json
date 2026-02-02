@@ -11,7 +11,7 @@
         "aov": 262.76,
         "first_order": "2025-09-29",
         "last_order": "2025-11-13",
-        "days_since_last": 80,
+        "days_since_last": 81,
         "segment": "VIP"
       },
       {
@@ -24,7 +24,7 @@
         "aov": 277.72,
         "first_order": "2025-09-29",
         "last_order": "2025-12-08",
-        "days_since_last": 55,
+        "days_since_last": 56,
         "segment": "VIP"
       },
       {
@@ -37,7 +37,7 @@
         "aov": 251.37,
         "first_order": "2026-01-12",
         "last_order": "2026-01-27",
-        "days_since_last": 5,
+        "days_since_last": 6,
         "segment": "VIP"
       },
       {
@@ -63,7 +63,7 @@
         "aov": 101.68,
         "first_order": "2025-07-08",
         "last_order": "2025-10-01",
-        "days_since_last": 123,
+        "days_since_last": 124,
         "segment": "VIP"
       },
       {
@@ -128,7 +128,7 @@
         "aov": 97.83,
         "first_order": "2025-12-04",
         "last_order": "2026-01-28",
-        "days_since_last": 4,
+        "days_since_last": 5,
         "segment": "VIP"
       },
       {
@@ -141,7 +141,7 @@
         "aov": 60.91,
         "first_order": "2025-07-19",
         "last_order": "2026-01-28",
-        "days_since_last": 4,
+        "days_since_last": 5,
         "segment": "VIP"
       },
       {
@@ -154,7 +154,7 @@
         "aov": 46.25,
         "first_order": "2025-07-22",
         "last_order": "2026-01-26",
-        "days_since_last": 6,
+        "days_since_last": 7,
         "segment": "VIP"
       },
       {
@@ -193,7 +193,7 @@
         "aov": 48.91,
         "first_order": "2025-07-14",
         "last_order": "2025-11-26",
-        "days_since_last": 67,
+        "days_since_last": 68,
         "segment": "VIP"
       },
       {
@@ -245,7 +245,7 @@
         "aov": 160.56,
         "first_order": "2025-10-29",
         "last_order": "2025-10-30",
-        "days_since_last": 94,
+        "days_since_last": 95,
         "segment": "Loyal"
       },
       {
@@ -297,7 +297,7 @@
         "aov": 275.85,
         "first_order": "2026-01-17",
         "last_order": "2026-01-30",
-        "days_since_last": 2,
+        "days_since_last": 3,
         "segment": "Active"
       },
       {
@@ -310,7 +310,7 @@
         "aov": 349.67,
         "first_order": "2025-10-24",
         "last_order": "2025-10-24",
-        "days_since_last": 100,
+        "days_since_last": 101,
         "segment": "One-Time"
       },
       {
@@ -336,7 +336,7 @@
         "aov": 46.48,
         "first_order": "2025-09-08",
         "last_order": "2026-01-08",
-        "days_since_last": 24,
+        "days_since_last": 25,
         "segment": "Loyal"
       },
       {
@@ -349,7 +349,7 @@
         "aov": 296.24,
         "first_order": "2025-09-18",
         "last_order": "2025-09-18",
-        "days_since_last": 136,
+        "days_since_last": 137,
         "segment": "One-Time"
       },
       {
@@ -362,7 +362,7 @@
         "aov": 92.9,
         "first_order": "2025-09-06",
         "last_order": "2025-11-06",
-        "days_since_last": 87,
+        "days_since_last": 88,
         "segment": "Loyal"
       },
       {
@@ -388,7 +388,7 @@
         "aov": 189.0,
         "first_order": "2025-11-21",
         "last_order": "2026-01-20",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "Active"
       },
       {
@@ -427,7 +427,7 @@
         "aov": 305.4,
         "first_order": "2026-01-14",
         "last_order": "2026-01-14",
-        "days_since_last": 18,
+        "days_since_last": 19,
         "segment": "One-Time"
       },
       {
@@ -440,7 +440,7 @@
         "aov": 156.29,
         "first_order": "2025-08-27",
         "last_order": "2025-09-26",
-        "days_since_last": 128,
+        "days_since_last": 129,
         "segment": "At-Risk"
       },
       {
@@ -453,7 +453,7 @@
         "aov": 91.67,
         "first_order": "2025-10-06",
         "last_order": "2025-11-20",
-        "days_since_last": 73,
+        "days_since_last": 74,
         "segment": "Loyal"
       },
       {
@@ -479,7 +479,7 @@
         "aov": 75.1,
         "first_order": "2025-12-06",
         "last_order": "2026-01-29",
-        "days_since_last": 3,
+        "days_since_last": 4,
         "segment": "Loyal"
       },
       {
@@ -492,7 +492,7 @@
         "aov": 180.75,
         "first_order": "2026-01-30",
         "last_order": "2026-01-30",
-        "days_since_last": 2,
+        "days_since_last": 3,
         "segment": "Active"
       },
       {
@@ -505,7 +505,7 @@
         "aov": 43.36,
         "first_order": "2025-07-15",
         "last_order": "2026-01-05",
-        "days_since_last": 27,
+        "days_since_last": 28,
         "segment": "Loyal"
       },
       {
@@ -531,7 +531,7 @@
         "aov": 327.6,
         "first_order": "2025-12-19",
         "last_order": "2025-12-19",
-        "days_since_last": 44,
+        "days_since_last": 45,
         "segment": "One-Time"
       },
       {
@@ -596,7 +596,7 @@
         "aov": 193.1,
         "first_order": "2025-12-05",
         "last_order": "2025-12-05",
-        "days_since_last": 58,
+        "days_since_last": 59,
         "segment": "One-Time"
       },
       {
@@ -609,7 +609,7 @@
         "aov": 126.67,
         "first_order": "2025-08-07",
         "last_order": "2025-08-07",
-        "days_since_last": 178,
+        "days_since_last": 179,
         "segment": "At-Risk"
       },
       {
@@ -622,7 +622,7 @@
         "aov": 252.81,
         "first_order": "2025-10-30",
         "last_order": "2025-10-30",
-        "days_since_last": 94,
+        "days_since_last": 95,
         "segment": "One-Time"
       },
       {
@@ -661,7 +661,7 @@
         "aov": 249.2,
         "first_order": "2026-01-12",
         "last_order": "2026-01-12",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "One-Time"
       },
       {
@@ -765,7 +765,7 @@
         "aov": 86.71,
         "first_order": "2025-09-18",
         "last_order": "2026-01-07",
-        "days_since_last": 25,
+        "days_since_last": 26,
         "segment": "Loyal"
       },
       {
@@ -804,7 +804,7 @@
         "aov": 156.1,
         "first_order": "2025-12-11",
         "last_order": "2025-12-11",
-        "days_since_last": 52,
+        "days_since_last": 53,
         "segment": "One-Time"
       },
       {
@@ -817,7 +817,7 @@
         "aov": 238.5,
         "first_order": "2026-01-15",
         "last_order": "2026-01-15",
-        "days_since_last": 17,
+        "days_since_last": 18,
         "segment": "One-Time"
       },
       {
@@ -908,7 +908,7 @@
         "aov": 57.34,
         "first_order": "2025-10-13",
         "last_order": "2025-12-27",
-        "days_since_last": 36,
+        "days_since_last": 37,
         "segment": "Loyal"
       },
       {
@@ -934,7 +934,7 @@
         "aov": 35.62,
         "first_order": "2025-11-08",
         "last_order": "2026-01-31",
-        "days_since_last": 1,
+        "days_since_last": 2,
         "segment": "Loyal"
       },
       {
@@ -960,7 +960,7 @@
         "aov": 112.33,
         "first_order": "2025-10-24",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "At-Risk"
       },
       {
@@ -973,7 +973,7 @@
         "aov": 100.84,
         "first_order": "2025-08-22",
         "last_order": "2025-10-17",
-        "days_since_last": 107,
+        "days_since_last": 108,
         "segment": "At-Risk"
       },
       {
@@ -1038,7 +1038,7 @@
         "aov": 30.37,
         "first_order": "2025-07-18",
         "last_order": "2026-01-21",
-        "days_since_last": 11,
+        "days_since_last": 12,
         "segment": "Loyal"
       },
       {
@@ -1051,7 +1051,7 @@
         "aov": 73.81,
         "first_order": "2025-09-08",
         "last_order": "2025-10-06",
-        "days_since_last": 118,
+        "days_since_last": 119,
         "segment": "At-Risk"
       },
       {
@@ -1077,7 +1077,7 @@
         "aov": 99.65,
         "first_order": "2026-01-16",
         "last_order": "2026-01-21",
-        "days_since_last": 11,
+        "days_since_last": 12,
         "segment": "Active"
       },
       {
@@ -1142,7 +1142,7 @@
         "aov": 82.73,
         "first_order": "2025-09-22",
         "last_order": "2025-12-04",
-        "days_since_last": 59,
+        "days_since_last": 60,
         "segment": "Active"
       },
       {
@@ -1194,7 +1194,7 @@
         "aov": 104.0,
         "first_order": "2025-11-07",
         "last_order": "2025-11-18",
-        "days_since_last": 75,
+        "days_since_last": 76,
         "segment": "At-Risk"
       },
       {
@@ -1259,7 +1259,7 @@
         "aov": 139.46,
         "first_order": "2025-08-05",
         "last_order": "2025-08-05",
-        "days_since_last": 180,
+        "days_since_last": 181,
         "segment": "One-Time"
       },
       {
@@ -1285,7 +1285,7 @@
         "aov": 36.9,
         "first_order": "2025-07-14",
         "last_order": "2025-07-21",
-        "days_since_last": 195,
+        "days_since_last": 196,
         "segment": "At-Risk"
       },
       {
@@ -1402,7 +1402,7 @@
         "aov": 46.97,
         "first_order": "2025-07-21",
         "last_order": "2025-07-29",
-        "days_since_last": 187,
+        "days_since_last": 188,
         "segment": "At-Risk"
       },
       {
@@ -1415,7 +1415,7 @@
         "aov": 48.28,
         "first_order": "2025-09-18",
         "last_order": "2025-09-18",
-        "days_since_last": 136,
+        "days_since_last": 137,
         "segment": "At-Risk"
       },
       {
@@ -1441,7 +1441,7 @@
         "aov": 170.37,
         "first_order": "2025-10-14",
         "last_order": "2025-10-14",
-        "days_since_last": 110,
+        "days_since_last": 111,
         "segment": "One-Time"
       },
       {
@@ -1454,7 +1454,7 @@
         "aov": 165.99,
         "first_order": "2025-08-29",
         "last_order": "2025-08-29",
-        "days_since_last": 156,
+        "days_since_last": 157,
         "segment": "One-Time"
       },
       {
@@ -1480,7 +1480,7 @@
         "aov": 36.65,
         "first_order": "2025-11-14",
         "last_order": "2026-01-27",
-        "days_since_last": 5,
+        "days_since_last": 6,
         "segment": "Active"
       },
       {
@@ -1506,7 +1506,7 @@
         "aov": 68.75,
         "first_order": "2026-01-05",
         "last_order": "2026-01-05",
-        "days_since_last": 27,
+        "days_since_last": 28,
         "segment": "Active"
       },
       {
@@ -1532,7 +1532,7 @@
         "aov": 78.45,
         "first_order": "2025-12-16",
         "last_order": "2025-12-19",
-        "days_since_last": 44,
+        "days_since_last": 45,
         "segment": "Active"
       },
       {
@@ -1571,7 +1571,7 @@
         "aov": 145.38,
         "first_order": "2025-10-10",
         "last_order": "2025-10-10",
-        "days_since_last": 114,
+        "days_since_last": 115,
         "segment": "One-Time"
       },
       {
@@ -1584,7 +1584,7 @@
         "aov": 40.27,
         "first_order": "2025-12-17",
         "last_order": "2026-01-12",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "Active"
       },
       {
@@ -1649,7 +1649,7 @@
         "aov": 45.3,
         "first_order": "2026-01-05",
         "last_order": "2026-01-07",
-        "days_since_last": 25,
+        "days_since_last": 26,
         "segment": "Active"
       },
       {
@@ -1662,7 +1662,7 @@
         "aov": 65.48,
         "first_order": "2025-10-21",
         "last_order": "2025-10-22",
-        "days_since_last": 102,
+        "days_since_last": 103,
         "segment": "At-Risk"
       },
       {
@@ -1675,7 +1675,7 @@
         "aov": 118.2,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 62,
+        "days_since_last": 63,
         "segment": "One-Time"
       },
       {
@@ -1688,7 +1688,7 @@
         "aov": 111.7,
         "first_order": "2025-11-22",
         "last_order": "2025-11-22",
-        "days_since_last": 71,
+        "days_since_last": 72,
         "segment": "One-Time"
       },
       {
@@ -1701,7 +1701,7 @@
         "aov": 62.55,
         "first_order": "2025-11-25",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "Active"
       },
       {
@@ -1714,7 +1714,7 @@
         "aov": 85.15,
         "first_order": "2025-09-12",
         "last_order": "2025-09-12",
-        "days_since_last": 142,
+        "days_since_last": 143,
         "segment": "One-Time"
       },
       {
@@ -1727,7 +1727,7 @@
         "aov": 89.66,
         "first_order": "2025-08-25",
         "last_order": "2025-08-25",
-        "days_since_last": 160,
+        "days_since_last": 161,
         "segment": "One-Time"
       },
       {
@@ -1740,7 +1740,7 @@
         "aov": 60.14,
         "first_order": "2025-08-04",
         "last_order": "2025-11-22",
-        "days_since_last": 71,
+        "days_since_last": 72,
         "segment": "At-Risk"
       },
       {
@@ -1753,7 +1753,7 @@
         "aov": 39.6,
         "first_order": "2025-11-18",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "Active"
       },
       {
@@ -1766,7 +1766,7 @@
         "aov": 144.0,
         "first_order": "2025-12-20",
         "last_order": "2025-12-20",
-        "days_since_last": 43,
+        "days_since_last": 44,
         "segment": "One-Time"
       },
       {
@@ -1792,7 +1792,7 @@
         "aov": 98.4,
         "first_order": "2025-08-14",
         "last_order": "2025-08-14",
-        "days_since_last": 171,
+        "days_since_last": 172,
         "segment": "One-Time"
       },
       {
@@ -1818,7 +1818,7 @@
         "aov": 76.4,
         "first_order": "2025-11-10",
         "last_order": "2025-11-10",
-        "days_since_last": 83,
+        "days_since_last": 84,
         "segment": "One-Time"
       },
       {
@@ -1831,7 +1831,7 @@
         "aov": 115.55,
         "first_order": "2025-10-07",
         "last_order": "2025-10-07",
-        "days_since_last": 117,
+        "days_since_last": 118,
         "segment": "One-Time"
       },
       {
@@ -1844,7 +1844,7 @@
         "aov": 83.26,
         "first_order": "2025-10-24",
         "last_order": "2025-10-24",
-        "days_since_last": 100,
+        "days_since_last": 101,
         "segment": "One-Time"
       },
       {
@@ -1870,7 +1870,7 @@
         "aov": 53.9,
         "first_order": "2025-12-10",
         "last_order": "2026-01-17",
-        "days_since_last": 15,
+        "days_since_last": 16,
         "segment": "Active"
       },
       {
@@ -1896,7 +1896,7 @@
         "aov": 57.05,
         "first_order": "2026-01-05",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "Active"
       },
       {
@@ -1922,7 +1922,7 @@
         "aov": 102.91,
         "first_order": "2025-08-25",
         "last_order": "2025-08-25",
-        "days_since_last": 160,
+        "days_since_last": 161,
         "segment": "One-Time"
       },
       {
@@ -1935,8 +1935,8 @@
         "aov": 55.68,
         "first_order": "2025-10-01",
         "last_order": "2025-12-03",
-        "days_since_last": 60,
-        "segment": "Active"
+        "days_since_last": 61,
+        "segment": "At-Risk"
       },
       {
         "customer_id": "56",
@@ -1948,7 +1948,7 @@
         "aov": 35.1,
         "first_order": "2025-07-18",
         "last_order": "2025-07-22",
-        "days_since_last": 194,
+        "days_since_last": 195,
         "segment": "At-Risk"
       },
       {
@@ -1961,7 +1961,7 @@
         "aov": 110.14,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 111,
+        "days_since_last": 112,
         "segment": "One-Time"
       },
       {
@@ -1974,7 +1974,7 @@
         "aov": 49.67,
         "first_order": "2025-09-19",
         "last_order": "2025-11-15",
-        "days_since_last": 78,
+        "days_since_last": 79,
         "segment": "At-Risk"
       },
       {
@@ -1987,7 +1987,7 @@
         "aov": 64.04,
         "first_order": "2025-10-21",
         "last_order": "2025-10-21",
-        "days_since_last": 103,
+        "days_since_last": 104,
         "segment": "One-Time"
       },
       {
@@ -2013,7 +2013,7 @@
         "aov": 36.0,
         "first_order": "2025-09-19",
         "last_order": "2025-11-19",
-        "days_since_last": 74,
+        "days_since_last": 75,
         "segment": "At-Risk"
       },
       {
@@ -2039,7 +2039,7 @@
         "aov": 57.91,
         "first_order": "2025-07-31",
         "last_order": "2025-10-20",
-        "days_since_last": 104,
+        "days_since_last": 105,
         "segment": "At-Risk"
       },
       {
@@ -2065,7 +2065,7 @@
         "aov": 103.7,
         "first_order": "2025-11-22",
         "last_order": "2025-11-22",
-        "days_since_last": 71,
+        "days_since_last": 72,
         "segment": "One-Time"
       },
       {
@@ -2078,7 +2078,7 @@
         "aov": 141.9,
         "first_order": "2026-01-10",
         "last_order": "2026-01-10",
-        "days_since_last": 22,
+        "days_since_last": 23,
         "segment": "One-Time"
       },
       {
@@ -2091,8 +2091,8 @@
         "aov": 37.31,
         "first_order": "2025-08-15",
         "last_order": "2025-12-03",
-        "days_since_last": 60,
-        "segment": "Active"
+        "days_since_last": 61,
+        "segment": "At-Risk"
       },
       {
         "customer_id": "121",
@@ -2104,7 +2104,7 @@
         "aov": 35.73,
         "first_order": "2025-08-08",
         "last_order": "2025-08-08",
-        "days_since_last": 177,
+        "days_since_last": 178,
         "segment": "At-Risk"
       },
       {
@@ -2130,7 +2130,7 @@
         "aov": 40.63,
         "first_order": "2025-08-21",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "At-Risk"
       },
       {
@@ -2143,7 +2143,7 @@
         "aov": 69.3,
         "first_order": "2026-01-16",
         "last_order": "2026-01-16",
-        "days_since_last": 16,
+        "days_since_last": 17,
         "segment": "One-Time"
       },
       {
@@ -2182,7 +2182,7 @@
         "aov": 56.82,
         "first_order": "2025-07-18",
         "last_order": "2025-07-28",
-        "days_since_last": 188,
+        "days_since_last": 189,
         "segment": "At-Risk"
       },
       {
@@ -2195,7 +2195,7 @@
         "aov": 88.8,
         "first_order": "2025-11-18",
         "last_order": "2025-11-18",
-        "days_since_last": 75,
+        "days_since_last": 76,
         "segment": "One-Time"
       },
       {
@@ -2208,7 +2208,7 @@
         "aov": 73.2,
         "first_order": "2026-01-05",
         "last_order": "2026-01-05",
-        "days_since_last": 27,
+        "days_since_last": 28,
         "segment": "One-Time"
       },
       {
@@ -2221,7 +2221,7 @@
         "aov": 98.2,
         "first_order": "2026-01-23",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "One-Time"
       },
       {
@@ -2234,7 +2234,7 @@
         "aov": 74.93,
         "first_order": "2025-08-15",
         "last_order": "2025-08-15",
-        "days_since_last": 170,
+        "days_since_last": 171,
         "segment": "One-Time"
       },
       {
@@ -2260,7 +2260,7 @@
         "aov": 58.5,
         "first_order": "2025-11-11",
         "last_order": "2025-11-11",
-        "days_since_last": 82,
+        "days_since_last": 83,
         "segment": "One-Time"
       },
       {
@@ -2273,7 +2273,7 @@
         "aov": 32.08,
         "first_order": "2025-09-23",
         "last_order": "2025-12-18",
-        "days_since_last": 45,
+        "days_since_last": 46,
         "segment": "Active"
       },
       {
@@ -2338,7 +2338,7 @@
         "aov": 70.6,
         "first_order": "2025-10-06",
         "last_order": "2025-10-06",
-        "days_since_last": 118,
+        "days_since_last": 119,
         "segment": "One-Time"
       },
       {
@@ -2364,7 +2364,7 @@
         "aov": 70.6,
         "first_order": "2025-11-06",
         "last_order": "2025-11-06",
-        "days_since_last": 87,
+        "days_since_last": 88,
         "segment": "One-Time"
       },
       {
@@ -2377,7 +2377,7 @@
         "aov": 75.09,
         "first_order": "2025-08-15",
         "last_order": "2025-08-15",
-        "days_since_last": 170,
+        "days_since_last": 171,
         "segment": "One-Time"
       },
       {
@@ -2403,7 +2403,7 @@
         "aov": 60.7,
         "first_order": "2026-01-04",
         "last_order": "2026-01-24",
-        "days_since_last": 8,
+        "days_since_last": 9,
         "segment": "Active"
       },
       {
@@ -2416,7 +2416,7 @@
         "aov": 105.88,
         "first_order": "2025-08-04",
         "last_order": "2025-08-04",
-        "days_since_last": 181,
+        "days_since_last": 182,
         "segment": "One-Time"
       },
       {
@@ -2546,7 +2546,7 @@
         "aov": 64.04,
         "first_order": "2025-08-30",
         "last_order": "2025-08-30",
-        "days_since_last": 155,
+        "days_since_last": 156,
         "segment": "One-Time"
       },
       {
@@ -2559,7 +2559,7 @@
         "aov": 64.04,
         "first_order": "2025-08-30",
         "last_order": "2025-08-30",
-        "days_since_last": 155,
+        "days_since_last": 156,
         "segment": "One-Time"
       },
       {
@@ -2598,7 +2598,7 @@
         "aov": 36.58,
         "first_order": "2025-11-05",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "Active"
       },
       {
@@ -2611,7 +2611,7 @@
         "aov": 84.2,
         "first_order": "2026-01-02",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "One-Time"
       },
       {
@@ -2624,7 +2624,7 @@
         "aov": 43.84,
         "first_order": "2025-09-02",
         "last_order": "2025-12-17",
-        "days_since_last": 46,
+        "days_since_last": 47,
         "segment": "Active"
       },
       {
@@ -2728,7 +2728,7 @@
         "aov": 113.8,
         "first_order": "2025-12-05",
         "last_order": "2025-12-05",
-        "days_since_last": 58,
+        "days_since_last": 59,
         "segment": "One-Time"
       },
       {
@@ -2832,7 +2832,7 @@
         "aov": 82.6,
         "first_order": "2026-01-21",
         "last_order": "2026-01-21",
-        "days_since_last": 11,
+        "days_since_last": 12,
         "segment": "One-Time"
       },
       {
@@ -2845,7 +2845,7 @@
         "aov": 62.0,
         "first_order": "2026-01-14",
         "last_order": "2026-01-14",
-        "days_since_last": 18,
+        "days_since_last": 19,
         "segment": "One-Time"
       },
       {
@@ -2858,7 +2858,7 @@
         "aov": 81.29,
         "first_order": "2025-08-28",
         "last_order": "2025-08-28",
-        "days_since_last": 157,
+        "days_since_last": 158,
         "segment": "One-Time"
       },
       {
@@ -2897,7 +2897,7 @@
         "aov": 82.6,
         "first_order": "2026-01-02",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "One-Time"
       },
       {
@@ -2910,7 +2910,7 @@
         "aov": 84.1,
         "first_order": "2026-01-13",
         "last_order": "2026-01-13",
-        "days_since_last": 19,
+        "days_since_last": 20,
         "segment": "One-Time"
       },
       {
@@ -2923,7 +2923,7 @@
         "aov": 18.34,
         "first_order": "2025-07-21",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "Active"
       },
       {
@@ -2949,7 +2949,7 @@
         "aov": 30.0,
         "first_order": "2026-01-03",
         "last_order": "2026-01-03",
-        "days_since_last": 29,
+        "days_since_last": 30,
         "segment": "Active"
       },
       {
@@ -2962,7 +2962,7 @@
         "aov": 80.0,
         "first_order": "2026-01-20",
         "last_order": "2026-01-20",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "One-Time"
       },
       {
@@ -3014,7 +3014,7 @@
         "aov": 18.67,
         "first_order": "2025-09-08",
         "last_order": "2026-01-20",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "Active"
       },
       {
@@ -3027,7 +3027,7 @@
         "aov": 62.7,
         "first_order": "2026-01-08",
         "last_order": "2026-01-08",
-        "days_since_last": 24,
+        "days_since_last": 25,
         "segment": "One-Time"
       },
       {
@@ -3040,7 +3040,7 @@
         "aov": 38.43,
         "first_order": "2025-10-09",
         "last_order": "2025-10-09",
-        "days_since_last": 115,
+        "days_since_last": 116,
         "segment": "One-Time"
       },
       {
@@ -3079,7 +3079,7 @@
         "aov": 81.5,
         "first_order": "2026-01-14",
         "last_order": "2026-01-14",
-        "days_since_last": 18,
+        "days_since_last": 19,
         "segment": "One-Time"
       },
       {
@@ -3105,7 +3105,7 @@
         "aov": 30.0,
         "first_order": "2025-12-05",
         "last_order": "2026-01-22",
-        "days_since_last": 10,
+        "days_since_last": 11,
         "segment": "Active"
       },
       {
@@ -3118,7 +3118,7 @@
         "aov": 69.0,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 62,
+        "days_since_last": 63,
         "segment": "One-Time"
       },
       {
@@ -3157,7 +3157,7 @@
         "aov": 69.37,
         "first_order": "2025-09-17",
         "last_order": "2025-09-17",
-        "days_since_last": 137,
+        "days_since_last": 138,
         "segment": "One-Time"
       },
       {
@@ -3170,7 +3170,7 @@
         "aov": 72.74,
         "first_order": "2025-08-16",
         "last_order": "2025-08-16",
-        "days_since_last": 169,
+        "days_since_last": 170,
         "segment": "One-Time"
       },
       {
@@ -3183,7 +3183,7 @@
         "aov": 72.74,
         "first_order": "2025-09-02",
         "last_order": "2025-09-02",
-        "days_since_last": 152,
+        "days_since_last": 153,
         "segment": "One-Time"
       },
       {
@@ -3222,7 +3222,7 @@
         "aov": 54.6,
         "first_order": "2025-11-06",
         "last_order": "2025-11-06",
-        "days_since_last": 87,
+        "days_since_last": 88,
         "segment": "One-Time"
       },
       {
@@ -3235,7 +3235,7 @@
         "aov": 54.6,
         "first_order": "2025-11-10",
         "last_order": "2025-11-10",
-        "days_since_last": 83,
+        "days_since_last": 84,
         "segment": "One-Time"
       },
       {
@@ -3287,7 +3287,7 @@
         "aov": 54.6,
         "first_order": "2025-12-17",
         "last_order": "2025-12-17",
-        "days_since_last": 46,
+        "days_since_last": 47,
         "segment": "One-Time"
       },
       {
@@ -3326,7 +3326,7 @@
         "aov": 39.0,
         "first_order": "2025-08-27",
         "last_order": "2025-08-27",
-        "days_since_last": 158,
+        "days_since_last": 159,
         "segment": "One-Time"
       },
       {
@@ -3352,7 +3352,7 @@
         "aov": 39.0,
         "first_order": "2025-09-06",
         "last_order": "2025-09-06",
-        "days_since_last": 148,
+        "days_since_last": 149,
         "segment": "One-Time"
       },
       {
@@ -3404,7 +3404,7 @@
         "aov": 66.9,
         "first_order": "2026-01-31",
         "last_order": "2026-01-31",
-        "days_since_last": 1,
+        "days_since_last": 2,
         "segment": "One-Time"
       },
       {
@@ -3430,7 +3430,7 @@
         "aov": 39.0,
         "first_order": "2025-10-18",
         "last_order": "2025-10-18",
-        "days_since_last": 106,
+        "days_since_last": 107,
         "segment": "One-Time"
       },
       {
@@ -3534,7 +3534,7 @@
         "aov": 64.17,
         "first_order": "2025-10-18",
         "last_order": "2025-10-18",
-        "days_since_last": 106,
+        "days_since_last": 107,
         "segment": "One-Time"
       },
       {
@@ -3560,7 +3560,7 @@
         "aov": 49.1,
         "first_order": "2025-09-16",
         "last_order": "2025-09-16",
-        "days_since_last": 138,
+        "days_since_last": 139,
         "segment": "One-Time"
       },
       {
@@ -3612,7 +3612,7 @@
         "aov": 39.0,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -3651,7 +3651,7 @@
         "aov": 19.44,
         "first_order": "2025-10-07",
         "last_order": "2025-12-12",
-        "days_since_last": 51,
+        "days_since_last": 52,
         "segment": "Active"
       },
       {
@@ -3677,7 +3677,7 @@
         "aov": 34.94,
         "first_order": "2025-09-01",
         "last_order": "2025-09-01",
-        "days_since_last": 153,
+        "days_since_last": 154,
         "segment": "At-Risk"
       },
       {
@@ -3690,7 +3690,7 @@
         "aov": 29.92,
         "first_order": "2025-10-11",
         "last_order": "2025-12-19",
-        "days_since_last": 44,
+        "days_since_last": 45,
         "segment": "Active"
       },
       {
@@ -3729,7 +3729,7 @@
         "aov": 59.1,
         "first_order": "2026-01-19",
         "last_order": "2026-01-19",
-        "days_since_last": 13,
+        "days_since_last": 14,
         "segment": "One-Time"
       },
       {
@@ -3755,7 +3755,7 @@
         "aov": 64.98,
         "first_order": "2025-08-12",
         "last_order": "2025-08-12",
-        "days_since_last": 173,
+        "days_since_last": 174,
         "segment": "One-Time"
       },
       {
@@ -3768,7 +3768,7 @@
         "aov": 57.22,
         "first_order": "2025-10-27",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "One-Time"
       },
       {
@@ -3781,7 +3781,7 @@
         "aov": 59.8,
         "first_order": "2025-08-09",
         "last_order": "2025-08-09",
-        "days_since_last": 176,
+        "days_since_last": 177,
         "segment": "One-Time"
       },
       {
@@ -3833,7 +3833,7 @@
         "aov": 56.1,
         "first_order": "2026-01-07",
         "last_order": "2026-01-07",
-        "days_since_last": 25,
+        "days_since_last": 26,
         "segment": "One-Time"
       },
       {
@@ -3846,7 +3846,7 @@
         "aov": 63.51,
         "first_order": "2025-10-04",
         "last_order": "2025-10-04",
-        "days_since_last": 120,
+        "days_since_last": 121,
         "segment": "One-Time"
       },
       {
@@ -3872,7 +3872,7 @@
         "aov": 56.69,
         "first_order": "2025-11-03",
         "last_order": "2025-11-03",
-        "days_since_last": 90,
+        "days_since_last": 91,
         "segment": "One-Time"
       },
       {
@@ -3898,7 +3898,7 @@
         "aov": 60.64,
         "first_order": "2025-08-04",
         "last_order": "2025-08-04",
-        "days_since_last": 181,
+        "days_since_last": 182,
         "segment": "One-Time"
       },
       {
@@ -3911,7 +3911,7 @@
         "aov": 39.0,
         "first_order": "2025-12-26",
         "last_order": "2025-12-26",
-        "days_since_last": 37,
+        "days_since_last": 38,
         "segment": "One-Time"
       },
       {
@@ -3924,7 +3924,7 @@
         "aov": 49.69,
         "first_order": "2025-10-28",
         "last_order": "2025-10-28",
-        "days_since_last": 96,
+        "days_since_last": 97,
         "segment": "One-Time"
       },
       {
@@ -3963,7 +3963,7 @@
         "aov": 56.1,
         "first_order": "2026-01-10",
         "last_order": "2026-01-10",
-        "days_since_last": 22,
+        "days_since_last": 23,
         "segment": "One-Time"
       },
       {
@@ -3976,7 +3976,7 @@
         "aov": 53.4,
         "first_order": "2026-01-19",
         "last_order": "2026-01-19",
-        "days_since_last": 13,
+        "days_since_last": 14,
         "segment": "One-Time"
       },
       {
@@ -3989,7 +3989,7 @@
         "aov": 53.4,
         "first_order": "2026-01-22",
         "last_order": "2026-01-22",
-        "days_since_last": 10,
+        "days_since_last": 11,
         "segment": "One-Time"
       },
       {
@@ -4067,7 +4067,7 @@
         "aov": 53.0,
         "first_order": "2026-01-20",
         "last_order": "2026-01-20",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "One-Time"
       },
       {
@@ -4080,7 +4080,7 @@
         "aov": 65.42,
         "first_order": "2025-07-18",
         "last_order": "2025-07-18",
-        "days_since_last": 198,
+        "days_since_last": 199,
         "segment": "One-Time"
       },
       {
@@ -4132,7 +4132,7 @@
         "aov": 46.9,
         "first_order": "2026-01-16",
         "last_order": "2026-01-16",
-        "days_since_last": 16,
+        "days_since_last": 17,
         "segment": "One-Time"
       },
       {
@@ -4158,7 +4158,7 @@
         "aov": 37.0,
         "first_order": "2026-01-02",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "One-Time"
       },
       {
@@ -4184,7 +4184,7 @@
         "aov": 39.0,
         "first_order": "2025-10-22",
         "last_order": "2025-10-22",
-        "days_since_last": 102,
+        "days_since_last": 103,
         "segment": "One-Time"
       },
       {
@@ -4275,7 +4275,7 @@
         "aov": 50.7,
         "first_order": "2025-11-17",
         "last_order": "2025-11-17",
-        "days_since_last": 76,
+        "days_since_last": 77,
         "segment": "One-Time"
       },
       {
@@ -4314,7 +4314,7 @@
         "aov": 38.7,
         "first_order": "2026-01-18",
         "last_order": "2026-01-18",
-        "days_since_last": 14,
+        "days_since_last": 15,
         "segment": "One-Time"
       },
       {
@@ -4340,7 +4340,7 @@
         "aov": 39.0,
         "first_order": "2025-10-30",
         "last_order": "2025-10-30",
-        "days_since_last": 94,
+        "days_since_last": 95,
         "segment": "One-Time"
       },
       {
@@ -4379,7 +4379,7 @@
         "aov": 25.5,
         "first_order": "2025-12-22",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "Active"
       },
       {
@@ -4392,7 +4392,7 @@
         "aov": 52.45,
         "first_order": "2025-10-06",
         "last_order": "2025-10-06",
-        "days_since_last": 118,
+        "days_since_last": 119,
         "segment": "One-Time"
       },
       {
@@ -4418,7 +4418,7 @@
         "aov": 39.0,
         "first_order": "2025-12-09",
         "last_order": "2025-12-09",
-        "days_since_last": 54,
+        "days_since_last": 55,
         "segment": "One-Time"
       },
       {
@@ -4431,7 +4431,7 @@
         "aov": 36.4,
         "first_order": "2025-10-04",
         "last_order": "2025-10-04",
-        "days_since_last": 120,
+        "days_since_last": 121,
         "segment": "One-Time"
       },
       {
@@ -4444,7 +4444,7 @@
         "aov": 23.6,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 62,
+        "days_since_last": 63,
         "segment": "At-Risk"
       },
       {
@@ -4496,7 +4496,7 @@
         "aov": 12.13,
         "first_order": "2026-01-03",
         "last_order": "2026-01-24",
-        "days_since_last": 8,
+        "days_since_last": 9,
         "segment": "Active"
       },
       {
@@ -4548,7 +4548,7 @@
         "aov": 46.0,
         "first_order": "2025-11-07",
         "last_order": "2025-11-07",
-        "days_since_last": 86,
+        "days_since_last": 87,
         "segment": "One-Time"
       },
       {
@@ -4561,7 +4561,7 @@
         "aov": 45.99,
         "first_order": "2025-10-27",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "One-Time"
       },
       {
@@ -4600,7 +4600,7 @@
         "aov": 33.69,
         "first_order": "2025-11-04",
         "last_order": "2025-11-04",
-        "days_since_last": 89,
+        "days_since_last": 90,
         "segment": "One-Time"
       },
       {
@@ -4626,7 +4626,7 @@
         "aov": 43.31,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -4639,7 +4639,7 @@
         "aov": 43.31,
         "first_order": "2025-10-09",
         "last_order": "2025-10-09",
-        "days_since_last": 115,
+        "days_since_last": 116,
         "segment": "One-Time"
       },
       {
@@ -4652,7 +4652,7 @@
         "aov": 43.3,
         "first_order": "2025-12-09",
         "last_order": "2025-12-09",
-        "days_since_last": 54,
+        "days_since_last": 55,
         "segment": "One-Time"
       },
       {
@@ -4691,7 +4691,7 @@
         "aov": 39.8,
         "first_order": "2025-12-13",
         "last_order": "2025-12-13",
-        "days_since_last": 50,
+        "days_since_last": 51,
         "segment": "One-Time"
       },
       {
@@ -4704,7 +4704,7 @@
         "aov": 35.1,
         "first_order": "2025-08-18",
         "last_order": "2025-08-18",
-        "days_since_last": 167,
+        "days_since_last": 168,
         "segment": "One-Time"
       },
       {
@@ -4717,7 +4717,7 @@
         "aov": 39.0,
         "first_order": "2025-09-06",
         "last_order": "2025-09-06",
-        "days_since_last": 148,
+        "days_since_last": 149,
         "segment": "One-Time"
       },
       {
@@ -4769,7 +4769,7 @@
         "aov": 21.4,
         "first_order": "2025-07-21",
         "last_order": "2025-08-16",
-        "days_since_last": 169,
+        "days_since_last": 170,
         "segment": "At-Risk"
       },
       {
@@ -4782,7 +4782,7 @@
         "aov": 39.0,
         "first_order": "2025-09-06",
         "last_order": "2025-09-06",
-        "days_since_last": 148,
+        "days_since_last": 149,
         "segment": "One-Time"
       },
       {
@@ -4808,7 +4808,7 @@
         "aov": 43.83,
         "first_order": "2025-09-02",
         "last_order": "2025-09-02",
-        "days_since_last": 152,
+        "days_since_last": 153,
         "segment": "One-Time"
       },
       {
@@ -4834,7 +4834,7 @@
         "aov": 39.0,
         "first_order": "2025-12-29",
         "last_order": "2025-12-29",
-        "days_since_last": 34,
+        "days_since_last": 35,
         "segment": "One-Time"
       },
       {
@@ -4860,7 +4860,7 @@
         "aov": 41.6,
         "first_order": "2025-11-04",
         "last_order": "2025-11-04",
-        "days_since_last": 89,
+        "days_since_last": 90,
         "segment": "One-Time"
       },
       {
@@ -4873,7 +4873,7 @@
         "aov": 31.5,
         "first_order": "2025-12-22",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "One-Time"
       },
       {
@@ -4912,7 +4912,7 @@
         "aov": 39.7,
         "first_order": "2026-01-23",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "One-Time"
       },
       {
@@ -4925,7 +4925,7 @@
         "aov": 34.72,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 111,
+        "days_since_last": 112,
         "segment": "One-Time"
       },
       {
@@ -4938,7 +4938,7 @@
         "aov": 40.64,
         "first_order": "2025-08-26",
         "last_order": "2025-08-26",
-        "days_since_last": 159,
+        "days_since_last": 160,
         "segment": "One-Time"
       },
       {
@@ -4964,7 +4964,7 @@
         "aov": 20.31,
         "first_order": "2025-10-17",
         "last_order": "2025-12-10",
-        "days_since_last": 53,
+        "days_since_last": 54,
         "segment": "Active"
       },
       {
@@ -4977,7 +4977,7 @@
         "aov": 36.74,
         "first_order": "2025-08-11",
         "last_order": "2025-08-11",
-        "days_since_last": 174,
+        "days_since_last": 175,
         "segment": "One-Time"
       },
       {
@@ -5068,7 +5068,7 @@
         "aov": 39.0,
         "first_order": "2025-12-22",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "One-Time"
       },
       {
@@ -5081,7 +5081,7 @@
         "aov": 40.44,
         "first_order": "2025-08-06",
         "last_order": "2025-08-06",
-        "days_since_last": 179,
+        "days_since_last": 180,
         "segment": "One-Time"
       },
       {
@@ -5146,7 +5146,7 @@
         "aov": 36.37,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 111,
+        "days_since_last": 112,
         "segment": "One-Time"
       },
       {
@@ -5172,7 +5172,7 @@
         "aov": 32.75,
         "first_order": "2025-09-19",
         "last_order": "2025-09-19",
-        "days_since_last": 135,
+        "days_since_last": 136,
         "segment": "One-Time"
       },
       {
@@ -5185,7 +5185,7 @@
         "aov": 36.5,
         "first_order": "2026-01-20",
         "last_order": "2026-01-20",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "One-Time"
       },
       {
@@ -5211,7 +5211,7 @@
         "aov": 36.5,
         "first_order": "2026-01-26",
         "last_order": "2026-01-26",
-        "days_since_last": 6,
+        "days_since_last": 7,
         "segment": "One-Time"
       },
       {
@@ -5224,7 +5224,7 @@
         "aov": 33.1,
         "first_order": "2025-11-26",
         "last_order": "2025-11-26",
-        "days_since_last": 67,
+        "days_since_last": 68,
         "segment": "One-Time"
       },
       {
@@ -5302,7 +5302,7 @@
         "aov": 34.7,
         "first_order": "2026-01-19",
         "last_order": "2026-01-19",
-        "days_since_last": 13,
+        "days_since_last": 14,
         "segment": "One-Time"
       },
       {
@@ -5315,7 +5315,7 @@
         "aov": 34.7,
         "first_order": "2026-01-26",
         "last_order": "2026-01-26",
-        "days_since_last": 6,
+        "days_since_last": 7,
         "segment": "One-Time"
       },
       {
@@ -5328,7 +5328,7 @@
         "aov": 35.3,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 62,
+        "days_since_last": 63,
         "segment": "One-Time"
       },
       {
@@ -5419,7 +5419,7 @@
         "aov": 25.46,
         "first_order": "2025-10-20",
         "last_order": "2025-10-20",
-        "days_since_last": 104,
+        "days_since_last": 105,
         "segment": "One-Time"
       },
       {
@@ -5458,7 +5458,7 @@
         "aov": 36.6,
         "first_order": "2025-12-02",
         "last_order": "2025-12-02",
-        "days_since_last": 61,
+        "days_since_last": 62,
         "segment": "One-Time"
       },
       {
@@ -5471,7 +5471,7 @@
         "aov": 36.57,
         "first_order": "2025-09-23",
         "last_order": "2025-09-23",
-        "days_since_last": 131,
+        "days_since_last": 132,
         "segment": "One-Time"
       },
       {
@@ -5497,7 +5497,7 @@
         "aov": 30.0,
         "first_order": "2025-11-15",
         "last_order": "2025-11-15",
-        "days_since_last": 78,
+        "days_since_last": 79,
         "segment": "One-Time"
       },
       {
@@ -5523,7 +5523,7 @@
         "aov": 24.3,
         "first_order": "2026-01-07",
         "last_order": "2026-01-07",
-        "days_since_last": 25,
+        "days_since_last": 26,
         "segment": "One-Time"
       },
       {
@@ -5588,7 +5588,7 @@
         "aov": 31.6,
         "first_order": "2026-01-07",
         "last_order": "2026-01-07",
-        "days_since_last": 25,
+        "days_since_last": 26,
         "segment": "One-Time"
       },
       {
@@ -5640,7 +5640,7 @@
         "aov": 32.73,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -5666,7 +5666,7 @@
         "aov": 28.87,
         "first_order": "2025-08-30",
         "last_order": "2025-08-30",
-        "days_since_last": 155,
+        "days_since_last": 156,
         "segment": "One-Time"
       },
       {
@@ -5679,7 +5679,7 @@
         "aov": 26.5,
         "first_order": "2026-01-17",
         "last_order": "2026-01-17",
-        "days_since_last": 15,
+        "days_since_last": 16,
         "segment": "One-Time"
       },
       {
@@ -5692,7 +5692,7 @@
         "aov": 31.0,
         "first_order": "2025-12-29",
         "last_order": "2025-12-29",
-        "days_since_last": 34,
+        "days_since_last": 35,
         "segment": "One-Time"
       },
       {
@@ -5705,7 +5705,7 @@
         "aov": 28.0,
         "first_order": "2026-01-06",
         "last_order": "2026-01-06",
-        "days_since_last": 26,
+        "days_since_last": 27,
         "segment": "One-Time"
       },
       {
@@ -5718,7 +5718,7 @@
         "aov": 24.37,
         "first_order": "2025-10-14",
         "last_order": "2025-10-14",
-        "days_since_last": 110,
+        "days_since_last": 111,
         "segment": "One-Time"
       },
       {
@@ -5744,7 +5744,7 @@
         "aov": 38.1,
         "first_order": "2025-12-22",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "One-Time"
       },
       {
@@ -5796,7 +5796,7 @@
         "aov": 14.25,
         "first_order": "2026-01-06",
         "last_order": "2026-01-09",
-        "days_since_last": 23,
+        "days_since_last": 24,
         "segment": "Active"
       },
       {
@@ -5809,7 +5809,7 @@
         "aov": 14.22,
         "first_order": "2025-08-12",
         "last_order": "2025-09-19",
-        "days_since_last": 135,
+        "days_since_last": 136,
         "segment": "At-Risk"
       },
       {
@@ -5952,7 +5952,7 @@
         "aov": 20.8,
         "first_order": "2025-12-02",
         "last_order": "2025-12-02",
-        "days_since_last": 61,
+        "days_since_last": 62,
         "segment": "One-Time"
       },
       {
@@ -5991,7 +5991,7 @@
         "aov": 21.91,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -6017,7 +6017,7 @@
         "aov": 22.46,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -6043,7 +6043,7 @@
         "aov": 25.5,
         "first_order": "2026-01-05",
         "last_order": "2026-01-05",
-        "days_since_last": 27,
+        "days_since_last": 28,
         "segment": "One-Time"
       },
       {
@@ -6082,7 +6082,7 @@
         "aov": 22.62,
         "first_order": "2025-08-02",
         "last_order": "2025-08-02",
-        "days_since_last": 183,
+        "days_since_last": 184,
         "segment": "One-Time"
       },
       {
@@ -6134,7 +6134,7 @@
         "aov": 20.32,
         "first_order": "2025-07-31",
         "last_order": "2025-07-31",
-        "days_since_last": 185,
+        "days_since_last": 186,
         "segment": "One-Time"
       },
       {
@@ -6186,7 +6186,7 @@
         "aov": 20.32,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 111,
+        "days_since_last": 112,
         "segment": "One-Time"
       },
       {
@@ -6225,7 +6225,7 @@
         "aov": 20.3,
         "first_order": "2025-11-24",
         "last_order": "2025-11-24",
-        "days_since_last": 69,
+        "days_since_last": 70,
         "segment": "One-Time"
       },
       {
@@ -6238,7 +6238,7 @@
         "aov": 19.4,
         "first_order": "2026-01-19",
         "last_order": "2026-01-19",
-        "days_since_last": 13,
+        "days_since_last": 14,
         "segment": "One-Time"
       },
       {
@@ -6251,7 +6251,7 @@
         "aov": 19.72,
         "first_order": "2025-09-23",
         "last_order": "2025-09-23",
-        "days_since_last": 131,
+        "days_since_last": 132,
         "segment": "One-Time"
       },
       {
@@ -6264,7 +6264,7 @@
         "aov": 18.2,
         "first_order": "2025-11-21",
         "last_order": "2025-11-21",
-        "days_since_last": 72,
+        "days_since_last": 73,
         "segment": "One-Time"
       },
       {
@@ -6303,7 +6303,7 @@
         "aov": 20.21,
         "first_order": "2025-08-07",
         "last_order": "2025-08-07",
-        "days_since_last": 178,
+        "days_since_last": 179,
         "segment": "One-Time"
       },
       {
@@ -6355,7 +6355,7 @@
         "aov": 17.3,
         "first_order": "2026-01-23",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "One-Time"
       },
       {
@@ -6381,7 +6381,7 @@
         "aov": 17.3,
         "first_order": "2026-01-30",
         "last_order": "2026-01-30",
-        "days_since_last": 2,
+        "days_since_last": 3,
         "segment": "One-Time"
       },
       {
@@ -6420,7 +6420,7 @@
         "aov": 18.77,
         "first_order": "2025-07-16",
         "last_order": "2025-07-16",
-        "days_since_last": 200,
+        "days_since_last": 201,
         "segment": "One-Time"
       },
       {
@@ -6485,7 +6485,7 @@
         "aov": 14.97,
         "first_order": "2025-07-30",
         "last_order": "2025-07-30",
-        "days_since_last": 186,
+        "days_since_last": 187,
         "segment": "One-Time"
       },
       {
@@ -6498,7 +6498,7 @@
         "aov": 16.36,
         "first_order": "2025-09-11",
         "last_order": "2025-09-11",
-        "days_since_last": 143,
+        "days_since_last": 144,
         "segment": "One-Time"
       },
       {
@@ -6563,7 +6563,7 @@
         "aov": 12.29,
         "first_order": "2025-10-23",
         "last_order": "2025-10-23",
-        "days_since_last": 101,
+        "days_since_last": 102,
         "segment": "One-Time"
       },
       {
@@ -6576,7 +6576,7 @@
         "aov": 12.7,
         "first_order": "2026-01-21",
         "last_order": "2026-01-21",
-        "days_since_last": 11,
+        "days_since_last": 12,
         "segment": "One-Time"
       },
       {
@@ -6602,7 +6602,7 @@
         "aov": 12.3,
         "first_order": "2026-01-02",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "One-Time"
       },
       {
@@ -6615,7 +6615,7 @@
         "aov": 12.29,
         "first_order": "2025-10-31",
         "last_order": "2025-10-31",
-        "days_since_last": 93,
+        "days_since_last": 94,
         "segment": "One-Time"
       },
       {
@@ -6628,7 +6628,7 @@
         "aov": 8.98,
         "first_order": "2025-07-03",
         "last_order": "2025-07-03",
-        "days_since_last": 213,
+        "days_since_last": 214,
         "segment": "One-Time"
       },
       {
@@ -6667,7 +6667,7 @@
         "aov": 13.36,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 127,
+        "days_since_last": 128,
         "segment": "One-Time"
       },
       {
@@ -6680,7 +6680,7 @@
         "aov": 10.7,
         "first_order": "2025-12-22",
         "last_order": "2025-12-22",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "One-Time"
       },
       {
@@ -6771,7 +6771,7 @@
         "aov": 6.9,
         "first_order": "2025-12-30",
         "last_order": "2025-12-30",
-        "days_since_last": 33,
+        "days_since_last": 34,
         "segment": "One-Time"
       },
       {
@@ -6784,7 +6784,7 @@
         "aov": 8.0,
         "first_order": "2025-12-30",
         "last_order": "2025-12-30",
-        "days_since_last": 33,
+        "days_since_last": 34,
         "segment": "One-Time"
       },
       {
@@ -6862,7 +6862,7 @@
         "aov": 0.0,
         "first_order": "2025-12-03",
         "last_order": "2025-12-03",
-        "days_since_last": 60,
+        "days_since_last": 61,
         "segment": "One-Time"
       },
       {
@@ -6875,7 +6875,7 @@
         "aov": 0.0,
         "first_order": "2025-08-28",
         "last_order": "2025-08-28",
-        "days_since_last": 157,
+        "days_since_last": 158,
         "segment": "At-Risk"
       },
       {
@@ -6888,7 +6888,7 @@
         "aov": 0.0,
         "first_order": "2026-01-02",
         "last_order": "2026-01-02",
-        "days_since_last": 30,
+        "days_since_last": 31,
         "segment": "One-Time"
       },
       {
@@ -6927,7 +6927,7 @@
         "aov": 3.38,
         "first_order": "2025-12-16",
         "last_order": "2026-01-23",
-        "days_since_last": 9,
+        "days_since_last": 10,
         "segment": "Active"
       },
       {
@@ -6940,7 +6940,7 @@
         "aov": 0.0,
         "first_order": "2025-07-10",
         "last_order": "2025-07-10",
-        "days_since_last": 206,
+        "days_since_last": 207,
         "segment": "At-Risk"
       },
       {
@@ -6953,7 +6953,7 @@
         "aov": 0.0,
         "first_order": "2025-07-17",
         "last_order": "2026-01-29",
-        "days_since_last": 3,
+        "days_since_last": 4,
         "segment": "Active"
       }
     ],
@@ -6967,12 +6967,12 @@
         "revenue": 5309.250000000002
       },
       "At-Risk": {
-        "count": 63,
-        "revenue": 3908.54
+        "count": 65,
+        "revenue": 4015.709999999999
       },
       "Active": {
-        "count": 59,
-        "revenue": 2828.299999999999
+        "count": 57,
+        "revenue": 2721.129999999999
       },
       "One-Time": {
         "count": 362,
@@ -6990,7 +6990,7 @@
         "aov": 262.76,
         "first_order": "2025-09-29",
         "last_order": "2025-11-13",
-        "days_since_last": 80,
+        "days_since_last": 81,
         "segment": "VIP"
       },
       {
@@ -7003,7 +7003,7 @@
         "aov": 277.72,
         "first_order": "2025-09-29",
         "last_order": "2025-12-08",
-        "days_since_last": 55,
+        "days_since_last": 56,
         "segment": "VIP"
       },
       {
@@ -7016,7 +7016,7 @@
         "aov": 251.37,
         "first_order": "2026-01-12",
         "last_order": "2026-01-27",
-        "days_since_last": 5,
+        "days_since_last": 6,
         "segment": "VIP"
       },
       {
@@ -7042,7 +7042,7 @@
         "aov": 101.68,
         "first_order": "2025-07-08",
         "last_order": "2025-10-01",
-        "days_since_last": 123,
+        "days_since_last": 124,
         "segment": "VIP"
       },
       {
@@ -7107,7 +7107,7 @@
         "aov": 97.83,
         "first_order": "2025-12-04",
         "last_order": "2026-01-28",
-        "days_since_last": 4,
+        "days_since_last": 5,
         "segment": "VIP"
       }
     ],
@@ -7135,7 +7135,7 @@
         "aov": 156.29,
         "first_order": "2025-08-27",
         "last_order": "2025-09-26",
-        "days_since_last": 128,
+        "days_since_last": 129,
         "segment": "At-Risk"
       },
       {
@@ -7148,7 +7148,7 @@
         "aov": 126.67,
         "first_order": "2025-08-07",
         "last_order": "2025-08-07",
-        "days_since_last": 178,
+        "days_since_last": 179,
         "segment": "At-Risk"
       },
       {
@@ -7213,7 +7213,7 @@
         "aov": 112.33,
         "first_order": "2025-10-24",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "At-Risk"
       },
       {
@@ -7226,7 +7226,7 @@
         "aov": 100.84,
         "first_order": "2025-08-22",
         "last_order": "2025-10-17",
-        "days_since_last": 107,
+        "days_since_last": 108,
         "segment": "At-Risk"
       },
       {
@@ -7252,7 +7252,7 @@
         "aov": 73.81,
         "first_order": "2025-09-08",
         "last_order": "2025-10-06",
-        "days_since_last": 118,
+        "days_since_last": 119,
         "segment": "At-Risk"
       },
       {
@@ -7291,7 +7291,7 @@
         "aov": 104.0,
         "first_order": "2025-11-07",
         "last_order": "2025-11-18",
-        "days_since_last": 75,
+        "days_since_last": 76,
         "segment": "At-Risk"
       },
       {
@@ -7317,7 +7317,7 @@
         "aov": 36.9,
         "first_order": "2025-07-14",
         "last_order": "2025-07-21",
-        "days_since_last": 195,
+        "days_since_last": 196,
         "segment": "At-Risk"
       },
       {
@@ -7369,7 +7369,7 @@
         "aov": 46.97,
         "first_order": "2025-07-21",
         "last_order": "2025-07-29",
-        "days_since_last": 187,
+        "days_since_last": 188,
         "segment": "At-Risk"
       },
       {
@@ -7382,7 +7382,7 @@
         "aov": 48.28,
         "first_order": "2025-09-18",
         "last_order": "2025-09-18",
-        "days_since_last": 136,
+        "days_since_last": 137,
         "segment": "At-Risk"
       },
       {
@@ -7421,7 +7421,7 @@
         "aov": 65.48,
         "first_order": "2025-10-21",
         "last_order": "2025-10-22",
-        "days_since_last": 102,
+        "days_since_last": 103,
         "segment": "At-Risk"
       },
       {
@@ -7434,7 +7434,7 @@
         "aov": 60.14,
         "first_order": "2025-08-04",
         "last_order": "2025-11-22",
-        "days_since_last": 71,
+        "days_since_last": 72,
         "segment": "At-Risk"
       },
       {
@@ -7477,6 +7477,19 @@
         "segment": "At-Risk"
       },
       {
+        "customer_id": "268",
+        "name": "Maria Barreiros",
+        "email": "",
+        "ltv": 55.18,
+        "total_revenue": 111.36,
+        "orders": 2,
+        "aov": 55.68,
+        "first_order": "2025-10-01",
+        "last_order": "2025-12-03",
+        "days_since_last": 61,
+        "segment": "At-Risk"
+      },
+      {
         "customer_id": "56",
         "name": "Anthony Chang",
         "email": "Tony.avcfal@gmail.com",
@@ -7486,7 +7499,7 @@
         "aov": 35.1,
         "first_order": "2025-07-18",
         "last_order": "2025-07-22",
-        "days_since_last": 194,
+        "days_since_last": 195,
         "segment": "At-Risk"
       },
       {
@@ -7499,7 +7512,7 @@
         "aov": 49.67,
         "first_order": "2025-09-19",
         "last_order": "2025-11-15",
-        "days_since_last": 78,
+        "days_since_last": 79,
         "segment": "At-Risk"
       },
       {
@@ -7512,7 +7525,7 @@
         "aov": 36.0,
         "first_order": "2025-09-19",
         "last_order": "2025-11-19",
-        "days_since_last": 74,
+        "days_since_last": 75,
         "segment": "At-Risk"
       },
       {
@@ -7538,7 +7551,7 @@
         "aov": 57.91,
         "first_order": "2025-07-31",
         "last_order": "2025-10-20",
-        "days_since_last": 104,
+        "days_since_last": 105,
         "segment": "At-Risk"
       },
       {
@@ -7555,6 +7568,19 @@
         "segment": "At-Risk"
       },
       {
+        "customer_id": "138",
+        "name": "Cam Hoard",
+        "email": "",
+        "ltv": 51.99,
+        "total_revenue": 111.94,
+        "orders": 3,
+        "aov": 37.31,
+        "first_order": "2025-08-15",
+        "last_order": "2025-12-03",
+        "days_since_last": 61,
+        "segment": "At-Risk"
+      },
+      {
         "customer_id": "121",
         "name": "Dina",
         "email": "Deenz30@mail.com",
@@ -7564,7 +7590,7 @@
         "aov": 35.73,
         "first_order": "2025-08-08",
         "last_order": "2025-08-08",
-        "days_since_last": 177,
+        "days_since_last": 178,
         "segment": "At-Risk"
       },
       {
@@ -7577,7 +7603,7 @@
         "aov": 40.63,
         "first_order": "2025-08-21",
         "last_order": "2025-10-27",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "At-Risk"
       },
       {
@@ -7603,7 +7629,7 @@
         "aov": 56.82,
         "first_order": "2025-07-18",
         "last_order": "2025-07-28",
-        "days_since_last": 188,
+        "days_since_last": 189,
         "segment": "At-Risk"
       },
       {
@@ -7733,7 +7759,7 @@
         "aov": 34.94,
         "first_order": "2025-09-01",
         "last_order": "2025-09-01",
-        "days_since_last": 153,
+        "days_since_last": 154,
         "segment": "At-Risk"
       },
       {
@@ -7759,7 +7785,7 @@
         "aov": 23.6,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 62,
+        "days_since_last": 63,
         "segment": "At-Risk"
       },
       {
@@ -7785,7 +7811,7 @@
         "aov": 21.4,
         "first_order": "2025-07-21",
         "last_order": "2025-08-16",
-        "days_since_last": 169,
+        "days_since_last": 170,
         "segment": "At-Risk"
       },
       {
@@ -7837,7 +7863,7 @@
         "aov": 14.22,
         "first_order": "2025-08-12",
         "last_order": "2025-09-19",
-        "days_since_last": 135,
+        "days_since_last": 136,
         "segment": "At-Risk"
       },
       {
@@ -7902,7 +7928,7 @@
         "aov": 0.0,
         "first_order": "2025-08-28",
         "last_order": "2025-08-28",
-        "days_since_last": 157,
+        "days_since_last": 158,
         "segment": "At-Risk"
       },
       {
@@ -7928,7 +7954,7 @@
         "aov": 0.0,
         "first_order": "2025-07-10",
         "last_order": "2025-07-10",
-        "days_since_last": 206,
+        "days_since_last": 207,
         "segment": "At-Risk"
       }
     ],
@@ -8124,7 +8150,7 @@
       "email": "Brc150@yahoo.com",
       "last_order": "2025-07-10",
       "expected_next": "2025-07-10",
-      "days_overdue": 206,
+      "days_overdue": 207,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8154,7 +8180,7 @@
       "email": "sdmichigan@gmail.com",
       "last_order": "2025-07-21",
       "expected_next": "2025-07-23",
-      "days_overdue": 193,
+      "days_overdue": 194,
       "churn_risk": 95,
       "avg_order_interval": 2
     },
@@ -8164,7 +8190,7 @@
       "email": "Nellycamacho365@gmail.com",
       "last_order": "2025-07-22",
       "expected_next": "2025-07-25",
-      "days_overdue": 191,
+      "days_overdue": 192,
       "churn_risk": 95,
       "avg_order_interval": 2.5
     },
@@ -8174,7 +8200,7 @@
       "email": "Tony.avcfal@gmail.com",
       "last_order": "2025-07-22",
       "expected_next": "2025-07-26",
-      "days_overdue": 190,
+      "days_overdue": 191,
       "churn_risk": 95,
       "avg_order_interval": 4
     },
@@ -8184,7 +8210,7 @@
       "email": "scharcc@gmail.com",
       "last_order": "2025-07-28",
       "expected_next": "2025-08-06",
-      "days_overdue": 179,
+      "days_overdue": 180,
       "churn_risk": 95,
       "avg_order_interval": 9
     },
@@ -8194,7 +8220,7 @@
       "email": "Robert@kravitzlaw.com",
       "last_order": "2025-07-29",
       "expected_next": "2025-08-02",
-      "days_overdue": 183,
+      "days_overdue": 184,
       "churn_risk": 95,
       "avg_order_interval": 4
     },
@@ -8214,7 +8240,7 @@
       "email": "Grjbellido@gmail.com",
       "last_order": "2025-08-16",
       "expected_next": "2025-09-10",
-      "days_overdue": 144,
+      "days_overdue": 145,
       "churn_risk": 95,
       "avg_order_interval": 25
     },
@@ -8304,7 +8330,7 @@
       "email": "Boubacar.g@finjpx.com",
       "last_order": "2025-08-07",
       "expected_next": "2025-08-07",
-      "days_overdue": 178,
+      "days_overdue": 179,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8314,7 +8340,7 @@
       "email": "Deenz30@mail.com",
       "last_order": "2025-08-08",
       "expected_next": "2025-08-08",
-      "days_overdue": 177,
+      "days_overdue": 178,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8344,7 +8370,7 @@
       "email": "",
       "last_order": "2025-09-19",
       "expected_next": "2025-10-26",
-      "days_overdue": 98,
+      "days_overdue": 99,
       "churn_risk": 95,
       "avg_order_interval": 37
     },
@@ -8394,7 +8420,7 @@
       "email": "",
       "last_order": "2025-09-26",
       "expected_next": "2025-10-25",
-      "days_overdue": 99,
+      "days_overdue": 100,
       "churn_risk": 95,
       "avg_order_interval": 29
     },
@@ -8404,7 +8430,7 @@
       "email": "",
       "last_order": "2025-08-28",
       "expected_next": "2025-08-28",
-      "days_overdue": 157,
+      "days_overdue": 158,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8434,7 +8460,7 @@
       "email": "staeylor@ymail.com",
       "last_order": "2025-09-01",
       "expected_next": "2025-09-01",
-      "days_overdue": 153,
+      "days_overdue": 154,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8444,7 +8470,7 @@
       "email": "",
       "last_order": "2025-11-06",
       "expected_next": "2025-11-26",
-      "days_overdue": 67,
+      "days_overdue": 68,
       "churn_risk": 95,
       "avg_order_interval": 20
     },
@@ -8454,7 +8480,7 @@
       "email": "Nhamade@thomabravo.com",
       "last_order": "2025-10-06",
       "expected_next": "2025-11-03",
-      "days_overdue": 90,
+      "days_overdue": 91,
       "churn_risk": 95,
       "avg_order_interval": 28
     },
@@ -8514,7 +8540,7 @@
       "email": "svenyabraich@gmail.com",
       "last_order": "2025-09-18",
       "expected_next": "2025-09-18",
-      "days_overdue": 136,
+      "days_overdue": 137,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8574,7 +8600,7 @@
       "email": "",
       "last_order": "2025-10-22",
       "expected_next": "2025-10-22",
-      "days_overdue": 102,
+      "days_overdue": 103,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8594,7 +8620,7 @@
       "email": "",
       "last_order": "2025-10-27",
       "expected_next": "2025-10-29",
-      "days_overdue": 95,
+      "days_overdue": 96,
       "churn_risk": 95,
       "avg_order_interval": 2
     },
@@ -8614,7 +8640,7 @@
       "email": "",
       "last_order": "2025-10-30",
       "expected_next": "2025-10-30",
-      "days_overdue": 94,
+      "days_overdue": 95,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8644,7 +8670,7 @@
       "email": "",
       "last_order": "2025-11-18",
       "expected_next": "2025-11-28",
-      "days_overdue": 65,
+      "days_overdue": 66,
       "churn_risk": 95,
       "avg_order_interval": 10
     },
@@ -8694,7 +8720,7 @@
       "email": "",
       "last_order": "2025-12-01",
       "expected_next": "2025-12-01",
-      "days_overdue": 62,
+      "days_overdue": 63,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -8704,7 +8730,7 @@
       "email": "Ruedag00@me.com",
       "last_order": "2025-11-26",
       "expected_next": "2025-12-04",
-      "days_overdue": 59,
+      "days_overdue": 60,
       "churn_risk": 80,
       "avg_order_interval": 8
     },
@@ -8734,7 +8760,7 @@
       "email": "",
       "last_order": "2025-10-27",
       "expected_next": "2026-01-01",
-      "days_overdue": 31,
+      "days_overdue": 32,
       "churn_risk": 80,
       "avg_order_interval": 66
     },
@@ -8744,7 +8770,7 @@
       "email": "Brookswelden@gmail.com",
       "last_order": "2025-10-17",
       "expected_next": "2025-12-11",
-      "days_overdue": 52,
+      "days_overdue": 53,
       "churn_risk": 80,
       "avg_order_interval": 55
     },
@@ -8754,7 +8780,7 @@
       "email": "",
       "last_order": "2025-11-19",
       "expected_next": "2025-12-19",
-      "days_overdue": 44,
+      "days_overdue": 45,
       "churn_risk": 80,
       "avg_order_interval": 30
     },
@@ -8764,7 +8790,7 @@
       "email": "",
       "last_order": "2025-12-01",
       "expected_next": "2025-12-12",
-      "days_overdue": 51,
+      "days_overdue": 52,
       "churn_risk": 80,
       "avg_order_interval": 10.8
     },
@@ -8844,7 +8870,7 @@
       "email": "",
       "last_order": "2025-12-19",
       "expected_next": "2025-12-21",
-      "days_overdue": 42,
+      "days_overdue": 43,
       "churn_risk": 80,
       "avg_order_interval": 2
     },
@@ -8864,7 +8890,7 @@
       "email": "Joubaud27@gmail.com",
       "last_order": "2025-10-20",
       "expected_next": "2026-01-09",
-      "days_overdue": 23,
+      "days_overdue": 24,
       "churn_risk": 60,
       "avg_order_interval": 81
     },
@@ -8874,7 +8900,7 @@
       "email": "Lane@lanecreatore.com",
       "last_order": "2025-12-11",
       "expected_next": "2026-01-03",
-      "days_overdue": 29,
+      "days_overdue": 30,
       "churn_risk": 60,
       "avg_order_interval": 22.5
     },
@@ -8884,7 +8910,7 @@
       "email": "aerosynch@hotmail.com",
       "last_order": "2025-11-15",
       "expected_next": "2026-01-10",
-      "days_overdue": 22,
+      "days_overdue": 23,
       "churn_risk": 60,
       "avg_order_interval": 56
     },
@@ -8904,7 +8930,7 @@
       "email": "",
       "last_order": "2025-12-22",
       "expected_next": "2026-01-17",
-      "days_overdue": 15,
+      "days_overdue": 16,
       "churn_risk": 60,
       "avg_order_interval": 26
     },
@@ -8944,7 +8970,7 @@
       "email": "",
       "last_order": "2026-01-02",
       "expected_next": "2026-01-13",
-      "days_overdue": 19,
+      "days_overdue": 20,
       "churn_risk": 60,
       "avg_order_interval": 11
     },
@@ -8954,7 +8980,7 @@
       "email": "Gu_ Hilkner@hotmail.com",
       "last_order": "2026-01-03",
       "expected_next": "2026-01-03",
-      "days_overdue": 29,
+      "days_overdue": 30,
       "churn_risk": 60,
       "avg_order_interval": 0
     },
@@ -8964,7 +8990,7 @@
       "email": "Michaelwagg@comcast.net",
       "last_order": "2026-01-05",
       "expected_next": "2026-01-05",
-      "days_overdue": 27,
+      "days_overdue": 28,
       "churn_risk": 60,
       "avg_order_interval": 0
     },
@@ -8994,7 +9020,7 @@
       "email": "",
       "last_order": "2026-01-09",
       "expected_next": "2026-01-11",
-      "days_overdue": 21,
+      "days_overdue": 22,
       "churn_risk": 60,
       "avg_order_interval": 2
     },
@@ -9054,7 +9080,7 @@
       "email": "Alexshiyan@gmail.com",
       "last_order": "2025-12-22",
       "expected_next": "2026-01-23",
-      "days_overdue": 9,
+      "days_overdue": 10,
       "churn_risk": 40,
       "avg_order_interval": 31.7
     },
@@ -9074,7 +9100,7 @@
       "email": "",
       "last_order": "2026-01-02",
       "expected_next": "2026-01-24",
-      "days_overdue": 8,
+      "days_overdue": 9,
       "churn_risk": 40,
       "avg_order_interval": 22
     },
@@ -9117,6 +9143,16 @@
       "days_overdue": 12,
       "churn_risk": 40,
       "avg_order_interval": 5
+    },
+    {
+      "customer_id": "588",
+      "name": "Sam Ellis",
+      "email": "",
+      "last_order": "2026-01-21",
+      "expected_next": "2026-01-25",
+      "days_overdue": 8,
+      "churn_risk": 40,
+      "avg_order_interval": 4
     },
     {
       "customer_id": "615",
@@ -16351,5 +16387,5 @@
     "total_new_customers": 535,
     "default_monthly_spend": 250
   },
-  "generated_at": "2026-02-02T03:52:37.102729"
+  "generated_at": "2026-02-02T12:54:06.518934"
 }
