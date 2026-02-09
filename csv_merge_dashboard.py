@@ -360,6 +360,23 @@ class CSVMerger:
 
         return subs['Amount'].sum()
 
+    def get_rent_income(self, months: List[str] = None) -> float:
+        """Get rent income from alterations ladies ($800/month starting Sept 2025)"""
+        RENT_START = '2025-09'
+        RENT_AMOUNT = 800.0
+
+        if months:
+            eligible = [m for m in months if m >= RENT_START]
+        else:
+            # If no months specified, count all months in the dataset from Sept onward
+            if self.merged_df is not None:
+                all_months = self.merged_df['Month'].dropna().unique().tolist()
+                eligible = [m for m in all_months if m >= RENT_START]
+            else:
+                eligible = []
+
+        return RENT_AMOUNT * len(eligible)
+
     def calculate_kpis(self, df: pd.DataFrame) -> Dict:
         """Calculate KPIs for a given dataset"""
         # Handle refunds (negative revenue)
@@ -371,10 +388,11 @@ class CSVMerger:
         # Get subscription revenue for the months in this dataset
         months_in_df = df['Month'].dropna().unique().tolist()
         subscription_revenue = self.get_subscription_revenue(months_in_df)
+        rent_income = self.get_rent_income(months_in_df)
 
-        total_revenue = df['Total after Credit Used'].sum() + subscription_revenue
+        total_revenue = df['Total after Credit Used'].sum() + subscription_revenue + rent_income
         total_cost = df['Final Cost'].sum()
-        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue  # Subscription revenue is already net (no tax on subscriptions)
+        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue + rent_income  # Subscription & rent are already net (no tax)
         profit = net_revenue - total_cost
         
         # Calculate dry cleaning items (exclude W&F pounds)
@@ -392,8 +410,9 @@ class CSVMerger:
         kpis = {
             'orders': len(df),
             'revenue': total_revenue,
-            'gross_sales': positive_revenue + subscription_revenue,
+            'gross_sales': positive_revenue + subscription_revenue + rent_income,
             'subscription_revenue': subscription_revenue,
+            'rent_income': rent_income,
             'refund_amount': refund_amount,
             'refund_count': refund_count,
             'cost': total_cost,
@@ -487,9 +506,10 @@ class CSVMerger:
         # Get subscription revenue for the months in this dataset
         months_in_df = df['Month'].dropna().unique().tolist()
         subscription_revenue = self.get_subscription_revenue(months_in_df)
+        rent_income = self.get_rent_income(months_in_df)
 
-        # Net revenue (after tax) + subscription revenue
-        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue
+        # Net revenue (after tax) + subscription revenue + rent income
+        net_revenue = df['Revenue Net Tax'].sum() + subscription_revenue + rent_income
 
         # Discounts and tax
         discounts = df['Discount'].sum()
@@ -507,6 +527,7 @@ class CSVMerger:
 
         return {
             'gross_sales': positive_revenue,
+            'rent_income': rent_income,
             'refunds': refunds,
             'net_revenue': net_revenue,
             'refund_rate_pct': round(refund_rate_pct, 2),

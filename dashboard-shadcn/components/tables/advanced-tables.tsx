@@ -21,6 +21,7 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
   // Calculate Financial Quality with Cost breakdown
   const grossSales = revenue_quality.gross_sales || 0;
   const subscriptionRevenue = kpiData?.subscription_revenue || 0;
+  const rentIncome = kpiData?.rent_income || revenue_quality.rent_income || 0;
   const refunds = revenue_quality.refunds || 0;
   const discounts = revenue_quality.discounts || 0;
   const tips = revenue_quality.tips || 0;
@@ -35,6 +36,7 @@ export function AdvancedTables({ data, kpiData }: AdvancedTablesProps) {
   const financialRows = [
     { label: 'Gross Sales', value: grossSales, format: 'currency' },
     { label: 'Subscription Revenue', value: subscriptionRevenue, format: 'currency', highlight: 'positive' },
+    { label: 'Rent Income', value: rentIncome, format: 'currency', highlight: 'positive' },
     { label: 'Refunds', value: -refunds, format: 'currency', highlight: 'negative' },
     { label: 'Discounts', value: -discounts, format: 'currency', highlight: 'negative' },
     { label: 'Tips', value: tips, format: 'currency' },

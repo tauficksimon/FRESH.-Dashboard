@@ -11,6 +11,7 @@ export interface KPIData {
   express_rate?: number;
   refund_amount?: number;
   subscription_revenue?: number;
+  rent_income?: number;
 }
 
 export interface SeriesData {

@@ -3,15 +3,16 @@
     "all": {
       "kpis": {
         "orders": 1100,
-        "revenue": 70411.817,
-        "gross_sales": 70637.327,
+        "revenue": 75211.817,
+        "gross_sales": 75437.327,
         "subscription_revenue": 627.5169999999999,
+        "rent_income": 4800.0,
         "refund_amount": 225.51,
         "refund_count": 5,
         "cost": 30826.714500000002,
-        "net_revenue": 66734.687,
-        "profit": 35907.9725,
-        "margin_pct": 53.80705913852567,
+        "net_revenue": 71534.687,
+        "profit": 40707.9725,
+        "margin_pct": 56.90662000100735,
         "items": 7594.9,
         "dry_clean_items": 3653.0,
         "wf_lbs": 3941.9,
@@ -93,6 +94,7 @@
       },
       "payment": {
         "Card": 965,
+        "None": 51,
         "Cash": 46,
         "Invoice": 22,
         "11": 16
@@ -108,8 +110,9 @@
       "advanced": {
         "revenue_quality": {
           "gross_sales": 70009.81,
+          "rent_income": 4800.0,
           "refunds": 225.51,
-          "net_revenue": 66734.687,
+          "net_revenue": 71534.687,
           "refund_rate_pct": 0.32,
           "discounts": 2963.49,
           "discount_rate_pct": 4.23,
@@ -242,6 +245,7 @@
           "revenue": 4504.68,
           "gross_sales": 4590.34,
           "subscription_revenue": 0.0,
+          "rent_income": 0.0,
           "refund_amount": 85.66,
           "refund_count": 1,
           "cost": 2572.11,
@@ -290,6 +294,7 @@
         },
         "payment": {
           "Card": 81,
+          "None": 3,
           "Invoice": 3,
           "11": 2
         },
@@ -301,6 +306,7 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 4590.34,
+            "rent_income": 0.0,
             "refunds": 85.66,
             "net_revenue": 4223.039999999999,
             "refund_rate_pct": 1.87,
@@ -434,6 +440,7 @@
               "revenue": 8.98,
               "gross_sales": 8.98,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 0.0,
@@ -482,6 +489,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 8.98,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 8.39,
                 "refund_rate_pct": 0.0,
@@ -541,6 +549,7 @@
               "revenue": 775.63,
               "gross_sales": 861.29,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 85.66,
               "refund_count": 1,
               "cost": 465.93499999999995,
@@ -593,6 +602,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 861.29,
+                "rent_income": 0.0,
                 "refunds": 85.66,
                 "net_revenue": 724.88,
                 "refund_rate_pct": 9.95,
@@ -726,6 +736,7 @@
               "revenue": 1519.0600000000004,
               "gross_sales": 1519.0600000000004,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 871.5800000000003,
@@ -771,6 +782,7 @@
             },
             "payment": {
               "Card": 28,
+              "None": 2,
               "Invoice": 1
             },
             "status": {
@@ -780,6 +792,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1519.0600000000004,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1425.7700000000002,
                 "refund_rate_pct": 0.0,
@@ -913,6 +926,7 @@
               "revenue": 1248.77,
               "gross_sales": 1248.77,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 657.22,
@@ -956,7 +970,8 @@
             },
             "payment": {
               "Card": 19,
-              "Invoice": 2
+              "Invoice": 2,
+              "None": 1
             },
             "status": {
               "collected": 21,
@@ -965,6 +980,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1248.77,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1171.39,
                 "refund_rate_pct": 0.0,
@@ -1088,6 +1104,7 @@
               "revenue": 952.24,
               "gross_sales": 952.24,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 577.3749999999999,
@@ -1140,6 +1157,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 952.24,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 892.61,
                 "refund_rate_pct": 0.0,
@@ -1270,6 +1288,7 @@
           "revenue": 6420.240000000001,
           "gross_sales": 6519.25,
           "subscription_revenue": 0.0,
+          "rent_income": 0.0,
           "refund_amount": 99.00999999999999,
           "refund_count": 2,
           "cost": 3337.2975,
@@ -1319,7 +1338,8 @@
         "payment": {
           "Card": 107,
           "Cash": 11,
-          "Invoice": 4
+          "Invoice": 4,
+          "None": 1
         },
         "status": {
           "collected": 122,
@@ -1329,6 +1349,7 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 6519.25,
+            "rent_income": 0.0,
             "refunds": 99.00999999999999,
             "net_revenue": 6008.48,
             "refund_rate_pct": 1.52,
@@ -1462,6 +1483,7 @@
               "revenue": 1907.2499999999998,
               "gross_sales": 1907.2499999999998,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1060.8550000000002,
@@ -1515,6 +1537,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1907.2499999999998,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1787.1799999999998,
                 "refund_rate_pct": 0.0,
@@ -1643,6 +1666,7 @@
               "revenue": 1237.74,
               "gross_sales": 1237.74,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 612.1750000000001,
@@ -1687,7 +1711,8 @@
             },
             "payment": {
               "Card": 21,
-              "Cash": 1
+              "Cash": 1,
+              "None": 1
             },
             "status": {
               "collected": 22,
@@ -1696,6 +1721,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1237.74,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1161.61,
                 "refund_rate_pct": 0.0,
@@ -1824,6 +1850,7 @@
               "revenue": 1006.9300000000001,
               "gross_sales": 1006.9300000000001,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 505.42749999999995,
@@ -1875,6 +1902,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1006.9300000000001,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 939.9200000000002,
                 "refund_rate_pct": 0.0,
@@ -1998,6 +2026,7 @@
               "revenue": 1812.5200000000002,
               "gross_sales": 1832.8400000000001,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 20.32,
               "refund_count": 1,
               "cost": 881.32,
@@ -2049,6 +2078,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1832.8400000000001,
+                "rent_income": 0.0,
                 "refunds": 20.32,
                 "net_revenue": 1693.7999999999997,
                 "refund_rate_pct": 1.11,
@@ -2172,6 +2202,7 @@
               "revenue": 455.8,
               "gross_sales": 534.49,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 78.69,
               "refund_count": 1,
               "cost": 277.52,
@@ -2222,6 +2253,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 534.49,
+                "rent_income": 0.0,
                 "refunds": 78.69,
                 "net_revenue": 425.9700000000001,
                 "refund_rate_pct": 14.72,
@@ -2344,15 +2376,16 @@
       "2025-09": {
         "kpis": {
           "orders": 131,
-          "revenue": 7266.549999999999,
-          "gross_sales": 7275.289999999999,
+          "revenue": 8066.549999999999,
+          "gross_sales": 8075.289999999999,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 8.74,
           "refund_count": 1,
           "cost": 3415.437,
-          "net_revenue": 6764.35,
-          "profit": 3348.9130000000005,
-          "margin_pct": 49.50827500055438,
+          "net_revenue": 7564.35,
+          "profit": 4148.9130000000005,
+          "margin_pct": 54.84824208292848,
           "items": 793.9,
           "dry_clean_items": 413.0,
           "wf_lbs": 380.9,
@@ -2397,6 +2430,7 @@
           "Card": 119,
           "Cash": 5,
           "Invoice": 3,
+          "None": 2,
           "11": 2
         },
         "status": {
@@ -2407,8 +2441,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 7275.289999999999,
+            "rent_income": 800.0,
             "refunds": 8.74,
-            "net_revenue": 6764.35,
+            "net_revenue": 7564.35,
             "refund_rate_pct": 0.12,
             "discounts": 387.57000000000005,
             "discount_rate_pct": 5.33,
@@ -2537,15 +2572,16 @@
           "2025-09-W1": {
             "kpis": {
               "orders": 19,
-              "revenue": 999.5,
-              "gross_sales": 1008.2399999999999,
+              "revenue": 1799.5,
+              "gross_sales": 1808.2399999999998,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 8.74,
               "refund_count": 1,
               "cost": 436.5949999999999,
-              "net_revenue": 934.6200000000001,
-              "profit": 498.0250000000002,
-              "margin_pct": 53.286362371873075,
+              "net_revenue": 1734.6200000000001,
+              "profit": 1298.025,
+              "margin_pct": 74.83051042879708,
               "items": 125.5,
               "dry_clean_items": 60.0,
               "wf_lbs": 65.5,
@@ -2591,8 +2627,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1008.2399999999999,
+                "rent_income": 800.0,
                 "refunds": 8.74,
-                "net_revenue": 934.6200000000001,
+                "net_revenue": 1734.6200000000001,
                 "refund_rate_pct": 0.87,
                 "discounts": 68.91,
                 "discount_rate_pct": 6.83,
@@ -2711,15 +2748,16 @@
           "2025-09-W2": {
             "kpis": {
               "orders": 28,
-              "revenue": 1594.14,
-              "gross_sales": 1594.14,
+              "revenue": 2394.1400000000003,
+              "gross_sales": 2394.1400000000003,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 761.745,
-              "net_revenue": 1494.64,
-              "profit": 732.8950000000001,
-              "margin_pct": 49.03488465449875,
+              "net_revenue": 2294.6400000000003,
+              "profit": 1532.8950000000004,
+              "margin_pct": 66.80328940487398,
               "items": 194.5,
               "dry_clean_items": 56.0,
               "wf_lbs": 138.5,
@@ -2758,6 +2796,7 @@
             "payment": {
               "Card": 24,
               "11": 2,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -2766,8 +2805,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1594.14,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1494.64,
+                "net_revenue": 2294.6400000000003,
                 "refund_rate_pct": 0.0,
                 "discounts": 85.17000000000002,
                 "discount_rate_pct": 5.34,
@@ -2886,15 +2926,16 @@
           "2025-09-W3": {
             "kpis": {
               "orders": 41,
-              "revenue": 2390.2599999999998,
-              "gross_sales": 2390.2599999999998,
+              "revenue": 3190.2599999999998,
+              "gross_sales": 3190.2599999999998,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1053.8919999999998,
-              "net_revenue": 2234.28,
-              "profit": 1180.3880000000004,
-              "margin_pct": 52.83080007877259,
+              "net_revenue": 3034.28,
+              "profit": 1980.3880000000004,
+              "margin_pct": 65.26714739575782,
               "items": 210.9,
               "dry_clean_items": 153.0,
               "wf_lbs": 57.9,
@@ -2933,6 +2974,7 @@
             },
             "payment": {
               "Card": 38,
+              "None": 1,
               "Invoice": 1,
               "Cash": 1
             },
@@ -2943,8 +2985,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2390.2599999999998,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2234.28,
+                "net_revenue": 3034.28,
                 "refund_rate_pct": 0.0,
                 "discounts": 113.1,
                 "discount_rate_pct": 4.73,
@@ -3068,15 +3111,16 @@
           "2025-09-W4": {
             "kpis": {
               "orders": 33,
-              "revenue": 1597.8300000000002,
-              "gross_sales": 1597.8300000000002,
+              "revenue": 2397.83,
+              "gross_sales": 2397.83,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 759.9150000000001,
-              "net_revenue": 1493.3,
-              "profit": 733.3849999999999,
-              "margin_pct": 49.11169892185093,
+              "net_revenue": 2293.3,
+              "profit": 1533.3850000000002,
+              "margin_pct": 66.86368987921337,
               "items": 201.4,
               "dry_clean_items": 89.0,
               "wf_lbs": 112.4,
@@ -3124,8 +3168,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1597.8300000000002,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1493.3,
+                "net_revenue": 2293.3,
                 "refund_rate_pct": 0.0,
                 "discounts": 54.87999999999999,
                 "discount_rate_pct": 3.43,
@@ -3249,15 +3294,16 @@
           "2025-09-W5": {
             "kpis": {
               "orders": 10,
-              "revenue": 684.8199999999999,
-              "gross_sales": 684.8199999999999,
+              "revenue": 1484.82,
+              "gross_sales": 1484.82,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 403.29,
-              "net_revenue": 607.51,
-              "profit": 204.21999999999997,
-              "margin_pct": 33.61590755707724,
+              "net_revenue": 1407.51,
+              "profit": 1004.22,
+              "margin_pct": 71.3472728435322,
               "items": 61.6,
               "dry_clean_items": 55.0,
               "wf_lbs": 6.6,
@@ -3303,8 +3349,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 684.8199999999999,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 607.51,
+                "net_revenue": 1407.51,
                 "refund_rate_pct": 0.0,
                 "discounts": 65.51,
                 "discount_rate_pct": 9.57,
@@ -3425,15 +3472,16 @@
       "2025-10": {
         "kpis": {
           "orders": 163,
-          "revenue": 12824.06,
-          "gross_sales": 12824.06,
+          "revenue": 13624.06,
+          "gross_sales": 13624.06,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 5431.692499999999,
-          "net_revenue": 12028.259999999998,
-          "profit": 6596.567499999999,
-          "margin_pct": 54.842242352592976,
+          "net_revenue": 12828.259999999998,
+          "profit": 7396.567499999999,
+          "margin_pct": 57.65838469129875,
           "items": 1218.5,
           "dry_clean_items": 641.0,
           "wf_lbs": 577.5,
@@ -3478,6 +3526,7 @@
           "Card": 148,
           "Cash": 11,
           "Invoice": 2,
+          "None": 1,
           "11": 1
         },
         "status": {
@@ -3488,8 +3537,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 12824.06,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 12028.259999999998,
+            "net_revenue": 12828.259999999998,
             "refund_rate_pct": 0.0,
             "discounts": 260.27,
             "discount_rate_pct": 2.03,
@@ -3618,15 +3668,16 @@
           "2025-10-W1": {
             "kpis": {
               "orders": 39,
-              "revenue": 3883.7300000000005,
-              "gross_sales": 3883.7300000000005,
+              "revenue": 4683.7300000000005,
+              "gross_sales": 4683.7300000000005,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1397.225,
-              "net_revenue": 3629.1899999999996,
-              "profit": 2231.9649999999997,
-              "margin_pct": 61.50036233980585,
+              "net_revenue": 4429.19,
+              "profit": 3031.9649999999997,
+              "margin_pct": 68.45416430543733,
               "items": 298.0,
               "dry_clean_items": 175.0,
               "wf_lbs": 123.0,
@@ -3666,7 +3717,8 @@
             },
             "payment": {
               "Card": 35,
-              "Cash": 3
+              "Cash": 3,
+              "None": 1
             },
             "status": {
               "collected": 38,
@@ -3675,8 +3727,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3883.7300000000005,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3629.1899999999996,
+                "net_revenue": 4429.19,
                 "refund_rate_pct": 0.0,
                 "discounts": 32.370000000000005,
                 "discount_rate_pct": 0.83,
@@ -3805,15 +3858,16 @@
           "2025-10-W2": {
             "kpis": {
               "orders": 30,
-              "revenue": 2050.3299999999995,
-              "gross_sales": 2050.3299999999995,
+              "revenue": 2850.3299999999995,
+              "gross_sales": 2850.3299999999995,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 990.7950000000001,
-              "net_revenue": 1916.29,
-              "profit": 925.4949999999999,
-              "margin_pct": 48.29618690281742,
+              "net_revenue": 2716.29,
+              "profit": 1725.495,
+              "margin_pct": 63.52396099091039,
               "items": 253.0,
               "dry_clean_items": 110.0,
               "wf_lbs": 143.0,
@@ -3860,8 +3914,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2050.3299999999995,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1916.29,
+                "net_revenue": 2716.29,
                 "refund_rate_pct": 0.0,
                 "discounts": 26.69,
                 "discount_rate_pct": 1.3,
@@ -3985,15 +4040,16 @@
           "2025-10-W3": {
             "kpis": {
               "orders": 35,
-              "revenue": 2526.0799999999995,
-              "gross_sales": 2526.0799999999995,
+              "revenue": 3326.0799999999995,
+              "gross_sales": 3326.0799999999995,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1099.13,
-              "net_revenue": 2377.6400000000003,
-              "profit": 1278.5100000000002,
-              "margin_pct": 53.77222792348716,
+              "net_revenue": 3177.6400000000003,
+              "profit": 2078.51,
+              "margin_pct": 65.41049332208809,
               "items": 232.5,
               "dry_clean_items": 111.0,
               "wf_lbs": 121.5,
@@ -4041,8 +4097,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2526.0799999999995,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2377.6400000000003,
+                "net_revenue": 3177.6400000000003,
                 "refund_rate_pct": 0.0,
                 "discounts": 64.9,
                 "discount_rate_pct": 2.57,
@@ -4161,15 +4218,16 @@
           "2025-10-W4": {
             "kpis": {
               "orders": 37,
-              "revenue": 2581.36,
-              "gross_sales": 2581.36,
+              "revenue": 3381.36,
+              "gross_sales": 3381.36,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1101.7,
-              "net_revenue": 2438.1300000000006,
-              "profit": 1336.4300000000005,
-              "margin_pct": 54.813730194862465,
+              "net_revenue": 3238.1300000000006,
+              "profit": 2136.4300000000003,
+              "margin_pct": 65.97727700864388,
               "items": 305.5,
               "dry_clean_items": 144.0,
               "wf_lbs": 161.5,
@@ -4218,8 +4276,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2581.36,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2438.1300000000006,
+                "net_revenue": 3238.1300000000006,
                 "refund_rate_pct": 0.0,
                 "discounts": 109.48,
                 "discount_rate_pct": 4.24,
@@ -4348,15 +4407,16 @@
           "2025-10-W5": {
             "kpis": {
               "orders": 22,
-              "revenue": 1782.56,
-              "gross_sales": 1782.56,
+              "revenue": 2582.56,
+              "gross_sales": 2582.56,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 842.8425000000001,
-              "net_revenue": 1667.0100000000002,
-              "profit": 824.1675000000001,
-              "margin_pct": 49.43986538773013,
+              "net_revenue": 2467.01,
+              "profit": 1624.1675,
+              "margin_pct": 65.83546479341389,
               "items": 129.5,
               "dry_clean_items": 101.0,
               "wf_lbs": 28.5,
@@ -4402,8 +4462,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1782.56,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1667.0100000000002,
+                "net_revenue": 2467.01,
                 "refund_rate_pct": 0.0,
                 "discounts": 26.830000000000002,
                 "discount_rate_pct": 1.51,
@@ -4524,15 +4585,16 @@
       "2025-11": {
         "kpis": {
           "orders": 143,
-          "revenue": 10703.89,
-          "gross_sales": 10703.89,
+          "revenue": 11503.89,
+          "gross_sales": 11503.89,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4446.7675,
-          "net_revenue": 10017.810000000001,
-          "profit": 5571.042500000001,
-          "margin_pct": 55.61138113020711,
+          "net_revenue": 10817.810000000001,
+          "profit": 6371.042500000001,
+          "margin_pct": 58.89401366820087,
           "items": 869.5,
           "dry_clean_items": 527.0,
           "wf_lbs": 342.5,
@@ -4585,8 +4647,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 10703.89,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 10017.810000000001,
+            "net_revenue": 10817.810000000001,
             "refund_rate_pct": 0.0,
             "discounts": 381.72999999999996,
             "discount_rate_pct": 3.57,
@@ -4710,15 +4773,16 @@
           "2025-11-W1": {
             "kpis": {
               "orders": 40,
-              "revenue": 2547.75,
-              "gross_sales": 2547.75,
+              "revenue": 3347.75,
+              "gross_sales": 3347.75,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1207.845,
-              "net_revenue": 2380.49,
-              "profit": 1172.6449999999998,
-              "margin_pct": 49.26065641947665,
+              "net_revenue": 3180.49,
+              "profit": 1972.6449999999998,
+              "margin_pct": 62.02330458514253,
               "items": 231.5,
               "dry_clean_items": 137.0,
               "wf_lbs": 94.5,
@@ -4765,8 +4829,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2547.75,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2380.49,
+                "net_revenue": 3180.49,
                 "refund_rate_pct": 0.0,
                 "discounts": 106.46000000000001,
                 "discount_rate_pct": 4.18,
@@ -4885,15 +4950,16 @@
           "2025-11-W2": {
             "kpis": {
               "orders": 31,
-              "revenue": 3350.1400000000003,
-              "gross_sales": 3350.1400000000003,
+              "revenue": 4150.14,
+              "gross_sales": 4150.14,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1243.915,
-              "net_revenue": 3137.75,
-              "profit": 1893.835,
-              "margin_pct": 60.356465620269304,
+              "net_revenue": 3937.75,
+              "profit": 2693.835,
+              "margin_pct": 68.41051361818297,
               "items": 201.5,
               "dry_clean_items": 131.0,
               "wf_lbs": 70.5,
@@ -4939,8 +5005,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3350.1400000000003,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3137.75,
+                "net_revenue": 3937.75,
                 "refund_rate_pct": 0.0,
                 "discounts": 138.98,
                 "discount_rate_pct": 4.15,
@@ -5059,15 +5126,16 @@
           "2025-11-W3": {
             "kpis": {
               "orders": 35,
-              "revenue": 1984.6000000000001,
-              "gross_sales": 1984.6000000000001,
+              "revenue": 2784.6000000000004,
+              "gross_sales": 2784.6000000000004,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 875.6725000000001,
-              "net_revenue": 1858.81,
-              "profit": 983.1374999999998,
-              "margin_pct": 52.89069350821224,
+              "net_revenue": 2658.81,
+              "profit": 1783.1374999999998,
+              "margin_pct": 67.06524723466512,
               "items": 219.0,
               "dry_clean_items": 109.0,
               "wf_lbs": 110.0,
@@ -5113,8 +5181,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1984.6000000000001,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1858.81,
+                "net_revenue": 2658.81,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -5233,15 +5302,16 @@
           "2025-11-W4": {
             "kpis": {
               "orders": 36,
-              "revenue": 2744.4,
-              "gross_sales": 2744.4,
+              "revenue": 3544.4,
+              "gross_sales": 3544.4,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1077.415,
-              "net_revenue": 2568.79,
-              "profit": 1491.375,
-              "margin_pct": 58.0574901023439,
+              "net_revenue": 3368.79,
+              "profit": 2291.375,
+              "margin_pct": 68.01774524384126,
               "items": 209.5,
               "dry_clean_items": 142.0,
               "wf_lbs": 67.5,
@@ -5289,8 +5359,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2744.4,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2568.79,
+                "net_revenue": 3368.79,
                 "refund_rate_pct": 0.0,
                 "discounts": 136.29,
                 "discount_rate_pct": 4.97,
@@ -5414,15 +5485,16 @@
           "2025-11-W5": {
             "kpis": {
               "orders": 1,
-              "revenue": 77.0,
-              "gross_sales": 77.0,
+              "revenue": 877.0,
+              "gross_sales": 877.0,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 41.92,
-              "net_revenue": 71.97,
-              "profit": 30.049999999999997,
-              "margin_pct": 41.753508406280396,
+              "net_revenue": 871.97,
+              "profit": 830.0500000000001,
+              "margin_pct": 95.19249515464982,
               "items": 8.0,
               "dry_clean_items": 8.0,
               "wf_lbs": 0.0,
@@ -5465,8 +5537,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 77.0,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 71.97,
+                "net_revenue": 871.97,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -5523,15 +5596,16 @@
       "2025-12": {
         "kpis": {
           "orders": 178,
-          "revenue": 10551.076999999997,
-          "gross_sales": 10551.076999999997,
+          "revenue": 11351.076999999997,
+          "gross_sales": 11351.076999999997,
           "subscription_revenue": 192.56699999999998,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4481.5375,
-          "net_revenue": 9912.866999999998,
-          "profit": 5431.329499999998,
-          "margin_pct": 54.790702830977146,
+          "net_revenue": 10712.866999999998,
+          "profit": 6231.329499999998,
+          "margin_pct": 58.166777390216815,
           "items": 1324.5,
           "dry_clean_items": 594.0,
           "wf_lbs": 730.5,
@@ -5575,6 +5649,7 @@
         "payment": {
           "Card": 156,
           "Cash": 10,
+          "None": 7,
           "11": 3,
           "Invoice": 2
         },
@@ -5586,8 +5661,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 10358.509999999998,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 9912.866999999998,
+            "net_revenue": 10712.866999999998,
             "refund_rate_pct": 0.0,
             "discounts": 357.56999999999994,
             "discount_rate_pct": 3.45,
@@ -5716,15 +5792,16 @@
           "2025-12-W1": {
             "kpis": {
               "orders": 50,
-              "revenue": 3448.6369999999997,
-              "gross_sales": 3448.6369999999997,
+              "revenue": 4248.637,
+              "gross_sales": 4248.637,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1436.17,
-              "net_revenue": 3238.597,
-              "profit": 1802.4270000000001,
-              "margin_pct": 55.654562762826,
+              "net_revenue": 4038.597,
+              "profit": 2602.427,
+              "margin_pct": 64.43888805939291,
               "items": 348.5,
               "dry_clean_items": 188.0,
               "wf_lbs": 160.5,
@@ -5771,8 +5848,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3256.0699999999997,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3238.597,
+                "net_revenue": 4038.597,
                 "refund_rate_pct": 0.0,
                 "discounts": 75.99,
                 "discount_rate_pct": 2.33,
@@ -5896,15 +5974,16 @@
           "2025-12-W2": {
             "kpis": {
               "orders": 32,
-              "revenue": 2419.837,
-              "gross_sales": 2419.837,
+              "revenue": 3219.837,
+              "gross_sales": 3219.837,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 716.175,
-              "net_revenue": 2275.257,
-              "profit": 1559.082,
-              "margin_pct": 68.5233360451149,
+              "net_revenue": 3075.257,
+              "profit": 2359.0820000000003,
+              "margin_pct": 76.71170246909446,
               "items": 195.5,
               "dry_clean_items": 114.0,
               "wf_lbs": 81.5,
@@ -5942,6 +6021,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 2,
               "Cash": 1
             },
             "status": {
@@ -5951,8 +6031,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2227.27,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2275.257,
+                "net_revenue": 3075.257,
                 "refund_rate_pct": 0.0,
                 "discounts": 118.52,
                 "discount_rate_pct": 5.32,
@@ -6071,15 +6152,16 @@
           "2025-12-W3": {
             "kpis": {
               "orders": 40,
-              "revenue": 2380.867,
-              "gross_sales": 2380.867,
+              "revenue": 3180.867,
+              "gross_sales": 3180.867,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1121.545,
-              "net_revenue": 2246.5870000000004,
-              "profit": 1125.0420000000004,
-              "margin_pct": 50.07782916931328,
+              "net_revenue": 3046.5870000000004,
+              "profit": 1925.0420000000004,
+              "margin_pct": 63.186838255398584,
               "items": 357.5,
               "dry_clean_items": 106.0,
               "wf_lbs": 251.5,
@@ -6118,7 +6200,8 @@
             },
             "payment": {
               "Card": 33,
-              "Cash": 5
+              "Cash": 5,
+              "None": 2
             },
             "status": {
               "collected": 40
@@ -6126,8 +6209,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2188.3,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2246.5870000000004,
+                "net_revenue": 3046.5870000000004,
                 "refund_rate_pct": 0.0,
                 "discounts": 38.42,
                 "discount_rate_pct": 1.76,
@@ -6251,15 +6335,16 @@
           "2025-12-W4": {
             "kpis": {
               "orders": 39,
-              "revenue": 2340.3370000000004,
-              "gross_sales": 2340.3370000000004,
+              "revenue": 3140.3370000000004,
+              "gross_sales": 3140.3370000000004,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 986.3075000000001,
-              "net_revenue": 2213.8869999999997,
-              "profit": 1227.5794999999996,
-              "margin_pct": 55.449058601455256,
+              "net_revenue": 3013.8869999999997,
+              "profit": 2027.5794999999996,
+              "margin_pct": 67.27456935180382,
               "items": 331.5,
               "dry_clean_items": 141.0,
               "wf_lbs": 190.5,
@@ -6298,6 +6383,7 @@
             "payment": {
               "Card": 33,
               "Cash": 3,
+              "None": 1,
               "11": 1,
               "Invoice": 1
             },
@@ -6308,8 +6394,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2147.7700000000004,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2213.8869999999997,
+                "net_revenue": 3013.8869999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 46.76,
                 "discount_rate_pct": 2.18,
@@ -6428,15 +6515,16 @@
           "2025-12-W5": {
             "kpis": {
               "orders": 17,
-              "revenue": 731.6669999999999,
-              "gross_sales": 731.6669999999999,
+              "revenue": 1531.667,
+              "gross_sales": 1531.667,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 221.34,
-              "net_revenue": 708.807,
-              "profit": 487.467,
-              "margin_pct": 68.77288175765757,
+              "net_revenue": 1508.807,
+              "profit": 1287.467,
+              "margin_pct": 85.33013168682277,
               "items": 91.5,
               "dry_clean_items": 45.0,
               "wf_lbs": 46.5,
@@ -6474,6 +6562,7 @@
             },
             "payment": {
               "Card": 13,
+              "None": 2,
               "Invoice": 1,
               "Cash": 1
             },
@@ -6484,8 +6573,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 539.0999999999999,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 708.807,
+                "net_revenue": 1508.807,
                 "refund_rate_pct": 0.0,
                 "discounts": 77.88,
                 "discount_rate_pct": 14.45,
@@ -6606,15 +6696,16 @@
       "2026-01": {
         "kpis": {
           "orders": 224,
-          "revenue": 15067.91,
-          "gross_sales": 15100.01,
+          "revenue": 15867.91,
+          "gross_sales": 15900.01,
           "subscription_revenue": 244.76,
+          "rent_income": 800.0,
           "refund_amount": 32.1,
           "refund_count": 1,
           "cost": 5901.4425,
-          "net_revenue": 14763.019999999999,
-          "profit": 8861.5775,
-          "margin_pct": 60.02550629884671,
+          "net_revenue": 15563.019999999999,
+          "profit": 9661.5775,
+          "margin_pct": 62.08035137139193,
           "items": 1429.0,
           "dry_clean_items": 747.0,
           "wf_lbs": 682.0,
@@ -6657,6 +6748,7 @@
         },
         "payment": {
           "Card": 191,
+          "None": 18,
           "11": 6,
           "Invoice": 5,
           "Cash": 4
@@ -6671,8 +6763,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 14855.25,
+            "rent_income": 800.0,
             "refunds": 32.1,
-            "net_revenue": 14763.019999999999,
+            "net_revenue": 15563.019999999999,
             "refund_rate_pct": 0.22,
             "discounts": 500.53000000000003,
             "discount_rate_pct": 3.37,
@@ -6801,15 +6894,16 @@
           "2026-01-W1": {
             "kpis": {
               "orders": 50,
-              "revenue": 2443.9900000000007,
-              "gross_sales": 2443.9900000000007,
+              "revenue": 3243.9900000000007,
+              "gross_sales": 3243.9900000000007,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1073.1125,
-              "net_revenue": 2386.7300000000005,
-              "profit": 1313.6175000000005,
-              "margin_pct": 55.03837886983447,
+              "net_revenue": 3186.7300000000005,
+              "profit": 2113.6175000000003,
+              "margin_pct": 66.32559080938768,
               "items": 236.0,
               "dry_clean_items": 133.0,
               "wf_lbs": 103.0,
@@ -6849,6 +6943,7 @@
             },
             "payment": {
               "Card": 44,
+              "None": 3,
               "11": 2,
               "Cash": 1
             },
@@ -6860,8 +6955,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2199.2300000000005,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2386.7300000000005,
+                "net_revenue": 3186.7300000000005,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.349999999999994,
                 "discount_rate_pct": 2.43,
@@ -6990,15 +7086,16 @@
           "2026-01-W2": {
             "kpis": {
               "orders": 46,
-              "revenue": 3819.329999999999,
-              "gross_sales": 3819.329999999999,
+              "revenue": 4619.329999999999,
+              "gross_sales": 4619.329999999999,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1283.0349999999999,
-              "net_revenue": 3749.21,
-              "profit": 2466.175,
-              "margin_pct": 65.77852400905792,
+              "net_revenue": 4549.21,
+              "profit": 3266.175,
+              "margin_pct": 71.79653170550492,
               "items": 331.0,
               "dry_clean_items": 174.0,
               "wf_lbs": 157.0,
@@ -7047,8 +7144,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3574.5699999999993,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3749.21,
+                "net_revenue": 4549.21,
                 "refund_rate_pct": 0.0,
                 "discounts": 160.11,
                 "discount_rate_pct": 4.48,
@@ -7167,15 +7265,16 @@
           "2026-01-W3": {
             "kpis": {
               "orders": 54,
-              "revenue": 4328.009999999999,
-              "gross_sales": 4328.009999999999,
+              "revenue": 5128.009999999999,
+              "gross_sales": 5128.009999999999,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1766.1949999999997,
-              "net_revenue": 4247.91,
-              "profit": 2481.715,
-              "margin_pct": 58.42202400709997,
+              "net_revenue": 5047.91,
+              "profit": 3281.715,
+              "margin_pct": 65.01136113757971,
               "items": 379.5,
               "dry_clean_items": 215.0,
               "wf_lbs": 164.5,
@@ -7215,6 +7314,7 @@
             },
             "payment": {
               "Card": 47,
+              "None": 4,
               "Invoice": 2,
               "11": 1
             },
@@ -7227,8 +7327,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 4083.2499999999995,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 4247.91,
+                "net_revenue": 5047.91,
                 "refund_rate_pct": 0.0,
                 "discounts": 55.18,
                 "discount_rate_pct": 1.35,
@@ -7357,15 +7458,16 @@
           "2026-01-W4": {
             "kpis": {
               "orders": 50,
-              "revenue": 2980.29,
-              "gross_sales": 3012.3900000000003,
+              "revenue": 3780.29,
+              "gross_sales": 3812.3900000000003,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 32.1,
               "refund_count": 1,
               "cost": 1205.5099999999998,
-              "net_revenue": 2926.62,
-              "profit": 1721.1100000000001,
-              "margin_pct": 58.808796495616114,
+              "net_revenue": 3726.62,
+              "profit": 2521.11,
+              "margin_pct": 67.65138382770446,
               "items": 343.0,
               "dry_clean_items": 125.0,
               "wf_lbs": 218.0,
@@ -7405,6 +7507,7 @@
             },
             "payment": {
               "Card": 43,
+              "None": 3,
               "Cash": 2,
               "Invoice": 1,
               "11": 1
@@ -7416,8 +7519,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2767.63,
+                "rent_income": 800.0,
                 "refunds": 32.1,
-                "net_revenue": 2926.62,
+                "net_revenue": 3726.62,
                 "refund_rate_pct": 1.16,
                 "discounts": 97.88,
                 "discount_rate_pct": 3.54,
@@ -7546,15 +7650,16 @@
           "2026-01-W5": {
             "kpis": {
               "orders": 24,
-              "revenue": 2475.33,
-              "gross_sales": 2475.33,
+              "revenue": 3275.33,
+              "gross_sales": 3275.33,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 573.59,
-              "net_revenue": 2431.59,
-              "profit": 1858.0,
-              "margin_pct": 76.41090808894592,
+              "net_revenue": 3231.59,
+              "profit": 2658.0,
+              "margin_pct": 82.2505330193496,
               "items": 139.5,
               "dry_clean_items": 100.0,
               "wf_lbs": 39.5,
@@ -7594,6 +7699,7 @@
             },
             "payment": {
               "Card": 14,
+              "None": 8,
               "11": 2
             },
             "status": {
@@ -7604,8 +7710,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2230.5699999999997,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2431.59,
+                "net_revenue": 3231.59,
                 "refund_rate_pct": 0.0,
                 "discounts": 134.01,
                 "discount_rate_pct": 6.01,
@@ -7736,15 +7843,16 @@
       "2026-02": {
         "kpis": {
           "orders": 49,
-          "revenue": 3073.4100000000003,
-          "gross_sales": 3073.4100000000003,
+          "revenue": 3873.4100000000003,
+          "gross_sales": 3873.4100000000003,
           "subscription_revenue": 190.19,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 1240.4299999999998,
-          "net_revenue": 3016.86,
-          "profit": 1776.4300000000003,
-          "margin_pct": 58.88340857712987,
+          "net_revenue": 3816.86,
+          "profit": 2576.4300000000003,
+          "margin_pct": 67.50129687753808,
           "items": 251.0,
           "dry_clean_items": 158.0,
           "wf_lbs": 93.0,
@@ -7786,6 +7894,7 @@
         },
         "payment": {
           "Card": 28,
+          "None": 19,
           "Invoice": 2
         },
         "status": {
@@ -7799,8 +7908,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 2883.2200000000003,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 3016.86,
+            "net_revenue": 3816.86,
             "refund_rate_pct": 0.0,
             "discounts": 53.760000000000005,
             "discount_rate_pct": 1.86,
@@ -7924,15 +8034,16 @@
           "2026-02-W1": {
             "kpis": {
               "orders": 48,
-              "revenue": 2991.0400000000004,
-              "gross_sales": 2991.0400000000004,
+              "revenue": 3791.0400000000004,
+              "gross_sales": 3791.0400000000004,
               "subscription_revenue": 190.19,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1203.1,
-              "net_revenue": 2936.11,
-              "profit": 1733.0100000000002,
-              "margin_pct": 59.024014767839084,
+              "net_revenue": 3736.11,
+              "profit": 2533.01,
+              "margin_pct": 67.79805733771222,
               "items": 247.0,
               "dry_clean_items": 155.0,
               "wf_lbs": 92.0,
@@ -7971,6 +8082,7 @@
             },
             "payment": {
               "Card": 28,
+              "None": 18,
               "Invoice": 2
             },
             "status": {
@@ -7983,8 +8095,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2800.8500000000004,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2936.11,
+                "net_revenue": 3736.11,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.760000000000005,
                 "discount_rate_pct": 1.92,
@@ -8108,15 +8221,16 @@
           "2026-02-W2": {
             "kpis": {
               "orders": 1,
-              "revenue": 272.56,
-              "gross_sales": 272.56,
+              "revenue": 1072.56,
+              "gross_sales": 1072.56,
               "subscription_revenue": 190.19,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 37.330000000000005,
-              "net_revenue": 270.94,
-              "profit": 233.60999999999999,
-              "margin_pct": 86.22204178046799,
+              "net_revenue": 1070.94,
+              "profit": 1033.6100000000001,
+              "margin_pct": 96.51427717705941,
               "items": 4.0,
               "dry_clean_items": 3.0,
               "wf_lbs": 1.0,
@@ -8150,15 +8264,18 @@
             "category": {
               "Wash & Fold": 82.37
             },
-            "payment": {},
+            "payment": {
+              "None": 1
+            },
             "status": {
               "pickup": 1
             },
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 82.37,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 270.94,
+                "net_revenue": 1070.94,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -8230,15 +8347,16 @@
     "all": {
       "kpis": {
         "orders": 1030,
-        "revenue": 66591.697,
-        "gross_sales": 66817.20700000001,
+        "revenue": 71391.697,
+        "gross_sales": 71617.20700000001,
         "subscription_revenue": 627.5169999999999,
+        "rent_income": 4800.0,
         "refund_amount": 225.51,
         "refund_count": 5,
         "cost": 29699.9945,
-        "net_revenue": 63001.58700000001,
-        "profit": 33301.592500000006,
-        "margin_pct": 52.85833910818787,
+        "net_revenue": 67801.587,
+        "profit": 38101.5925,
+        "margin_pct": 56.19572370776513,
         "items": 7300.4,
         "dry_clean_items": 3370.0,
         "wf_lbs": 3930.4,
@@ -8321,7 +8439,8 @@
       "payment": {
         "Card": 965,
         "Cash": 46,
-        "11": 16
+        "11": 16,
+        "None": 3
       },
       "status": {
         "collected": 1010,
@@ -8333,8 +8452,9 @@
       "advanced": {
         "revenue_quality": {
           "gross_sales": 66189.69,
+          "rent_income": 4800.0,
           "refunds": 225.51,
-          "net_revenue": 63001.58700000001,
+          "net_revenue": 67801.587,
           "refund_rate_pct": 0.34,
           "discounts": 1939.86,
           "discount_rate_pct": 2.93,
@@ -8467,6 +8587,7 @@
           "revenue": 4415.660000000001,
           "gross_sales": 4501.320000000001,
           "subscription_revenue": 0.0,
+          "rent_income": 0.0,
           "refund_amount": 85.66,
           "refund_count": 1,
           "cost": 2542.1450000000004,
@@ -8524,6 +8645,7 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 4501.320000000001,
+            "rent_income": 0.0,
             "refunds": 85.66,
             "net_revenue": 4137.629999999999,
             "refund_rate_pct": 1.9,
@@ -8657,6 +8779,7 @@
               "revenue": 8.98,
               "gross_sales": 8.98,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 0.0,
@@ -8705,6 +8828,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 8.98,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 8.39,
                 "refund_rate_pct": 0.0,
@@ -8764,6 +8888,7 @@
               "revenue": 775.63,
               "gross_sales": 861.29,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 85.66,
               "refund_count": 1,
               "cost": 465.93499999999995,
@@ -8816,6 +8941,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 861.29,
+                "rent_income": 0.0,
                 "refunds": 85.66,
                 "net_revenue": 724.88,
                 "refund_rate_pct": 9.95,
@@ -8949,6 +9075,7 @@
               "revenue": 1478.44,
               "gross_sales": 1478.44,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 850.6000000000003,
@@ -9001,6 +9128,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1478.44,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1387.8100000000002,
                 "refund_rate_pct": 0.0,
@@ -9134,6 +9262,7 @@
               "revenue": 1200.37,
               "gross_sales": 1200.37,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 648.2349999999999,
@@ -9184,6 +9313,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1200.37,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1123.9399999999998,
                 "refund_rate_pct": 0.0,
@@ -9307,6 +9437,7 @@
               "revenue": 952.24,
               "gross_sales": 952.24,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 577.3749999999999,
@@ -9359,6 +9490,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 952.24,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 892.61,
                 "refund_rate_pct": 0.0,
@@ -9489,6 +9621,7 @@
           "revenue": 6321.84,
           "gross_sales": 6420.85,
           "subscription_revenue": 0.0,
+          "rent_income": 0.0,
           "refund_amount": 99.00999999999999,
           "refund_count": 2,
           "cost": 3297.5875,
@@ -9546,6 +9679,7 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 6420.85,
+            "rent_income": 0.0,
             "refunds": 99.00999999999999,
             "net_revenue": 5912.01,
             "refund_rate_pct": 1.54,
@@ -9679,6 +9813,7 @@
               "revenue": 1907.25,
               "gross_sales": 1907.25,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1060.855,
@@ -9731,6 +9866,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1907.25,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1787.1799999999998,
                 "refund_rate_pct": 0.0,
@@ -9859,6 +9995,7 @@
               "revenue": 1139.3400000000001,
               "gross_sales": 1139.3400000000001,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 572.465,
@@ -9911,6 +10048,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1139.3400000000001,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 1065.1399999999999,
                 "refund_rate_pct": 0.0,
@@ -10039,6 +10177,7 @@
               "revenue": 1006.9300000000001,
               "gross_sales": 1006.9300000000001,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 505.42749999999995,
@@ -10090,6 +10229,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1006.9300000000001,
+                "rent_income": 0.0,
                 "refunds": 0.0,
                 "net_revenue": 939.9200000000002,
                 "refund_rate_pct": 0.0,
@@ -10213,6 +10353,7 @@
               "revenue": 1812.52,
               "gross_sales": 1832.84,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 20.32,
               "refund_count": 1,
               "cost": 881.32,
@@ -10263,6 +10404,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1832.84,
+                "rent_income": 0.0,
                 "refunds": 20.32,
                 "net_revenue": 1693.8,
                 "refund_rate_pct": 1.11,
@@ -10386,6 +10528,7 @@
               "revenue": 455.8,
               "gross_sales": 534.49,
               "subscription_revenue": 0.0,
+              "rent_income": 0.0,
               "refund_amount": 78.69,
               "refund_count": 1,
               "cost": 277.52,
@@ -10436,6 +10579,7 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 534.49,
+                "rent_income": 0.0,
                 "refunds": 78.69,
                 "net_revenue": 425.9700000000001,
                 "refund_rate_pct": 14.72,
@@ -10558,15 +10702,16 @@
       "2025-09": {
         "kpis": {
           "orders": 126,
-          "revenue": 7226.950000000001,
-          "gross_sales": 7235.6900000000005,
+          "revenue": 8026.950000000001,
+          "gross_sales": 8035.6900000000005,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 8.74,
           "refund_count": 1,
           "cost": 3390.7169999999996,
-          "net_revenue": 6728.7699999999995,
-          "profit": 3338.053,
-          "margin_pct": 49.60866547675133,
+          "net_revenue": 7528.7699999999995,
+          "profit": 4138.053,
+          "margin_pct": 54.96320116034891,
           "items": 766.9,
           "dry_clean_items": 386.0,
           "wf_lbs": 380.9,
@@ -10619,8 +10764,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 7235.6900000000005,
+            "rent_income": 800.0,
             "refunds": 8.74,
-            "net_revenue": 6728.7699999999995,
+            "net_revenue": 7528.7699999999995,
             "refund_rate_pct": 0.12,
             "discounts": 231.81,
             "discount_rate_pct": 3.2,
@@ -10749,15 +10895,16 @@
           "2025-09-W1": {
             "kpis": {
               "orders": 18,
-              "revenue": 999.4999999999999,
-              "gross_sales": 1008.2399999999999,
+              "revenue": 1799.5,
+              "gross_sales": 1808.2399999999998,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 8.74,
               "refund_count": 1,
               "cost": 436.5949999999999,
-              "net_revenue": 934.6200000000001,
-              "profit": 498.0250000000002,
-              "margin_pct": 53.286362371873075,
+              "net_revenue": 1734.6200000000001,
+              "profit": 1298.025,
+              "margin_pct": 74.83051042879708,
               "items": 117.5,
               "dry_clean_items": 52.0,
               "wf_lbs": 65.5,
@@ -10802,8 +10949,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1008.2399999999999,
+                "rent_income": 800.0,
                 "refunds": 8.74,
-                "net_revenue": 934.6200000000001,
+                "net_revenue": 1734.6200000000001,
                 "refund_rate_pct": 0.87,
                 "discounts": 16.99,
                 "discount_rate_pct": 1.69,
@@ -10922,15 +11070,16 @@
           "2025-09-W2": {
             "kpis": {
               "orders": 27,
-              "revenue": 1594.1399999999999,
-              "gross_sales": 1594.1399999999999,
+              "revenue": 2394.14,
+              "gross_sales": 2394.14,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 751.265,
-              "net_revenue": 1496.07,
-              "profit": 744.805,
-              "margin_pct": 49.78410101131631,
+              "net_revenue": 2296.0699999999997,
+              "profit": 1544.8049999999998,
+              "margin_pct": 67.28039650359092,
               "items": 192.5,
               "dry_clean_items": 54.0,
               "wf_lbs": 138.5,
@@ -10977,8 +11126,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1594.1399999999999,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1496.07,
+                "net_revenue": 2296.0699999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 85.17000000000002,
                 "discount_rate_pct": 5.34,
@@ -11097,15 +11247,16 @@
           "2025-09-W3": {
             "kpis": {
               "orders": 39,
-              "revenue": 2350.66,
-              "gross_sales": 2350.66,
+              "revenue": 3150.66,
+              "gross_sales": 3150.66,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1039.6519999999998,
-              "net_revenue": 2197.27,
-              "profit": 1157.6180000000002,
-              "margin_pct": 52.68437652177476,
+              "net_revenue": 2997.27,
+              "profit": 1957.6180000000002,
+              "margin_pct": 65.31336849866712,
               "items": 199.9,
               "dry_clean_items": 142.0,
               "wf_lbs": 57.9,
@@ -11152,8 +11303,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2350.66,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2197.27,
+                "net_revenue": 2997.27,
                 "refund_rate_pct": 0.0,
                 "discounts": 48.199999999999996,
                 "discount_rate_pct": 2.05,
@@ -11277,15 +11429,16 @@
           "2025-09-W4": {
             "kpis": {
               "orders": 32,
-              "revenue": 1597.83,
-              "gross_sales": 1597.83,
+              "revenue": 2397.83,
+              "gross_sales": 2397.83,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 759.915,
-              "net_revenue": 1493.2999999999997,
-              "profit": 733.3849999999998,
-              "margin_pct": 49.11169892185093,
+              "net_revenue": 2293.2999999999997,
+              "profit": 1533.3849999999998,
+              "margin_pct": 66.86368987921337,
               "items": 195.4,
               "dry_clean_items": 83.0,
               "wf_lbs": 112.4,
@@ -11332,8 +11485,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1597.83,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1493.2999999999997,
+                "net_revenue": 2293.2999999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 15.940000000000001,
                 "discount_rate_pct": 1.0,
@@ -11457,15 +11611,16 @@
           "2025-09-W5": {
             "kpis": {
               "orders": 10,
-              "revenue": 684.8199999999999,
-              "gross_sales": 684.8199999999999,
+              "revenue": 1484.82,
+              "gross_sales": 1484.82,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 403.29,
-              "net_revenue": 607.51,
-              "profit": 204.21999999999997,
-              "margin_pct": 33.61590755707724,
+              "net_revenue": 1407.51,
+              "profit": 1004.22,
+              "margin_pct": 71.3472728435322,
               "items": 61.6,
               "dry_clean_items": 55.0,
               "wf_lbs": 6.6,
@@ -11511,8 +11666,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 684.8199999999999,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 607.51,
+                "net_revenue": 1407.51,
                 "refund_rate_pct": 0.0,
                 "discounts": 65.51,
                 "discount_rate_pct": 9.57,
@@ -11633,15 +11789,16 @@
       "2025-10": {
         "kpis": {
           "orders": 160,
-          "revenue": 12787.66,
-          "gross_sales": 12787.66,
+          "revenue": 13587.66,
+          "gross_sales": 13587.66,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 5418.9625,
-          "net_revenue": 11994.24,
-          "profit": 6575.2775,
-          "margin_pct": 54.82029290726216,
+          "net_revenue": 12794.24,
+          "profit": 7375.2775,
+          "margin_pct": 57.64529585188335,
           "items": 1195.5,
           "dry_clean_items": 618.0,
           "wf_lbs": 577.5,
@@ -11694,8 +11851,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 12787.66,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 11994.24,
+            "net_revenue": 12794.24,
             "refund_rate_pct": 0.0,
             "discounts": 121.98,
             "discount_rate_pct": 0.95,
@@ -11824,15 +11982,16 @@
           "2025-10-W1": {
             "kpis": {
               "orders": 38,
-              "revenue": 3847.330000000001,
-              "gross_sales": 3847.330000000001,
+              "revenue": 4647.330000000001,
+              "gross_sales": 4647.330000000001,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1384.495,
-              "net_revenue": 3595.17,
-              "profit": 2210.675,
-              "margin_pct": 61.49013815758365,
+              "net_revenue": 4395.17,
+              "profit": 3010.675,
+              "margin_pct": 68.49962572551233,
               "items": 296.0,
               "dry_clean_items": 173.0,
               "wf_lbs": 123.0,
@@ -11880,8 +12039,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3847.330000000001,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3595.17,
+                "net_revenue": 4395.17,
                 "refund_rate_pct": 0.0,
                 "discounts": 32.37,
                 "discount_rate_pct": 0.84,
@@ -12010,15 +12170,16 @@
           "2025-10-W2": {
             "kpis": {
               "orders": 30,
-              "revenue": 2050.3299999999995,
-              "gross_sales": 2050.3299999999995,
+              "revenue": 2850.3299999999995,
+              "gross_sales": 2850.3299999999995,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 990.7950000000001,
-              "net_revenue": 1916.29,
-              "profit": 925.4949999999999,
-              "margin_pct": 48.29618690281742,
+              "net_revenue": 2716.29,
+              "profit": 1725.495,
+              "margin_pct": 63.52396099091039,
               "items": 253.0,
               "dry_clean_items": 110.0,
               "wf_lbs": 143.0,
@@ -12065,8 +12226,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2050.3299999999995,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1916.29,
+                "net_revenue": 2716.29,
                 "refund_rate_pct": 0.0,
                 "discounts": 26.69,
                 "discount_rate_pct": 1.3,
@@ -12190,15 +12352,16 @@
           "2025-10-W3": {
             "kpis": {
               "orders": 34,
-              "revenue": 2526.08,
-              "gross_sales": 2526.08,
+              "revenue": 3326.08,
+              "gross_sales": 3326.08,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1099.1299999999999,
-              "net_revenue": 2377.64,
-              "profit": 1278.51,
-              "margin_pct": 53.77222792348716,
+              "net_revenue": 3177.64,
+              "profit": 2078.51,
+              "margin_pct": 65.4104933220881,
               "items": 222.5,
               "dry_clean_items": 101.0,
               "wf_lbs": 121.5,
@@ -12245,8 +12408,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2526.08,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2377.64,
+                "net_revenue": 3177.64,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -12365,15 +12529,16 @@
           "2025-10-W4": {
             "kpis": {
               "orders": 36,
-              "revenue": 2581.36,
-              "gross_sales": 2581.36,
+              "revenue": 3381.36,
+              "gross_sales": 3381.36,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1101.7,
-              "net_revenue": 2438.1300000000006,
-              "profit": 1336.4300000000005,
-              "margin_pct": 54.813730194862465,
+              "net_revenue": 3238.1300000000006,
+              "profit": 2136.4300000000003,
+              "margin_pct": 65.97727700864388,
               "items": 294.5,
               "dry_clean_items": 133.0,
               "wf_lbs": 161.5,
@@ -12421,8 +12586,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2581.36,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2438.1300000000006,
+                "net_revenue": 3238.1300000000006,
                 "refund_rate_pct": 0.0,
                 "discounts": 36.09,
                 "discount_rate_pct": 1.4,
@@ -12551,15 +12717,16 @@
           "2025-10-W5": {
             "kpis": {
               "orders": 22,
-              "revenue": 1782.56,
-              "gross_sales": 1782.56,
+              "revenue": 2582.56,
+              "gross_sales": 2582.56,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 842.8425000000001,
-              "net_revenue": 1667.0100000000002,
-              "profit": 824.1675000000001,
-              "margin_pct": 49.43986538773013,
+              "net_revenue": 2467.01,
+              "profit": 1624.1675,
+              "margin_pct": 65.83546479341389,
               "items": 129.5,
               "dry_clean_items": 101.0,
               "wf_lbs": 28.5,
@@ -12605,8 +12772,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1782.56,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1667.0100000000002,
+                "net_revenue": 2467.01,
                 "refund_rate_pct": 0.0,
                 "discounts": 26.830000000000002,
                 "discount_rate_pct": 1.51,
@@ -12727,15 +12895,16 @@
       "2025-11": {
         "kpis": {
           "orders": 142,
-          "revenue": 10703.89,
-          "gross_sales": 10703.89,
+          "revenue": 11503.89,
+          "gross_sales": 11503.89,
           "subscription_revenue": 0.0,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4446.7675,
-          "net_revenue": 10017.809999999998,
-          "profit": 5571.042499999998,
-          "margin_pct": 55.61138113020709,
+          "net_revenue": 10817.809999999998,
+          "profit": 6371.042499999998,
+          "margin_pct": 58.89401366820086,
           "items": 864.5,
           "dry_clean_items": 522.0,
           "wf_lbs": 342.5,
@@ -12787,8 +12956,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 10703.89,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 10017.809999999998,
+            "net_revenue": 10817.809999999998,
             "refund_rate_pct": 0.0,
             "discounts": 328.78,
             "discount_rate_pct": 3.07,
@@ -12912,15 +13082,16 @@
           "2025-11-W1": {
             "kpis": {
               "orders": 39,
-              "revenue": 2547.75,
-              "gross_sales": 2547.75,
+              "revenue": 3347.75,
+              "gross_sales": 3347.75,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1207.845,
-              "net_revenue": 2380.4900000000002,
-              "profit": 1172.6450000000002,
-              "margin_pct": 49.26065641947667,
+              "net_revenue": 3180.4900000000002,
+              "profit": 1972.6450000000002,
+              "margin_pct": 62.02330458514255,
               "items": 226.5,
               "dry_clean_items": 132.0,
               "wf_lbs": 94.5,
@@ -12966,8 +13137,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2547.75,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2380.4900000000002,
+                "net_revenue": 3180.4900000000002,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.51,
                 "discount_rate_pct": 2.1,
@@ -13086,15 +13258,16 @@
           "2025-11-W2": {
             "kpis": {
               "orders": 31,
-              "revenue": 3350.1400000000003,
-              "gross_sales": 3350.1400000000003,
+              "revenue": 4150.14,
+              "gross_sales": 4150.14,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1243.915,
-              "net_revenue": 3137.75,
-              "profit": 1893.835,
-              "margin_pct": 60.356465620269304,
+              "net_revenue": 3937.75,
+              "profit": 2693.835,
+              "margin_pct": 68.41051361818297,
               "items": 201.5,
               "dry_clean_items": 131.0,
               "wf_lbs": 70.5,
@@ -13140,8 +13313,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3350.1400000000003,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3137.75,
+                "net_revenue": 3937.75,
                 "refund_rate_pct": 0.0,
                 "discounts": 138.98,
                 "discount_rate_pct": 4.15,
@@ -13260,15 +13434,16 @@
           "2025-11-W3": {
             "kpis": {
               "orders": 35,
-              "revenue": 1984.6000000000001,
-              "gross_sales": 1984.6000000000001,
+              "revenue": 2784.6000000000004,
+              "gross_sales": 2784.6000000000004,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 875.6725000000001,
-              "net_revenue": 1858.81,
-              "profit": 983.1374999999998,
-              "margin_pct": 52.89069350821224,
+              "net_revenue": 2658.81,
+              "profit": 1783.1374999999998,
+              "margin_pct": 67.06524723466512,
               "items": 219.0,
               "dry_clean_items": 109.0,
               "wf_lbs": 110.0,
@@ -13314,8 +13489,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1984.6000000000001,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1858.81,
+                "net_revenue": 2658.81,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -13434,15 +13610,16 @@
           "2025-11-W4": {
             "kpis": {
               "orders": 36,
-              "revenue": 2744.4,
-              "gross_sales": 2744.4,
+              "revenue": 3544.4,
+              "gross_sales": 3544.4,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1077.415,
-              "net_revenue": 2568.79,
-              "profit": 1491.375,
-              "margin_pct": 58.0574901023439,
+              "net_revenue": 3368.79,
+              "profit": 2291.375,
+              "margin_pct": 68.01774524384126,
               "items": 209.5,
               "dry_clean_items": 142.0,
               "wf_lbs": 67.5,
@@ -13490,8 +13667,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2744.4,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2568.79,
+                "net_revenue": 3368.79,
                 "refund_rate_pct": 0.0,
                 "discounts": 136.29,
                 "discount_rate_pct": 4.97,
@@ -13615,15 +13793,16 @@
           "2025-11-W5": {
             "kpis": {
               "orders": 1,
-              "revenue": 77.0,
-              "gross_sales": 77.0,
+              "revenue": 877.0,
+              "gross_sales": 877.0,
               "subscription_revenue": 0.0,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 41.92,
-              "net_revenue": 71.97,
-              "profit": 30.049999999999997,
-              "margin_pct": 41.753508406280396,
+              "net_revenue": 871.97,
+              "profit": 830.0500000000001,
+              "margin_pct": 95.19249515464982,
               "items": 8.0,
               "dry_clean_items": 8.0,
               "wf_lbs": 0.0,
@@ -13666,8 +13845,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 77.0,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 71.97,
+                "net_revenue": 871.97,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -13724,15 +13904,16 @@
       "2025-12": {
         "kpis": {
           "orders": 172,
-          "revenue": 10392.776999999998,
-          "gross_sales": 10392.776999999998,
+          "revenue": 11192.776999999998,
+          "gross_sales": 11192.776999999998,
           "subscription_revenue": 192.56699999999998,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 4399.9375,
-          "net_revenue": 9764.917,
-          "profit": 5364.9794999999995,
-          "margin_pct": 54.941373285610105,
+          "net_revenue": 10564.917,
+          "profit": 6164.9794999999995,
+          "margin_pct": 58.35331692620017,
           "items": 1296.5,
           "dry_clean_items": 566.0,
           "wf_lbs": 730.5,
@@ -13776,7 +13957,8 @@
         "payment": {
           "Card": 156,
           "Cash": 10,
-          "11": 3
+          "11": 3,
+          "None": 3
         },
         "status": {
           "collected": 172
@@ -13785,8 +13967,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 10200.21,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 9764.917,
+            "net_revenue": 10564.917,
             "refund_rate_pct": 0.0,
             "discounts": 265.69999999999993,
             "discount_rate_pct": 2.6,
@@ -13915,15 +14098,16 @@
           "2025-12-W1": {
             "kpis": {
               "orders": 50,
-              "revenue": 3448.6369999999997,
-              "gross_sales": 3448.6369999999997,
+              "revenue": 4248.637,
+              "gross_sales": 4248.637,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1436.17,
-              "net_revenue": 3238.597,
-              "profit": 1802.4270000000001,
-              "margin_pct": 55.654562762826,
+              "net_revenue": 4038.597,
+              "profit": 2602.427,
+              "margin_pct": 64.43888805939291,
               "items": 348.5,
               "dry_clean_items": 188.0,
               "wf_lbs": 160.5,
@@ -13970,8 +14154,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3256.0699999999997,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3238.597,
+                "net_revenue": 4038.597,
                 "refund_rate_pct": 0.0,
                 "discounts": 75.99,
                 "discount_rate_pct": 2.33,
@@ -14095,15 +14280,16 @@
           "2025-12-W2": {
             "kpis": {
               "orders": 31,
-              "revenue": 2341.2370000000005,
-              "gross_sales": 2341.2370000000005,
+              "revenue": 3141.2370000000005,
+              "gross_sales": 3141.2370000000005,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 680.265,
-              "net_revenue": 2201.797,
-              "profit": 1521.5320000000002,
-              "margin_pct": 69.1040999692524,
+              "net_revenue": 3001.797,
+              "profit": 2321.532,
+              "margin_pct": 77.33807449337847,
               "items": 186.5,
               "dry_clean_items": 105.0,
               "wf_lbs": 81.5,
@@ -14141,6 +14327,7 @@
             },
             "payment": {
               "Card": 29,
+              "None": 1,
               "Cash": 1
             },
             "status": {
@@ -14149,8 +14336,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2148.6700000000005,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2201.797,
+                "net_revenue": 3001.797,
                 "refund_rate_pct": 0.0,
                 "discounts": 118.52,
                 "discount_rate_pct": 5.52,
@@ -14269,15 +14457,16 @@
           "2025-12-W3": {
             "kpis": {
               "orders": 40,
-              "revenue": 2380.867,
-              "gross_sales": 2380.867,
+              "revenue": 3180.867,
+              "gross_sales": 3180.867,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1121.545,
-              "net_revenue": 2246.5870000000004,
-              "profit": 1125.0420000000004,
-              "margin_pct": 50.07782916931328,
+              "net_revenue": 3046.5870000000004,
+              "profit": 1925.0420000000004,
+              "margin_pct": 63.186838255398584,
               "items": 357.5,
               "dry_clean_items": 106.0,
               "wf_lbs": 251.5,
@@ -14316,7 +14505,8 @@
             },
             "payment": {
               "Card": 33,
-              "Cash": 5
+              "Cash": 5,
+              "None": 2
             },
             "status": {
               "collected": 40
@@ -14324,8 +14514,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2188.3,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2246.5870000000004,
+                "net_revenue": 3046.5870000000004,
                 "refund_rate_pct": 0.0,
                 "discounts": 38.42,
                 "discount_rate_pct": 1.76,
@@ -14449,15 +14640,16 @@
           "2025-12-W4": {
             "kpis": {
               "orders": 37,
-              "revenue": 2329.637,
-              "gross_sales": 2329.637,
+              "revenue": 3129.637,
+              "gross_sales": 3129.637,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 981.0675,
-              "net_revenue": 2203.8869999999997,
-              "profit": 1222.8194999999996,
-              "margin_pct": 55.48467321600425,
+              "net_revenue": 3003.8869999999997,
+              "profit": 2022.8194999999996,
+              "margin_pct": 67.34006638731749,
               "items": 329.5,
               "dry_clean_items": 139.0,
               "wf_lbs": 190.5,
@@ -14504,8 +14696,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2137.07,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2203.8869999999997,
+                "net_revenue": 3003.8869999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 32.77,
                 "discount_rate_pct": 1.53,
@@ -14624,15 +14817,16 @@
           "2025-12-W5": {
             "kpis": {
               "orders": 14,
-              "revenue": 662.667,
-              "gross_sales": 662.667,
+              "revenue": 1462.667,
+              "gross_sales": 1462.667,
               "subscription_revenue": 192.56699999999998,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 180.89,
-              "net_revenue": 644.317,
-              "profit": 463.427,
-              "margin_pct": 71.92531005700612,
+              "net_revenue": 1444.317,
+              "profit": 1263.4270000000001,
+              "margin_pct": 87.47574112885191,
               "items": 74.5,
               "dry_clean_items": 28.0,
               "wf_lbs": 46.5,
@@ -14678,8 +14872,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 470.1,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 644.317,
+                "net_revenue": 1444.317,
                 "refund_rate_pct": 0.0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0.0,
@@ -14800,15 +14995,16 @@
       "2026-01": {
         "kpis": {
           "orders": 201,
-          "revenue": 13210.609999999999,
-          "gross_sales": 13242.710000000001,
+          "revenue": 14010.609999999999,
+          "gross_sales": 14042.710000000001,
           "subscription_revenue": 244.76,
+          "rent_income": 800.0,
           "refund_amount": 32.1,
           "refund_count": 1,
           "cost": 5578.7925,
-          "net_revenue": 12940.220000000001,
-          "profit": 7361.427500000002,
-          "margin_pct": 56.88796249213692,
+          "net_revenue": 13740.220000000001,
+          "profit": 8161.427500000002,
+          "margin_pct": 59.39808460126549,
           "items": 1353.5,
           "dry_clean_items": 682.0,
           "wf_lbs": 671.5,
@@ -14863,8 +15059,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 12997.95,
+            "rent_income": 800.0,
             "refunds": 32.1,
-            "net_revenue": 12940.220000000001,
+            "net_revenue": 13740.220000000001,
             "refund_rate_pct": 0.25,
             "discounts": 236.03000000000003,
             "discount_rate_pct": 1.82,
@@ -14993,15 +15190,16 @@
           "2026-01-W1": {
             "kpis": {
               "orders": 47,
-              "revenue": 2281.09,
-              "gross_sales": 2281.09,
+              "revenue": 3081.09,
+              "gross_sales": 3081.09,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1042.6725000000001,
-              "net_revenue": 2225.1099999999997,
-              "profit": 1182.4374999999995,
-              "margin_pct": 53.14063124969102,
+              "net_revenue": 3025.1099999999997,
+              "profit": 1982.4374999999995,
+              "margin_pct": 65.53274095818003,
               "items": 223.5,
               "dry_clean_items": 131.0,
               "wf_lbs": 92.5,
@@ -15050,8 +15248,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2036.33,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 2225.1099999999997,
+                "net_revenue": 3025.1099999999997,
                 "refund_rate_pct": 0.0,
                 "discounts": 53.349999999999994,
                 "discount_rate_pct": 2.62,
@@ -15175,15 +15374,16 @@
           "2026-01-W2": {
             "kpis": {
               "orders": 44,
-              "revenue": 3819.33,
-              "gross_sales": 3819.33,
+              "revenue": 4619.33,
+              "gross_sales": 4619.33,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1283.035,
-              "net_revenue": 3749.21,
-              "profit": 2466.175,
-              "margin_pct": 65.77852400905792,
+              "net_revenue": 4549.21,
+              "profit": 3266.175,
+              "margin_pct": 71.79653170550492,
               "items": 315.0,
               "dry_clean_items": 158.0,
               "wf_lbs": 157.0,
@@ -15231,8 +15431,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3574.57,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3749.21,
+                "net_revenue": 4549.21,
                 "refund_rate_pct": 0.0,
                 "discounts": 34.77,
                 "discount_rate_pct": 0.97,
@@ -15351,15 +15552,16 @@
           "2026-01-W3": {
             "kpis": {
               "orders": 48,
-              "revenue": 4033.41,
-              "gross_sales": 4033.41,
+              "revenue": 4833.41,
+              "gross_sales": 4833.41,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 1737.725,
-              "net_revenue": 3959.09,
-              "profit": 2221.3650000000002,
-              "margin_pct": 56.10796925556125,
+              "net_revenue": 4759.09,
+              "profit": 3021.3650000000002,
+              "margin_pct": 63.486191687906725,
               "items": 371.5,
               "dry_clean_items": 207.0,
               "wf_lbs": 164.5,
@@ -15407,8 +15609,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 3788.6499999999996,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 3959.09,
+                "net_revenue": 4759.09,
                 "refund_rate_pct": 0.0,
                 "discounts": 19.6,
                 "discount_rate_pct": 0.52,
@@ -15532,15 +15735,16 @@
           "2026-01-W4": {
             "kpis": {
               "orders": 46,
-              "revenue": 2892.99,
-              "gross_sales": 2925.09,
+              "revenue": 3692.99,
+              "gross_sales": 3725.09,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 32.1,
               "refund_count": 1,
               "cost": 1162.0599999999997,
-              "net_revenue": 2841.0299999999997,
-              "profit": 1678.97,
-              "margin_pct": 59.09722882194135,
+              "net_revenue": 3641.0299999999997,
+              "profit": 2478.9700000000003,
+              "margin_pct": 68.08430581456348,
               "items": 337.0,
               "dry_clean_items": 119.0,
               "wf_lbs": 218.0,
@@ -15590,8 +15794,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 2680.33,
+                "rent_income": 800.0,
                 "refunds": 32.1,
-                "net_revenue": 2841.0299999999997,
+                "net_revenue": 3641.0299999999997,
                 "refund_rate_pct": 1.2,
                 "discounts": 63.89,
                 "discount_rate_pct": 2.38,
@@ -15720,15 +15925,16 @@
           "2026-01-W5": {
             "kpis": {
               "orders": 16,
-              "revenue": 1162.83,
-              "gross_sales": 1162.83,
+              "revenue": 1962.83,
+              "gross_sales": 1962.83,
               "subscription_revenue": 244.76,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 353.3,
-              "net_revenue": 1144.82,
-              "profit": 791.52,
-              "margin_pct": 69.13925333240161,
+              "net_revenue": 1944.82,
+              "profit": 1591.52,
+              "margin_pct": 81.83379438714123,
               "items": 106.5,
               "dry_clean_items": 67.0,
               "wf_lbs": 39.5,
@@ -15776,8 +15982,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 918.0699999999999,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1144.82,
+                "net_revenue": 1944.82,
                 "refund_rate_pct": 0.0,
                 "discounts": 64.42,
                 "discount_rate_pct": 7.02,
@@ -15903,15 +16110,16 @@
       "2026-02": {
         "kpis": {
           "orders": 28,
-          "revenue": 1532.3100000000004,
-          "gross_sales": 1532.3100000000004,
+          "revenue": 2332.3100000000004,
+          "gross_sales": 2332.3100000000004,
           "subscription_revenue": 190.19,
+          "rent_income": 800.0,
           "refund_amount": 0.0,
           "refund_count": 0,
           "cost": 625.085,
-          "net_revenue": 1505.99,
-          "profit": 880.905,
-          "margin_pct": 58.49341629094482,
+          "net_revenue": 2305.99,
+          "profit": 1680.9049999999997,
+          "margin_pct": 72.89298739370075,
           "items": 164.0,
           "dry_clean_items": 72.0,
           "wf_lbs": 92.0,
@@ -15963,8 +16171,9 @@
         "advanced": {
           "revenue_quality": {
             "gross_sales": 1342.1200000000003,
+            "rent_income": 800.0,
             "refunds": 0.0,
-            "net_revenue": 1505.99,
+            "net_revenue": 2305.99,
             "refund_rate_pct": 0.0,
             "discounts": 8.6,
             "discount_rate_pct": 0.64,
@@ -16083,15 +16292,16 @@
           "2026-02-W1": {
             "kpis": {
               "orders": 28,
-              "revenue": 1532.3100000000004,
-              "gross_sales": 1532.3100000000004,
+              "revenue": 2332.3100000000004,
+              "gross_sales": 2332.3100000000004,
               "subscription_revenue": 190.19,
+              "rent_income": 800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 625.085,
-              "net_revenue": 1505.99,
-              "profit": 880.905,
-              "margin_pct": 58.49341629094482,
+              "net_revenue": 2305.99,
+              "profit": 1680.9049999999997,
+              "margin_pct": 72.89298739370075,
               "items": 164.0,
               "dry_clean_items": 72.0,
               "wf_lbs": 92.0,
@@ -16139,8 +16349,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 1342.1200000000003,
+                "rent_income": 800.0,
                 "refunds": 0.0,
-                "net_revenue": 1505.99,
+                "net_revenue": 2305.99,
                 "refund_rate_pct": 0.0,
                 "discounts": 8.6,
                 "discount_rate_pct": 0.64,
@@ -16259,14 +16470,15 @@
           "2026-02-W2": {
             "kpis": {
               "orders": 0,
-              "revenue": 627.5169999999999,
-              "gross_sales": 627.5169999999999,
+              "revenue": 5427.517,
+              "gross_sales": 5427.517,
               "subscription_revenue": 627.5169999999999,
+              "rent_income": 4800.0,
               "refund_amount": 0.0,
               "refund_count": 0,
               "cost": 0.0,
-              "net_revenue": 627.5169999999999,
-              "profit": 627.5169999999999,
+              "net_revenue": 5427.517,
+              "profit": 5427.517,
               "margin_pct": 100.0,
               "items": 0.0,
               "dry_clean_items": 0.0,
@@ -16292,8 +16504,9 @@
             "advanced": {
               "revenue_quality": {
                 "gross_sales": 0.0,
+                "rent_income": 4800.0,
                 "refunds": 0.0,
-                "net_revenue": 627.5169999999999,
+                "net_revenue": 5427.517,
                 "refund_rate_pct": 0,
                 "discounts": 0.0,
                 "discount_rate_pct": 0,
@@ -16337,7 +16550,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2026-02-08T22:14:38.177183-05:00",
-    "last_updated_display": "February 08, 2026 at 10:14 PM EST"
+    "last_updated": "2026-02-08T22:30:59.758519-05:00",
+    "last_updated_display": "February 08, 2026 at 10:30 PM EST"
   }
 }

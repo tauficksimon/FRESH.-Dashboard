@@ -62,9 +62,11 @@ def generate_growth_metrics():
     monthly['orders_mom'] = monthly['orders'].pct_change() * 100
 
     # Helper functions for days/hours (since they might be missing in JSON)
+    today = pd.Timestamp.now().normalize()
+
     def get_hours_open_in_month(month_period):
         start = month_period.start_time
-        end = month_period.end_time
+        end = min(month_period.end_time, today)  # Cap to today for current month
         days = pd.date_range(start=start, end=end, freq='D')
         weekday_hours = len([d for d in days if d.dayofweek < 5]) * 10  # Mon-Fri × 10 hours
         saturday_hours = len([d for d in days if d.dayofweek == 5]) * 4  # Sat × 4 hours
@@ -73,7 +75,7 @@ def generate_growth_metrics():
     def get_adjusted_days_in_month(month_period):
         """Calculate adjusted days: weekdays count as 1, Saturdays as 0.5, Sundays as 0"""
         start = month_period.start_time
-        end = month_period.end_time
+        end = min(month_period.end_time, today)  # Cap to today for current month
         days = pd.date_range(start=start, end=end, freq='D')
         weekdays = len([d for d in days if d.dayofweek < 5])  # Mon-Fri
         saturdays = len([d for d in days if d.dayofweek == 5])  # Saturday = 0.5 day
@@ -117,16 +119,24 @@ def generate_growth_metrics():
     monthly['orders_3mo_avg'] = monthly['orders'].rolling(window=3, min_periods=1).mean()
 
     # Summary Stats
-    last_month = monthly.iloc[-1]
+    # Use last COMPLETE month for summary comparisons (current month is incomplete and skews stats)
+    current_month_period = pd.Timestamp.now().to_period('M')
+    complete_months = monthly[monthly['month'] < current_month_period]
+
+    if len(complete_months) >= 1:
+        last_month = complete_months.iloc[-1]
+    else:
+        last_month = monthly.iloc[-1]  # Fallback if no complete months
+
     first_month = monthly.iloc[0]
-    
-    # CMGR
-    num_months = len(monthly) - 1
+
+    # CMGR (based on complete months only)
+    num_months = len(complete_months) - 1 if len(complete_months) > 1 else len(monthly) - 1
     cmgr = ((last_month['revenue'] / first_month['revenue']) ** (1 / num_months) - 1) * 100 if num_months > 0 else 0
 
-    # Slope / Acceleration
-    if len(monthly) >= 2:
-        prev_month = monthly.iloc[-2]
+    # Slope / Acceleration (compare last two complete months)
+    if len(complete_months) >= 2:
+        prev_month = complete_months.iloc[-2]
         slope_change = last_month['revenue'] - prev_month['revenue']
         slope_change_pct = ((last_month['revenue'] / prev_month['revenue']) - 1) * 100 if prev_month['revenue'] > 0 else 0
         prev_month_revenue = prev_month['revenue']
