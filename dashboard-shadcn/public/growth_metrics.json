@@ -1,7 +1,7 @@
 {
   "summary": {
-    "total_revenue": 77348.95000000001,
-    "total_orders": 1210,
+    "total_revenue": 77390.89,
+    "total_orders": 1211,
     "cmgr": 24.2,
     "revenue_multiplier": 3.7,
     "orders_multiplier": 2.5,
@@ -171,24 +171,24 @@
     },
     {
       "month": "2026-02",
-      "revenue": 9974.09,
-      "orders": 159,
-      "unique_customers": 115,
-      "revenue_mom": -35.4,
-      "orders_mom": -29.0,
-      "velocity": 0.98,
-      "efficiency": 61.57,
+      "revenue": 10016.03,
+      "orders": 160,
+      "unique_customers": 116,
+      "revenue_mom": -35.2,
+      "orders_mom": -28.6,
+      "velocity": 0.99,
+      "efficiency": 61.83,
       "adjusted_days": 16.5,
-      "orders_per_day": 9.6,
-      "revenue_per_day": 604.49,
-      "cumulative_revenue": 77348.95,
-      "cumulative_orders": 1210,
-      "revenue_growth_from_start": 137.0,
-      "orders_growth_from_start": 79.0,
+      "orders_per_day": 9.7,
+      "revenue_per_day": 607.03,
+      "cumulative_revenue": 77390.89,
+      "cumulative_orders": 1211,
+      "revenue_growth_from_start": 138.0,
+      "orders_growth_from_start": 80.0,
       "revenue_multiplier": 2.4,
       "orders_multiplier": 1.8,
-      "revenue_3mo_avg": 11974.99,
-      "orders_3mo_avg": 187.0
+      "revenue_3mo_avg": 11988.97,
+      "orders_3mo_avg": 187.3
     }
   ],
   "weekly": [
@@ -425,10 +425,10 @@
     },
     {
       "week": "2026-02-16/2026-02-22",
-      "orders": 62,
-      "revenue": 3580.56,
-      "orders_per_day": 11.3,
-      "revenue_per_day": 651.01
+      "orders": 63,
+      "revenue": 3623.34,
+      "orders_per_day": 11.5,
+      "revenue_per_day": 658.79
     }
   ],
   "customer_mix": [
@@ -483,9 +483,9 @@
     },
     {
       "month": "2026-02",
-      "new_customers": 58,
+      "new_customers": 59,
       "returning_customers": 57,
-      "new_revenue": 4100.12,
+      "new_revenue": 4142.9,
       "returning_revenue": 5210.87
     }
   ]

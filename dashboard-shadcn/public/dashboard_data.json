@@ -2,25 +2,25 @@
   "ALL_DATA__ALL_ORDERS": {
     "all": {
       "kpis": {
-        "orders": 1210,
-        "revenue": 81146.95000000001,
-        "gross_sales": 81538.76000000001,
+        "orders": 1211,
+        "revenue": 81189.73000000001,
+        "gross_sales": 81581.54000000001,
         "subscription_revenue": 251.38,
         "rent_income": 4800.0,
         "refund_amount": 391.81,
         "refund_count": 7,
-        "cost": 33645.529500000004,
-        "net_revenue": 77348.95000000001,
-        "profit": 43703.42050000001,
-        "margin_pct": 56.501633829547785,
-        "items": 8288.4,
+        "cost": 33665.4795,
+        "net_revenue": 77390.89000000001,
+        "profit": 43725.41050000001,
+        "margin_pct": 56.49942842109712,
+        "items": 8295.4,
         "dry_clean_items": 4055.0,
-        "wf_lbs": 4233.4,
-        "unique_customers": 587,
-        "new_customers": 587,
+        "wf_lbs": 4240.4,
+        "unique_customers": 588,
+        "new_customers": 588,
         "returning_customers": 0,
-        "aov": 63.96998245614035,
-        "express_rate": 8.347107438016529,
+        "aov": 63.950674846625766,
+        "express_rate": 8.340214698596201,
         "new_customer_share_pct": 100.0
       },
       "series": {
@@ -42,7 +42,7 @@
           10703.89,
           10338.210000000001,
           14894.65,
-          9163.6
+          9206.38
         ],
         "cost": [
           2572.11,
@@ -52,7 +52,7 @@
           4446.7675,
           4481.5375,
           5943.4425,
-          4017.245
+          4037.195
         ],
         "profit": [
           1631.94,
@@ -62,7 +62,7 @@
           5571.0425,
           5219.7925,
           8644.9175,
-          4966.655
+          4988.645
         ],
         "orders": [
           89,
@@ -72,7 +72,7 @@
           143,
           178,
           224,
-          159
+          160
         ],
         "aov": [
           52.24524390243902,
@@ -82,18 +82,18 @@
           73.66036764705882,
           58.091796407185626,
           69.6182380952381,
-          62.22408163265307
+          62.08702702702702
         ]
       },
       "category": {
         "Dry Cleaning": 44311.089999999946,
         "Shoes": 1136.1499999999999,
-        "Wash & Fold": 12022.950000000008,
+        "Wash & Fold": 12065.730000000009,
         "Other": 17674.979999999992,
         "W&F Delicate": 950.3999999999999
       },
       "payment": {
-        "Card": 1057,
+        "Card": 1058,
         "Cash": 50,
         "Invoice": 25,
         "11": 21
@@ -101,64 +101,64 @@
       "status": {
         "collected": 1138,
         "ready": 45,
-        "cleaning": 24,
+        "cleaning": 25,
         "detailing": 3
       },
       "top_products": [],
       "advanced": {
         "revenue_quality": {
-          "gross_sales": 76487.38,
+          "gross_sales": 76530.16,
           "rent_income": 4800.0,
           "refunds": 391.81,
-          "net_revenue": 77348.95000000001,
+          "net_revenue": 77390.89000000001,
           "refund_rate_pct": 0.51,
           "discounts": 3199.14,
           "discount_rate_pct": 4.18,
           "tips": 0.0,
           "tip_rate_pct": 0.0,
-          "tax": 3798.0,
+          "tax": 3798.84,
           "service_fee": 0.0,
           "delivery_fee": 0.0,
           "refund_orders": 7
         },
         "aov_stats": {
-          "mean": 63.75,
-          "median": 44.07,
+          "mean": 63.73,
+          "median": 44.02,
           "p25": 27.98,
           "p75": 71.97,
           "gross_margin_pct": 53.46
         },
         "customer": {
-          "unique_customers": 587,
-          "new_customers": 587,
+          "unique_customers": 588,
+          "new_customers": 588,
           "returning_customers": 0,
           "new_share_pct": 100.0,
           "ret_share_pct": 0.0,
           "ret_new_ratio": 0.0,
-          "repeat_30d": "152/587",
-          "repeat_30d_pct": 25.89,
-          "top10_share_pct": 20.12
+          "repeat_30d": "152/588",
+          "repeat_30d_pct": 25.85,
+          "top10_share_pct": 20.11
         },
         "ar": {
           "unpaid_orders": 79,
           "unpaid_balance": 4444.61,
-          "unpaid_share_pct": 6.53
+          "unpaid_share_pct": 6.52
         },
         "service_mix": [
           {
             "category": "Dry Cleaning",
             "revenue": 44311.09,
-            "share_pct": 58.23
+            "share_pct": 58.2
           },
           {
             "category": "Other",
             "revenue": 17674.98,
-            "share_pct": 23.23
+            "share_pct": 23.21
           },
           {
             "category": "Wash & Fold",
-            "revenue": 12022.95,
-            "share_pct": 15.8
+            "revenue": 12065.73,
+            "share_pct": 15.85
           },
           {
             "category": "Shoes",
@@ -174,8 +174,8 @@
         "unit_prices": [
           {
             "item": "Wash & Fold Bag (min 15lb)",
-            "revenue": 12022.95,
-            "units": 4035.4,
+            "revenue": 12065.73,
+            "units": 4042.4,
             "unit_price": 3.0
           },
           {
@@ -233,7 +233,7 @@
             "unit_price": 13.8
           }
         ],
-        "wash_fold_lbs": 4233.4
+        "wash_fold_lbs": 4240.4
       }
     },
     "by_month": {
@@ -7818,26 +7818,26 @@
       },
       "2026-02": {
         "kpis": {
-          "orders": 159,
-          "revenue": 10153.789999999999,
-          "gross_sales": 10320.090000000002,
+          "orders": 160,
+          "revenue": 10196.570000000002,
+          "gross_sales": 10362.87,
           "subscription_revenue": 190.19,
           "rent_income": 800.0,
           "refund_amount": 166.3,
           "refund_count": 2,
-          "cost": 4017.245,
-          "net_revenue": 9974.090000000002,
-          "profit": 5956.845000000002,
-          "margin_pct": 59.72319279252544,
-          "items": 944.5,
+          "cost": 4037.195,
+          "net_revenue": 10016.03,
+          "profit": 5978.835000000001,
+          "margin_pct": 59.69266266175322,
+          "items": 951.5,
           "dry_clean_items": 560.0,
-          "wf_lbs": 384.5,
-          "unique_customers": 115,
-          "new_customers": 57,
+          "wf_lbs": 391.5,
+          "unique_customers": 116,
+          "new_customers": 58,
           "returning_customers": 58,
-          "aov": 63.51789115646259,
-          "express_rate": 6.918238993710692,
-          "new_customer_share_pct": 49.56521739130435
+          "aov": 63.37209459459461,
+          "express_rate": 6.875000000000001,
+          "new_customer_share_pct": 50.0
         },
         "months": [
           "2026-02"
@@ -7847,29 +7847,29 @@
             "2026-02"
           ],
           "revenue": [
-            9163.6
+            9206.38
           ],
           "cost": [
-            4017.245
+            4037.195
           ],
           "profit": [
-            4966.655
+            4988.645
           ],
           "orders": [
-            159
+            160
           ],
           "aov": [
-            62.22408163265307
+            62.08702702702702
           ]
         },
         "category": {
           "Other": 2024.42,
           "Dry Cleaning": 5631.97,
-          "Wash & Fold": 1240.5100000000002,
+          "Wash & Fold": 1283.2900000000002,
           "Shoes": 266.7
         },
         "payment": {
-          "Card": 111,
+          "Card": 112,
           "Invoice": 5,
           "11": 4,
           "Cash": 1
@@ -7877,69 +7877,69 @@
         "status": {
           "collected": 106,
           "ready": 27,
-          "cleaning": 24,
+          "cleaning": 25,
           "detailing": 2
         },
         "top_products": [],
         "advanced": {
           "revenue_quality": {
-            "gross_sales": 9329.900000000001,
+            "gross_sales": 9372.68,
             "rent_income": 800.0,
             "refunds": 166.3,
-            "net_revenue": 9974.090000000002,
-            "refund_rate_pct": 1.78,
+            "net_revenue": 10016.03,
+            "refund_rate_pct": 1.77,
             "discounts": 251.43,
-            "discount_rate_pct": 2.69,
+            "discount_rate_pct": 2.68,
             "tips": 0.0,
             "tip_rate_pct": 0.0,
-            "tax": 179.70000000000005,
+            "tax": 180.54000000000002,
             "service_fee": 0.0,
             "delivery_fee": 0.0,
             "refund_orders": 2
           },
           "aov_stats": {
-            "mean": 62.22,
-            "median": 40.1,
-            "p25": 29.6,
-            "p75": 74.71,
-            "gross_margin_pct": 55.28
+            "mean": 62.09,
+            "median": 40.11,
+            "p25": 29.74,
+            "p75": 74.69,
+            "gross_margin_pct": 55.27
           },
           "customer": {
-            "unique_customers": 115,
-            "new_customers": 57,
+            "unique_customers": 116,
+            "new_customers": 58,
             "returning_customers": 58,
-            "new_share_pct": 49.57,
-            "ret_share_pct": 50.43,
-            "ret_new_ratio": 1.02,
-            "repeat_30d": "10/57",
-            "repeat_30d_pct": 17.54,
-            "top10_share_pct": 32.56
+            "new_share_pct": 50.0,
+            "ret_share_pct": 50.0,
+            "ret_new_ratio": 1.0,
+            "repeat_30d": "10/58",
+            "repeat_30d_pct": 17.24,
+            "top10_share_pct": 32.41
           },
           "ar": {
             "unpaid_orders": 43,
             "unpaid_balance": 2684.21,
-            "unpaid_share_pct": 27.04
+            "unpaid_share_pct": 26.88
           },
           "service_mix": [
             {
               "category": "Dry Cleaning",
               "revenue": 5631.97,
-              "share_pct": 61.46
+              "share_pct": 61.17
             },
             {
               "category": "Other",
               "revenue": 2024.42,
-              "share_pct": 22.09
+              "share_pct": 21.99
             },
             {
               "category": "Wash & Fold",
-              "revenue": 1240.51,
-              "share_pct": 13.54
+              "revenue": 1283.29,
+              "share_pct": 13.94
             },
             {
               "category": "Shoes",
               "revenue": 266.7,
-              "share_pct": 2.91
+              "share_pct": 2.9
             }
           ],
           "unit_prices": [
@@ -7951,9 +7951,9 @@
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
-              "revenue": 1240.51,
-              "units": 384.5,
-              "unit_price": 3.2
+              "revenue": 1283.29,
+              "units": 391.5,
+              "unit_price": 3.3
             },
             {
               "item": "Trousers",
@@ -8004,7 +8004,7 @@
               "unit_price": 15.7
             }
           ],
-          "wash_fold_lbs": 384.5
+          "wash_fold_lbs": 391.5
         },
         "by_week": {
           "2026-02-W1": {
@@ -8373,137 +8373,137 @@
           },
           "2026-02-W3": {
             "kpis": {
-              "orders": 62,
-              "revenue": 4447.96,
-              "gross_sales": 4614.26,
+              "orders": 63,
+              "revenue": 4490.74,
+              "gross_sales": 4657.040000000001,
               "subscription_revenue": 190.19,
               "rent_income": 800.0,
               "refund_amount": 166.3,
               "refund_count": 2,
-              "cost": 1545.3000000000004,
-              "net_revenue": 4380.16,
-              "profit": 2834.8599999999997,
-              "margin_pct": 64.72046683226182,
-              "items": 399.5,
+              "cost": 1565.2500000000005,
+              "net_revenue": 4422.1,
+              "profit": 2856.85,
+              "margin_pct": 64.6039212139029,
+              "items": 406.5,
               "dry_clean_items": 195.0,
-              "wf_lbs": 204.5,
-              "unique_customers": 49,
-              "new_customers": 20,
+              "wf_lbs": 211.5,
+              "unique_customers": 50,
+              "new_customers": 21,
               "returning_customers": 29,
-              "aov": 64.53793103448277,
-              "express_rate": 9.67741935483871,
-              "new_customer_share_pct": 40.816326530612244
+              "aov": 64.1549152542373,
+              "express_rate": 9.523809523809524,
+              "new_customer_share_pct": 42.0
             },
             "series": {
               "months": [
                 "2026-02"
               ],
               "revenue": [
-                3457.77
+                3500.55
               ],
               "cost": [
-                1545.3
+                1565.25
               ],
               "profit": [
-                1844.6699999999998
+                1866.6599999999999
               ],
               "orders": [
-                62
+                63
               ],
               "aov": [
-                61.258793103448276
+                60.93135593220339
               ]
             },
             "category": {
-              "Wash & Fold": 630.3300000000002,
+              "Wash & Fold": 673.1100000000001,
               "Dry Cleaning": 2347.2400000000002,
               "Other": 460.20000000000005,
               "Shoes": 20.0
             },
             "payment": {
-              "Card": 35,
+              "Card": 36,
               "Invoice": 1,
               "11": 1
             },
             "status": {
               "collected": 27,
-              "cleaning": 21,
+              "cleaning": 22,
               "ready": 13,
               "detailing": 1
             },
             "advanced": {
               "revenue_quality": {
-                "gross_sales": 3624.07,
+                "gross_sales": 3666.8500000000004,
                 "rent_income": 800.0,
                 "refunds": 166.3,
-                "net_revenue": 4380.16,
-                "refund_rate_pct": 4.59,
+                "net_revenue": 4422.1,
+                "refund_rate_pct": 4.54,
                 "discounts": 85.75999999999999,
-                "discount_rate_pct": 2.37,
+                "discount_rate_pct": 2.34,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 67.8,
+                "tax": 68.64,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 2
               },
               "aov_stats": {
-                "mean": 61.26,
-                "median": 40.05,
-                "p25": 29.71,
-                "p75": 73.46,
-                "gross_margin_pct": 54.42
+                "mean": 60.93,
+                "median": 40.1,
+                "p25": 30.3,
+                "p75": 72.79,
+                "gross_margin_pct": 54.39
               },
               "customer": {
-                "unique_customers": 49,
-                "new_customers": 20,
+                "unique_customers": 50,
+                "new_customers": 21,
                 "returning_customers": 29,
-                "new_share_pct": 40.82,
-                "ret_share_pct": 59.18,
-                "ret_new_ratio": 1.45,
-                "repeat_30d": "3/20",
-                "repeat_30d_pct": 15.0,
-                "top10_share_pct": 55.07
+                "new_share_pct": 42.0,
+                "ret_share_pct": 58.0,
+                "ret_new_ratio": 1.38,
+                "repeat_30d": "3/21",
+                "repeat_30d_pct": 14.29,
+                "top10_share_pct": 54.4
               },
               "ar": {
                 "unpaid_orders": 26,
                 "unpaid_balance": 1568.31,
-                "unpaid_share_pct": 41.94
+                "unpaid_share_pct": 41.27
               },
               "service_mix": [
                 {
                   "category": "Dry Cleaning",
                   "revenue": 2347.24,
-                  "share_pct": 67.88
+                  "share_pct": 67.05
                 },
                 {
                   "category": "Wash & Fold",
-                  "revenue": 630.33,
-                  "share_pct": 18.23
+                  "revenue": 673.11,
+                  "share_pct": 19.23
                 },
                 {
                   "category": "Other",
                   "revenue": 460.2,
-                  "share_pct": 13.31
+                  "share_pct": 13.15
                 },
                 {
                   "category": "Shoes",
                   "revenue": 20.0,
-                  "share_pct": 0.58
+                  "share_pct": 0.57
                 }
               ],
               "unit_prices": [
+                {
+                  "item": "Wash & Fold Bag (min 15lb)",
+                  "revenue": 673.11,
+                  "units": 211.5,
+                  "unit_price": 3.2
+                },
                 {
                   "item": "Business Shirt",
                   "revenue": 638.71,
                   "units": 56.0,
                   "unit_price": 11.4
-                },
-                {
-                  "item": "Wash & Fold Bag (min 15lb)",
-                  "revenue": 630.33,
-                  "units": 204.5,
-                  "unit_price": 3.1
                 },
                 {
                   "item": "Trousers",
@@ -8554,7 +8554,7 @@
                   "unit_price": 23.5
                 }
               ],
-              "wash_fold_lbs": 204.5
+              "wash_fold_lbs": 211.5
             }
           }
         }
@@ -8564,26 +8564,26 @@
   "ALL_DATA__PAID_ONLY": {
     "all": {
       "kpis": {
-        "orders": 1131,
-        "revenue": 76702.34,
-        "gross_sales": 77094.15000000001,
+        "orders": 1132,
+        "revenue": 76745.12,
+        "gross_sales": 77136.93000000001,
         "subscription_revenue": 251.38,
         "rent_income": 4800.0,
         "refund_amount": 391.81,
         "refund_count": 7,
-        "cost": 32329.6445,
-        "net_revenue": 73002.23000000001,
-        "profit": 40672.585500000016,
-        "margin_pct": 55.71416859457582,
-        "items": 7882.4,
+        "cost": 32349.5945,
+        "net_revenue": 73044.17000000001,
+        "profit": 40694.57550000001,
+        "margin_pct": 55.71228408783344,
+        "items": 7889.4,
         "dry_clean_items": 3726.0,
-        "wf_lbs": 4156.4,
-        "unique_customers": 570,
-        "new_customers": 567,
+        "wf_lbs": 4163.4,
+        "unique_customers": 571,
+        "new_customers": 568,
         "returning_customers": 3,
-        "aov": 63.14830570902395,
-        "express_rate": 8.753315649867375,
-        "new_customer_share_pct": 99.47368421052632
+        "aov": 63.12879484820607,
+        "express_rate": 8.745583038869258,
+        "new_customer_share_pct": 99.47460595446584
       },
       "series": {
         "months": [
@@ -8604,7 +8604,7 @@
           10703.89,
           10200.210000000001,
           13515.35,
-          6479.39
+          6522.17
         ],
         "cost": [
           2552.6349999999998,
@@ -8614,7 +8614,7 @@
           4446.7675,
           4416.4075,
           5694.1725,
-          3101.915
+          3121.865
         ],
         "profit": [
           1584.9950000000003,
@@ -8624,7 +8624,7 @@
           5571.0425,
           5155.9425,
           7541.937500000001,
-          3250.415
+          3272.4050000000007
         ],
         "orders": [
           84,
@@ -8634,7 +8634,7 @@
           142,
           173,
           211,
-          116
+          117
         ],
         "aov": [
           52.721124999999994,
@@ -8644,60 +8644,60 @@
           73.66036764705882,
           58.36798780487805,
           65.6810891089109,
-          59.7740366972477
+          59.611909090909094
         ]
       },
       "category": {
         "Dry Cleaning": 42335.879999999954,
         "Shoes": 842.05,
-        "Wash & Fold": 11819.050000000007,
+        "Wash & Fold": 11861.830000000007,
         "Other": 15703.579999999989,
         "W&F Delicate": 950.3999999999999
       },
       "payment": {
-        "Card": 1057,
+        "Card": 1058,
         "Cash": 50,
         "11": 21
       },
       "status": {
         "collected": 1114,
         "ready": 10,
-        "cleaning": 7
+        "cleaning": 8
       },
       "top_products": [],
       "advanced": {
         "revenue_quality": {
-          "gross_sales": 72042.77,
+          "gross_sales": 72085.55,
           "rent_income": 4800.0,
           "refunds": 391.81,
-          "net_revenue": 73002.23000000001,
+          "net_revenue": 73044.17000000001,
           "refund_rate_pct": 0.54,
           "discounts": 2048.91,
           "discount_rate_pct": 2.84,
           "tips": 0.0,
           "tip_rate_pct": 0.0,
-          "tax": 3700.1100000000006,
+          "tax": 3700.9500000000003,
           "service_fee": 0.0,
           "delivery_fee": 0.0,
           "refund_orders": 7
         },
         "aov_stats": {
-          "mean": 62.92,
+          "mean": 62.9,
           "median": 44.12,
           "p25": 27.99,
           "p75": 71.76,
           "gross_margin_pct": 52.42
         },
         "customer": {
-          "unique_customers": 570,
-          "new_customers": 567,
+          "unique_customers": 571,
+          "new_customers": 568,
           "returning_customers": 3,
           "new_share_pct": 99.47,
           "ret_share_pct": 0.53,
           "ret_new_ratio": 0.01,
-          "repeat_30d": "143/567",
-          "repeat_30d_pct": 25.22,
-          "top10_share_pct": 20.76
+          "repeat_30d": "143/568",
+          "repeat_30d_pct": 25.18,
+          "top10_share_pct": 20.75
         },
         "ar": {
           "unpaid_orders": 0,
@@ -8708,17 +8708,17 @@
           {
             "category": "Dry Cleaning",
             "revenue": 42335.88,
-            "share_pct": 59.09
+            "share_pct": 59.05
           },
           {
             "category": "Other",
             "revenue": 15703.58,
-            "share_pct": 21.92
+            "share_pct": 21.9
           },
           {
             "category": "Wash & Fold",
-            "revenue": 11819.05,
-            "share_pct": 16.5
+            "revenue": 11861.83,
+            "share_pct": 16.55
           },
           {
             "category": "W&F Delicate",
@@ -8728,14 +8728,14 @@
           {
             "category": "Shoes",
             "revenue": 842.05,
-            "share_pct": 1.18
+            "share_pct": 1.17
           }
         ],
         "unit_prices": [
           {
             "item": "Wash & Fold Bag (min 15lb)",
-            "revenue": 11819.05,
-            "units": 3958.4,
+            "revenue": 11861.83,
+            "units": 3965.4,
             "unit_price": 3.0
           },
           {
@@ -8793,7 +8793,7 @@
             "unit_price": 22.0
           }
         ],
-        "wash_fold_lbs": 4156.4
+        "wash_fold_lbs": 4163.4
       }
     },
     "by_month": {
@@ -16333,26 +16333,26 @@
       },
       "2026-02": {
         "kpis": {
-          "orders": 116,
-          "revenue": 7469.58,
-          "gross_sales": 7635.88,
+          "orders": 117,
+          "revenue": 7512.36,
+          "gross_sales": 7678.66,
           "subscription_revenue": 190.19,
           "rent_income": 800.0,
           "refund_amount": 166.3,
           "refund_count": 2,
-          "cost": 3101.915,
-          "net_revenue": 7342.5199999999995,
-          "profit": 4240.605,
-          "margin_pct": 57.75408170491875,
-          "items": 722.0,
+          "cost": 3121.865,
+          "net_revenue": 7384.459999999999,
+          "profit": 4262.594999999999,
+          "margin_pct": 57.72385523112049,
+          "items": 729.0,
           "dry_clean_items": 404.0,
-          "wf_lbs": 318.0,
-          "unique_customers": 89,
-          "new_customers": 45,
+          "wf_lbs": 325.0,
+          "unique_customers": 90,
+          "new_customers": 46,
           "returning_customers": 44,
-          "aov": 61.51889908256882,
-          "express_rate": 8.620689655172415,
-          "new_customer_share_pct": 50.56179775280899
+          "aov": 61.3409090909091,
+          "express_rate": 8.547008547008547,
+          "new_customer_share_pct": 51.11111111111111
         },
         "months": [
           "2026-02"
@@ -16362,71 +16362,71 @@
             "2026-02"
           ],
           "revenue": [
-            6479.39
+            6522.17
           ],
           "cost": [
-            3101.915
+            3121.865
           ],
           "profit": [
-            3250.415
+            3272.4050000000007
           ],
           "orders": [
-            116
+            117
           ],
           "aov": [
-            59.7740366972477
+            59.611909090909094
           ]
         },
         "category": {
           "Other": 1170.0200000000002,
           "Dry Cleaning": 4216.259999999999,
-          "Wash & Fold": 1073.1100000000001,
+          "Wash & Fold": 1115.89,
           "Shoes": 20.0
         },
         "payment": {
-          "Card": 111,
+          "Card": 112,
           "11": 4,
           "Cash": 1
         },
         "status": {
           "collected": 103,
-          "cleaning": 7,
+          "cleaning": 8,
           "ready": 6
         },
         "top_products": [],
         "advanced": {
           "revenue_quality": {
-            "gross_sales": 6645.6900000000005,
+            "gross_sales": 6688.47,
             "rent_income": 800.0,
             "refunds": 166.3,
-            "net_revenue": 7342.5199999999995,
-            "refund_rate_pct": 2.5,
+            "net_revenue": 7384.459999999999,
+            "refund_rate_pct": 2.49,
             "discounts": 71.57,
-            "discount_rate_pct": 1.08,
+            "discount_rate_pct": 1.07,
             "tips": 0.0,
             "tip_rate_pct": 0.0,
-            "tax": 127.06,
+            "tax": 127.9,
             "service_fee": 0.0,
             "delivery_fee": 0.0,
             "refund_orders": 2
           },
           "aov_stats": {
-            "mean": 59.77,
-            "median": 40.12,
-            "p25": 32.45,
-            "p75": 74.67,
-            "gross_margin_pct": 51.17
+            "mean": 59.61,
+            "median": 40.24,
+            "p25": 32.57,
+            "p75": 74.41,
+            "gross_margin_pct": 51.18
           },
           "customer": {
-            "unique_customers": 89,
-            "new_customers": 45,
+            "unique_customers": 90,
+            "new_customers": 46,
             "returning_customers": 44,
-            "new_share_pct": 50.56,
-            "ret_share_pct": 49.44,
-            "ret_new_ratio": 0.98,
-            "repeat_30d": "8/45",
-            "repeat_30d_pct": 17.78,
-            "top10_share_pct": 36.02
+            "new_share_pct": 51.11,
+            "ret_share_pct": 48.89,
+            "ret_new_ratio": 0.96,
+            "repeat_30d": "8/46",
+            "repeat_30d_pct": 17.39,
+            "top10_share_pct": 35.79
           },
           "ar": {
             "unpaid_orders": 0,
@@ -16437,17 +16437,17 @@
             {
               "category": "Dry Cleaning",
               "revenue": 4216.26,
-              "share_pct": 65.07
+              "share_pct": 64.65
             },
             {
               "category": "Other",
               "revenue": 1170.02,
-              "share_pct": 18.06
+              "share_pct": 17.94
             },
             {
               "category": "Wash & Fold",
-              "revenue": 1073.11,
-              "share_pct": 16.56
+              "revenue": 1115.89,
+              "share_pct": 17.11
             },
             {
               "category": "Shoes",
@@ -16464,8 +16464,8 @@
             },
             {
               "item": "Wash & Fold Bag (min 15lb)",
-              "revenue": 1073.11,
-              "units": 318.0,
+              "revenue": 1115.89,
+              "units": 325.0,
               "unit_price": 3.4
             },
             {
@@ -16517,7 +16517,7 @@
               "unit_price": 12.8
             }
           ],
-          "wash_fold_lbs": 318.0
+          "wash_fold_lbs": 325.0
         },
         "by_week": {
           "2026-02-W1": {
@@ -16877,95 +16877,95 @@
           },
           "2026-02-W3": {
             "kpis": {
-              "orders": 36,
-              "revenue": 2879.65,
-              "gross_sales": 3045.9500000000003,
+              "orders": 37,
+              "revenue": 2922.43,
+              "gross_sales": 3088.7300000000005,
               "subscription_revenue": 190.19,
               "rent_income": 800.0,
               "refund_amount": 166.3,
               "refund_count": 2,
-              "cost": 1008.1950000000002,
-              "net_revenue": 2842.6,
-              "profit": 1834.4049999999997,
-              "margin_pct": 64.5326461690002,
-              "items": 244.0,
+              "cost": 1028.1450000000002,
+              "net_revenue": 2884.54,
+              "profit": 1856.3949999999998,
+              "margin_pct": 64.3567085219827,
+              "items": 251.0,
               "dry_clean_items": 106.0,
-              "wf_lbs": 138.0,
-              "unique_customers": 27,
-              "new_customers": 12,
+              "wf_lbs": 145.0,
+              "unique_customers": 28,
+              "new_customers": 13,
               "returning_customers": 15,
-              "aov": 66.83757575757575,
-              "express_rate": 16.666666666666664,
-              "new_customer_share_pct": 44.44444444444444
+              "aov": 66.10529411764706,
+              "express_rate": 16.216216216216218,
+              "new_customer_share_pct": 46.42857142857143
             },
             "series": {
               "months": [
                 "2026-02"
               ],
               "revenue": [
-                1889.46
+                1932.24
               ],
               "cost": [
-                1008.1949999999999
+                1028.145
               ],
               "profit": [
-                844.2150000000001
+                866.2049999999999
               ],
               "orders": [
-                36
+                37
               ],
               "aov": [
-                61.07424242424243
+                60.51147058823529
               ]
             },
             "category": {
-              "Wash & Fold": 462.92999999999995,
+              "Wash & Fold": 505.7099999999999,
               "Other": -17.599999999999994,
               "Dry Cleaning": 1424.1299999999999,
               "Shoes": 20.0
             },
             "payment": {
-              "Card": 35,
+              "Card": 36,
               "11": 1
             },
             "status": {
               "collected": 27,
-              "cleaning": 6,
+              "cleaning": 7,
               "ready": 3
             },
             "advanced": {
               "revenue_quality": {
-                "gross_sales": 2055.76,
+                "gross_sales": 2098.5400000000004,
                 "rent_income": 800.0,
                 "refunds": 166.3,
-                "net_revenue": 2842.6,
-                "refund_rate_pct": 8.09,
+                "net_revenue": 2884.54,
+                "refund_rate_pct": 7.92,
                 "discounts": 24.68,
-                "discount_rate_pct": 1.2,
+                "discount_rate_pct": 1.18,
                 "tips": 0.0,
                 "tip_rate_pct": 0.0,
-                "tax": 37.050000000000004,
+                "tax": 37.89000000000001,
                 "service_fee": 0.0,
                 "delivery_fee": 0.0,
                 "refund_orders": 2
               },
               "aov_stats": {
-                "mean": 61.07,
-                "median": 40.35,
-                "p25": 34.51,
-                "p75": 61.96,
-                "gross_margin_pct": 45.57
+                "mean": 60.51,
+                "median": 41.14,
+                "p25": 34.66,
+                "p75": 61.72,
+                "gross_margin_pct": 45.73
               },
               "customer": {
-                "unique_customers": 27,
-                "new_customers": 12,
+                "unique_customers": 28,
+                "new_customers": 13,
                 "returning_customers": 15,
-                "new_share_pct": 44.44,
-                "ret_share_pct": 55.56,
-                "ret_new_ratio": 1.25,
-                "repeat_30d": "3/12",
-                "repeat_30d_pct": 25.0,
-                "top10_share_pct": 71.45
+                "new_share_pct": 46.43,
+                "ret_share_pct": 53.57,
+                "ret_new_ratio": 1.15,
+                "repeat_30d": "3/13",
+                "repeat_30d_pct": 23.08,
+                "top10_share_pct": 69.87
               },
               "ar": {
                 "unpaid_orders": 0,
@@ -16976,30 +16976,30 @@
                 {
                   "category": "Dry Cleaning",
                   "revenue": 1424.13,
-                  "share_pct": 75.37
+                  "share_pct": 73.7
                 },
                 {
                   "category": "Wash & Fold",
-                  "revenue": 462.93,
-                  "share_pct": 24.5
+                  "revenue": 505.71,
+                  "share_pct": 26.17
                 },
                 {
                   "category": "Shoes",
                   "revenue": 20.0,
-                  "share_pct": 1.06
+                  "share_pct": 1.04
                 },
                 {
                   "category": "Other",
                   "revenue": -17.6,
-                  "share_pct": -0.93
+                  "share_pct": -0.91
                 }
               ],
               "unit_prices": [
                 {
                   "item": "Wash & Fold Bag (min 15lb)",
-                  "revenue": 462.93,
-                  "units": 138.0,
-                  "unit_price": 3.4
+                  "revenue": 505.71,
+                  "units": 145.0,
+                  "unit_price": 3.5
                 },
                 {
                   "item": "Business Shirt",
@@ -17056,7 +17056,7 @@
                   "unit_price": 16.3
                 }
               ],
-              "wash_fold_lbs": 138.0
+              "wash_fold_lbs": 145.0
             }
           }
         }
@@ -17064,7 +17064,7 @@
     }
   },
   "_metadata": {
-    "last_updated": "2026-02-21T13:33:30.202234-05:00",
-    "last_updated_display": "February 21, 2026 at 01:33 PM EST"
+    "last_updated": "2026-02-22T00:24:38.023977-05:00",
+    "last_updated_display": "February 22, 2026 at 12:24 AM EST"
   }
 }

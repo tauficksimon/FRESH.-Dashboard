@@ -1,13 +1,13 @@
 Metric,Value
-Total Orders,1210
-Gross Revenue,$81538.76
-Net Revenue (after tax),$77348.95
-Total Cost,$33645.53
-Profit,$43703.42
+Total Orders,1211
+Gross Revenue,$81581.54
+Net Revenue (after tax),$77390.89
+Total Cost,$33665.48
+Profit,$43725.41
 Profit Margin %,56.50%
-Total Items,8288.4
-Average Order Value,$63.97
-Express Order Rate %,8.35%
+Total Items,8295.4
+Average Order Value,$63.95
+Express Order Rate %,8.34%
 ,
 REVENUE QUALITY,
 Refunds Total,$391.81
@@ -15,29 +15,29 @@ Refund Rate %,0.51%
 Refund Order Count,7
 Discounts Total,$3199.14
 Discount Rate %,4.18%
-Tax Total,$3798.00
+Tax Total,$3798.84
 ,
 AOV DISTRIBUTION,
-AOV Mean,$63.75
-AOV Median,$44.07
+AOV Mean,$63.73
+AOV Median,$44.02
 AOV 25th Percentile,$27.98
 AOV 75th Percentile,$71.97
 ,
 CUSTOMER METRICS,
-Unique Customers,587
-New Customers,587
+Unique Customers,588
+New Customers,588
 Returning Customers,0
 New Customer Share %,100.00%
 Returning Share %,0.00%
 Returning/New Ratio,0.00
-30-Day Repeat,152/587
-30-Day Repeat Rate %,25.89%
-Top 10 Revenue Share %,20.12%
+30-Day Repeat,152/588
+30-Day Repeat Rate %,25.85%
+Top 10 Revenue Share %,20.11%
 ,
 ACCOUNTS RECEIVABLE,
 Unpaid Orders,79
 Unpaid Balance,$4444.61
-Unpaid Share %,6.53%
+Unpaid Share %,6.52%
 ,
 WASH & FOLD,
-Total Pounds,4233.4 lbs
+Total Pounds,4240.4 lbs
