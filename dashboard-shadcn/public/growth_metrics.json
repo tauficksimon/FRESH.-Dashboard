@@ -1,23 +1,23 @@
 {
   "summary": {
-    "total_revenue": 79731.37,
-    "total_orders": 1264,
-    "cmgr": 16.7,
-    "revenue_multiplier": 3.0,
+    "total_revenue": 83828.43000000001,
+    "total_orders": 1322,
+    "cmgr": 16.6,
+    "revenue_multiplier": 2.9,
     "orders_multiplier": 2.4,
-    "total_revenue_growth_pct": 195.0,
-    "total_orders_growth_pct": 139.0,
+    "total_revenue_growth_pct": 192.0,
+    "total_orders_growth_pct": 136.0,
     "first_month_revenue": 4204.05,
-    "last_month_revenue": 12407.9,
+    "last_month_revenue": 12292.69,
     "first_month_orders": 89,
-    "last_month_orders": 213,
+    "last_month_orders": 210,
     "prev_month_revenue": 15398.16,
-    "slope_change": -2990.26,
-    "slope_change_pct": -19.4,
-    "orders_per_hour": 0.99,
-    "revenue_per_hour": 57.44,
-    "orders_per_day": 9.7,
-    "revenue_per_day": 564.0,
+    "slope_change": -3105.47,
+    "slope_change_pct": -20.2,
+    "orders_per_hour": 0.97,
+    "revenue_per_hour": 56.91,
+    "orders_per_day": 9.5,
+    "revenue_per_day": 558.76,
     "hours_open": 216.0,
     "adjusted_days": 22.0
   },
@@ -171,24 +171,45 @@
     },
     {
       "month": "2026-02",
-      "revenue": 12407.9,
-      "orders": 213,
-      "unique_customers": 143,
-      "revenue_mom": -19.4,
-      "orders_mom": -4.9,
-      "velocity": 0.99,
-      "efficiency": 57.44,
+      "revenue": 12292.69,
+      "orders": 210,
+      "unique_customers": 142,
+      "revenue_mom": -20.2,
+      "orders_mom": -6.2,
+      "velocity": 0.97,
+      "efficiency": 56.91,
       "adjusted_days": 22.0,
-      "orders_per_day": 9.7,
-      "revenue_per_day": 564.0,
-      "cumulative_revenue": 79731.37,
-      "cumulative_orders": 1264,
-      "revenue_growth_from_start": 195.0,
-      "orders_growth_from_start": 139.0,
-      "revenue_multiplier": 3.0,
+      "orders_per_day": 9.5,
+      "revenue_per_day": 558.76,
+      "cumulative_revenue": 79616.16,
+      "cumulative_orders": 1261,
+      "revenue_growth_from_start": 192.0,
+      "orders_growth_from_start": 136.0,
+      "revenue_multiplier": 2.9,
       "orders_multiplier": 2.4,
-      "revenue_3mo_avg": 12769.13,
-      "orders_3mo_avg": 205.0
+      "revenue_3mo_avg": 12730.73,
+      "orders_3mo_avg": 204.0
+    },
+    {
+      "month": "2026-03",
+      "revenue": 4212.27,
+      "orders": 61,
+      "unique_customers": 56,
+      "revenue_mom": -65.7,
+      "orders_mom": -71.0,
+      "velocity": 0.82,
+      "efficiency": 56.92,
+      "adjusted_days": 7.5,
+      "orders_per_day": 8.1,
+      "revenue_per_day": 561.64,
+      "cumulative_revenue": 83828.43,
+      "cumulative_orders": 1322,
+      "revenue_growth_from_start": 0.0,
+      "orders_growth_from_start": -31.0,
+      "revenue_multiplier": 1.0,
+      "orders_multiplier": 0.7,
+      "revenue_3mo_avg": 10634.37,
+      "orders_3mo_avg": 165.0
     }
   ],
   "weekly": [
@@ -425,17 +446,31 @@
     },
     {
       "week": "2026-02-16/2026-02-22",
-      "orders": 64,
-      "revenue": 3742.04,
-      "orders_per_day": 11.6,
-      "revenue_per_day": 680.37
+      "orders": 62,
+      "revenue": 3646.04,
+      "orders_per_day": 11.3,
+      "revenue_per_day": 662.92
     },
     {
       "week": "2026-02-23/2026-03-01",
-      "orders": 52,
-      "revenue": 2231.82,
-      "orders_per_day": 9.5,
-      "revenue_per_day": 405.79
+      "orders": 51,
+      "revenue": 2210.3,
+      "orders_per_day": 9.3,
+      "revenue_per_day": 401.87
+    },
+    {
+      "week": "2026-03-02/2026-03-08",
+      "orders": 48,
+      "revenue": 2676.82,
+      "orders_per_day": 8.7,
+      "revenue_per_day": 486.69
+    },
+    {
+      "week": "2026-03-09/2026-03-15",
+      "orders": 13,
+      "revenue": 803.73,
+      "orders_per_day": 2.4,
+      "revenue_per_day": 146.13
     }
   ],
   "customer_mix": [
@@ -491,9 +526,16 @@
     {
       "month": "2026-02",
       "new_customers": 79,
-      "returning_customers": 65,
-      "new_revenue": 5632.42,
-      "returning_revenue": 6098.65
+      "returning_customers": 64,
+      "new_revenue": 5643.87,
+      "returning_revenue": 5969.68
+    },
+    {
+      "month": "2026-03",
+      "new_customers": 23,
+      "returning_customers": 33,
+      "new_revenue": 1536.27,
+      "returning_revenue": 1944.28
     }
   ]
 }
