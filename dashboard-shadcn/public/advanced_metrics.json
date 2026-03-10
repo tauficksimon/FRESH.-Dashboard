@@ -76,7 +76,7 @@
         "aov": 88.01,
         "first_order": "2025-12-04",
         "last_order": "2026-03-06",
-        "days_since_last": 3,
+        "days_since_last": 4,
         "segment": "VIP"
       },
       {
@@ -89,7 +89,7 @@
         "aov": 77.71,
         "first_order": "2025-07-09",
         "last_order": "2026-02-19",
-        "days_since_last": 18,
+        "days_since_last": 19,
         "segment": "VIP"
       },
       {
@@ -206,7 +206,7 @@
         "aov": 426.28,
         "first_order": "2026-01-30",
         "last_order": "2026-01-30",
-        "days_since_last": 38,
+        "days_since_last": 39,
         "segment": "Active"
       },
       {
@@ -427,7 +427,7 @@
         "aov": 75.78,
         "first_order": "2025-12-06",
         "last_order": "2026-03-05",
-        "days_since_last": 4,
+        "days_since_last": 5,
         "segment": "Loyal"
       },
       {
@@ -869,7 +869,7 @@
         "aov": 80.58,
         "first_order": "2025-09-15",
         "last_order": "2026-02-17",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "Loyal"
       },
       {
@@ -947,7 +947,7 @@
         "aov": 33.88,
         "first_order": "2025-12-15",
         "last_order": "2026-01-27",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "Loyal"
       },
       {
@@ -977,6 +977,19 @@
         "segment": "At-Risk"
       },
       {
+        "customer_id": "759",
+        "name": "Patrick Flaherty",
+        "email": "",
+        "ltv": 124.35,
+        "total_revenue": 248.7,
+        "orders": 1,
+        "aov": 248.7,
+        "first_order": "2026-03-10",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "One-Time"
+      },
+      {
         "customer_id": "197",
         "name": "Habil Hamade",
         "email": "Nhamade@thomabravo.com",
@@ -999,7 +1012,7 @@
         "aov": 246.7,
         "first_order": "2026-02-02",
         "last_order": "2026-02-02",
-        "days_since_last": 35,
+        "days_since_last": 36,
         "segment": "One-Time"
       },
       {
@@ -1066,6 +1079,19 @@
         "last_order": "2025-12-31",
         "days_since_last": 69,
         "segment": "Loyal"
+      },
+      {
+        "customer_id": "277",
+        "name": "Abby Stuart",
+        "email": "ars375@cornell.edu",
+        "ltv": 112.1,
+        "total_revenue": 235.66,
+        "orders": 2,
+        "aov": 117.83,
+        "first_order": "2025-10-03",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "Active"
       },
       {
         "customer_id": "380",
@@ -1142,7 +1168,7 @@
         "aov": 105.95,
         "first_order": "2026-01-23",
         "last_order": "2026-02-22",
-        "days_since_last": 15,
+        "days_since_last": 16,
         "segment": "Active"
       },
       {
@@ -1324,7 +1350,7 @@
         "aov": 95.7,
         "first_order": "2025-11-26",
         "last_order": "2025-11-26",
-        "days_since_last": 103,
+        "days_since_last": 104,
         "segment": "At-Risk"
       },
       {
@@ -1337,7 +1363,7 @@
         "aov": 189.2,
         "first_order": "2026-02-17",
         "last_order": "2026-02-17",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "One-Time"
       },
       {
@@ -1350,7 +1376,7 @@
         "aov": 188.3,
         "first_order": "2026-02-17",
         "last_order": "2026-02-17",
-        "days_since_last": 20,
+        "days_since_last": 21,
         "segment": "One-Time"
       },
       {
@@ -1376,7 +1402,7 @@
         "aov": 48.04,
         "first_order": "2025-09-23",
         "last_order": "2025-11-05",
-        "days_since_last": 124,
+        "days_since_last": 125,
         "segment": "At-Risk"
       },
       {
@@ -1536,6 +1562,19 @@
         "segment": "One-Time"
       },
       {
+        "customer_id": "398",
+        "name": "Ajay Puri",
+        "email": "",
+        "ltv": 85.47,
+        "total_revenue": 164.92,
+        "orders": 2,
+        "aov": 82.46,
+        "first_order": "2025-11-13",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "Active"
+      },
+      {
         "customer_id": "42",
         "name": "Steve Crandall",
         "email": "sdmichigan@gmail.com",
@@ -1571,7 +1610,7 @@
         "aov": 127.3,
         "first_order": "2025-09-27",
         "last_order": "2025-09-27",
-        "days_since_last": 163,
+        "days_since_last": 164,
         "segment": "One-Time"
       },
       {
@@ -1584,7 +1623,7 @@
         "aov": 166.4,
         "first_order": "2026-01-27",
         "last_order": "2026-01-27",
-        "days_since_last": 41,
+        "days_since_last": 42,
         "segment": "One-Time"
       },
       {
@@ -1675,7 +1714,7 @@
         "aov": 68.38,
         "first_order": "2025-07-23",
         "last_order": "2025-08-05",
-        "days_since_last": 216,
+        "days_since_last": 217,
         "segment": "At-Risk"
       },
       {
@@ -1715,6 +1754,19 @@
         "first_order": "2025-08-22",
         "last_order": "2025-08-22",
         "days_since_last": 200,
+        "segment": "One-Time"
+      },
+      {
+        "customer_id": "757",
+        "name": "Jerel Sabella",
+        "email": "",
+        "ltv": 76.15,
+        "total_revenue": 152.3,
+        "orders": 1,
+        "aov": 152.3,
+        "first_order": "2026-03-10",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
         "segment": "One-Time"
       },
       {
@@ -1779,7 +1831,7 @@
         "aov": 77.65,
         "first_order": "2025-12-22",
         "last_order": "2026-01-05",
-        "days_since_last": 63,
+        "days_since_last": 64,
         "segment": "At-Risk"
       },
       {
@@ -1950,19 +2002,6 @@
         "last_order": "2026-03-09",
         "days_since_last": 1,
         "segment": "Active"
-      },
-      {
-        "customer_id": "398",
-        "name": "Ajay Puri",
-        "email": "",
-        "ltv": 65.01,
-        "total_revenue": 124.0,
-        "orders": 1,
-        "aov": 124.0,
-        "first_order": "2025-11-13",
-        "last_order": "2025-11-13",
-        "days_since_last": 117,
-        "segment": "One-Time"
       },
       {
         "customer_id": "551",
@@ -2199,6 +2238,19 @@
         "segment": "At-Risk"
       },
       {
+        "customer_id": "317",
+        "name": "Taylor Shapiro",
+        "email": "shapiro.taylor5@gmail.com",
+        "ltv": 58.79,
+        "total_revenue": 117.19,
+        "orders": 2,
+        "aov": 58.59,
+        "first_order": "2025-10-15",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "Active"
+      },
+      {
         "customer_id": "134",
         "name": "Karen Horpa",
         "email": "",
@@ -2325,7 +2377,7 @@
         "aov": 51.33,
         "first_order": "2025-09-09",
         "last_order": "2025-10-15",
-        "days_since_last": 145,
+        "days_since_last": 146,
         "segment": "At-Risk"
       },
       {
@@ -2611,7 +2663,7 @@
         "aov": 60.06,
         "first_order": "2025-08-08",
         "last_order": "2025-09-12",
-        "days_since_last": 178,
+        "days_since_last": 179,
         "segment": "At-Risk"
       },
       {
@@ -2715,7 +2767,7 @@
         "aov": 47.58,
         "first_order": "2025-09-10",
         "last_order": "2025-09-19",
-        "days_since_last": 171,
+        "days_since_last": 172,
         "segment": "At-Risk"
       },
       {
@@ -2767,7 +2819,7 @@
         "aov": 31.43,
         "first_order": "2025-08-30",
         "last_order": "2026-01-26",
-        "days_since_last": 42,
+        "days_since_last": 43,
         "segment": "Active"
       },
       {
@@ -2793,7 +2845,7 @@
         "aov": 99.9,
         "first_order": "2026-01-12",
         "last_order": "2026-01-12",
-        "days_since_last": 56,
+        "days_since_last": 57,
         "segment": "One-Time"
       },
       {
@@ -2819,7 +2871,7 @@
         "aov": 70.6,
         "first_order": "2025-11-05",
         "last_order": "2025-11-05",
-        "days_since_last": 124,
+        "days_since_last": 125,
         "segment": "One-Time"
       },
       {
@@ -2923,7 +2975,7 @@
         "aov": 93.06,
         "first_order": "2025-09-11",
         "last_order": "2025-09-11",
-        "days_since_last": 179,
+        "days_since_last": 180,
         "segment": "One-Time"
       },
       {
@@ -2936,21 +2988,8 @@
         "aov": 48.02,
         "first_order": "2025-09-17",
         "last_order": "2026-01-19",
-        "days_since_last": 49,
+        "days_since_last": 50,
         "segment": "Active"
-      },
-      {
-        "customer_id": "277",
-        "name": "Abby Stuart",
-        "email": "ars375@cornell.edu",
-        "ltv": 46.25,
-        "total_revenue": 103.96,
-        "orders": 1,
-        "aov": 103.96,
-        "first_order": "2025-10-03",
-        "last_order": "2025-10-03",
-        "days_since_last": 157,
-        "segment": "One-Time"
       },
       {
         "customer_id": "209",
@@ -2988,7 +3027,7 @@
         "aov": 87.7,
         "first_order": "2025-07-21",
         "last_order": "2025-07-21",
-        "days_since_last": 231,
+        "days_since_last": 232,
         "segment": "One-Time"
       },
       {
@@ -3014,7 +3053,7 @@
         "aov": 30.4,
         "first_order": "2025-12-11",
         "last_order": "2026-02-03",
-        "days_since_last": 34,
+        "days_since_last": 35,
         "segment": "Active"
       },
       {
@@ -3222,7 +3261,7 @@
         "aov": 28.55,
         "first_order": "2026-02-21",
         "last_order": "2026-02-26",
-        "days_since_last": 11,
+        "days_since_last": 12,
         "segment": "Active"
       },
       {
@@ -3655,6 +3694,19 @@
         "segment": "Active"
       },
       {
+        "customer_id": "758",
+        "name": "Hector Andrade",
+        "email": "",
+        "ltv": 38.45,
+        "total_revenue": 76.9,
+        "orders": 1,
+        "aov": 76.9,
+        "first_order": "2026-03-10",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "One-Time"
+      },
+      {
         "customer_id": "296",
         "name": "Ingrid",
         "email": "imjaar@gmail.com",
@@ -3781,7 +3833,7 @@
         "aov": 75.1,
         "first_order": "2026-02-02",
         "last_order": "2026-02-02",
-        "days_since_last": 35,
+        "days_since_last": 36,
         "segment": "One-Time"
       },
       {
@@ -3807,7 +3859,7 @@
         "aov": 88.1,
         "first_order": "2025-12-02",
         "last_order": "2025-12-02",
-        "days_since_last": 97,
+        "days_since_last": 98,
         "segment": "One-Time"
       },
       {
@@ -3963,7 +4015,7 @@
         "aov": 54.6,
         "first_order": "2025-12-10",
         "last_order": "2025-12-10",
-        "days_since_last": 89,
+        "days_since_last": 90,
         "segment": "One-Time"
       },
       {
@@ -4015,7 +4067,7 @@
         "aov": 39.0,
         "first_order": "2025-10-31",
         "last_order": "2025-10-31",
-        "days_since_last": 129,
+        "days_since_last": 130,
         "segment": "One-Time"
       },
       {
@@ -4056,19 +4108,6 @@
         "last_order": "2026-03-03",
         "days_since_last": 7,
         "segment": "One-Time"
-      },
-      {
-        "customer_id": "244",
-        "name": "William Cortes",
-        "email": "",
-        "ltv": 34.38,
-        "total_revenue": 68.37,
-        "orders": 2,
-        "aov": 34.19,
-        "first_order": "2025-09-22",
-        "last_order": "2026-03-03",
-        "days_since_last": 7,
-        "segment": "Active"
       },
       {
         "customer_id": "192",
@@ -4197,7 +4236,7 @@
         "aov": 32.55,
         "first_order": "2025-12-02",
         "last_order": "2026-02-11",
-        "days_since_last": 26,
+        "days_since_last": 27,
         "segment": "Active"
       },
       {
@@ -4288,7 +4327,7 @@
         "aov": 52.4,
         "first_order": "2025-10-15",
         "last_order": "2025-10-15",
-        "days_since_last": 145,
+        "days_since_last": 146,
         "segment": "One-Time"
       },
       {
@@ -4340,7 +4379,7 @@
         "aov": 63.2,
         "first_order": "2026-03-04",
         "last_order": "2026-03-04",
-        "days_since_last": 5,
+        "days_since_last": 6,
         "segment": "One-Time"
       },
       {
@@ -4355,19 +4394,6 @@
         "last_order": "2026-02-10",
         "days_since_last": 28,
         "segment": "Active"
-      },
-      {
-        "customer_id": "746",
-        "name": "Gui Dzik Lumina",
-        "email": "gdzik@luminacm.com",
-        "ltv": 31.55,
-        "total_revenue": 63.1,
-        "orders": 1,
-        "aov": 63.1,
-        "first_order": "2026-03-05",
-        "last_order": "2026-03-05",
-        "days_since_last": 4,
-        "segment": "One-Time"
       },
       {
         "customer_id": "220",
@@ -4407,6 +4433,19 @@
         "last_order": "2026-02-17",
         "days_since_last": 21,
         "segment": "One-Time"
+      },
+      {
+        "customer_id": "244",
+        "name": "William Cortes",
+        "email": "",
+        "ltv": 31.08,
+        "total_revenue": 61.77,
+        "orders": 2,
+        "aov": 30.88,
+        "first_order": "2025-09-22",
+        "last_order": "2026-03-03",
+        "days_since_last": 7,
+        "segment": "Active"
       },
       {
         "customer_id": "321",
@@ -4587,20 +4626,7 @@
         "aov": 57.2,
         "first_order": "2025-09-25",
         "last_order": "2025-09-25",
-        "days_since_last": 165,
-        "segment": "One-Time"
-      },
-      {
-        "customer_id": "317",
-        "name": "Taylor Shapiro",
-        "email": "shapiro.taylor5@gmail.com",
-        "ltv": 29.6,
-        "total_revenue": 58.81,
-        "orders": 1,
-        "aov": 58.81,
-        "first_order": "2025-10-15",
-        "last_order": "2025-10-15",
-        "days_since_last": 146,
+        "days_since_last": 166,
         "segment": "One-Time"
       },
       {
@@ -4847,7 +4873,7 @@
         "aov": 59.65,
         "first_order": "2025-08-11",
         "last_order": "2025-08-11",
-        "days_since_last": 210,
+        "days_since_last": 211,
         "segment": "One-Time"
       },
       {
@@ -4994,6 +5020,19 @@
         "segment": "One-Time"
       },
       {
+        "customer_id": "760",
+        "name": "Lucia Munoz",
+        "email": "",
+        "ltv": 26.41,
+        "total_revenue": 52.81,
+        "orders": 1,
+        "aov": 52.81,
+        "first_order": "2026-03-10",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
+        "segment": "One-Time"
+      },
+      {
         "customer_id": "254",
         "name": "Sandra Houston",
         "email": "",
@@ -5029,7 +5068,7 @@
         "aov": 51.34,
         "first_order": "2025-09-24",
         "last_order": "2025-09-24",
-        "days_since_last": 166,
+        "days_since_last": 167,
         "segment": "One-Time"
       },
       {
@@ -5108,6 +5147,19 @@
         "first_order": "2025-11-19",
         "last_order": "2025-11-19",
         "days_since_last": 111,
+        "segment": "One-Time"
+      },
+      {
+        "customer_id": "746",
+        "name": "Gui Dzik Lumina",
+        "email": "gdzik@luminacm.com",
+        "ltv": 25.04,
+        "total_revenue": 50.08,
+        "orders": 1,
+        "aov": 50.08,
+        "first_order": "2026-03-05",
+        "last_order": "2026-03-05",
+        "days_since_last": 5,
         "segment": "One-Time"
       },
       {
@@ -5289,7 +5341,7 @@
         "aov": 43.78,
         "first_order": "2025-09-03",
         "last_order": "2025-09-03",
-        "days_since_last": 187,
+        "days_since_last": 188,
         "segment": "One-Time"
       },
       {
@@ -5393,7 +5445,7 @@
         "aov": 46.51,
         "first_order": "2026-03-04",
         "last_order": "2026-03-04",
-        "days_since_last": 5,
+        "days_since_last": 6,
         "segment": "One-Time"
       },
       {
@@ -5419,7 +5471,7 @@
         "aov": 44.9,
         "first_order": "2025-12-01",
         "last_order": "2025-12-01",
-        "days_since_last": 98,
+        "days_since_last": 99,
         "segment": "One-Time"
       },
       {
@@ -5692,7 +5744,7 @@
         "aov": 42.78,
         "first_order": "2026-03-03",
         "last_order": "2026-03-03",
-        "days_since_last": 6,
+        "days_since_last": 7,
         "segment": "One-Time"
       },
       {
@@ -5757,7 +5809,7 @@
         "aov": 20.85,
         "first_order": "2026-02-02",
         "last_order": "2026-02-10",
-        "days_since_last": 27,
+        "days_since_last": 28,
         "segment": "Active"
       },
       {
@@ -5939,7 +5991,7 @@
         "aov": 18.45,
         "first_order": "2025-08-26",
         "last_order": "2025-08-26",
-        "days_since_last": 195,
+        "days_since_last": 196,
         "segment": "At-Risk"
       },
       {
@@ -6030,7 +6082,7 @@
         "aov": 37.44,
         "first_order": "2025-10-03",
         "last_order": "2025-10-03",
-        "days_since_last": 157,
+        "days_since_last": 158,
         "segment": "One-Time"
       },
       {
@@ -6056,7 +6108,7 @@
         "aov": 31.2,
         "first_order": "2025-08-01",
         "last_order": "2025-08-01",
-        "days_since_last": 220,
+        "days_since_last": 221,
         "segment": "One-Time"
       },
       {
@@ -6069,7 +6121,7 @@
         "aov": 39.0,
         "first_order": "2025-12-17",
         "last_order": "2025-12-17",
-        "days_since_last": 82,
+        "days_since_last": 83,
         "segment": "One-Time"
       },
       {
@@ -6109,6 +6161,19 @@
         "first_order": "2025-08-06",
         "last_order": "2025-08-06",
         "days_since_last": 216,
+        "segment": "One-Time"
+      },
+      {
+        "customer_id": "761",
+        "name": "Viktoria Vityuk",
+        "email": "",
+        "ltv": 18.7,
+        "total_revenue": 37.4,
+        "orders": 1,
+        "aov": 37.4,
+        "first_order": "2026-03-10",
+        "last_order": "2026-03-10",
+        "days_since_last": 0,
         "segment": "One-Time"
       },
       {
@@ -6199,7 +6264,7 @@
         "aov": 36.37,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 147,
+        "days_since_last": 148,
         "segment": "One-Time"
       },
       {
@@ -6303,7 +6368,7 @@
         "aov": 40.41,
         "first_order": "2025-07-14",
         "last_order": "2025-07-14",
-        "days_since_last": 238,
+        "days_since_last": 239,
         "segment": "One-Time"
       },
       {
@@ -6654,7 +6719,7 @@
         "aov": 31.1,
         "first_order": "2026-01-29",
         "last_order": "2026-01-29",
-        "days_since_last": 39,
+        "days_since_last": 40,
         "segment": "One-Time"
       },
       {
@@ -6732,7 +6797,7 @@
         "aov": 30.6,
         "first_order": "2026-01-23",
         "last_order": "2026-01-23",
-        "days_since_last": 45,
+        "days_since_last": 46,
         "segment": "One-Time"
       },
       {
@@ -7057,7 +7122,7 @@
         "aov": 27.88,
         "first_order": "2025-07-21",
         "last_order": "2025-07-21",
-        "days_since_last": 231,
+        "days_since_last": 232,
         "segment": "One-Time"
       },
       {
@@ -7148,7 +7213,7 @@
         "aov": 27.0,
         "first_order": "2025-08-18",
         "last_order": "2025-09-11",
-        "days_since_last": 179,
+        "days_since_last": 180,
         "segment": "At-Risk"
       },
       {
@@ -7161,7 +7226,7 @@
         "aov": 26.94,
         "first_order": "2025-08-12",
         "last_order": "2025-08-12",
-        "days_since_last": 209,
+        "days_since_last": 210,
         "segment": "One-Time"
       },
       {
@@ -7226,7 +7291,7 @@
         "aov": 21.38,
         "first_order": "2025-10-13",
         "last_order": "2025-10-13",
-        "days_since_last": 147,
+        "days_since_last": 148,
         "segment": "One-Time"
       },
       {
@@ -7291,7 +7356,7 @@
         "aov": 20.6,
         "first_order": "2026-01-26",
         "last_order": "2026-01-26",
-        "days_since_last": 42,
+        "days_since_last": 43,
         "segment": "One-Time"
       },
       {
@@ -7330,7 +7395,7 @@
         "aov": 20.0,
         "first_order": "2026-01-29",
         "last_order": "2026-01-29",
-        "days_since_last": 39,
+        "days_since_last": 40,
         "segment": "One-Time"
       },
       {
@@ -7486,7 +7551,7 @@
         "aov": 9.7,
         "first_order": "2026-02-14",
         "last_order": "2026-02-25",
-        "days_since_last": 12,
+        "days_since_last": 13,
         "segment": "Active"
       },
       {
@@ -7564,7 +7629,7 @@
         "aov": 20.2,
         "first_order": "2025-11-07",
         "last_order": "2025-11-07",
-        "days_since_last": 122,
+        "days_since_last": 123,
         "segment": "One-Time"
       },
       {
@@ -8006,7 +8071,7 @@
         "aov": 6.9,
         "first_order": "2025-12-16",
         "last_order": "2025-12-16",
-        "days_since_last": 83,
+        "days_since_last": 84,
         "segment": "One-Time"
       },
       {
@@ -8071,7 +8136,7 @@
         "aov": 8.2,
         "first_order": "2026-01-05",
         "last_order": "2026-01-05",
-        "days_since_last": 63,
+        "days_since_last": 64,
         "segment": "One-Time"
       },
       {
@@ -8084,7 +8149,7 @@
         "aov": 7.21,
         "first_order": "2025-07-16",
         "last_order": "2025-07-16",
-        "days_since_last": 236,
+        "days_since_last": 237,
         "segment": "One-Time"
       },
       {
@@ -8237,16 +8302,16 @@
         "revenue": 13962.319999999996
       },
       "Active": {
-        "count": 76,
-        "revenue": 3859.8000000000006
+        "count": 79,
+        "revenue": 4112.860000000001
       },
       "Loyal": {
         "count": 42,
         "revenue": 7134.220000000001
       },
       "One-Time": {
-        "count": 410,
-        "revenue": 13685.99999999999
+        "count": 412,
+        "revenue": 13822.689999999991
       },
       "At-Risk": {
         "count": 84,
@@ -8329,7 +8394,7 @@
         "aov": 88.01,
         "first_order": "2025-12-04",
         "last_order": "2026-03-06",
-        "days_since_last": 3,
+        "days_since_last": 4,
         "segment": "VIP"
       },
       {
@@ -8342,7 +8407,7 @@
         "aov": 77.71,
         "first_order": "2025-07-09",
         "last_order": "2026-02-19",
-        "days_since_last": 18,
+        "days_since_last": 19,
         "segment": "VIP"
       },
       {
@@ -8552,7 +8617,7 @@
         "aov": 95.7,
         "first_order": "2025-11-26",
         "last_order": "2025-11-26",
-        "days_since_last": 103,
+        "days_since_last": 104,
         "segment": "At-Risk"
       },
       {
@@ -8578,7 +8643,7 @@
         "aov": 48.04,
         "first_order": "2025-09-23",
         "last_order": "2025-11-05",
-        "days_since_last": 124,
+        "days_since_last": 125,
         "segment": "At-Risk"
       },
       {
@@ -8669,7 +8734,7 @@
         "aov": 68.38,
         "first_order": "2025-07-23",
         "last_order": "2025-08-05",
-        "days_since_last": 216,
+        "days_since_last": 217,
         "segment": "At-Risk"
       },
       {
@@ -8708,7 +8773,7 @@
         "aov": 77.65,
         "first_order": "2025-12-22",
         "last_order": "2026-01-05",
-        "days_since_last": 63,
+        "days_since_last": 64,
         "segment": "At-Risk"
       },
       {
@@ -8864,7 +8929,7 @@
         "aov": 51.33,
         "first_order": "2025-09-09",
         "last_order": "2025-10-15",
-        "days_since_last": 145,
+        "days_since_last": 146,
         "segment": "At-Risk"
       },
       {
@@ -9007,7 +9072,7 @@
         "aov": 60.06,
         "first_order": "2025-08-08",
         "last_order": "2025-09-12",
-        "days_since_last": 178,
+        "days_since_last": 179,
         "segment": "At-Risk"
       },
       {
@@ -9033,7 +9098,7 @@
         "aov": 47.58,
         "first_order": "2025-09-10",
         "last_order": "2025-09-19",
-        "days_since_last": 171,
+        "days_since_last": 172,
         "segment": "At-Risk"
       },
       {
@@ -9306,7 +9371,7 @@
         "aov": 18.45,
         "first_order": "2025-08-26",
         "last_order": "2025-08-26",
-        "days_since_last": 195,
+        "days_since_last": 196,
         "segment": "At-Risk"
       },
       {
@@ -9397,7 +9462,7 @@
         "aov": 27.0,
         "first_order": "2025-08-18",
         "last_order": "2025-09-11",
-        "days_since_last": 179,
+        "days_since_last": 180,
         "segment": "At-Risk"
       },
       {
@@ -9480,13 +9545,13 @@
       }
     ],
     "churned": [],
-    "avg_ltv": 68.75,
+    "avg_ltv": 68.83,
     "avg_vip_ltv": 664.87,
-    "avg_repeat_ltv": 133.79,
-    "avg_first_time_ltv": 33.38,
+    "avg_repeat_ltv": 133.13,
+    "avg_first_time_ltv": 33.55,
     "vip_count": 21,
-    "repeat_count": 223,
-    "first_time_count": 410
+    "repeat_count": 226,
+    "first_time_count": 412
   },
   "cohorts": [
     {
@@ -9628,8 +9693,8 @@
           "rate": 11.1
         },
         "M5": {
-          "count": 2,
-          "rate": 2.5
+          "count": 4,
+          "rate": 4.9
         }
       }
     },
@@ -9654,8 +9719,8 @@
           "rate": 14.3
         },
         "M4": {
-          "count": 2,
-          "rate": 3.2
+          "count": 3,
+          "rate": 4.8
         }
       }
     },
@@ -9715,10 +9780,10 @@
     },
     {
       "cohort": "2026-03",
-      "size": 23,
+      "size": 28,
       "months": {
         "M0": {
-          "count": 23,
+          "count": 28,
           "rate": 100.0
         }
       }
@@ -9851,7 +9916,7 @@
       "email": "Zackvrona@gmail.com",
       "last_order": "2025-08-05",
       "expected_next": "2025-08-18",
-      "days_overdue": 203,
+      "days_overdue": 204,
       "churn_risk": 95,
       "avg_order_interval": 13
     },
@@ -9951,7 +10016,7 @@
       "email": "",
       "last_order": "2025-09-12",
       "expected_next": "2025-10-17",
-      "days_overdue": 143,
+      "days_overdue": 144,
       "churn_risk": 95,
       "avg_order_interval": 35
     },
@@ -9991,7 +10056,7 @@
       "email": "",
       "last_order": "2025-09-11",
       "expected_next": "2025-10-05",
-      "days_overdue": 155,
+      "days_overdue": 156,
       "churn_risk": 95,
       "avg_order_interval": 24
     },
@@ -10031,7 +10096,7 @@
       "email": "",
       "last_order": "2025-08-26",
       "expected_next": "2025-08-26",
-      "days_overdue": 195,
+      "days_overdue": 196,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -10091,7 +10156,7 @@
       "email": "Abudayehnimer@gmail.com",
       "last_order": "2025-10-15",
       "expected_next": "2025-11-20",
-      "days_overdue": 109,
+      "days_overdue": 110,
       "churn_risk": 95,
       "avg_order_interval": 36
     },
@@ -10101,7 +10166,7 @@
       "email": "",
       "last_order": "2025-09-19",
       "expected_next": "2025-09-28",
-      "days_overdue": 162,
+      "days_overdue": 163,
       "churn_risk": 95,
       "avg_order_interval": 9
     },
@@ -10161,7 +10226,7 @@
       "email": "emily.levine01@gmail.com",
       "last_order": "2025-11-05",
       "expected_next": "2025-11-26",
-      "days_overdue": 103,
+      "days_overdue": 104,
       "churn_risk": 95,
       "avg_order_interval": 21
     },
@@ -10191,7 +10256,7 @@
       "email": "Yuriramos884@gmail.com",
       "last_order": "2025-11-13",
       "expected_next": "2025-11-16",
-      "days_overdue": 113,
+      "days_overdue": 114,
       "churn_risk": 95,
       "avg_order_interval": 3.4
     },
@@ -10321,7 +10386,7 @@
       "email": "",
       "last_order": "2025-12-15",
       "expected_next": "2025-12-25",
-      "days_overdue": 74,
+      "days_overdue": 75,
       "churn_risk": 95,
       "avg_order_interval": 10.2
     },
@@ -10371,7 +10436,7 @@
       "email": "",
       "last_order": "2025-11-26",
       "expected_next": "2025-11-26",
-      "days_overdue": 103,
+      "days_overdue": 104,
       "churn_risk": 95,
       "avg_order_interval": 0
     },
@@ -10471,7 +10536,7 @@
       "email": "",
       "last_order": "2026-01-02",
       "expected_next": "2026-01-24",
-      "days_overdue": 44,
+      "days_overdue": 45,
       "churn_risk": 80,
       "avg_order_interval": 22.3
     },
@@ -10521,7 +10586,7 @@
       "email": "Vicenms95@gmail.com",
       "last_order": "2025-12-18",
       "expected_next": "2026-01-29",
-      "days_overdue": 39,
+      "days_overdue": 40,
       "churn_risk": 80,
       "avg_order_interval": 42.5
     },
@@ -10541,7 +10606,7 @@
       "email": "",
       "last_order": "2025-12-27",
       "expected_next": "2026-01-20",
-      "days_overdue": 48,
+      "days_overdue": 49,
       "churn_risk": 80,
       "avg_order_interval": 24.3
     },
@@ -10651,7 +10716,7 @@
       "email": "Piersonmandell10@gmail.com",
       "last_order": "2026-01-05",
       "expected_next": "2026-01-19",
-      "days_overdue": 49,
+      "days_overdue": 50,
       "churn_risk": 80,
       "avg_order_interval": 14
     },
@@ -10691,7 +10756,7 @@
       "email": "sugeivisgomez@gmail.com",
       "last_order": "2026-01-27",
       "expected_next": "2026-01-29",
-      "days_overdue": 39,
+      "days_overdue": 40,
       "churn_risk": 80,
       "avg_order_interval": 2.3
     },
@@ -10731,7 +10796,7 @@
       "email": "",
       "last_order": "2026-01-30",
       "expected_next": "2026-01-30",
-      "days_overdue": 38,
+      "days_overdue": 39,
       "churn_risk": 80,
       "avg_order_interval": 0
     },
@@ -10806,12 +10871,22 @@
       "avg_order_interval": 44
     },
     {
+      "customer_id": "403",
+      "name": "Eduardo Kley Cavalieri",
+      "email": "eduardokcavalieri@hotmail.com",
+      "last_order": "2026-02-06",
+      "expected_next": "2026-02-23",
+      "days_overdue": 15,
+      "churn_risk": 60,
+      "avg_order_interval": 17.5
+    },
+    {
       "customer_id": "463",
       "name": "Natalia Garcia",
       "email": "ngarcia.015@gmail.com",
       "last_order": "2026-01-22",
       "expected_next": "2026-02-14",
-      "days_overdue": 23,
+      "days_overdue": 24,
       "churn_risk": 60,
       "avg_order_interval": 23.5
     },
@@ -10861,7 +10936,7 @@
       "email": "",
       "last_order": "2026-02-12",
       "expected_next": "2026-02-19",
-      "days_overdue": 18,
+      "days_overdue": 19,
       "churn_risk": 60,
       "avg_order_interval": 7.5
     },
@@ -10881,7 +10956,7 @@
       "email": "katerinadsmith@gmail.com",
       "last_order": "2026-02-10",
       "expected_next": "2026-02-18",
-      "days_overdue": 19,
+      "days_overdue": 20,
       "churn_risk": 60,
       "avg_order_interval": 8
     },
@@ -10961,19 +11036,9 @@
       "email": "",
       "last_order": "2026-02-19",
       "expected_next": "2026-02-28",
-      "days_overdue": 9,
+      "days_overdue": 10,
       "churn_risk": 40,
       "avg_order_interval": 9.4
-    },
-    {
-      "customer_id": "403",
-      "name": "Eduardo Kley Cavalieri",
-      "email": "eduardokcavalieri@hotmail.com",
-      "last_order": "2026-02-06",
-      "expected_next": "2026-02-23",
-      "days_overdue": 14,
-      "churn_risk": 40,
-      "avg_order_interval": 17.5
     },
     {
       "customer_id": "476",
@@ -10982,6 +11047,16 @@
       "last_order": "2026-02-02",
       "expected_next": "2026-03-01",
       "days_overdue": 9,
+      "churn_risk": 40,
+      "avg_order_interval": 27
+    },
+    {
+      "customer_id": "483",
+      "name": "Gabriel Navarro",
+      "email": "Gabrielnavarro525@yahoo.com",
+      "last_order": "2026-02-03",
+      "expected_next": "2026-03-02",
+      "days_overdue": 8,
       "churn_risk": 40,
       "avg_order_interval": 27
     },
@@ -11122,12 +11197,12 @@
       },
       {
         "month": "2026-03",
-        "orders": 61,
-        "revenue_per_order": 57.06,
-        "fixed_cost_per_order": 100.82,
-        "contribution_margin": -43.76,
+        "orders": 69,
+        "revenue_per_order": 61.74,
+        "fixed_cost_per_order": 89.13,
+        "contribution_margin": -27.39,
         "total_fixed_costs": 6150,
-        "break_even_orders": 108
+        "break_even_orders": 100
       }
     ],
     "fixed_costs": {
@@ -11140,11 +11215,11 @@
     }
   },
   "order_interval": {
-    "avg_days": 21.2,
-    "median_days": 10,
+    "avg_days": 21.7,
+    "median_days": 10.0,
     "min_days": 0,
     "max_days": 235,
-    "total_repeat_customers": 223
+    "total_repeat_customers": 226
   },
   "predictive_ltv": {
     "predictions": [
@@ -12229,18 +12304,6 @@
         "days_to_second_order": null
       },
       {
-        "customer_id": "277",
-        "name": "Abby Stuart",
-        "email": "ars375@cornell.edu",
-        "order_count": 1,
-        "current_ltv": 46.25,
-        "predicted_ltv": 151.47,
-        "potential_score": 65,
-        "potential_category": "High",
-        "first_order_value": 103.96,
-        "days_to_second_order": null
-      },
-      {
         "customer_id": "290",
         "name": "Chloe Kouns",
         "email": "Chloekouns@outlook.com",
@@ -12370,18 +12433,6 @@
         "potential_score": 65,
         "potential_category": "High",
         "first_order_value": 139.0,
-        "days_to_second_order": null
-      },
-      {
-        "customer_id": "398",
-        "name": "Ajay Puri",
-        "email": "",
-        "order_count": 1,
-        "current_ltv": 65.01,
-        "predicted_ltv": 151.47,
-        "potential_score": 65,
-        "potential_category": "High",
-        "first_order_value": 124.0,
         "days_to_second_order": null
       },
       {
@@ -12730,6 +12781,30 @@
         "potential_score": 65,
         "potential_category": "High",
         "first_order_value": 120.8,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "757",
+        "name": "Jerel Sabella",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 76.15,
+        "predicted_ltv": 151.47,
+        "potential_score": 65,
+        "potential_category": "High",
+        "first_order_value": 152.3,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "759",
+        "name": "Patrick Flaherty",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 124.35,
+        "predicted_ltv": 151.47,
+        "potential_score": 65,
+        "potential_category": "High",
+        "first_order_value": 248.7,
         "days_to_second_order": null
       },
       {
@@ -13957,18 +14032,6 @@
         "days_to_second_order": null
       },
       {
-        "customer_id": "746",
-        "name": "Gui Dzik Lumina",
-        "email": "gdzik@luminacm.com",
-        "order_count": 1,
-        "current_ltv": 31.55,
-        "predicted_ltv": 86.56,
-        "potential_score": 45,
-        "potential_category": "Medium",
-        "first_order_value": 63.1,
-        "days_to_second_order": null
-      },
-      {
         "customer_id": "751",
         "name": "Irina Movilean",
         "email": "",
@@ -13978,6 +14041,18 @@
         "potential_score": 45,
         "potential_category": "Medium",
         "first_order_value": 93.94,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "758",
+        "name": "Hector Andrade",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 38.45,
+        "predicted_ltv": 86.56,
+        "potential_score": 45,
+        "potential_category": "Medium",
+        "first_order_value": 76.9,
         "days_to_second_order": null
       },
       {
@@ -14141,7 +14216,7 @@
         "name": "William Cortes",
         "email": "",
         "order_count": 2,
-        "current_ltv": 34.38,
+        "current_ltv": 31.08,
         "predicted_ltv": 64.92,
         "potential_score": 30,
         "potential_category": "Low",
@@ -14171,6 +14246,18 @@
         "potential_category": "Low",
         "first_order_value": 55.55,
         "days_to_second_order": 94
+      },
+      {
+        "customer_id": "277",
+        "name": "Abby Stuart",
+        "email": "ars375@cornell.edu",
+        "order_count": 2,
+        "current_ltv": 112.1,
+        "predicted_ltv": 64.92,
+        "potential_score": 30,
+        "potential_category": "Low",
+        "first_order_value": 103.96,
+        "days_to_second_order": 158
       },
       {
         "customer_id": "289",
@@ -14245,6 +14332,18 @@
         "days_to_second_order": 110
       },
       {
+        "customer_id": "317",
+        "name": "Taylor Shapiro",
+        "email": "shapiro.taylor5@gmail.com",
+        "order_count": 2,
+        "current_ltv": 58.79,
+        "predicted_ltv": 64.92,
+        "potential_score": 30,
+        "potential_category": "Low",
+        "first_order_value": 58.81,
+        "days_to_second_order": 146
+      },
+      {
         "customer_id": "348",
         "name": "Teddy",
         "email": "",
@@ -14267,6 +14366,18 @@
         "potential_category": "Low",
         "first_order_value": 84.5,
         "days_to_second_order": 95
+      },
+      {
+        "customer_id": "398",
+        "name": "Ajay Puri",
+        "email": "",
+        "order_count": 2,
+        "current_ltv": 85.47,
+        "predicted_ltv": 64.92,
+        "potential_score": 30,
+        "potential_category": "Low",
+        "first_order_value": 124.0,
+        "days_to_second_order": 117
       },
       {
         "customer_id": "421",
@@ -15358,18 +15469,6 @@
         "potential_score": 25,
         "potential_category": "Low",
         "first_order_value": 20.32,
-        "days_to_second_order": null
-      },
-      {
-        "customer_id": "317",
-        "name": "Taylor Shapiro",
-        "email": "shapiro.taylor5@gmail.com",
-        "order_count": 1,
-        "current_ltv": 29.6,
-        "predicted_ltv": 43.28,
-        "potential_score": 25,
-        "potential_category": "Low",
-        "first_order_value": 58.81,
         "days_to_second_order": null
       },
       {
@@ -17437,6 +17536,18 @@
         "days_to_second_order": null
       },
       {
+        "customer_id": "746",
+        "name": "Gui Dzik Lumina",
+        "email": "gdzik@luminacm.com",
+        "order_count": 1,
+        "current_ltv": 25.04,
+        "predicted_ltv": 43.28,
+        "potential_score": 25,
+        "potential_category": "Low",
+        "first_order_value": 50.08,
+        "days_to_second_order": null
+      },
+      {
         "customer_id": "747",
         "name": "Georgii Butaev",
         "email": "",
@@ -17482,6 +17593,30 @@
         "potential_score": 25,
         "potential_category": "Low",
         "first_order_value": 34.33,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "760",
+        "name": "Lucia Munoz",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 26.41,
+        "predicted_ltv": 43.28,
+        "potential_score": 25,
+        "potential_category": "Low",
+        "first_order_value": 52.81,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "761",
+        "name": "Viktoria Vityuk",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 18.7,
+        "predicted_ltv": 43.28,
+        "potential_score": 25,
+        "potential_category": "Low",
+        "first_order_value": 37.4,
         "days_to_second_order": null
       }
     ],
@@ -18568,18 +18703,6 @@
         "days_to_second_order": null
       },
       {
-        "customer_id": "277",
-        "name": "Abby Stuart",
-        "email": "ars375@cornell.edu",
-        "order_count": 1,
-        "current_ltv": 46.25,
-        "predicted_ltv": 151.47,
-        "potential_score": 65,
-        "potential_category": "High",
-        "first_order_value": 103.96,
-        "days_to_second_order": null
-      },
-      {
         "customer_id": "290",
         "name": "Chloe Kouns",
         "email": "Chloekouns@outlook.com",
@@ -18709,18 +18832,6 @@
         "potential_score": 65,
         "potential_category": "High",
         "first_order_value": 139.0,
-        "days_to_second_order": null
-      },
-      {
-        "customer_id": "398",
-        "name": "Ajay Puri",
-        "email": "",
-        "order_count": 1,
-        "current_ltv": 65.01,
-        "predicted_ltv": 151.47,
-        "potential_score": 65,
-        "potential_category": "High",
-        "first_order_value": 124.0,
         "days_to_second_order": null
       },
       {
@@ -19070,9 +19181,33 @@
         "potential_category": "High",
         "first_order_value": 120.8,
         "days_to_second_order": null
+      },
+      {
+        "customer_id": "757",
+        "name": "Jerel Sabella",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 76.15,
+        "predicted_ltv": 151.47,
+        "potential_score": 65,
+        "potential_category": "High",
+        "first_order_value": 152.3,
+        "days_to_second_order": null
+      },
+      {
+        "customer_id": "759",
+        "name": "Patrick Flaherty",
+        "email": "",
+        "order_count": 1,
+        "current_ltv": 124.35,
+        "predicted_ltv": 151.47,
+        "potential_score": 65,
+        "potential_category": "High",
+        "first_order_value": 248.7,
+        "days_to_second_order": null
       }
     ],
-    "total_predicted": 528
+    "total_predicted": 533
   },
   "seasonal_patterns": {
     "monthly": [
@@ -19090,9 +19225,9 @@
       },
       {
         "month": "March",
-        "orders": 61,
-        "revenue": 3480.55,
-        "avg_order_value": 57.06
+        "orders": 69,
+        "revenue": 4260.04,
+        "avg_order_value": 61.74
       },
       {
         "month": "July",
@@ -19140,9 +19275,9 @@
       },
       {
         "day": "Tuesday",
-        "orders": 228,
-        "revenue": 13812.96,
-        "avg_order_value": 60.58
+        "orders": 236,
+        "revenue": 14605.47,
+        "avg_order_value": 61.89
       },
       {
         "day": "Wednesday",
@@ -19153,8 +19288,8 @@
       {
         "day": "Thursday",
         "orders": 188,
-        "revenue": 12291.01,
-        "avg_order_value": 65.38
+        "revenue": 12277.99,
+        "avg_order_value": 65.31
       },
       {
         "day": "Friday",
@@ -19223,23 +19358,23 @@
       },
       {
         "hour": 15,
-        "orders": 118,
-        "revenue": 6774.52
+        "orders": 121,
+        "revenue": 7026.12
       },
       {
         "hour": 16,
-        "orders": 105,
-        "revenue": 6074.17
+        "orders": 107,
+        "revenue": 6393.17
       },
       {
         "hour": 17,
-        "orders": 112,
-        "revenue": 6546.9
+        "orders": 113,
+        "revenue": 6599.71
       },
       {
         "hour": 18,
-        "orders": 102,
-        "revenue": 5938.52
+        "orders": 104,
+        "revenue": 6107.62
       },
       {
         "hour": 19,
@@ -19259,7 +19394,7 @@
       {
         "hour": 22,
         "orders": 4,
-        "revenue": 243.0
+        "revenue": 229.98
       },
       {
         "hour": 23,
@@ -19269,14 +19404,14 @@
     ],
     "current_month_projection": {
       "month": "March",
-      "current_orders": 61,
-      "current_revenue": 3480.55,
-      "projected_orders": 198,
-      "projected_revenue": 13208.72,
+      "current_orders": 69,
+      "current_revenue": 4260.04,
+      "projected_orders": 212,
+      "projected_revenue": 14944.37,
       "days_elapsed": 10,
       "days_remaining": 21,
-      "daily_run_rate": 6.1,
-      "growth_rate": -12.1
+      "daily_run_rate": 6.9,
+      "growth_rate": -8.1
     },
     "forecast_7_days": [
       {
@@ -19296,7 +19431,7 @@
       {
         "date": "2026-03-13",
         "day": "Friday",
-        "predicted_orders": 6,
+        "predicted_orders": 7,
         "confidence_low": 3,
         "confidence_high": 10
       },
@@ -19317,7 +19452,7 @@
       {
         "date": "2026-03-16",
         "day": "Monday",
-        "predicted_orders": 10,
+        "predicted_orders": 11,
         "confidence_low": 8,
         "confidence_high": 13
       },
@@ -19326,7 +19461,7 @@
         "day": "Tuesday",
         "predicted_orders": 8,
         "confidence_low": 5,
-        "confidence_high": 10
+        "confidence_high": 11
       }
     ],
     "insights": {
@@ -19337,7 +19472,7 @@
       "busiest_month": "January",
       "busiest_month_orders": 224,
       "slowest_month": "March",
-      "slowest_month_orders": 61,
+      "slowest_month_orders": 69,
       "peak_hours": [
         {
           "hour": 12,
@@ -19406,16 +19541,16 @@
       },
       {
         "month": "2026-03",
-        "new_customers": 23,
+        "new_customers": 28,
         "ad_spend": 250,
-        "cac": 10.87
+        "cac": 8.93
       }
     ],
     "total_ad_spend": 2176.0,
-    "avg_new_customers_per_month": 70.3,
-    "avg_cac": 3.44,
-    "total_new_customers": 633,
+    "avg_new_customers_per_month": 70.9,
+    "avg_cac": 3.41,
+    "total_new_customers": 638,
     "default_monthly_spend": 250
   },
-  "generated_at": "2026-03-10T17:08:29.581312"
+  "generated_at": "2026-03-10T23:06:14.309029"
 }
